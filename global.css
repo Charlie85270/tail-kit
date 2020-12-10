@@ -1,0 +1,7 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.perspective {
+    transform: perspective(1500px) rotateY(-5deg) rotateX(25deg) rotate(20deg) translateY(-150px) !important;
+}
