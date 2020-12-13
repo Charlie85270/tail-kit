@@ -6,8 +6,8 @@ const Header: FC = () => {
   return (
     <div className="relative bg-white z-40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
-          <div className="flex justify-start">
+        <div className="flex justify-between items-center border-b-2 border-gray-100 py-6  md:space-x-10">
+          <div className="flex justify-start items-center gap-12">
             <a href="#">
               <span className="sr-only">Workflow</span>
               <img
@@ -16,6 +16,115 @@ const Header: FC = () => {
                 alt=""
               />
             </a>
+            <nav className="hidden md:flex space-x-10">
+              <div className="relative">
+                <button
+                  type="button"
+                  onClick={() => setIsSectionOpen(!isSectionOpen)}
+                  className="group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 text-xl"
+                >
+                  <span>Components</span>
+
+                  <svg
+                    className="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </button>
+                {isSectionOpen && (
+                  <div className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                    <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                      <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                        <Link href="/components/cards">
+                          <a className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                            <i className="far fa-address-card flex-shrink-0 h-6 w-6 text-indigo-600" />
+
+                            <div className="ml-4">
+                              <p className="text-base font-medium text-gray-900">
+                                Cards
+                              </p>
+                              <p className="mt-1 text-sm text-gray-500">
+                                Profile cards, product cards, actions cards ...
+                              </p>
+                            </div>
+                          </a>
+                        </Link>
+                        <a
+                          href="#"
+                          className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+                        >
+                          <i className="fas fa-tv flex-shrink-0 h-6 w-6 text-indigo-600" />
+                          <div className="ml-4">
+                            <p className="text-base font-medium text-gray-900">
+                              Data display
+                            </p>
+                            <p className="mt-1 text-sm text-gray-500">
+                              All ways to display data
+                            </p>
+                          </div>
+                        </a>
+
+                        <a
+                          href="#"
+                          className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+                        >
+                          <i className="fas fa-mouse-pointer flex-shrink-0 h-6 w-6 text-indigo-600" />
+                          <div className="ml-4">
+                            <p className="text-base font-medium text-gray-900">
+                              Elements
+                            </p>
+                            <p className="mt-1 text-sm text-gray-500">
+                              Your customers&#039; data will be safe and secure.
+                            </p>
+                          </div>
+                        </a>
+
+                        <a
+                          href="#"
+                          className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+                        >
+                          <i className="fab fa-wpforms flex-shrink-0 h-6 w-6 text-indigo-600" />
+
+                          <div className="ml-4">
+                            <p className="text-base font-medium text-gray-900">
+                              Forms
+                            </p>
+                            <p className="mt-1 text-sm text-gray-500">
+                              All forms element include input, select,
+                              checkbox....
+                            </p>
+                          </div>
+                        </a>
+
+                        <a
+                          href="#"
+                          className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+                        >
+                          <i className="fas fa-stream flex-shrink-0 h-6 w-6 text-indigo-600" />
+
+                          <div className="ml-4">
+                            <p className="text-base font-medium text-gray-900">
+                              List
+                            </p>
+                            <p className="mt-1 text-sm text-gray-500">
+                              All components to display element ordered or not
+                            </p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </nav>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
             <button
@@ -42,115 +151,10 @@ const Header: FC = () => {
               </svg>
             </button>
           </div>
-          <nav className="hidden md:flex space-x-10">
-            <div className="relative">
-              <button
-                type="button"
-                onClick={() => setIsSectionOpen(!isSectionOpen)}
-                className="group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 text-xl"
-              >
-                <span>Components</span>
 
-                <svg
-                  className="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </button>
-              {isSectionOpen && (
-                <div className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
-                  <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-                    <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                      <Link href="/components/cards">
-                        <a className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
-                          <i className="far fa-address-card flex-shrink-0 h-6 w-6 text-indigo-600" />
-
-                          <div className="ml-4">
-                            <p className="text-base font-medium text-gray-900">
-                              Cards
-                            </p>
-                            <p className="mt-1 text-sm text-gray-500">
-                              Profile cards, product cards, actions cards ...
-                            </p>
-                          </div>
-                        </a>
-                      </Link>
-                      <a
-                        href="#"
-                        className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
-                      >
-                        <i className="fas fa-tv flex-shrink-0 h-6 w-6 text-indigo-600" />
-                        <div className="ml-4">
-                          <p className="text-base font-medium text-gray-900">
-                            Data display
-                          </p>
-                          <p className="mt-1 text-sm text-gray-500">
-                            All ways to display data
-                          </p>
-                        </div>
-                      </a>
-
-                      <a
-                        href="#"
-                        className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
-                      >
-                        <i className="fas fa-mouse-pointer flex-shrink-0 h-6 w-6 text-indigo-600" />
-                        <div className="ml-4">
-                          <p className="text-base font-medium text-gray-900">
-                            Elements
-                          </p>
-                          <p className="mt-1 text-sm text-gray-500">
-                            Your customers&#039; data will be safe and secure.
-                          </p>
-                        </div>
-                      </a>
-
-                      <a
-                        href="#"
-                        className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
-                      >
-                        <i className="fab fa-wpforms flex-shrink-0 h-6 w-6 text-indigo-600" />
-
-                        <div className="ml-4">
-                          <p className="text-base font-medium text-gray-900">
-                            Forms
-                          </p>
-                          <p className="mt-1 text-sm text-gray-500">
-                            All forms element include input, select,
-                            checkbox....
-                          </p>
-                        </div>
-                      </a>
-
-                      <a
-                        href="#"
-                        className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
-                      >
-                        <i className="fas fa-stream flex-shrink-0 h-6 w-6 text-indigo-600" />
-
-                        <div className="ml-4">
-                          <p className="text-base font-medium text-gray-900">
-                            List
-                          </p>
-                          <p className="mt-1 text-sm text-gray-500">
-                            All components to display element ordered or not
-                          </p>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              )}
-            </div>
-          </nav>
+          <a href="https://github.com/Charlie85270/fastUI" className="">
+            <i className="fab fa-github mr-2 w-10 h-10 text-gray-500" />
+          </a>
         </div>
       </div>
       {isMenuOpen && (

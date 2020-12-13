@@ -3,7 +3,6 @@ import AppLayout from "../../../components/layout/AppLayout";
 import ComponentLayout from "../../../components/layout/ComponentLayout";
 import CoverAndButtonsProfilCard from "../../../components/kit/components/profile/CoverAndButtonsProfilCard";
 import FullPhotoCard from "../../../components/kit/components/profile/FullPhotoCard";
-import ShoppingDetailsCard from "../../../components/kit/components/shopping/ShoppingDetailsCard";
 import Avatar from "../../../components/kit/components/profile/Avatar";
 import SimpleProfilVerti from "../../../components/kit/components/profile/SimpleProfilVerti";
 import SimpleProfilHori from "../../../components/kit/components/profile/SimpleProfilHori";

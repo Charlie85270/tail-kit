@@ -4,11 +4,12 @@ import ComponentLayout from "../../../components/layout/ComponentLayout";
 import PricingCard from "../../../components/kit/components/pricing/PricingCard";
 import PricingCard2 from "../../../components/kit/components/pricing/PricingCard2";
 import PricingCard3 from "../../../components/kit/components/pricing/PricingCard3";
+import SectionHeader from "../../../components/site/header/SectionHeader";
 
 const ComponentsPage: FC = () => {
   return (
     <AppLayout>
-      <h1 className="w-full text-center text-4xl mb-8">Pricing</h1>
+      <SectionHeader title="Pricing" />
 
       <ComponentLayout
         title="Pricing card 1"
