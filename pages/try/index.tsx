@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import ShoppingDetailsCard from "../../components/kit/components/shopping/ShoppingDetailsCard";
+import ShoppingDetailsCard from "../../components/kit/components/commerce/shopping/ShoppingDetailsCard";
 
 const TryPage: FC = () => {
   return <ShoppingDetailsCard />;
