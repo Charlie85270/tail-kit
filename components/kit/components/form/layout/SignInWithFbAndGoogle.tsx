@@ -5,7 +5,7 @@ import InputText from "../inputtext/InputText";
 const SignInWithFbAndGoogle = () => {
   return (
     <div className="flex flex-col bg-white shadow px-4 sm:px-6 md:px-8 lg:px-10 py-8 rounded-lg w-full max-w-md">
-      <div className="font-medium self-center text-xl sm:text-2xl uppercase text-gray-800 mb-6">
+      <div className="font-medium self-center text-xl sm:text-2xl  text-gray-800 mb-6">
         Login To Your Account
       </div>
       <div className="flex item-center gap-4">
@@ -14,7 +14,7 @@ const SignInWithFbAndGoogle = () => {
       </div>
       <div className="relative mt-10 h-px bg-gray-300">
         <div className="absolute left-0 top-0 flex justify-center w-full -mt-2">
-          <span className="bg-white px-4 text-xs text-gray-500 uppercase">
+          <span className="bg-white px-4 text-xs text-gray-500 ">
             Or Login With Email
           </span>
         </div>

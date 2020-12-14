@@ -5,7 +5,7 @@ const ShoppingDetailsCard: FC = () => {
       <img
         src="/images/object/3.png"
         alt="adidas"
-        className="w-40 h-44 m-auto"
+        className="w-32 p-4 h-36 m-auto"
       />
 
       <div className="bg-pink-200 m-3 p-4 rounded-lg">

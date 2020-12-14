@@ -9,6 +9,12 @@ const Commerce: FC = () => {
       img: "images/sections/pricing.svg",
       link: "/components/pricing",
     },
+    {
+      title: "Shopping card",
+      items: 4,
+      img: "images/sections/shopping.svg",
+      link: "/components/shopping",
+    },
   ];
 
   return (

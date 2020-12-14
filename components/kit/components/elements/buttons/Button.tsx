@@ -19,7 +19,7 @@ const Button = (props: Props) => {
         props.icon ? "flex justify-center items-center" : "flex-shrink-0"
       } bg-${
         props.color
-      }-600 text-white w-full text-center text-base font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-${
+      }-600 text-white w-full transition ease-in duration-200 text-center text-base font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-${
         props.color
       }-700 focus:outline-none focus:ring-2 focus:ring-${
         props.color

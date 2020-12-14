@@ -6,13 +6,13 @@ import SimpleIconDescCard from "../components/kit/components/cards/SimpleIconDes
 import CustomSelect from "../components/kit/components/form/select/CustomSelect";
 import SimpleNotificationCard from "../components/kit/components/cards/SimpleNotificationCard";
 import InfoNumberCard from "../components/kit/components/cards/InfoNumberCard";
-import ShoppingDetailsCard from "../components/kit/components/shopping/ShoppingDetailsCard";
 import TextButton from "../components/kit/components/elements/buttons/Button";
 import HomeLayout from "../components/layout/HomeLayout";
 import Link from "next/link";
 import CoverAndButtonsProfilCard from "../components/kit/components/profile/CoverAndButtonsProfilCard";
 import SimpleProfilCard from "../components/kit/components/profile/SimpleProfilVerti";
 import Button from "../components/kit/components/elements/buttons/Button";
+import ShoppingDetailsCard from "../components/kit/components/commerce/shopping/ShoppingDetailsCard";
 
 const IndexPage: FC = () => {
   return (

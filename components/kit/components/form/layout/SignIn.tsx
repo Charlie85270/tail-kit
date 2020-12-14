@@ -5,7 +5,7 @@ import InputText from "../inputtext/InputText";
 const SignIn = () => {
   return (
     <div className="flex flex-col bg-white shadow px-4 sm:px-6 md:px-8 lg:px-10 py-8 rounded-lg w-full max-w-md">
-      <div className="font-medium self-center text-xl sm:text-2xl uppercase text-gray-600 mb-6">
+      <div className="font-medium self-center text-xl sm:text-2xl  text-gray-600 mb-6">
         Login To Your Account
       </div>
 
