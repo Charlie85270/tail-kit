@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import MultipleAvatar from "./MultipleAvatar";
+import MultipleAvatar from "../elements/avatars/MultipleAvatar";
 
 const GroupInfo: FC = () => {
   return (

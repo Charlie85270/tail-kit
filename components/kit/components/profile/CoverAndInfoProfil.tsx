@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import Avatar from "./Avatar";
+import Avatar from "../elements/avatars/Avatar";
 
 const CoverAndInfoProfil: FC = () => {
   return (

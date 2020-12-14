@@ -1,20 +1,18 @@
 import { FC } from "react";
 import SimplePhotoDescCard from "../components/kit/components/cards/SimplePhotoDescCard";
 import TagsCard from "../components/kit/components/cards/TagsCard";
-import SimpleLoadingButton from "../components/kit/components/buttons/SimpleLoadingButton";
 import DeleteConfirmation from "../components/kit/components/confirmations/DeleteConfirmation";
 import SimpleIconDescCard from "../components/kit/components/cards/SimpleIconDescCard";
-import SimpleSelect from "../components/kit/components/form/select/SimpleSelect";
+import CustomSelect from "../components/kit/components/form/select/CustomSelect";
 import SimpleNotificationCard from "../components/kit/components/cards/SimpleNotificationCard";
-import IconButton from "../components/kit/components/buttons/IconButton";
 import InfoNumberCard from "../components/kit/components/cards/InfoNumberCard";
 import ShoppingDetailsCard from "../components/kit/components/shopping/ShoppingDetailsCard";
-import TextButton from "../components/kit/components/buttons/TextButton";
-import TextAndIconButton from "../components/kit/components/buttons/TextAndIconButton";
+import TextButton from "../components/kit/components/elements/buttons/Button";
 import HomeLayout from "../components/layout/HomeLayout";
 import Link from "next/link";
 import CoverAndButtonsProfilCard from "../components/kit/components/profile/CoverAndButtonsProfilCard";
 import SimpleProfilCard from "../components/kit/components/profile/SimpleProfilVerti";
+import Button from "../components/kit/components/elements/buttons/Button";
 
 const IndexPage: FC = () => {
   return (
@@ -35,7 +33,7 @@ const IndexPage: FC = () => {
           <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start w-full">
             <div className="rounded-md shadow">
               <Link href="/components">
-                <a className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
+                <a className="w-full flex items-center justify-center px-8 py-3  text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 px-4 py-2">
                   Get started
                 </a>
               </Link>
@@ -43,7 +41,7 @@ const IndexPage: FC = () => {
             <div className="mt-3 sm:mt-0 sm:ml-3">
               <a
                 href="https://github.com/Charlie85270/fastUI"
-                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-gray-800 bg-gray-100 hover:bg-gray-200 md:py-4 md:text-lg md:px-10"
+                className="w-full flex items-center justify-center px-8 py-3  text-base font-medium rounded-md text-gray-800 bg-gray-100 hover:bg-gray-200 px-4 py-2"
               >
                 <i className="fab fa-github mr-2" />
                 <span className="ml-2">Github</span>
@@ -56,10 +54,10 @@ const IndexPage: FC = () => {
             <div className="col-1">
               <div className="mb-4">
                 <div className="flex items-center justify-center w-full gap-4">
-                  <IconButton icon="fas fa-step-backward" />
-                  <IconButton icon="fas fa-pause" />
-                  <IconButton />
-                  <IconButton icon="fas fa-step-forward" />
+                  <Button icon="fas fa-step-backward" color="blue" />
+                  <Button icon="fas fa-pause" color="blue" />
+                  <Button icon="fas fa-upload" color="blue" />
+                  <Button icon="fas fa-step-forward" color="blue" />
                 </div>
               </div>
 
@@ -69,9 +67,7 @@ const IndexPage: FC = () => {
               <div className="mb-4">
                 <SimplePhotoDescCard />
               </div>
-              <div className="mb-4">
-                <SimpleLoadingButton />
-              </div>
+
               <div className="mb-4">
                 <DeleteConfirmation />
               </div>
@@ -80,8 +76,9 @@ const IndexPage: FC = () => {
               </div>
             </div>
             <div className="col-1">
-              <div className="mb-4">
-                <TextButton />
+              <div className="mb-4 flex gap-4">
+                <TextButton label="Annuler" color="red" />
+                <TextButton label="Confirmer" color="green" />
               </div>
               <div className="mb-4">
                 <CoverAndButtonsProfilCard />
@@ -93,7 +90,7 @@ const IndexPage: FC = () => {
                 <SimpleIconDescCard />
               </div>
               <div className="mb-4">
-                <SimpleSelect />
+                <CustomSelect />
               </div>
 
               <div className="mb-4">
@@ -114,7 +111,15 @@ const IndexPage: FC = () => {
                 <SimpleProfilCard />
               </div>
               <div className="mb-4">
-                <TextAndIconButton />
+                <Button label="Upload" icon="fas fa-upload" color="red" />
+              </div>
+              <div className="mb-4">
+                <Button
+                  icon="fas fa-spinner"
+                  animated={true}
+                  color="blue"
+                  label="loading"
+                />
               </div>
             </div>
           </div>

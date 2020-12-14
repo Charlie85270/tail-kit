@@ -3,14 +3,14 @@ import AppLayout from "../../../components/layout/AppLayout";
 import ComponentLayout from "../../../components/layout/ComponentLayout";
 import CoverAndButtonsProfilCard from "../../../components/kit/components/profile/CoverAndButtonsProfilCard";
 import FullPhotoCard from "../../../components/kit/components/profile/FullPhotoCard";
-import Avatar from "../../../components/kit/components/profile/Avatar";
 import SimpleProfilVerti from "../../../components/kit/components/profile/SimpleProfilVerti";
 import SimpleProfilHori from "../../../components/kit/components/profile/SimpleProfilHori";
 import AddProfilInfo from "../../../components/kit/components/profile/AddProfilInfo";
 import CoverAndInfoProfil from "../../../components/kit/components/profile/CoverAndInfoProfil";
 import GroupInfo from "../../../components/kit/components/profile/GroupInfo";
-import MultipleAvatar from "../../../components/kit/components/profile/MultipleAvatar";
 import SectionHeader from "../../../components/site/header/SectionHeader";
+import Avatar from "../../../components/kit/components/elements/avatars/Avatar";
+import MultipleAvatar from "../../../components/kit/components/elements/avatars/MultipleAvatar";
 
 const ComponentsPage: FC = () => {
   return (

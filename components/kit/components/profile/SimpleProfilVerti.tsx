@@ -1,5 +1,6 @@
 import React, { FC } from "react";
-import Avatar from "./Avatar";
+import Avatar from "../elements/avatars/Avatar";
+
 const SimpleProfilVerti: FC = () => {
   return (
     <div className="shadow-lg rounded-2xl w-36 p-2 py-6 bg-white">

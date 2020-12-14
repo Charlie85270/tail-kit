@@ -11,7 +11,7 @@ const SectionHeader = ({ title }: Props) => {
       <h1 className="text-4xl">{title}</h1>
 
       <Link href="/components">
-        <a className="w-28  px-4 py-2 border border-transparent text-base font-medium rounded-md text-white hover:text-black bg-black hover:bg-white">
+        <a className="w-28  px-4 py-2 text-base font-medium rounded-md text-white bg-black">
           <i className="fas fa-long-arrow-alt-left mr-4"></i>
           Back
         </a>
