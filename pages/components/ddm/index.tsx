@@ -10,14 +10,17 @@ const DdmPages: FC = () => {
     {
       label: "Stripe",
       icon: "fab fa-cc-stripe",
+      desc: "pay with your stripe account",
     },
     {
       label: "Mastercard",
       icon: "fab fa-cc-mastercard",
+      desc: "pay with your mastercard card",
     },
     {
       label: "Paypal",
       icon: "fab fa-cc-paypal",
+      desc: "pay with your paypal account",
     },
   ];
 
@@ -29,7 +32,7 @@ const DdmPages: FC = () => {
         jsLink="https://github.com/Charlie85270/fastUI"
         element={
           <Ddm
-            label="Envoyer"
+            label="Pay with"
             forceOpen={true}
             items={ddmItems.map((item) => {
               return { label: item.label };
@@ -56,7 +59,43 @@ const DdmPages: FC = () => {
       <ComponentLayout
         title="With icon on items"
         jsLink="https://github.com/Charlie85270/fastUI"
-        element={<Ddm label="Payer par" forceOpen={true} items={ddmItems} />}
+        element={
+          <Ddm
+            label="Pay with"
+            forceOpen={true}
+            items={ddmItems.map((item) => {
+              return { label: item.label, icon: item.icon };
+            })}
+          />
+        }
+        component={Button}
+      />
+      <ComponentLayout
+        title="With icon on items with divider"
+        jsLink="https://github.com/Charlie85270/fastUI"
+        element={
+          <Ddm
+            label="Pay with"
+            forceOpen={true}
+            withDivider={true}
+            items={ddmItems.map((item) => {
+              return { label: item.label, icon: item.icon };
+            })}
+          />
+        }
+        component={Button}
+      />
+      <ComponentLayout
+        title="With icon on items with desc"
+        jsLink="https://github.com/Charlie85270/fastUI"
+        element={
+          <Ddm
+            label="Pay with"
+            forceOpen={true}
+            withDivider={true}
+            items={ddmItems}
+          />
+        }
         component={Button}
       />
     </AppLayout>

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 interface Props {
   forceOpen?: boolean;
   label?: string;
+  withDivider?: boolean;
   icon?: string;
   items: DDMItem[];
 }
@@ -10,6 +11,7 @@ interface Props {
 interface DDMItem {
   icon?: string;
   label: string;
+  desc?: string;
 }
 
 const Ddm = (props: Props) => {
@@ -38,7 +40,9 @@ const Ddm = (props: Props) => {
       {(props.forceOpen || isOpen) && (
         <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
           <div
-            className="py-1"
+            className={`py-1 ${
+              props.withDivider ? "divide-y divide-gray-100" : ""
+            }`}
             role="menu"
             aria-orientation="vertical"
             aria-labelledby="options-menu"
@@ -49,11 +53,17 @@ const Ddm = (props: Props) => {
                   href="#"
                   className={`${
                     item.icon ? "flex items-center" : "block"
-                  } block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900`}
+                  } block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900`}
                   role="menuitem"
                 >
                   {item.icon && <i className={`${item.icon} mr-2`} />}
-                  {item.label}
+
+                  <span className="flex flex-col">
+                    <span className="text-gray-900">{item.label}</span>
+                    {item.desc && (
+                      <span className="text-gray-400 text-xs">{item.desc}</span>
+                    )}
+                  </span>
                 </a>
               );
             })}

@@ -23,7 +23,7 @@ const Elements: FC = () => {
     },
     {
       title: "DropDown Menu",
-      items: 3,
+      items: 5,
       img: "images/sections/ddm.svg",
       link: "/components/ddm",
     },
