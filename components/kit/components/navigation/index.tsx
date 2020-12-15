@@ -17,7 +17,9 @@ const Navigation: FC = () => {
     },
   ];
 
-  return <SectionDesc id="forms" items={formSections} title="Navigation" />;
+  return (
+    <SectionDesc id="navigation" items={formSections} title="Navigation" />
+  );
 };
 
 export default Navigation;

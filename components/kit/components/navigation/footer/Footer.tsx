@@ -53,7 +53,7 @@ const Footer = (props: Props) => {
         </ul>
         {props.withSocialLink && (
           <div
-            className={`${props.textColor} pt-8 flex border-t border-gray-200 max-w-xs mx-auto items-center justify-between`}
+            className={`${props.subTextColor} pt-8 flex border-t border-gray-200 max-w-xs mx-auto items-center justify-between`}
           >
             <a href="#">
               <i
