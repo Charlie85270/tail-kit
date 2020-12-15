@@ -2,7 +2,7 @@ import React, { FC } from "react";
 const MultipleShoppingCard: FC = () => {
   return (
     <div className="flex flex-wrap items-center justify-center">
-      <div className="flex-shrink-0 m-6 relative overflow-hidden bg-yellow-500 rounded-lg max-w-xs shadow-lg">
+      <div className="flex-shrink-0 mx-2 mb-6 relative overflow-hidden bg-yellow-500 rounded-lg max-w-xs shadow-lg">
         <svg
           className="absolute bottom-0 left-0 mb-8"
           viewBox="0 0 375 283"
@@ -40,7 +40,7 @@ const MultipleShoppingCard: FC = () => {
           </div>
         </div>
       </div>
-      <div className="flex-shrink-0 m-6 relative overflow-hidden bg-blue-500 rounded-lg max-w-xs shadow-lg">
+      <div className="flex-shrink-0 mx-2 relative overflow-hidden bg-blue-500 rounded-lg max-w-xs shadow-lg">
         <svg
           className="absolute bottom-0 left-0 mb-8"
           viewBox="0 0 375 283"
@@ -78,7 +78,7 @@ const MultipleShoppingCard: FC = () => {
           </div>
         </div>
       </div>
-      <div className="flex-shrink-0 m-6 relative overflow-hidden bg-purple-500 rounded-lg max-w-xs shadow-lg">
+      <div className="flex-shrink-0 mx-2 -mb-6 relative overflow-hidden bg-purple-500 rounded-lg max-w-xs shadow-lg">
         <svg
           className="absolute bottom-0 left-0 mb-8"
           viewBox="0 0 375 283"

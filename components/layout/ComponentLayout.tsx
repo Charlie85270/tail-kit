@@ -11,6 +11,7 @@ interface Props {
   title: string;
   jsLink?: string;
   configLink?: string;
+  vertical?: boolean;
 }
 
 enum STATUS {
@@ -34,11 +35,13 @@ const ComponentLayout = (props: Props) => {
   return (
     <div className="bg-gray-100 shadow rounded-xl mb-4">
       <div className="flex flex-col md:flex-row items-center justify-between mb-8 bg-white p-4 border rounded-xl">
-        <p className="text-xl text-gray-600 mb-2 md:mb-0">{props.title}</p>
+        <p className="text-xl font-light text-gray-600 mb-2 md:mb-0">
+          {props.title}
+        </p>
         <div className="flex items-center flex-row gap-4 justify-center">
           {props.jsLink && (
             <a
-              className="text-black underline bg-yellow-300 hover:bg-yellow-400 rounded-lg p-2"
+              className="text-black border border-gray-800 bg-yellow-300 hover:bg-yellow-400 rounded-lg p-2"
               href={props.jsLink}
             >
               <i className="fas fa-exclamation-circle mr-2"></i>Need JS
@@ -46,7 +49,7 @@ const ComponentLayout = (props: Props) => {
           )}
           {props.configLink && (
             <a
-              className="text-black underline bg-yellow-300 hover:bg-yellow-400 rounded-lg p-2"
+              className="text-black border border-gray-800 bg-yellow-300 hover:bg-yellow-400 rounded-lg p-2"
               href={props.configLink}
             >
               <i className="fas fa-exclamation-circle mr-2"></i>Need
@@ -54,12 +57,12 @@ const ComponentLayout = (props: Props) => {
             </a>
           )}
           <div className="w-32">
-            <Button
-              color="pink"
-              label="code"
-              icon="fas fa-code"
+            <button
               onClick={() => setStatus(STATUS.EDIT_CODE)}
-            />
+              className="w-28 px-4 py-2 border border-gray-800  text-base font-medium rounded-md text-gray-800 bg-white hover:bg-gray-100"
+            >
+              <i className="fas fa-code mr-2"></i> code
+            </button>
           </div>
 
           <button className="w-28 px-4 py-2  text-base font-medium rounded-md text-gray-800 bg-white hover:bg-gray-200">
@@ -75,13 +78,21 @@ const ComponentLayout = (props: Props) => {
         language="markup"
         code={code()}
       >
-        <div className="flex flex-col md:flex-row gap-4 mx-4 justify-between items-start py-16">
-          <div className="mx-auto">
+        <div
+          className={`${
+            props.vertical
+              ? "flex-col justify-center"
+              : "md:flex-row justify-between "
+          } flex gap-4 mx-4 items-start py-16`}
+        >
+          <div className={`${props.vertical ? "w-full" : ""} mx-auto`}>
             <LivePreview />
           </div>
 
           {status !== STATUS.DEFAULT && (
-            <div className="relative w-full md:w-3/4 ">
+            <div
+              className={`${props.vertical ? "" : "md:w-3/4"} relative w-full`}
+            >
               <div>
                 <button className="w-28 absolute z-30 right-16 top-2 px-4 py-2  text-base font-medium rounded-md text-gray-800 bg-gray-100 hover:bg-gray-200">
                   Copy

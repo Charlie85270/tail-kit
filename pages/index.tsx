@@ -13,6 +13,10 @@ import CoverAndButtonsProfilCard from "../components/kit/components/profile/Cove
 import SimpleProfilCard from "../components/kit/components/profile/SimpleProfilVerti";
 import Button from "../components/kit/components/elements/buttons/Button";
 import ShoppingDetailsCard from "../components/kit/components/commerce/shopping/ShoppingDetailsCard";
+import MultipleShoppingCard from "../components/kit/components/commerce/shopping/MultipleShoppingCard";
+import PricingCard from "../components/kit/components/commerce/pricing/PricingCard";
+import ShoppingColorChoice from "../components/kit/components/commerce/shopping/ShoppingColorChoice";
+import ClassicShoppingCard from "../components/kit/components/commerce/shopping/ClassicShoppingCard";
 
 const IndexPage: FC = () => {
   return (
@@ -23,7 +27,9 @@ const IndexPage: FC = () => {
             <span className="block xl:inline">
               Quickly and easily create stunning UI with
             </span>
-            <span className="block text-indigo-600 xl:inline"> fastUI</span>
+            <span className="flex w-40 m-auto text-indigo-600 xl:inline">
+              fastUI
+            </span>
           </h1>
           <p className="mt-3  text-gray-500 sm:mt-5 text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
             Fast UI gives you access to over 100 CSS components based on
@@ -49,7 +55,7 @@ const IndexPage: FC = () => {
             </div>
           </div>
         </div>
-        <div className="opacity-10 z-10 md:z-50 md:opacity-70 sm:text-center  absolute perspective lg:text-left transform  w-full right-60  md:-right-12 -top-10  md:w-1/2">
+        <div className="opacity-10 z-10 md:z-50 md:opacity-70 sm:text-center  absolute perspective lg:text-left transform  w-full right-0  md:right-20 -top-56  md:w-1/2">
           <div className="flex gap-4 gap-y-1">
             <div className="col-1">
               <div className="mb-4">
@@ -72,7 +78,7 @@ const IndexPage: FC = () => {
                 <DeleteConfirmation />
               </div>
               <div className="mb-4">
-                <ShoppingDetailsCard />
+                <MultipleShoppingCard />
               </div>
             </div>
             <div className="col-1">
@@ -86,6 +92,7 @@ const IndexPage: FC = () => {
               <div className="mb-4">
                 <SimpleNotificationCard />
               </div>
+
               <div className="mb-4">
                 <SimpleIconDescCard />
               </div>
@@ -94,7 +101,7 @@ const IndexPage: FC = () => {
               </div>
 
               <div className="mb-4">
-                <DeleteConfirmation />
+                <PricingCard />
               </div>
             </div>
             <div className="col-1">
@@ -110,16 +117,9 @@ const IndexPage: FC = () => {
               <div className="mb-4">
                 <SimpleProfilCard />
               </div>
+
               <div className="mb-4">
-                <Button label="Upload" icon="fas fa-upload" color="red" />
-              </div>
-              <div className="mb-4">
-                <Button
-                  icon="fas fa-spinner"
-                  animated={true}
-                  color="blue"
-                  label="loading"
-                />
+                <ClassicShoppingCard />
               </div>
             </div>
           </div>

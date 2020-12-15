@@ -11,7 +11,7 @@ const Commerce: FC = () => {
     },
     {
       title: "Shopping card",
-      items: 4,
+      items: 6,
       img: "images/sections/shopping.svg",
       link: "/components/shopping",
     },

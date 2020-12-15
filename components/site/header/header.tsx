@@ -20,30 +20,42 @@ const menuEntry = [
     desc: "Pricing card, shooping item, basket layout...",
     link: "/components#commerce",
   },
+  {
+    title: "Navigation",
+    icon: "fas fa-location-arrow",
+    desc: "Header, footer...",
+    link: "/components#navigation",
+  },
 ];
 
-const Header: FC = () => {
+const Header = ({ hideGithub, dark }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSectionOpen, setIsSectionOpen] = useState(false);
   return (
     <div className="relative bg-white z-40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex justify-between items-center border-b-2 border-gray-100 py-6  md:space-x-10">
+        <div
+          className={`${
+            hideGithub ? "" : "border-b-2 "
+          } flex justify-between items-center  border-gray-100 py-6  md:space-x-10`}
+        >
           <div className="flex justify-start items-center gap-12">
-            <a href="#">
-              <span className="sr-only">Workflow</span>
+            <a href="/" className="flex items-center">
               <img
-                className="h-8 w-auto sm:h-10"
-                src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                className="h-12 w-auto sm:h-12"
+                src="/icons/rocket.svg"
                 alt=""
               />
+              <span className="text-indigo-600 ml-2 text-2xl font-bold">
+                FastUI
+              </span>
             </a>
             <nav className="hidden md:flex space-x-10">
               <div className="relative">
                 <button
                   type="button"
                   onClick={() => setIsSectionOpen(!isSectionOpen)}
-                  className="group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 text-xl"
+                  className="group bg-white rounded-md text-gray-800 inline-flex items-center text-base font-normal hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 text-xl"
                 >
                   <span>Components</span>
 
@@ -73,8 +85,8 @@ const Header: FC = () => {
                                   className={`${entry.icon} flex-shrink-0 h-6 w-6 text-indigo-600`}
                                 />
 
-                                <div className="ml-4">
-                                  <p className="text-base font-medium text-gray-900">
+                                <div className="ml-4 font-normal">
+                                  <p className="text-base text-gray-900">
                                     {entry.title}
                                   </p>
                                   <p className="mt-1 text-sm text-gray-500">
@@ -92,9 +104,12 @@ const Header: FC = () => {
               </div>
             </nav>
           </div>
-          <a href="https://github.com/Charlie85270/fastUI" className="">
-            <i className="fab fa-github mr-2 w-10 h-10 text-gray-500" />
-          </a>
+          {!hideGithub && (
+            <a href="https://github.com/Charlie85270/fastUI" className="">
+              <i className="fab fa-github mr-2 w-10 h-10 text-gray-500" />
+            </a>
+          )}
+
           <div className="-mr-2 -my-2 md:hidden">
             <button
               type="button"
@@ -130,7 +145,7 @@ const Header: FC = () => {
                 <div>
                   <img
                     className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                    src="/icons/rocket.svg"
                     alt="Workflow"
                   />
                 </div>
@@ -163,16 +178,18 @@ const Header: FC = () => {
               <div className="mt-6">
                 <nav>
                   {menuEntry.map((entry) => {
-                    <Link href={entry.link}>
-                      <a className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
-                        <i
-                          className={`${entry.icon} far fa-address-card flex-shrink-0 h-6 w-6 text-indigo-600`}
-                        />
-                        <span className="ml-3 text-base font-medium text-gray-900">
-                          {entry.title}
-                        </span>
-                      </a>
-                    </Link>;
+                    return (
+                      <Link href={entry.link}>
+                        <a className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                          <i
+                            className={`${entry.icon} far fa-address-card flex-shrink-0 h-6 w-6 text-indigo-600`}
+                          />
+                          <span className="ml-3 text-base font-normal text-gray-900">
+                            {entry.title}
+                          </span>
+                        </a>
+                      </Link>
+                    );
                   })}
                 </nav>
               </div>
