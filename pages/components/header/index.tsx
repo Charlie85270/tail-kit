@@ -167,6 +167,26 @@ const HeaderPage: FC = () => {
         }
         component={Header}
       />
+      <ComponentLayout
+        vertical={true}
+        title="Dark fat with search bar"
+        jsLink="https://github.com/Charlie85270/fastUI"
+        element={
+          <Header
+            links={links}
+            withSearchBar={true}
+            withShadow={true}
+            hideIconRight={true}
+            hideProfile={true}
+            alignRight={false}
+            bgColor="bg-gray-800"
+            isFat={true}
+            textColor="text-gray-400"
+            textSelectedColor="text-white"
+          />
+        }
+        component={Header}
+      />
     </AppLayout>
   );
 };

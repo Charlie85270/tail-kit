@@ -28,6 +28,7 @@ const IndexPage: FC = () => {
               Quickly and easily create stunning UI with
             </span>
             <span className="flex w-40 m-auto text-indigo-600 xl:inline">
+              {" "}
               fastUI
             </span>
           </h1>

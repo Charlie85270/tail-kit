@@ -14,7 +14,7 @@ const TogglePage: FC = () => {
       <SectionHeader title="Form layout" />
       <ComponentLayout
         title="Subscribe"
-        element={<FormSubscribe />}
+        element={<FormSubscribe label="Subscribe" placeholder="Email" />}
         component={FormSubscribe}
       />
       <ComponentLayout
