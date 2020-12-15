@@ -28,7 +28,7 @@ const menuEntry = [
   },
 ];
 
-const Header = ({ hideGithub, dark }) => {
+const Header = ({ hideGithub }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSectionOpen, setIsSectionOpen] = useState(false);
   return (
