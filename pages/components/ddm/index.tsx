@@ -50,8 +50,8 @@ const DdmPages: FC = () => {
         jsLink="https://github.com/Charlie85270/fastUI"
         element={
           <Ddm
-            icon="fas fa-ellipsis-v"
-            withBackground={true}
+            icon="fas fa-user-circle"
+            withBackground={false}
             forceOpen={true}
             items={ddmItems.map((item) => {
               return { label: item.label };

@@ -11,7 +11,7 @@ const Pagesection: FC = () => {
     },
     {
       title: "Testimonial",
-      items: 3,
+      items: 4,
       img: "images/sections/testimonial.svg",
       link: "/components/testimonial",
     },

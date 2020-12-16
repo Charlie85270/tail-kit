@@ -4,30 +4,56 @@ import ComponentLayout from "../../../components/layout/ComponentLayout";
 import SectionHeader from "../../../components/site/header/SectionHeader";
 import Badge from "../../../components/kit/components/elements/badges/Badge";
 import ClickableBadge from "../../../components/kit/components/elements/badges/ClickableBadge";
-import LargeBadge from "../../../components/kit/components/elements/badges/LargeBadge";
 import NotificationBadge from "../../../components/kit/components/elements/badges/NotificationBadge";
 import BadgeList from "../../../components/kit/components/elements/badges/BadgeList";
 import NotificationIconBadge from "../../../components/kit/components/elements/badges/NotificationIconBadge";
-import LargeBadgeIcon from "../../../components/kit/components/elements/badges/LargeBadgeIcon";
 
 const BadgesPage: FC = () => {
   return (
     <AppLayout>
       <SectionHeader title="Badges" />
+
       <ComponentLayout
-        title="Simple badge"
-        element={<Badge />}
+        title="Badge stroke"
+        element={
+          <Badge label="Hello" color="bg-red-200" textColor="text-red-600" />
+        }
         component={Badge}
       />
       <ComponentLayout
-        title="Large badge"
-        element={<LargeBadge />}
-        component={LargeBadge}
+        title="Badge line"
+        element={
+          <Badge
+            label="Hello"
+            borderColor="border border-indigo-500"
+            textColor="text-indigo-500"
+          />
+        }
+        component={Badge}
       />
       <ComponentLayout
-        title="Large badge with icon"
-        element={<LargeBadgeIcon />}
-        component={LargeBadgeIcon}
+        title="Stroke with icon"
+        element={
+          <Badge
+            icon="fab fa-facebook-f"
+            label="Facebook"
+            color="bg-blue-200"
+            textColor="text-blue-600"
+          />
+        }
+        component={Badge}
+      />
+      <ComponentLayout
+        title="Line with icon"
+        element={
+          <Badge
+            icon="fab fa-facebook-f"
+            label="Facebook"
+            borderColor="border border-indigo-500"
+            textColor="text-indigo-500"
+          />
+        }
+        component={Badge}
       />
       <ComponentLayout
         title="Removable badge"

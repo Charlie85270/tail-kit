@@ -3,19 +3,28 @@ import React from "react";
 interface Props {
   withBorder?: boolean;
   withInfo?: boolean;
-  size?: "small" | "normal" | "big";
+  size?: "small" | "normal" | "big" | "monster";
+  type?: "square" | "rounded" | "full";
 }
-const Avatar = ({ withBorder, size, withInfo }: Props) => {
+const Avatar = ({ withBorder, size, withInfo, type }: Props) => {
   let sizeClasses = "h-16 w-16";
   if (size && size !== "normal") {
     sizeClasses = size === "small" ? "h-10 w-10" : "h-20 w-20";
+    if (size === "monster") {
+      sizeClasses = "h-40 w-40";
+    }
+  }
+
+  let roundedClasses = "rounded-full";
+  if (type && type !== "full") {
+    roundedClasses = type === "square" ? "" : "rounded-lg";
   }
   return (
     <a href="#" className="block relative">
       <img
         alt="profil"
         src="/images/person/1.jpg"
-        className={`rounded-full ${sizeClasses} ${
+        className={`${roundedClasses} ${sizeClasses} ${
           withBorder ? " border-2 border-white" : ""
         }`}
       />

@@ -1,8 +1,22 @@
-import React, { FC } from "react";
-const Badge: FC = () => {
+import React from "react";
+
+interface Props {
+  color?: string;
+  textColor?: string;
+  borderColor?: string;
+  label?: string;
+  icon?: string;
+}
+const Badge = (props: Props) => {
   return (
-    <span className="w-full px-4 py-1 text-base rounded-full text-red-600 bg-red-200">
-      Starter
+    <span
+      className={`w-full px-4 py-2 ${
+        props.icon ? "flex items-center" : ""
+      } text-base rounded-full ${props.textColor ? props.textColor : ""} ${
+        props.borderColor ? props.borderColor : ""
+      } ${props.color}`}
+    >
+      {props.icon && <i className={`${props.icon} mr-2`}></i>} {props.label}
     </span>
   );
 };

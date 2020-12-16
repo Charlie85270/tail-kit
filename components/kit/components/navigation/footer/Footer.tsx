@@ -52,7 +52,7 @@ const Footer = (props: Props) => {
           >
             <a href="#">
               <i
-                className={`text-xl fab hover:text-gray-800 dark:hover:text-white transition-colors duration-200 fa-facebook-f`}
+                className={`text-xl fab fa-facebook-f hover:text-gray-800 dark:hover:text-white transition-colors duration-200`}
               ></i>
             </a>
             <a href="#">

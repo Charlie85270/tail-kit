@@ -14,6 +14,7 @@ const BigTestimonial = () => {
         with your social media accounts by posting regularly yourself
         <span className="font-bold text-indigo-500">”</span>
       </p>
+
       <div className="flex items-center justify-center mt-8">
         <Avatar size="small" />
         <div className="flex ml-2 items-center justify-center">

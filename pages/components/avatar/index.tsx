@@ -10,18 +10,28 @@ const AvatarPage: FC = () => {
     <AppLayout>
       <SectionHeader title="Avatar" />
       <ComponentLayout
-        title="Simple avatar"
+        title="Simple full rounded avatar"
         element={<Avatar />}
         component={Avatar}
       />
       <ComponentLayout
-        title="small avatar"
+        title="small full rounded avatar"
         element={<Avatar size="small" />}
         component={Avatar}
       />
       <ComponentLayout
-        title="Big avatar"
+        title="Big full rounded avatar"
         element={<Avatar size="big" />}
+        component={Avatar}
+      />
+      <ComponentLayout
+        title="Round avatar"
+        element={<Avatar type="rounded" />}
+        component={Avatar}
+      />
+      <ComponentLayout
+        title="Square avatar"
+        element={<Avatar type="square" />}
         component={Avatar}
       />
       <ComponentLayout

@@ -6,6 +6,7 @@ import Button from "../../../components/kit/components/elements/buttons/Button";
 import ButtonWithIndications from "../../../components/kit/components/elements/buttons/ButtonWithIndications";
 import MultipleButton from "../../../components/kit/components/elements/buttons/MultipleButton";
 import PagerButton from "../../../components/kit/components/elements/buttons/PagerButton";
+import RoundedButton from "../../../components/kit/components/elements/buttons/RoundedButton";
 
 const ComponentsPage: FC = () => {
   return (
@@ -91,6 +92,21 @@ const ComponentsPage: FC = () => {
             color="gray"
           />
         }
+        component={Button}
+      />
+      <ComponentLayout
+        title="Rounded button"
+        element={<RoundedButton label="Play" />}
+        component={Button}
+      />
+      <ComponentLayout
+        title="Rounded button with icon"
+        element={<RoundedButton label="Play" icon="far fa-play-circle" />}
+        component={Button}
+      />
+      <ComponentLayout
+        title="Rounded icon"
+        element={<RoundedButton icon="far fa-play-circle" />}
         component={Button}
       />
     </AppLayout>

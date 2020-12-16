@@ -19,7 +19,7 @@ const TogglePage: FC = () => {
       <ComponentLayout
         title="toggle"
         configLink="https://tailwindcss.com/docs/hover-focus-and-other-states#checked"
-        element={<Toggle onChange={() => null} />}
+        element={<Toggle onChange={() => null} label="Accept" />}
         component={Toggle}
       />
       <ComponentLayout title="radio" element={<Radio />} component={Radio} />

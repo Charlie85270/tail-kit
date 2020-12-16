@@ -6,6 +6,7 @@ import Button from "../../../components/kit/components/elements/buttons/Button";
 import SimpleTestimonial from "../../../components/kit/components/pagesection/testimonial/SimpleTestimonial";
 import BigTestimonial from "../../../components/kit/components/pagesection/testimonial/BigTestimonial";
 import MultipleTestimonial from "../../../components/kit/components/pagesection/testimonial/MultipleTestimonial";
+import BigTestimonialFlex from "../../../components/kit/components/pagesection/testimonial/BigTestimonialFlex";
 
 const ComponentsPage: FC = () => {
   return (
@@ -19,11 +20,18 @@ const ComponentsPage: FC = () => {
       />
 
       <ComponentLayout
-        title="Big light"
+        title="Big"
         showSwitchMode={true}
         vertical={true}
         element={<BigTestimonial />}
         component={Button}
+      />
+      <ComponentLayout
+        title="Big with image on left"
+        showSwitchMode={true}
+        vertical={true}
+        element={<BigTestimonialFlex />}
+        component={BigTestimonialFlex}
       />
 
       <ComponentLayout
