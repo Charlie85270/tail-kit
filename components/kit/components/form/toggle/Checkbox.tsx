@@ -13,9 +13,9 @@ const Checkbox = (props: Props) => {
           type="checkbox"
           name="checked-demo"
           defaultValue="1"
-          className="form-tick appearance-none bg-check h-6 w-6 border border-gray-300 rounded-md checked:bg-blue-600 checked:border-transparent focus:outline-none"
+          className="form-tick appearance-none bg-white bg-check h-6 w-6 border border-gray-300 rounded-md checked:bg-blue-600 checked:border-transparent focus:outline-none"
         />
-        <span className="text-gray-900 font-medium">
+        <span className="text-gray-900 dark:text-white font-medium">
           {props.label || "Option 1"}
         </span>
       </label>

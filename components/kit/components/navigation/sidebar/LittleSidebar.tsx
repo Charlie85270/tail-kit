@@ -1,10 +1,7 @@
 import React from "react";
 
 interface Props {
-  textColor: string;
   withHeader?: boolean;
-  selectedTextColor: string;
-  backgroundColor: string;
   links: Links[];
   withBottomLink?: boolean;
 }
@@ -17,9 +14,7 @@ interface Links {
 const LittleSidebar = (props: Props) => {
   return (
     <div className="flex flex-row h-full">
-      <nav
-        className={`${props.backgroundColor} w-20 h-screen justify-between flex flex-col`}
-      >
+      <nav className="bg-white dark:bg-gray-800 w-20 h-screen justify-between flex flex-col">
         <div className="mt-10 mb-10">
           {props.withHeader && (
             <a href="#">
@@ -38,7 +33,7 @@ const LittleSidebar = (props: Props) => {
                     <a href="#">
                       <span>
                         <i
-                          className={`${link.icon} h-6 w-6 ${props.textColor} mx-auto hover:${props.selectedTextColor} `}
+                          className={`${link.icon} h-6 w-6 text-gray-500 dark:text-gray-300 mx-auto hover:text-gray-800 dark:hover:text-white transition-colors duration-200`}
                         />
                       </span>
                     </a>

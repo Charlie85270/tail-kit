@@ -1,9 +1,9 @@
 import { LiveProvider, LiveEditor, LivePreview } from "react-live";
-import { FC, useState, useCallback, Component } from "react";
+import { FC, useState, useCallback, Component, useRef } from "react";
 import EDITOR_THEME from "../../editorTheme";
 import ReactDOMServer from "react-dom/server";
 import { formatHtml } from "../../utils/Utils";
-import Button from "../kit/components/elements/buttons/Button";
+import Toggle from "../kit/components/form/toggle/Toggle";
 
 interface Props {
   element: JSX.Element;
@@ -11,6 +11,7 @@ interface Props {
   title: string;
   jsLink?: string;
   configLink?: string;
+  showSwitchMode?: boolean;
   vertical?: boolean;
 }
 
@@ -31,14 +32,30 @@ const ComponentLayout = (props: Props) => {
     return formatHtml(ReactDOMServer.renderToStaticMarkup(props.element));
   }, [props.element]);
 
+  const [isDarkMode, setDarkMode] = useState(false);
+  const previewRef = useRef<HTMLDivElement>();
+
+  const changeMode = (isDark) => {
+    setDarkMode(isDark);
+    if (isDark) {
+      previewRef.current.classList.add("dark");
+    } else {
+      previewRef.current.classList.remove("dark");
+    }
+  };
+
   const [status, setStatus] = useState<STATUS>(STATUS.DEFAULT);
   return (
-    <div className="bg-gray-100 shadow rounded-xl mb-4">
+    <div className="bg-gray-100 shadow rounded-xl mb-4" key={props.title}>
       <div className="flex flex-col md:flex-row items-center justify-between mb-8 bg-white p-4 border rounded-xl">
         <p className="text-xl font-light text-gray-600 mb-2 md:mb-0">
           {props.title}
         </p>
         <div className="flex items-center flex-row gap-4 justify-center">
+          {props.showSwitchMode && (
+            <Toggle label="Dark mode" onChange={(mode) => changeMode(mode)} />
+          )}
+
           {props.jsLink && (
             <a
               className="text-black border border-gray-800 bg-yellow-300 hover:bg-yellow-400 rounded-lg p-2"
@@ -85,7 +102,10 @@ const ComponentLayout = (props: Props) => {
               : "md:flex-row justify-between "
           } flex gap-4 mx-4 items-start py-16`}
         >
-          <div className={`${props.vertical ? "w-full" : ""} mx-auto`}>
+          <div
+            ref={previewRef}
+            className={`${props.vertical ? "w-full " : ""}mx-auto`}
+          >
             <LivePreview />
           </div>
 

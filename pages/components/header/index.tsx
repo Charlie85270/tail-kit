@@ -19,6 +19,17 @@ const links = [
     label: "Contact",
   },
 ];
+const ddmItems = [
+  {
+    label: "Settings",
+  },
+  {
+    label: "Account",
+  },
+  {
+    label: "Logout",
+  },
+];
 
 const HeaderPage: FC = () => {
   return (
@@ -30,12 +41,10 @@ const HeaderPage: FC = () => {
         jsLink="https://github.com/Charlie85270/fastUI"
         element={
           <Header
+            forceMenuOpenInMobile={true}
+            forceDDMOpenInMobile={true}
             links={links}
-            hideIconRight={true}
-            hideProfile={true}
-            bgColor="bg-white"
-            textColor="text-gray-400"
-            textSelectedColor="text-gray-800"
+            hideGitHubLink={true}
           />
         }
         component={Header}
@@ -47,28 +56,10 @@ const HeaderPage: FC = () => {
         element={
           <Header
             links={links}
+            forceMenuOpenInMobile={true}
+            forceDDMOpenInMobile={true}
             withShadow={true}
-            hideIconRight={true}
-            hideProfile={true}
-            bgColor="bg-white"
-            textColor="text-gray-400"
-            textSelectedColor="text-gray-800"
-          />
-        }
-        component={Header}
-      />
-      <ComponentLayout
-        vertical={true}
-        title="Dark"
-        jsLink="https://github.com/Charlie85270/fastUI"
-        element={
-          <Header
-            links={links}
-            hideIconRight={true}
-            hideProfile={true}
-            bgColor="bg-black"
-            textColor="text-gray-300"
-            textSelectedColor="text-white"
+            hideGitHubLink={true}
           />
         }
         component={Header}
@@ -81,13 +72,11 @@ const HeaderPage: FC = () => {
         element={
           <Header
             links={links}
+            forceMenuOpenInMobile={true}
+            forceDDMOpenInMobile={true}
             withShadow={true}
-            hideIconRight={true}
-            hideProfile={true}
+            hideGitHubLink={true}
             alignRight={true}
-            bgColor="bg-white"
-            textColor="text-gray-400"
-            textSelectedColor="text-gray-800"
           />
         }
         component={Header}
@@ -99,13 +88,12 @@ const HeaderPage: FC = () => {
         element={
           <Header
             links={links}
+            forceMenuOpenInMobile={true}
+            forceDDMOpenInMobile={true}
             withShadow={true}
-            hideIconRight={true}
-            hideProfile={false}
+            hideGitHubLink={true}
+            ddmItems={ddmItems}
             alignRight={false}
-            bgColor="bg-white"
-            textColor="text-gray-400"
-            textSelectedColor="text-gray-800"
           />
         }
         component={Header}
@@ -117,13 +105,12 @@ const HeaderPage: FC = () => {
         element={
           <Header
             links={links}
+            forceMenuOpenInMobile={true}
+            forceDDMOpenInMobile={true}
             withShadow={true}
-            hideIconRight={false}
-            hideProfile={false}
+            hideGitHubLink={false}
+            ddmItems={ddmItems}
             alignRight={false}
-            bgColor="bg-white"
-            textColor="text-gray-400"
-            textSelectedColor="text-gray-800"
           />
         }
         component={Header}
@@ -135,14 +122,13 @@ const HeaderPage: FC = () => {
         element={
           <Header
             links={links}
-            hideIconRight={true}
+            forceMenuOpenInMobile={true}
+            forceDDMOpenInMobile={true}
+            hideGitHubLink={true}
             withShadow={true}
-            hideProfile={true}
+            ddmItems={ddmItems}
             alignRight={false}
-            bgColor="bg-white"
             isFat={true}
-            textColor="text-gray-400"
-            textSelectedColor="text-gray-800"
           />
         }
         component={Header}
@@ -155,34 +141,12 @@ const HeaderPage: FC = () => {
           <Header
             links={links}
             withSearchBar={true}
+            forceMenuOpenInMobile={true}
+            forceDDMOpenInMobile={true}
             withShadow={true}
-            hideIconRight={true}
-            hideProfile={true}
+            hideGitHubLink={true}
             alignRight={false}
-            bgColor="bg-white"
             isFat={true}
-            textColor="text-gray-400"
-            textSelectedColor="text-gray-800"
-          />
-        }
-        component={Header}
-      />
-      <ComponentLayout
-        vertical={true}
-        title="Dark fat with search bar"
-        jsLink="https://github.com/Charlie85270/fastUI"
-        element={
-          <Header
-            links={links}
-            withSearchBar={true}
-            withShadow={true}
-            hideIconRight={true}
-            hideProfile={true}
-            alignRight={false}
-            bgColor="bg-gray-800"
-            isFat={true}
-            textColor="text-gray-400"
-            textSelectedColor="text-white"
           />
         }
         component={Header}

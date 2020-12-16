@@ -2,14 +2,12 @@ import React, { FC } from "react";
 
 const PricingCard2: FC = () => {
   return (
-    <div className="shadow-lg rounded-2xl w-64 bg-indigo-500 p-4">
-      <div className="flex items-center justify-between">
-        <p className="text-white text-4xl font-medium mb-4">Pro</p>
-        <p className="text-white text-3xl font-bold flex flex-col">
+    <div className="shadow-lg rounded-2xl w-64 bg-indigo-500 dark:bg-gray-800 p-4">
+      <div className="flex text-white  items-center justify-between">
+        <p className="text-4xl font-medium mb-4">Pro</p>
+        <p className="text-3xl font-bold flex flex-col">
           $99
-          <span className="text-white  font-thin text-right text-sm">
-            month
-          </span>
+          <span className="font-thin text-right text-sm">month</span>
         </p>
       </div>
 

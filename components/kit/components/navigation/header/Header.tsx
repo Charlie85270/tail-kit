@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import FormSubscribe from "../../form/layout/FormSubscribe";
+import Ddm, { DDMItem } from "../../elements/ddm/ddm";
 
 interface Props {
-  bgColor: string;
-  textColor: string;
-  textSelectedColor: string;
+  forceMenuOpenInMobile?: boolean;
+  forceDDMOpenInMobile?: boolean;
   links: HeaderLink[];
+  ddmItems?: DDMItem[];
   withShadow?: boolean;
-  hideProfile?: boolean;
-  hideIconRight?: boolean;
+  hideGitHubLink?: boolean;
   alignRight?: boolean;
   withSearchBar?: boolean;
   isFat?: boolean;
@@ -21,13 +21,13 @@ interface HeaderLink {
 
 const Header = (props: Props) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
+
   return (
     <div>
       <nav
-        className={`${props.bgColor} ${props.withShadow ? "shadow" : ""} ${
-          props.isFat ? "py-4" : ""
-        } `}
+        className={`bg-white dark:bg-gray-800 ${
+          props.withShadow ? " shadow" : ""
+        }${props.isFat ? " py-4" : ""} `}
       >
         <div className="max-w-7xl mx-auto px-8">
           <div className="flex items-center justify-between h-16">
@@ -48,14 +48,13 @@ const Header = (props: Props) => {
                   {props.links.map((link) => {
                     return (
                       <a
+                        key={link.label}
                         href={link.link || "#"}
                         className={`${
                           link.isSelected
-                            ? props.textSelectedColor
-                            : props.textColor
-                        }  hover:${
-                          props.textSelectedColor
-                        } px-3 py-2 rounded-md ${
+                            ? "text-gray-800 dark:text-white"
+                            : "text-gray-400"
+                        }  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md ${
                           props.isFat ? "text-md" : "text-sm"
                         } font-medium`}
                       >
@@ -66,12 +65,14 @@ const Header = (props: Props) => {
                 </div>
               </div>
             </div>
-            <div className="hidden md:block">
+            <div className="block">
               {props.withSearchBar && (
-                <FormSubscribe label="Search" placeholder="components" />
+                <div className="-mr-2 flex">
+                  <FormSubscribe label="Search" placeholder="components" />
+                </div>
               )}
               <div className="ml-4 flex items-center md:ml-6">
-                {!props.hideIconRight && (
+                {!props.hideGitHubLink && (
                   <a
                     href="https://github.com/Charlie85270/fastUI"
                     className="p-1 rounded-full text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
@@ -80,50 +81,27 @@ const Header = (props: Props) => {
                     <i className="fab fa-github h-8 w-8" />
                   </a>
                 )}
-                {!props.hideProfile && (
+                {props.ddmItems && (
                   <div className="ml-3 relative">
                     <div>
-                      <button
-                        onClick={() => setIsProfileMenuOpen(true)}
-                        className="max-w-xs bg-gray-800 rounded-full flex items-center text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-                        id="user-menu"
-                        aria-haspopup="true"
-                      >
-                        <span className="sr-only">Open user menu</span>
-                        <img
-                          className="h-8 w-8 rounded-full"
-                          src="/images/person/1.jpg"
-                          alt=""
-                        />
-                      </button>
-                    </div>
-
-                    <div
-                      className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5"
-                      role="menu"
-                      aria-orientation="vertical"
-                      aria-labelledby="user-menu"
-                    >
-                      {props.links.map((link) => {
-                        return (
-                          <a
-                            href={link.link || "#"}
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                            role="menuitem"
-                          >
-                            {link.label}
-                          </a>
-                        );
-                      })}
+                      <Ddm
+                        icon="fas fa-user-circle"
+                        withBackground={false}
+                        forceOpen={props.forceDDMOpenInMobile}
+                        items={props.ddmItems.map((item) => {
+                          return { label: item.label };
+                        })}
+                      />
                     </div>
                   </div>
                 )}
               </div>
             </div>
+
             <div className="-mr-2 flex md:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className={`${props.textSelectedColor} hover:${props.textColor} inline-flex items-center justify-center p-2 rounded-md text-gray-400 focus:outline-none`}
+                className={`text-gray-800 hover:text-gray-400 dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none`}
               >
                 {isMenuOpen ? (
                   <i className="fas fa-times block h-8 w-8"></i>
@@ -135,17 +113,18 @@ const Header = (props: Props) => {
           </div>
         </div>
 
-        {isMenuOpen && (
-          <div>
+        {(isMenuOpen || props.forceMenuOpenInMobile) && (
+          <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {props.links.map((link) => {
                 return (
                   <a
+                    key={link.label}
                     href="#"
                     className={`${
                       link.isSelected
-                        ? props.textSelectedColor
-                        : props.textColor
+                        ? "text-gray-800 dark:text-white"
+                        : "text-gray-400"
                     } block px-3 py-2 rounded-md text-base font-medium`}
                   >
                     {link.label}
@@ -153,68 +132,6 @@ const Header = (props: Props) => {
                 );
               })}
             </div>
-            {(!props.hideProfile || isProfileMenuOpen) && (
-              <div className="pt-4 pb-3 border-t border-gray-700">
-                <div className="flex items-center px-5">
-                  <div className="flex-shrink-0">
-                    <img
-                      className="h-10 w-10 rounded-full"
-                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                      alt=""
-                    />
-                  </div>
-                  <div className="ml-3">
-                    <div className="text-base font-medium leading-none text-white">
-                      Tom Cook
-                    </div>
-                    <div className="text-sm font-medium leading-none text-gray-400">
-                      tom@example.com
-                    </div>
-                  </div>
-                  <button className="ml-auto bg-gray-800 flex-shrink-0 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
-                    <span className="sr-only">View notifications</span>
-
-                    <svg
-                      className="h-6 w-6"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
-                      />
-                    </svg>
-                  </button>
-                </div>
-                <div className="mt-3 px-2 space-y-1">
-                  <a
-                    href="#"
-                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700"
-                  >
-                    Your Profile
-                  </a>
-
-                  <a
-                    href="#"
-                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700"
-                  >
-                    Settings
-                  </a>
-
-                  <a
-                    href="#"
-                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700"
-                  >
-                    Sign out
-                  </a>
-                </div>
-              </div>
-            )}
           </div>
         )}
       </nav>

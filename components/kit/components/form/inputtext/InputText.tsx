@@ -23,7 +23,7 @@ const InputText = (props: Props) => {
         </label>
       )}
       {(props.helper || props.icon) && (
-        <span className="inline-flex  items-center px-3 rounded-l-md border-t border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
+        <span className="inline-flex  items-center px-3 rounded-l-md border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
           {props.helper || <i className={props.icon} />}
         </span>
       )}

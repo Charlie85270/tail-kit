@@ -4,7 +4,6 @@ import ComponentLayout from "../../../components/layout/ComponentLayout";
 import SectionHeader from "../../../components/site/header/SectionHeader";
 import Avatar from "../../../components/kit/components/elements/avatars/Avatar";
 import MultipleAvatar from "../../../components/kit/components/elements/avatars/MultipleAvatar";
-import AvatarWithInfo from "../../../components/kit/components/elements/avatars/AvatarWithInfo";
 
 const AvatarPage: FC = () => {
   return (
@@ -16,13 +15,33 @@ const AvatarPage: FC = () => {
         component={Avatar}
       />
       <ComponentLayout
+        title="small avatar"
+        element={<Avatar size="small" />}
+        component={Avatar}
+      />
+      <ComponentLayout
+        title="Big avatar"
+        element={<Avatar size="big" />}
+        component={Avatar}
+      />
+      <ComponentLayout
         title="Avatar with badge"
-        element={<AvatarWithInfo />}
-        component={AvatarWithInfo}
+        element={<Avatar withInfo={true} />}
+        component={Avatar}
       />
       <ComponentLayout
         title="Multiple avatar"
         element={<MultipleAvatar />}
+        component={MultipleAvatar}
+      />
+      <ComponentLayout
+        title="Multiple small avatar"
+        element={<MultipleAvatar size="small" />}
+        component={MultipleAvatar}
+      />
+      <ComponentLayout
+        title="Multiple big avatar"
+        element={<MultipleAvatar size="big" />}
         component={MultipleAvatar}
       />
     </AppLayout>

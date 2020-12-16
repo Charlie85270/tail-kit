@@ -1,0 +1,42 @@
+import React from "react";
+import FormSubscribe from "../../form/layout/FormSubscribe";
+
+interface Props {
+  backgroundColor: string;
+  textColor: string;
+  text2Color: string;
+}
+
+const SubscribeCta = (props: Props) => {
+  return (
+    <div className={`${props.backgroundColor}`}>
+      <div className="relative px-4 py-6 overflow-hidden sm:px-6 sm:py-8 lg:p-12 xl:p-16">
+        <h2
+          className={`text-2xl font-semibold font-display ${props.textColor} sm:text-3xl`}
+        >
+          We've got more coming...
+        </h2>
+        <p className={`mt-2 max-w-xl text-base ${props.text2Color}`}>
+          Want to hear from us when we add new components? Sign up for our
+          newsletter and we'll email you every time we release a new batch of
+          components.
+        </p>
+        <form>
+          <div className="sm:flex jusitfy-start mt-6">
+            <FormSubscribe label="Subscribe" placeholder="Email" />
+          </div>
+        </form>
+
+        <div className="hidden lg:block absolute inset-y-0 lg:left-2/3 xl:left-1/2 right-0">
+          <img
+            className="w-1/2 object-cover maw-w-44 mx-auto"
+            src="/images/object/5.png"
+            alt="car"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default SubscribeCta;

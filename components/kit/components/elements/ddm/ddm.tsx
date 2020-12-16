@@ -6,12 +6,14 @@ interface Props {
   withDivider?: boolean;
   icon?: string;
   items: DDMItem[];
+  withBackground?: boolean;
 }
 
-interface DDMItem {
+export interface DDMItem {
   icon?: string;
   label: string;
   desc?: string;
+  link?: string;
 }
 
 const Ddm = (props: Props) => {
@@ -22,7 +24,11 @@ const Ddm = (props: Props) => {
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
+          className={` ${
+            props.withBackground
+              ? "border border-gray-300 bg-white dark:bg-gray-800 shadow-sm"
+              : ""
+          } flex items-center justify-center w-full rounded-md  px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-50 hover:bg-gray-50 dark:hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-gray-500`}
           id="options-menu"
           aria-haspopup="true"
           aria-expanded="true"
@@ -31,14 +37,14 @@ const Ddm = (props: Props) => {
 
           <i
             className={`${props.icon || "fas fa-caret-down"} ${
-              props.label ? "ml-4" : ""
-            }  h-4`}
+              props.label ? "ml-4 h-4" : "h-8 w-8 text-lg"
+            }`}
           />
         </button>
       </div>
 
       {(props.forceOpen || isOpen) && (
-        <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+        <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5">
           <div
             className={`py-1 ${
               props.withDivider ? "divide-y divide-gray-100" : ""
@@ -50,16 +56,17 @@ const Ddm = (props: Props) => {
             {props.items.map((item) => {
               return (
                 <a
-                  href="#"
+                  key={item.label}
+                  href={item.link || "#"}
                   className={`${
                     item.icon ? "flex items-center" : "block"
-                  } block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900`}
+                  } block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white dark:hover:bg-gray-600`}
                   role="menuitem"
                 >
                   {item.icon && <i className={`${item.icon} mr-2`} />}
 
                   <span className="flex flex-col">
-                    <span className="text-gray-900">{item.label}</span>
+                    <span>{item.label}</span>
                     {item.desc && (
                       <span className="text-gray-400 text-xs">{item.desc}</span>
                     )}

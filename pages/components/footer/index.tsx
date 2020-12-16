@@ -23,79 +23,49 @@ const FooterPage: FC = () => {
       subLinks: ["Settings", "Themes", "Plugins", "LinkedIn"],
     },
   ];
-  const simpleLinks = ["Components", "Contacts", "Customization", "Jobs"];
+
+  const simpleLinks = [
+    {
+      label: "FAQ",
+    },
+    {
+      label: "Configuration",
+    },
+    {
+      label: "Github",
+    },
+    {
+      label: "LinkedIn",
+    },
+  ];
 
   return (
     <AppLayout>
       <SectionHeader title="Footer" />
       <ComponentLayout
         vertical={true}
+        showSwitchMode={true}
         title="Light"
-        element={
-          <SimpleFooter
-            links={simpleLinks}
-            withSocial={false}
-            textHoverColor="text-gray-800"
-            bgColor="bg-white"
-            textColor="text-gray-500"
-          />
-        }
+        element={<SimpleFooter links={simpleLinks} withSocial={false} />}
+        component={Footer}
+      />
+
+      <ComponentLayout
+        vertical={true}
+        showSwitchMode={true}
+        title="With socials"
+        element={<SimpleFooter links={simpleLinks} withSocial={true} />}
         component={Footer}
       />
       <ComponentLayout
         vertical={true}
-        title="Dark"
-        element={
-          <SimpleFooter
-            links={simpleLinks}
-            withSocial={false}
-            textHoverColor="text-gray-200"
-            bgColor="bg-gray-800"
-            textColor="text-white"
-          />
-        }
-        component={Footer}
-      />
-      <ComponentLayout
-        vertical={true}
-        title="Dark with socials"
-        element={
-          <SimpleFooter
-            links={simpleLinks}
-            withSocial={true}
-            textHoverColor="text-gray-200"
-            bgColor="bg-gray-800"
-            textColor="text-white"
-          />
-        }
-        component={Footer}
-      />
-      <ComponentLayout
-        vertical={true}
-        title="Dark with socials and credits"
+        showSwitchMode={true}
+        title="With socials and credits"
         element={
           <SimpleFooter
             links={simpleLinks}
             withSocial={true}
             withCredits={true}
-            textHoverColor="text-gray-200"
-            bgColor="bg-gray-800"
-            textColor="text-white"
-          />
-        }
-        component={Footer}
-      />
-      <ComponentLayout
-        vertical={true}
-        title="Light with socials and credits"
-        element={
-          <SimpleFooter
-            links={simpleLinks}
-            withSocial={true}
-            withCredits={true}
-            textHoverColor="text-gray-800"
-            bgColor="bg-white"
-            textColor="text-gray-500"
           />
         }
         component={Footer}
@@ -103,81 +73,45 @@ const FooterPage: FC = () => {
 
       <ComponentLayout
         vertical={true}
-        title="Dark full"
+        showSwitchMode={true}
+        title="full"
         element={
           <SimpleFooter
             links={simpleLinks}
             withSocial={true}
             withSearch={true}
-            withSiteIcon={true}
             withCredits={true}
-            textHoverColor="text-gray-200"
-            bgColor="bg-gray-800"
-            textColor="text-white"
           />
         }
         component={Footer}
       />
       <ComponentLayout
         vertical={true}
+        showSwitchMode={true}
         title="Multiple"
-        element={
-          <Footer
-            links={links}
-            subTextColor="text-gray-500"
-            textHoverColor="text-gray-800"
-            bgColor="bg-white"
-            showSubLinks={true}
-            textColor="text-gray-400"
-          />
-        }
+        element={<Footer links={links} showSubLinks={true} />}
         component={Footer}
       />
 
       <ComponentLayout
         vertical={true}
-        title="Dark"
-        element={
-          <Footer
-            links={links}
-            subTextColor="text-gray-300"
-            textHoverColor="text-white"
-            bgColor="bg-gray-800"
-            showSubLinks={true}
-            textColor="text-white"
-          />
-        }
-        component={Footer}
-      />
-      <ComponentLayout
-        vertical={true}
+        showSwitchMode={true}
         title="With socials"
         element={
-          <Footer
-            links={links}
-            withSocialLink={true}
-            subTextColor="text-gray-400"
-            textHoverColor="text-gray-800"
-            bgColor="bg-white"
-            showSubLinks={true}
-            textColor="text-gray-800"
-          />
+          <Footer links={links} withSocialLink={true} showSubLinks={true} />
         }
         component={Footer}
       />
       <ComponentLayout
         vertical={true}
+        showSwitchMode={true}
         title="With socials and credits"
         element={
           <Footer
             links={links}
             withSocialLink={true}
             withCredits={true}
-            subTextColor="text-gray-400"
-            textHoverColor="text-gray-800"
-            bgColor="bg-white"
             showSubLinks={true}
-            textColor="text-gray-800"
           />
         }
         component={Footer}
@@ -191,11 +125,7 @@ const FooterPage: FC = () => {
             withSocialLink={true}
             withCredits={true}
             withSearch={true}
-            subTextColor="text-gray-400"
-            textHoverColor="text-gray-800"
-            bgColor="bg-white"
             showSubLinks={true}
-            textColor="text-gray-800"
           />
         }
         component={Footer}

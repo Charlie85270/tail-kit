@@ -4,6 +4,7 @@ import Elements from "../../components/kit/components/elements";
 import Forms from "../../components/kit/components/form";
 import Commerce from "../../components/kit/components/commerce";
 import Navigation from "../../components/kit/components/navigation";
+import Pagesection from "../../components/kit/components/pagesection";
 
 const ComponentsPage: FC = () => {
   return (
@@ -12,6 +13,7 @@ const ComponentsPage: FC = () => {
       <Forms />
       <Commerce />
       <Navigation />
+      <Pagesection />
     </AppLayout>
   );
 };

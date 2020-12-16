@@ -3,10 +3,8 @@ import AppLayout from "../../../components/layout/AppLayout";
 import ComponentLayout from "../../../components/layout/ComponentLayout";
 import SectionHeader from "../../../components/site/header/SectionHeader";
 import FormSubscribe from "../../../components/kit/components/form/layout/FormSubscribe";
-import SignInWithFb from "../../../components/kit/components/form/layout/SignInWithFb";
-import SignIn from "../../../components/kit/components/form/layout/SignIn";
-import SignInWithFbAndGoogle from "../../../components/kit/components/form/layout/SignInWithFbAndGoogle";
 import CreateAccount from "../../../components/kit/components/form/layout/CreateAccount";
+import SignIn from "../../../components/kit/components/form/layout/SignIn";
 
 const TogglePage: FC = () => {
   return (
@@ -19,19 +17,27 @@ const TogglePage: FC = () => {
       />
       <ComponentLayout
         title="Create account"
+        showSwitchMode={true}
         element={<CreateAccount />}
         component={CreateAccount}
       />
-      <ComponentLayout title="Login" element={<SignIn />} component={SignIn} />
       <ComponentLayout
-        title="With facebook"
-        element={<SignInWithFb />}
-        component={SignInWithFb}
+        title="Login"
+        showSwitchMode={true}
+        element={<SignIn />}
+        component={SignIn}
       />
       <ComponentLayout
-        title="With facebook"
-        element={<SignInWithFbAndGoogle />}
-        component={SignInWithFbAndGoogle}
+        showSwitchMode={true}
+        title="With Facebook"
+        element={<SignIn withFacebook={true} />}
+        component={SignIn}
+      />
+      <ComponentLayout
+        showSwitchMode={true}
+        title="With Facebook and Google"
+        element={<SignIn withGoogle={true} withFacebook={true} />}
+        component={SignIn}
       />
     </AppLayout>
   );

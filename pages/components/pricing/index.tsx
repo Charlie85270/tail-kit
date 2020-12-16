@@ -12,16 +12,19 @@ const ComponentsPage: FC = () => {
       <SectionHeader title="Pricing" />
 
       <ComponentLayout
+        showSwitchMode={true}
         title="Pricing card 1"
         element={<PricingCard />}
         component={PricingCard}
       />
       <ComponentLayout
+        showSwitchMode={true}
         title="Pricing card 2"
         element={<PricingCard2 />}
         component={PricingCard2}
       />
       <ComponentLayout
+        showSwitchMode={true}
         title="Pricing card 3"
         element={<PricingCard3 />}
         component={PricingCard3}

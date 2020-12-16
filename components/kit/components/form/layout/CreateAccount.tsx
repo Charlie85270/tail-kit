@@ -5,11 +5,11 @@ import Checkbox from "../toggle/Checkbox";
 
 const CreateAccount = () => {
   return (
-    <div className="flex flex-col bg-white shadow px-4 sm:px-6 md:px-8 lg:px-10 py-8 rounded-lg max-w-md">
-      <div className="font-medium self-center text-xl sm:text-2xl  text-gray-800 mb-2">
+    <div className="flex flex-col bg-white dark:bg-gray-800 shadow px-4 sm:px-6 md:px-8 lg:px-10 py-8 rounded-lg max-w-md">
+      <div className="font-light self-center text-xl sm:text-2xl text-gray-800 dark:text-white mb-2">
         Create a new account
       </div>
-      <span className="flex-items-center text-gray-500 justify-center text-center text-sm">
+      <span className="flex-items-center text-gray-500 dark:text-gray-400 justify-center text-center text-sm">
         Already have an account ?
         <a
           href="#"

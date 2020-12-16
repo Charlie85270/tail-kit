@@ -1,5 +1,6 @@
 module.exports = {
   important: true,
+  darkMode: "class",
   purge: {
     content: ["./pages/**/*.tsx", "./components/**/*.tsx"],
     // These options are passed through directly to PurgeCSS

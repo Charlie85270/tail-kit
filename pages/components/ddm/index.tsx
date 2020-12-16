@@ -29,10 +29,12 @@ const DdmPages: FC = () => {
       <SectionHeader title="Drop Down" />
       <ComponentLayout
         title="Simple ddm"
+        showSwitchMode={true}
         jsLink="https://github.com/Charlie85270/fastUI"
         element={
           <Ddm
             label="Pay with"
+            withBackground={true}
             forceOpen={true}
             items={ddmItems.map((item) => {
               return { label: item.label };
@@ -44,10 +46,12 @@ const DdmPages: FC = () => {
 
       <ComponentLayout
         title="With icon"
+        showSwitchMode={true}
         jsLink="https://github.com/Charlie85270/fastUI"
         element={
           <Ddm
             icon="fas fa-ellipsis-v"
+            withBackground={true}
             forceOpen={true}
             items={ddmItems.map((item) => {
               return { label: item.label };
@@ -58,10 +62,12 @@ const DdmPages: FC = () => {
       />
       <ComponentLayout
         title="With icon on items"
+        showSwitchMode={true}
         jsLink="https://github.com/Charlie85270/fastUI"
         element={
           <Ddm
             label="Pay with"
+            withBackground={true}
             forceOpen={true}
             items={ddmItems.map((item) => {
               return { label: item.label, icon: item.icon };
@@ -71,12 +77,14 @@ const DdmPages: FC = () => {
         component={Button}
       />
       <ComponentLayout
+        showSwitchMode={true}
         title="With icon on items with divider"
         jsLink="https://github.com/Charlie85270/fastUI"
         element={
           <Ddm
             label="Pay with"
             forceOpen={true}
+            withBackground={true}
             withDivider={true}
             items={ddmItems.map((item) => {
               return { label: item.label, icon: item.icon };
@@ -86,11 +94,13 @@ const DdmPages: FC = () => {
         component={Button}
       />
       <ComponentLayout
+        showSwitchMode={true}
         title="With icon on items with desc"
         jsLink="https://github.com/Charlie85270/fastUI"
         element={
           <Ddm
             label="Pay with"
+            withBackground={true}
             forceOpen={true}
             withDivider={true}
             items={ddmItems}

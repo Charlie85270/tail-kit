@@ -2,7 +2,24 @@ import { FC } from "react";
 
 import SimpleFooter from "../kit/components/navigation/footer/SimpleFooter";
 import Header from "../kit/components/navigation/header/Header";
-const simpleLinks = ["Components", "Contacts", "Customization", "Jobs"];
+const footerLink = [
+  {
+    label: "FAQ",
+    link: "/components#elements",
+  },
+  {
+    label: "Configuration",
+    link: "/components#forms",
+  },
+  {
+    label: "Github",
+    link: "/components#commerce",
+  },
+  {
+    label: "LinkedIn",
+    link: "/components#navigation",
+  },
+];
 
 const menuEntry = [
   {
@@ -28,31 +45,24 @@ const AppLayout: FC = ({ children }) => {
     <div className="relative bg-white">
       <div className="mx-auto h-full">
         <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20  lg:w-full lg:pb-28 xl:pb-32 h-full">
-          <Header
-            links={menuEntry}
-            withShadow={true}
-            hideIconRight={false}
-            hideProfile={true}
-            alignRight={false}
-            bgColor="bg-gray-800"
-            isFat={true}
-            textColor="text-gray-400"
-            textSelectedColor="text-white"
-          />
+          <div className="dark">
+            <Header
+              links={menuEntry}
+              withShadow={true}
+              hideGitHubLink={false}
+              alignRight={false}
+              isFat={true}
+            />
+          </div>
+
           <main className="mx-auto max-w-7xl px-4 mt-8 sm:px-6  lg:px-8 h-full">
             {children}
           </main>
         </div>
       </div>
-      <SimpleFooter
-        links={simpleLinks}
-        withSocial={true}
-        withSiteIcon={true}
-        withCredits={true}
-        textHoverColor="text-gray-200"
-        bgColor="bg-gray-800"
-        textColor="text-white"
-      />
+      <div className="dark">
+        <SimpleFooter links={footerLink} withSocial={true} withCredits={true} />
+      </div>
     </div>
   );
 };

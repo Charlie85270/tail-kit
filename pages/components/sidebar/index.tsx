@@ -31,160 +31,50 @@ const SideBar: FC = () => {
       <SectionHeader title="Sidebar" />
       <ComponentLayout
         title="Light"
+        showSwitchMode={true}
+        element={<Sidebar links={links} />}
+        component={Sidebar}
+      />
+
+      <ComponentLayout
+        showSwitchMode={true}
+        title="With header"
+        element={<Sidebar links={links} withHeader={true} />}
+        component={Sidebar}
+      />
+      <ComponentLayout
+        showSwitchMode={true}
+        title="With border"
+        element={<Sidebar links={links} withBorder={true} withHeader={true} />}
+        component={Sidebar}
+      />
+
+      <ComponentLayout
+        showSwitchMode={true}
+        title="With footer"
         element={
-          <Sidebar
-            links={links}
-            backgroundColor="bg-white"
-            textColor="text-gray-300"
-            selectedTextColor="text-gray-900"
-          />
+          <Sidebar links={links} withBottomLink={true} withHeader={true} />
         }
         component={Sidebar}
       />
       <ComponentLayout
-        title="Dark"
-        element={
-          <Sidebar
-            links={links}
-            backgroundColor="bg-gray-800"
-            textColor="text-gray-400"
-            selectedTextColor="text-white"
-          />
-        }
-        component={Sidebar}
-      />
-      <ComponentLayout
-        title="Dark with header"
-        element={
-          <Sidebar
-            links={links}
-            withHeader={true}
-            backgroundColor="bg-gray-800"
-            textColor="text-gray-400"
-            selectedTextColor="text-white"
-          />
-        }
-        component={Sidebar}
-      />
-      <ComponentLayout
-        title="Dark with border"
-        element={
-          <Sidebar
-            links={links}
-            withBorder={true}
-            withHeader={true}
-            backgroundColor="bg-gray-800"
-            textColor="text-gray-400"
-            selectedTextColor="text-white"
-          />
-        }
-        component={Sidebar}
-      />
-      <ComponentLayout
-        title="Indigo"
-        element={
-          <Sidebar
-            links={links}
-            withHeader={true}
-            backgroundSelectedColor="bg-gray-100"
-            backgroundHoverColor="bg-gray-100"
-            backgroundColor="bg-indigo-500"
-            textColor="text-white"
-            selectedTextColor="text-indigo-500"
-          />
-        }
-        component={Sidebar}
-      />
-      <ComponentLayout
-        title="Dark with background"
-        element={
-          <Sidebar
-            links={links}
-            withHeader={true}
-            backgroundSelectedColor="bg-gray-900"
-            backgroundHoverColor="bg-gray-900"
-            backgroundColor="bg-gray-800"
-            textColor="text-gray-400"
-            selectedTextColor="text-white"
-          />
-        }
-        component={Sidebar}
-      />
-      <ComponentLayout
-        title="Light with background"
-        element={
-          <Sidebar
-            links={links}
-            withHeader={true}
-            backgroundSelectedColor="bg-gray-100"
-            backgroundHoverColor="bg-gray-100"
-            backgroundColor="bg-white"
-            textColor="text-gray-400"
-            selectedTextColor="text-gray-800"
-          />
-        }
-        component={Sidebar}
-      />
-      <ComponentLayout
-        title="Indigo with footer"
-        element={
-          <Sidebar
-            links={links}
-            withBottomLink={true}
-            withHeader={true}
-            backgroundSelectedColor="bg-gray-100"
-            backgroundHoverColor="bg-gray-100"
-            backgroundColor="bg-indigo-500"
-            textColor="text-white"
-            selectedTextColor="text-indigo-500"
-          />
-        }
-        component={Sidebar}
-      />
-      <ComponentLayout
-        title="Light icon"
-        element={
-          <LittleSidebar
-            textColor="text-gray-500"
-            selectedTextColor="text-gray-800"
-            backgroundColor="bg-white"
-            links={links}
-          />
-        }
+        title="Just icon"
+        showSwitchMode={true}
+        element={<LittleSidebar links={links} />}
         component={LittleSidebar}
       />
-      <ComponentLayout
-        title="Dark icon"
-        element={
-          <LittleSidebar
-            textColor="text-gray-400"
-            selectedTextColor="text-white"
-            backgroundColor="bg-gray-800"
-            links={links}
-          />
-        }
-        component={LittleSidebar}
-      />
+
       <ComponentLayout
         title="With header"
-        element={
-          <LittleSidebar
-            textColor="text-gray-400"
-            selectedTextColor="text-white"
-            backgroundColor="bg-gray-800"
-            links={links}
-            withHeader={true}
-          />
-        }
+        showSwitchMode={true}
+        element={<LittleSidebar links={links} withHeader={true} />}
         component={LittleSidebar}
       />
       <ComponentLayout
         title="With footer"
+        showSwitchMode={true}
         element={
           <LittleSidebar
-            textColor="text-gray-400"
-            selectedTextColor="text-white"
-            backgroundColor="bg-gray-800"
             links={links}
             withHeader={true}
             withBottomLink={true}

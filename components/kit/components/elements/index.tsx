@@ -17,7 +17,7 @@ const Elements: FC = () => {
     },
     {
       title: "Avatar",
-      items: 3,
+      items: 7,
       img: "images/sections/avatar.svg",
       link: "/components/avatar",
     },
