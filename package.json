@@ -25,6 +25,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
     "autoprefixer": "^10.1.0",
+    "lodash": "^4.17.20",
     "next": "^10.0.3",
     "postcss": "^8.2.1",
     "postcss-import": "^13.0.0",
