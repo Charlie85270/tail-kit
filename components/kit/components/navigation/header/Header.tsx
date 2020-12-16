@@ -83,16 +83,14 @@ const Header = (props: Props) => {
                 )}
                 {props.ddmItems && (
                   <div className="ml-3 relative">
-                    <div>
-                      <Ddm
-                        icon="fas fa-user-circle"
-                        withBackground={false}
-                        forceOpen={props.forceDDMOpenInMobile}
-                        items={props.ddmItems.map((item) => {
-                          return { label: item.label };
-                        })}
-                      />
-                    </div>
+                    <Ddm
+                      icon="fas fa-user-circle"
+                      withBackground={false}
+                      forceOpen={props.forceDDMOpenInMobile}
+                      items={props.ddmItems.map((item) => {
+                        return { label: item.label };
+                      })}
+                    />
                   </div>
                 )}
               </div>

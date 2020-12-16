@@ -5,13 +5,13 @@ const Pagesection: FC = () => {
   const pageSections = [
     {
       title: "CTA",
-      items: 10,
+      items: 8,
       img: "images/sections/cta.svg",
       link: "/components/cta",
     },
     {
       title: "Testimonial",
-      items: 6,
+      items: 3,
       img: "images/sections/testimonial.svg",
       link: "/components/testimonial",
     },

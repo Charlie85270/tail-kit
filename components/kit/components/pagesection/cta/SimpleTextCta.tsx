@@ -2,23 +2,18 @@ import React from "react";
 import Button from "../../elements/buttons/Button";
 
 interface Props {
-  backgroundColor: string;
-  textColor: string;
-  text2Color: string;
   withDesc?: boolean;
-  descColor?: string;
   withImage?: boolean;
-  btnColor: string;
-  btnColor2?: string;
   isVertical?: boolean;
+  twoButton?: boolean;
   isLeft?: boolean;
 }
 
 const SimpleTextCta = (props: Props) => {
   return (
     <div
-      className={`${props.backgroundColor} ${
-        props.withImage ? " overflow-hidden relative" : ""
+      className={`bg-white dark:bg-gray-800 ${
+        props.withImage ? "overflow-hidden relative" : ""
       }`}
     >
       <div
@@ -33,18 +28,16 @@ const SimpleTextCta = (props: Props) => {
         } py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20`}
       >
         <h2
-          className={`text-3xl font-extrabold ${props.textColor} sm:text-4xl`}
+          className={`text-3xl font-extrabold text-black dark:text-white sm:text-4xl`}
         >
           <span className="block">Want to be millionaire ?</span>
-          <span className={`"block ${props.text2Color}`}>
-            It's today or never.
-          </span>
+          <span className={`"block text-indigo-500`}>It's today or never.</span>
         </h2>
         {props.withDesc && (
           <p
             className={`text-xl max-w-md mx-auto ${
               props.isVertical ? "mt-4" : ""
-            } ${props.descColor}`}
+            } text-gray-300`}
           >
             I had noticed that both in the very poor and very rich extremes of
             society the mad were often allowed to mingle freely
@@ -56,19 +49,11 @@ const SimpleTextCta = (props: Props) => {
               props.isVertical ? "mt-12" : ""
             } inline-flex rounded-md shadow`}
           >
-            <Button
-              label="Get started"
-              isFat={true}
-              color={props.btnColor}
-            ></Button>
+            <Button label="Get started" isFat={true} color="indigo"></Button>
           </div>
-          {props.btnColor2 && (
+          {props.twoButton && (
             <div className="ml-3 inline-flex rounded-md shadow">
-              <Button
-                label="Invite friend"
-                isFat={true}
-                color={props.btnColor2}
-              />
+              <Button label="Invite friend" isFat={true} color="gray" />
             </div>
           )}
         </div>
