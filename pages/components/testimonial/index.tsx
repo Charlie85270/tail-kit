@@ -7,6 +7,7 @@ import SimpleTestimonial from "../../../components/kit/components/pagesection/te
 import BigTestimonial from "../../../components/kit/components/pagesection/testimonial/BigTestimonial";
 import MultipleTestimonial from "../../../components/kit/components/pagesection/testimonial/MultipleTestimonial";
 import BigTestimonialFlex from "../../../components/kit/components/pagesection/testimonial/BigTestimonialFlex";
+import HeadTestimonial from "../../../components/kit/components/pagesection/testimonial/HeadTestimonial";
 
 const ComponentsPage: FC = () => {
   return (
@@ -18,13 +19,19 @@ const ComponentsPage: FC = () => {
         element={<SimpleTestimonial withShadow={true} />}
         component={Button}
       />
-
+      <ComponentLayout
+        showSwitchMode={true}
+        title="Head"
+        vertical={true}
+        element={<HeadTestimonial />}
+        component={HeadTestimonial}
+      />
       <ComponentLayout
         title="Big"
         showSwitchMode={true}
         vertical={true}
         element={<BigTestimonial />}
-        component={Button}
+        component={BigTestimonial}
       />
       <ComponentLayout
         title="Big with image on left"
@@ -39,7 +46,7 @@ const ComponentsPage: FC = () => {
         title="Multiple"
         vertical={true}
         element={<MultipleTestimonial />}
-        component={Button}
+        component={MultipleTestimonial}
       />
     </AppLayout>
   );

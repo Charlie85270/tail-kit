@@ -3,7 +3,6 @@ import React, { useState } from "react";
 interface Props {
   forceOpen?: boolean;
   label?: string;
-  withDivider?: boolean;
   icon?: string;
   items: DDMItem[];
   withBackground?: boolean;
@@ -16,7 +15,7 @@ export interface DDMItem {
   link?: string;
 }
 
-const Ddm = (props: Props) => {
+const LargeDdm = (props: Props) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="relative inline-block text-left">
@@ -44,40 +43,39 @@ const Ddm = (props: Props) => {
       </div>
 
       {(props.forceOpen || isOpen) && (
-        <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5">
-          <div
-            className={`py-1 ${
-              props.withDivider ? "divide-y divide-gray-100" : ""
-            }`}
-            role="menu"
-            aria-orientation="vertical"
-            aria-labelledby="options-menu"
-          >
-            {props.items.map((item) => {
-              return (
-                <a
-                  key={item.label}
-                  href={item.link || "#"}
-                  className={`${
-                    item.icon ? "flex items-center" : "block"
-                  } block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white dark:hover:bg-gray-600`}
-                  role="menuitem"
-                >
-                  {item.icon && <i className={`${item.icon} mr-2`} />}
-
-                  <span className="flex flex-col">
-                    <span>{item.label}</span>
-                    {item.desc && (
-                      <span className="text-gray-400 text-xs">{item.desc}</span>
+        <div className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+          <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+            <div className="relative grid gap-6 bg-white dark:bg-gray-800 px-5 py-6 sm:gap-8 sm:p-8 divide-y divide-gray-100">
+              {props.items.map((item) => {
+                return (
+                  <a
+                    href={item.link || "#"}
+                    className="-m-3 p-3 flex items-center hover:bg-gray-50"
+                  >
+                    {item.icon && (
+                      <i
+                        className={`${item.icon} dark:text-white flex-shrink-0 h-6 w-6`}
+                      />
                     )}
-                  </span>
-                </a>
-              );
-            })}
+
+                    <div className="ml-4">
+                      <p className="text-base font-medium text-gray-900 dark:text-white">
+                        {item.label}
+                      </p>
+                      {item.desc && (
+                        <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+                          {item.desc}
+                        </p>
+                      )}
+                    </div>
+                  </a>
+                );
+              })}
+            </div>
           </div>
         </div>
       )}
     </div>
   );
 };
-export default Ddm;
+export default LargeDdm;

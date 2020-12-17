@@ -4,6 +4,7 @@ interface Props {
   color?: string;
   icon?: string;
   disabled?: boolean;
+  submit?: boolean;
   isFat?: boolean;
   animated?: boolean;
   label?: string;
@@ -14,7 +15,7 @@ const Button = (props: Props) => {
   return (
     <button
       onClick={props.onClick}
-      type="button"
+      type={props.submit ? "submit" : "button"}
       disabled={props.disabled}
       className={`${props.isFat ? "py-4 px-6" : "py-2 px-4"}  ${
         props.icon ? "flex justify-center items-center" : "flex-shrink-0"

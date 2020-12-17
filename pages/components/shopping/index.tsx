@@ -30,6 +30,7 @@ const ShoppingPage: FC = () => {
       />
       <ComponentLayout
         title="Classic"
+        showSwitchMode={true}
         element={<ClassicShoppingCard />}
         component={ClassicShoppingCard}
       />
@@ -39,6 +40,7 @@ const ShoppingPage: FC = () => {
         component={ShoppingDetailsCard}
       />
       <ComponentLayout
+        showSwitchMode={true}
         title="Shipped"
         element={<ShippedCard />}
         component={ShippedCard}

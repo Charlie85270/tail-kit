@@ -12,13 +12,13 @@ const TogglePage: FC = () => {
       <SectionHeader title="Toggle" />
       <ComponentLayout
         title="simple"
-        configLink="https://tailwindcss.com/docs/background-image"
+        needConfiguration={true}
         element={<Checkbox />}
         component={Checkbox}
       />
       <ComponentLayout
         title="toggle"
-        configLink="https://tailwindcss.com/docs/hover-focus-and-other-states#checked"
+        needConfiguration={true}
         element={<Toggle onChange={() => null} label="Accept" />}
         component={Toggle}
       />

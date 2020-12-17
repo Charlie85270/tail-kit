@@ -5,6 +5,10 @@ import SectionHeader from "../../../components/site/header/SectionHeader";
 import FormSubscribe from "../../../components/kit/components/form/layout/FormSubscribe";
 import CreateAccount from "../../../components/kit/components/form/layout/CreateAccount";
 import SignIn from "../../../components/kit/components/form/layout/SignIn";
+import ContactForm from "../../../components/kit/components/form/layout/ContactForm";
+import LoginWithBackground from "../../../components/kit/components/form/layout/LoginWithBackground";
+import UserInfoForm from "../../../components/kit/components/form/layout/UserInfoForm";
+import DesignLogin from "../../../components/kit/components/form/layout/DesignLogin";
 
 const TogglePage: FC = () => {
   return (
@@ -38,6 +42,30 @@ const TogglePage: FC = () => {
         title="With Facebook and Google"
         element={<SignIn withGoogle={true} withFacebook={true} />}
         component={SignIn}
+      />
+      <ComponentLayout
+        showSwitchMode={true}
+        title="Contact form"
+        element={<ContactForm />}
+        component={ContactForm}
+      />
+      <ComponentLayout
+        vertical={true}
+        title="Login with background"
+        element={<LoginWithBackground />}
+        component={LoginWithBackground}
+      />
+      <ComponentLayout
+        vertical={true}
+        title="Login design"
+        element={<DesignLogin />}
+        component={DesignLogin}
+      />
+      <ComponentLayout
+        vertical={true}
+        title="User information form"
+        element={<UserInfoForm />}
+        component={UserInfoForm}
       />
     </AppLayout>
   );

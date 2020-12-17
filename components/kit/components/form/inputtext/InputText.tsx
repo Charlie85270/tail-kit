@@ -9,11 +9,17 @@ interface Props {
   helper?: string;
   placeholder?: string;
   name?: string;
+  disabled?: boolean;
+  square?: boolean;
 }
 
 const InputText = (props: Props) => {
   return (
-    <div className={`${props.helper || props.icon ? "flex" : ""} relative`}>
+    <div
+      className={`${props.helper || props.icon ? "flex" : ""} relative ${
+        props.disabled ? "opacity-50 pointer-events-none" : ""
+      }`}
+    >
       {props.label && (
         <label htmlFor={props.name} className="text-gray-700">
           {props.label}{" "}
@@ -23,15 +29,24 @@ const InputText = (props: Props) => {
         </label>
       )}
       {(props.helper || props.icon) && (
-        <span className="inline-flex  items-center px-3 rounded-l-md border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
+        <span
+          className={`${
+            props.square ? "" : "rounded-l-md"
+          } inline-flex  items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm`}
+        >
           {props.helper || <i className={props.icon} />}
         </span>
       )}
       <input
-        className={`${props.error ? "ring-red-500 ring-2" : ""} ${
+        disabled={props.disabled}
+        className={`${props.error ? "ring-red-500 ring-2" : ""}${
           props.helper || props.icon
-            ? "rounded-r-lg "
-            : "rounded-lg border-transparent"
+            ? !props.square
+              ? " rounded-r-lg"
+              : ""
+            : !props.square
+            ? " rounded-lg border-transparent"
+            : ""
         } flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent`}
         type={props.type || "text"}
         name={props.name}

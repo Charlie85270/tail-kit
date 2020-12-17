@@ -1,12 +1,13 @@
 import React, { FC } from "react";
 import AppLayout from "../../../components/layout/AppLayout";
 import ComponentLayout from "../../../components/layout/ComponentLayout";
-import SectionHeader from "../../../components/site/header/SectionHeader";
-import Badge from "../../../components/kit/components/elements/badges/Badge";
 import ClickableBadge from "../../../components/kit/components/elements/badges/ClickableBadge";
 import NotificationBadge from "../../../components/kit/components/elements/badges/NotificationBadge";
 import BadgeList from "../../../components/kit/components/elements/badges/BadgeList";
 import NotificationIconBadge from "../../../components/kit/components/elements/badges/NotificationIconBadge";
+import SectionHeader from "../../../components/site/header/SectionHeader";
+import Badge from "../../../components/kit/components/elements/badges/Badge";
+import ColoredTextAndBadge from "../../../components/kit/components/elements/badges/ColoredTextAndBadge";
 
 const BadgesPage: FC = () => {
   return (
@@ -56,7 +57,20 @@ const BadgesPage: FC = () => {
         component={Badge}
       />
       <ComponentLayout
-        title="Removable badge"
+        title="Line with button"
+        element={
+          <Badge
+            icon="fab fa-facebook-f"
+            label="Facebook"
+            removeAction={() => null}
+            borderColor="border border-indigo-500"
+            textColor="text-indigo-500"
+          />
+        }
+        component={Badge}
+      />
+      <ComponentLayout
+        title="Full button"
         element={<ClickableBadge />}
         component={ClickableBadge}
       />
@@ -66,8 +80,33 @@ const BadgesPage: FC = () => {
         component={BadgeList}
       />
       <ComponentLayout
+        title="Pink badge"
+        element={
+          <ColoredTextAndBadge
+            badgeLabel="Pink"
+            label="Im a sexy badge and you can use me everyday at every hour."
+            backgroundBadgeColor="bg-pink-600"
+            textColor="text-pink-600"
+          />
+        }
+        component={Badge}
+      />
+      <ComponentLayout
+        title="Black badge"
+        element={
+          <ColoredTextAndBadge
+            badgeLabel="Black"
+            label="Im a sexy badge and you can use me everyday at every hour."
+            backgroundBadgeColor="bg-gray-700"
+            textColor="text-gray-700"
+          />
+        }
+        component={Badge}
+      />
+
+      <ComponentLayout
         title="Notification badge"
-        element={<NotificationBadge />}
+        element={<NotificationBadge number={2} />}
         component={NotificationBadge}
       />
       <ComponentLayout

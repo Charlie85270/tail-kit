@@ -2,8 +2,10 @@ import React from "react";
 import Button from "../../elements/buttons/Button";
 
 interface Props {
-  withDesc?: boolean;
-  withImage?: boolean;
+  title: string;
+  subtitle?: string;
+  description?: string;
+  image?: string;
   isVertical?: boolean;
   twoButton?: boolean;
   isLeft?: boolean;
@@ -13,7 +15,7 @@ const SimpleTextCta = (props: Props) => {
   return (
     <div
       className={`bg-white dark:bg-gray-800 ${
-        props.withImage ? "overflow-hidden relative" : ""
+        props.image ? "overflow-hidden relative" : ""
       }`}
     >
       <div
@@ -24,23 +26,24 @@ const SimpleTextCta = (props: Props) => {
               : "text-center"
             : "lg:flex lg:items-center lg:justify-between"
         } ${
-          props.withImage ? "w-1/2" : "w-full mx-auto"
+          props.image ? "w-1/2" : "w-full mx-auto"
         } py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20`}
       >
         <h2
           className={`text-3xl font-extrabold text-black dark:text-white sm:text-4xl`}
         >
-          <span className="block">Want to be millionaire ?</span>
-          <span className={`"block text-indigo-500`}>It's today or never.</span>
+          <span className="block">{props.title}</span>
+          {props.subtitle && (
+            <span className="block text-indigo-500">{props.subtitle}</span>
+          )}
         </h2>
-        {props.withDesc && (
+        {props.description && (
           <p
-            className={`text-xl max-w-md mx-auto ${
-              props.isVertical ? "mt-4" : ""
-            } text-gray-300`}
+            className={`text-xl${props.isVertical ? " mt-4" : ""}${
+              props.image ? "" : " max-w-md mx-auto"
+            } text-gray-400`}
           >
-            I had noticed that both in the very poor and very rich extremes of
-            society the mad were often allowed to mingle freely
+            {props.description}
           </p>
         )}
         <div className="lg:mt-0 lg:flex-shrink-0">
@@ -58,10 +61,10 @@ const SimpleTextCta = (props: Props) => {
           )}
         </div>
       </div>
-      {props.withImage && (
+      {props.image && (
         <img
-          src="/images/car/1.jpg"
-          className="absolute w-1/2 hidden lg:block right-0 top-0"
+          src={props.image}
+          className="absolute h-full max-w-1/2 hidden lg:block right-0 top-0"
         />
       )}
     </div>

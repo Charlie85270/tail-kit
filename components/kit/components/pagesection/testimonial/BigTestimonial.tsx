@@ -7,7 +7,7 @@ const BigTestimonial = () => {
       <img src="/icons/rocket.svg" className="h-10 w-10 mb-8 m-auto" />
 
       <p
-        className={`text-gray-800 dark:text-white w-full md:w-2/3 m-auto text-center text-lg md:text-3xl`}
+        className={`text-gray-600 dark:text-white w-full md:w-2/3 m-auto text-center text-lg md:text-3xl`}
       >
         <span className="font-bold text-indigo-500">“</span>
         To get social media testimonials like these, keep your customers engaged
@@ -18,12 +18,10 @@ const BigTestimonial = () => {
       <div className="flex items-center justify-center mt-8">
         <Avatar size="small" />
         <div className="flex ml-2 items-center justify-center">
-          <span
-            className={`font-semibold text-gray-700 dark:text-gray-100 mr-2 text-lg`}
-          >
+          <span className="font-semibold text-indigo-500 mr-2 text-lg">
             Jean Miguel
           </span>
-          <span className="text-indigo-500 text-xl font-bold">/</span>
+          <span className="text-gray-400 text-xl font-light">/</span>
           <span className="text-gray-400 text-md ml-2">User of FastUI</span>
         </div>
       </div>

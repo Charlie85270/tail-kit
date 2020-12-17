@@ -2,6 +2,7 @@ import React from "react";
 
 interface Props {
   color?: string;
+  removeAction?: () => void;
   textColor?: string;
   borderColor?: string;
   label?: string;
@@ -17,6 +18,11 @@ const Badge = (props: Props) => {
       } ${props.color}`}
     >
       {props.icon && <i className={`${props.icon} mr-2`}></i>} {props.label}
+      {props.removeAction && (
+        <button className="bg-transparent hover" onClick={props.removeAction}>
+          <i className="fas h-4 fa-times ml-8"></i>
+        </button>
+      )}
     </span>
   );
 };

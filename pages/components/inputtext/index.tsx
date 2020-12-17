@@ -12,6 +12,11 @@ const InputTextPage: FC = () => {
 
       <ComponentLayout
         title="Simple"
+        element={<InputText square={true} placeholder="Your email" />}
+        component={InputText}
+      />
+      <ComponentLayout
+        title="Rounded"
         element={<InputText placeholder="Your email" />}
         component={InputText}
       />
@@ -41,6 +46,18 @@ const InputTextPage: FC = () => {
             label="Email"
             error="Email is invalid"
             required
+            name="email"
+            placeholder="Your email"
+          />
+        }
+        component={InputText}
+      />
+      <ComponentLayout
+        title="Disabled"
+        element={
+          <InputText
+            label="Email disabled"
+            disabled={true}
             name="email"
             placeholder="Your email"
           />

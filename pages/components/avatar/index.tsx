@@ -54,6 +54,12 @@ const AvatarPage: FC = () => {
         element={<MultipleAvatar size="big" />}
         component={MultipleAvatar}
       />
+      <ComponentLayout
+        needConfiguration={true}
+        title="With hover effect"
+        element={<MultipleAvatar size="big" withHoverEffect={true} />}
+        component={MultipleAvatar}
+      />
     </AppLayout>
   );
 };

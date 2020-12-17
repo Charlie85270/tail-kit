@@ -20,7 +20,7 @@ const CreateAccount = () => {
         </a>
       </span>
 
-      <div className="mt-8">
+      <div className="mt-8 p-6">
         <form action="#">
           <div className="flex flex-col mb-2">
             <InputText name="pseudo" type="text" placeholder="Pseudo" />
@@ -33,16 +33,13 @@ const CreateAccount = () => {
             <InputText type="text" placeholder="Email" />
           </div>
 
-          <div className="flex w-full">
-            <Button label="Login" color="purple" />
+          <div className="flex w-full my-4">
+            <Button submit={true} label="Login" color="purple" />
           </div>
         </form>
-      </div>
-      <div className="flex justify-center items-center mt-6">
-        <Checkbox
-          noShadow={true}
-          label="I have read and agree term of services "
-        />
+        <div className="flex justify-center items-center mt-6">
+          <Checkbox label="I have read and agree term of services " />
+        </div>
       </div>
     </div>
   );

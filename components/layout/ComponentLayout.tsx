@@ -10,9 +10,10 @@ interface Props {
   component: any;
   title: string;
   jsLink?: string;
-  configLink?: string;
+  needConfiguration?: boolean;
   showSwitchMode?: boolean;
   vertical?: boolean;
+  containerClasses?: string;
 }
 
 enum STATUS {
@@ -46,7 +47,12 @@ const ComponentLayout = (props: Props) => {
 
   const [status, setStatus] = useState<STATUS>(STATUS.DEFAULT);
   return (
-    <div className="bg-gray-100 shadow rounded-xl mb-4" key={props.title}>
+    <div
+      className={`bg-gray-100 shadow rounded-xl mb-4 ${
+        props.containerClasses ? props.containerClasses : ""
+      }`}
+      key={props.title}
+    >
       <div className="flex flex-col md:flex-row items-center justify-between mb-8 bg-white p-4 border rounded-xl">
         <p className="text-xl font-light text-gray-600 mb-2 md:mb-0">
           {props.title}
@@ -64,10 +70,10 @@ const ComponentLayout = (props: Props) => {
               <i className="fas fa-exclamation-circle mr-2"></i>Need JS
             </a>
           )}
-          {props.configLink && (
+          {props.needConfiguration && (
             <a
               className="text-black border border-gray-800 bg-yellow-300 hover:bg-yellow-400 rounded-lg p-2"
-              href={props.configLink}
+              href="/configuration"
             >
               <i className="fas fa-exclamation-circle mr-2"></i>Need
               configuration

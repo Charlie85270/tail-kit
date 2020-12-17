@@ -47,7 +47,7 @@ const SignIn = (props: Props) => {
           </div>
 
           <div className="flex w-full">
-            <Button label="Login" color="purple" />
+            <Button submit={true} label="Login" color="purple" />
           </div>
         </form>
       </div>

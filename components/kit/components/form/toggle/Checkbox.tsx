@@ -2,24 +2,23 @@ import React from "react";
 
 interface Props {
   label?: string;
-  noShadow?: boolean;
+  onChange?: (checked) => void;
 }
 
 const Checkbox = (props: Props) => {
   return (
-    <div className={props.noShadow ? "" : "p-4 bg-white rounded-xl shadow-md"}>
-      <label className="flex items-center space-x-3">
-        <input
-          type="checkbox"
-          name="checked-demo"
-          defaultValue="1"
-          className="form-tick appearance-none bg-white bg-check h-6 w-6 border border-gray-300 rounded-md checked:bg-blue-600 checked:border-transparent focus:outline-none"
-        />
-        <span className="text-gray-900 dark:text-white font-medium">
-          {props.label || "Option 1"}
-        </span>
-      </label>
-    </div>
+    <label className="flex items-center space-x-3">
+      <input
+        type="checkbox"
+        name="checked-demo"
+        onChange={(e) => props.onChange?.(e.target.checked)}
+        defaultValue="1"
+        className="form-tick appearance-none bg-white bg-check h-6 w-6 border border-gray-300 rounded-md checked:bg-blue-600 checked:border-transparent focus:outline-none"
+      />
+      <span className="text-gray-700 dark:text-white font-normal">
+        {props.label || "Option 1"}
+      </span>
+    </label>
   );
 };
 export default Checkbox;

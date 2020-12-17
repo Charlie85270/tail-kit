@@ -11,19 +11,19 @@ const Elements: FC = () => {
     },
     {
       title: "Badges",
-      items: 7,
+      items: 11,
       img: "images/sections/badges.svg",
       link: "/components/badges",
     },
     {
       title: "Avatar",
-      items: 9,
+      items: 10,
       img: "images/sections/avatar.svg",
       link: "/components/avatar",
     },
     {
-      title: "DropDown Menu",
-      items: 5,
+      title: "Ddm",
+      items: 6,
       img: "images/sections/ddm.svg",
       link: "/components/ddm",
     },
