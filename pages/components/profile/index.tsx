@@ -1,59 +1,64 @@
 import React, { FC } from "react";
 import AppLayout from "../../../components/layout/AppLayout";
 import ComponentLayout from "../../../components/layout/ComponentLayout";
-import CoverAndButtonsProfilCard from "../../../components/kit/components/profile/CoverAndButtonsProfilCard";
-import FullPhotoCard from "../../../components/kit/components/profile/FullPhotoCard";
-import SimpleProfilVerti from "../../../components/kit/components/profile/SimpleProfilVerti";
-import SimpleProfilHori from "../../../components/kit/components/profile/SimpleProfilHori";
-import AddProfilInfo from "../../../components/kit/components/profile/AddProfilInfo";
-import CoverAndInfoProfil from "../../../components/kit/components/profile/CoverAndInfoProfil";
-import GroupInfo from "../../../components/kit/components/profile/GroupInfo";
 import SectionHeader from "../../../components/site/header/SectionHeader";
-import Avatar from "../../../components/kit/components/elements/avatars/Avatar";
-import MultipleAvatar from "../../../components/kit/components/elements/avatars/MultipleAvatar";
+import CoverAndButtonsProfilCard from "../../../components/kit/components/pagesection/profile/CoverAndButtonsProfilCard";
+import AddProfilInfo from "../../../components/kit/components/pagesection/profile/AddProfilInfo";
+import CoverAndInfoProfil from "../../../components/kit/components/pagesection/profile/CoverAndInfoProfil";
+import FullPhotoCard from "../../../components/kit/components/pagesection/profile/FullPhotoCard";
+import SimpleProfile from "../../../components/kit/components/pagesection/profile/SimpleProfil";
+import HeadProfil from "../../../components/kit/components/pagesection/profile/HeadProfil";
 
 const ComponentsPage: FC = () => {
   return (
     <AppLayout>
-      <SectionHeader title="Profile" />
-      <ComponentLayout title="Avatar" element={<Avatar />} component={Avatar} />
+      <SectionHeader title="Profile / Team" />
       <ComponentLayout
-        title="Multiple avatar"
-        element={<MultipleAvatar />}
-        component={MultipleAvatar}
+        showSwitchMode={true}
+        title="Simple horizontal"
+        element={<SimpleProfile horizontal={true} />}
+        component={SimpleProfile}
       />
       <ComponentLayout
-        title="Simple profile vertical"
-        element={<SimpleProfilVerti />}
-        component={SimpleProfilVerti}
+        showSwitchMode={true}
+        title="Simple vertical"
+        element={<SimpleProfile />}
+        component={SimpleProfile}
       />
       <ComponentLayout
-        title="Simple profile horizontal"
-        element={<SimpleProfilHori />}
-        component={SimpleProfilHori}
+        showSwitchMode={true}
+        title="With action"
+        element={<SimpleProfile horizontal={true} withAction={true} />}
+        component={SimpleProfile}
       />
       <ComponentLayout
-        title="Profile add"
-        element={<AddProfilInfo />}
-        component={AddProfilInfo}
-      />
-      <ComponentLayout
+        showSwitchMode={true}
         title="With cover"
         element={<CoverAndButtonsProfilCard />}
         component={CoverAndButtonsProfilCard}
       />
       <ComponentLayout
-        title="With cover and details"
+        showSwitchMode={true}
+        title="Head"
+        element={<HeadProfil />}
+        component={HeadProfil}
+      />
+      <ComponentLayout
+        showSwitchMode={true}
+        title="Add"
+        element={<AddProfilInfo />}
+        component={AddProfilInfo}
+      />
+
+      <ComponentLayout
+        showSwitchMode={true}
+        title="With cover and info"
         element={<CoverAndInfoProfil />}
         component={CoverAndInfoProfil}
       />
+
       <ComponentLayout
-        title="Group details"
-        element={<GroupInfo />}
-        component={GroupInfo}
-      />
-      <ComponentLayout
-        title="Full picture card"
+        title="Photo Full"
         element={<FullPhotoCard />}
         component={FullPhotoCard}
       />

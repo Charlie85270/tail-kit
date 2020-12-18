@@ -18,7 +18,7 @@ const Button = (props: Props) => {
       type={props.submit ? "submit" : "button"}
       disabled={props.disabled}
       className={`${props.isFat ? "py-4 px-6" : "py-2 px-4"}  ${
-        props.icon ? "flex justify-center items-center" : "flex-shrink-0"
+        props.icon ? "flex justify-center items-center" : ""
       } bg-${
         props.color
       }-600 text-white w-full transition ease-in duration-200 text-center text-base font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-${

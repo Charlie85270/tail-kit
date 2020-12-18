@@ -8,6 +8,7 @@ import MultipleShoppingCard from "../../../components/kit/components/commerce/sh
 import ClassicShoppingCard from "../../../components/kit/components/commerce/shopping/ClassicShoppingCard";
 import SimpleShoppingCard from "../../../components/kit/components/commerce/shopping/SimpleShoppingCard";
 import ShippedCard from "../../../components/kit/components/commerce/shopping/ShippedCard";
+import ProductWithEval from "../../../components/kit/components/commerce/shopping/ProductWithEval";
 
 const ShoppingPage: FC = () => {
   return (
@@ -27,6 +28,11 @@ const ShoppingPage: FC = () => {
         title="Multiple"
         element={<MultipleShoppingCard />}
         component={MultipleShoppingCard}
+      />
+      <ComponentLayout
+        title="With eval"
+        element={<ProductWithEval />}
+        component={ProductWithEval}
       />
       <ComponentLayout
         title="Classic"

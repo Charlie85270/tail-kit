@@ -27,6 +27,18 @@ const Elements: FC = () => {
       img: "images/sections/ddm.svg",
       link: "/components/ddm",
     },
+    {
+      title: "Alert",
+      items: 10,
+      img: "images/sections/banner.svg",
+      link: "/components/alert",
+    },
+    {
+      title: "Data display",
+      items: 6,
+      img: "images/sections/data.svg",
+      link: "/components/data",
+    },
   ];
 
   return <SectionDesc id="elements" items={elementsSection} title="Elements" />;

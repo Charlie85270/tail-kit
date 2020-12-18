@@ -24,7 +24,10 @@ const SectionDesc = ({ title, items, id }: Props) => {
       <div className="flex w-full gap-0 md:gap-4 flex-wrap justify-evenly md:justify-start items-center">
         {items.map((section) => {
           return (
-            <div className="hover:opacity-80 border rounded-lg w-1/3 m-2 md:m-0  md:w-1/5">
+            <div
+              key={section.title}
+              className="hover:opacity-80 border rounded-lg w-1/3 m-2 md:m-0  md:w-1/5"
+            >
               <Link href={section.link}>
                 <a className="">
                   <img

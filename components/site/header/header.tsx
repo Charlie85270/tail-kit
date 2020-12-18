@@ -106,7 +106,7 @@ const Header = ({ hideGithub }) => {
           </div>
           {!hideGithub && (
             <a href="https://github.com/Charlie85270/fastUI" className="">
-              <i className="fab fa-github mr-2 w-10 h-10 text-gray-500" />
+              <i className="fab fa-github mr-2 w-10 h-10 text-gray-400 hover:text-gray-200" />
             </a>
           )}
 

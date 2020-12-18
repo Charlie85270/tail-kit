@@ -3,10 +3,11 @@ import React from "react";
 interface Props {
   withBorder?: boolean;
   withInfo?: boolean;
+  img?: string;
   size?: "small" | "normal" | "big" | "monster";
   type?: "square" | "rounded" | "full";
 }
-const Avatar = ({ withBorder, size, withInfo, type }: Props) => {
+const Avatar = ({ withBorder, size, withInfo, type, img }: Props) => {
   let sizeClasses = "h-16 w-16";
   if (size && size !== "normal") {
     sizeClasses = size === "small" ? "h-10 w-10" : "h-20 w-20";
@@ -23,9 +24,9 @@ const Avatar = ({ withBorder, size, withInfo, type }: Props) => {
     <a href="#" className="block relative">
       <img
         alt="profil"
-        src="/images/person/1.jpg"
+        src={img || "/images/person/1.jpg"}
         className={`mx-auto ${roundedClasses} ${sizeClasses} ${
-          withBorder ? " border-2 border-white" : ""
+          withBorder ? " border-2 border-white dark:border-gray-800" : ""
         }`}
       />
       {withInfo && (

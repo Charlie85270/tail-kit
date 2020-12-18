@@ -4,7 +4,7 @@ import ComponentLayout from "../../../components/layout/ComponentLayout";
 import SectionHeader from "../../../components/site/header/SectionHeader";
 import Button from "../../../components/kit/components/elements/buttons/Button";
 import LargeDdm from "../../../components/kit/components/elements/ddm/LargeDdm";
-import Ddm from "../../../components/kit/components/elements/ddm/ddm";
+import Ddm from "../../../components/kit/components/elements/ddm/Ddm";
 
 const DdmPages: FC = () => {
   const ddmItems = [

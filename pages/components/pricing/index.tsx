@@ -5,6 +5,7 @@ import SectionHeader from "../../../components/site/header/SectionHeader";
 import PricingCard from "../../../components/kit/components/commerce/pricing/PricingCard";
 import PricingCard2 from "../../../components/kit/components/commerce/pricing/PricingCard2";
 import PricingCard3 from "../../../components/kit/components/commerce/pricing/PricingCard3";
+import PricingCard4 from "../../../components/kit/components/commerce/pricing/PricingCard4";
 
 const ComponentsPage: FC = () => {
   return (
@@ -28,6 +29,12 @@ const ComponentsPage: FC = () => {
         title="Pricing card 3"
         element={<PricingCard3 />}
         component={PricingCard3}
+      />
+      <ComponentLayout
+        showSwitchMode={true}
+        title="Pricing card 4"
+        element={<PricingCard4 />}
+        component={PricingCard4}
       />
     </AppLayout>
   );

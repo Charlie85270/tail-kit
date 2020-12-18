@@ -1,22 +1,21 @@
 import { FC } from "react";
-import SimplePhotoDescCard from "../components/kit/components/cards/SimplePhotoDescCard";
-import TagsCard from "../components/kit/components/cards/TagsCard";
-import DeleteConfirmation from "../components/kit/components/confirmations/DeleteConfirmation";
-import SimpleIconDescCard from "../components/kit/components/cards/SimpleIconDescCard";
-import CustomSelect from "../components/kit/components/form/select/CustomSelect";
-import SimpleNotificationCard from "../components/kit/components/cards/SimpleNotificationCard";
-import InfoNumberCard from "../components/kit/components/cards/InfoNumberCard";
+
 import TextButton from "../components/kit/components/elements/buttons/Button";
 import HomeLayout from "../components/layout/HomeLayout";
 import Link from "next/link";
-import CoverAndButtonsProfilCard from "../components/kit/components/profile/CoverAndButtonsProfilCard";
-import SimpleProfilCard from "../components/kit/components/profile/SimpleProfilVerti";
+import CoverAndButtonsProfilCard from "../components/kit/components/pagesection/profile/CoverAndButtonsProfilCard";
+import SimpleProfilCard from "../components/kit/components/pagesection/profile/SimpleProfil";
 import Button from "../components/kit/components/elements/buttons/Button";
-import ShoppingDetailsCard from "../components/kit/components/commerce/shopping/ShoppingDetailsCard";
 import MultipleShoppingCard from "../components/kit/components/commerce/shopping/MultipleShoppingCard";
 import PricingCard from "../components/kit/components/commerce/pricing/PricingCard";
-import ShoppingColorChoice from "../components/kit/components/commerce/shopping/ShoppingColorChoice";
 import ClassicShoppingCard from "../components/kit/components/commerce/shopping/ClassicShoppingCard";
+import DeleteConfirmation from "../components/kit/components/elements/alert/ConfirmationCard";
+import TagsCard from "../components/kit/components/cards/TagsCard";
+import SimplePhotoDescCard from "../components/kit/components/elements/data/SimplePhotoDescCard";
+import SimpleNotificationCard from "../components/kit/components/elements/data/SimpleNotificationCard";
+import SimpleIconDescCard from "../components/kit/components/elements/data/SimpleIconDescCard";
+import CustomSelect from "../components/kit/components/form/select/CustomSelect";
+import InfoNumberCard from "../components/kit/components/elements/data/InfoNumberCard";
 
 const IndexPage: FC = () => {
   return (

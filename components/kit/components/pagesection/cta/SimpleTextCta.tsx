@@ -64,7 +64,7 @@ const SimpleTextCta = (props: Props) => {
       {props.image && (
         <img
           src={props.image}
-          className="absolute h-full max-w-1/2 hidden lg:block right-0 top-0"
+          className="absolute h-full max-w-1/2 hidden lg:block right-0 top-0 transform rotate-12"
         />
       )}
     </div>
