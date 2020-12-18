@@ -8,6 +8,7 @@ import BigTestimonial from "../../../components/kit/components/pagesection/testi
 import MultipleTestimonial from "../../../components/kit/components/pagesection/testimonial/MultipleTestimonial";
 import BigTestimonialFlex from "../../../components/kit/components/pagesection/testimonial/BigTestimonialFlex";
 import HeadTestimonial from "../../../components/kit/components/pagesection/testimonial/HeadTestimonial";
+import SimpleReview from "../../../components/kit/components/pagesection/testimonial/SimpleReview";
 
 const ComponentsPage: FC = () => {
   return (
@@ -47,6 +48,12 @@ const ComponentsPage: FC = () => {
         vertical={true}
         element={<MultipleTestimonial />}
         component={MultipleTestimonial}
+      />
+      <ComponentLayout
+        showSwitchMode={true}
+        title="Review"
+        element={<SimpleReview />}
+        component={SimpleReview}
       />
     </AppLayout>
   );

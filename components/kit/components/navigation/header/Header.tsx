@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import FormSubscribe from "../../form/layout/FormSubscribe";
-import Ddm, { DDMItem } from "../../elements/ddm/ddm";
+import Ddm, { DDMItem } from "../../elements/ddm/Ddm";
 
 interface Props {
   forceMenuOpenInMobile?: boolean;
