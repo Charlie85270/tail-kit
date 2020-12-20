@@ -10,6 +10,7 @@ import SimpleTextCta from "../../../components/kit/components/pagesection/cta/Si
 import SimpleAlert from "../../../components/kit/components/elements/alert/SimpleAlert";
 import ClosableLongAlert from "../../../components/kit/components/elements/alert/ClosableLongAlert";
 import CookieAlert from "../../../components/kit/components/elements/alert/CookieAlert";
+import CookieAlert2 from "../../../components/kit/components/elements/alert/CookieAlert2";
 
 const AlertPage = () => {
   const title = "Become millionaire ?";
@@ -61,6 +62,13 @@ const AlertPage = () => {
           <ClosableLongAlert text="Something not ideal might be happening." />
         }
         component={ClosableLongAlert}
+      />
+      <ComponentLayout
+        vertical={false}
+        title="Cookie alert 2"
+        showSwitchMode={true}
+        element={<CookieAlert2 />}
+        component={CookieAlert2}
       />
       <ComponentLayout
         vertical={true}

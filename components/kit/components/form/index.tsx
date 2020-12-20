@@ -23,7 +23,7 @@ const Forms: FC = () => {
     },
     {
       title: "Layout",
-      items: 9,
+      items: 10,
       img: "images/sections/form.svg",
       link: "/components/form",
     },

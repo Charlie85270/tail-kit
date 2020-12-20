@@ -26,6 +26,12 @@ const menuEntry = [
     desc: "Header, footer...",
     link: "/components#navigation",
   },
+  {
+    title: "Sections",
+    icon: "fas fa-location-arrow",
+    desc: "Faq, profile, team ...",
+    link: "/components#pagesection",
+  },
 ];
 
 const Header = ({ hideGithub }) => {

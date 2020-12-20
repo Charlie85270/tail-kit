@@ -10,6 +10,8 @@ import SimplePhotoDescCard from "../../../components/kit/components/elements/dat
 import BandeauNumber from "../../../components/kit/components/elements/data/BandeauNumber";
 import TimerEvent from "../../../components/kit/components/elements/data/TimerEvent";
 import CovidInfo from "../../../components/kit/components/elements/data/CovidInfo";
+import InfoNumberCard2 from "../../../components/kit/components/elements/data/InfoNumberCard2";
+import BandeauInfo from "../../../components/kit/components/elements/data/BandeauInfo";
 
 const DataPage = () => {
   return (
@@ -20,6 +22,18 @@ const DataPage = () => {
         title="Sales card"
         element={<InfoNumberCard />}
         component={InfoNumberCard}
+      />
+      <ComponentLayout
+        vertical={false}
+        title="Number card"
+        element={<InfoNumberCard2 />}
+        component={InfoNumberCard2}
+      />
+      <ComponentLayout
+        showSwitchMode={true}
+        title="Covid data"
+        element={<CovidInfo />}
+        component={CovidInfo}
       />
       <ComponentLayout
         vertical={false}
@@ -53,17 +67,18 @@ const DataPage = () => {
         component={BandeauNumber}
       />
       <ComponentLayout
+        vertical={true}
+        title="Bandeau Info"
+        showSwitchMode={true}
+        element={<BandeauInfo />}
+        component={BandeauInfo}
+      />
+      <ComponentLayout
         showSwitchMode={true}
         vertical={true}
         title="Timer event"
         element={<TimerEvent />}
         component={TimerEvent}
-      />
-      <ComponentLayout
-        showSwitchMode={true}
-        title="Covid data"
-        element={<CovidInfo />}
-        component={CovidInfo}
       />
     </AppLayout>
   );

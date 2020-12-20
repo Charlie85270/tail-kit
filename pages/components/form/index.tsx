@@ -9,6 +9,7 @@ import ContactForm from "../../../components/kit/components/form/layout/ContactF
 import LoginWithBackground from "../../../components/kit/components/form/layout/LoginWithBackground";
 import UserInfoForm from "../../../components/kit/components/form/layout/UserInfoForm";
 import DesignLogin from "../../../components/kit/components/form/layout/DesignLogin";
+import SearchForm from "../../../components/kit/components/form/layout/SearchForm";
 
 const TogglePage: FC = () => {
   return (
@@ -66,6 +67,12 @@ const TogglePage: FC = () => {
         title="User information form"
         element={<UserInfoForm />}
         component={UserInfoForm}
+      />
+      <ComponentLayout
+        vertical={true}
+        title="Search form"
+        element={<SearchForm />}
+        component={SearchForm}
       />
     </AppLayout>
   );

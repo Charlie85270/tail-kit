@@ -6,6 +6,9 @@ import PricingCard from "../../../components/kit/components/commerce/pricing/Pri
 import PricingCard2 from "../../../components/kit/components/commerce/pricing/PricingCard2";
 import PricingCard3 from "../../../components/kit/components/commerce/pricing/PricingCard3";
 import PricingCard4 from "../../../components/kit/components/commerce/pricing/PricingCard4";
+import PricingCard5 from "../../../components/kit/components/commerce/pricing/PricingCard5";
+import PricingCard6 from "../../../components/kit/components/commerce/pricing/PricingCard6";
+import PricingCard7 from "../../../components/kit/components/commerce/pricing/PricingCard7";
 
 const ComponentsPage: FC = () => {
   return (
@@ -35,6 +38,18 @@ const ComponentsPage: FC = () => {
         title="Pricing card 4"
         element={<PricingCard4 />}
         component={PricingCard4}
+      />
+      <ComponentLayout
+        showSwitchMode={true}
+        title="Pricing card 5"
+        element={<PricingCard5 />}
+        component={PricingCard5}
+      />
+      <ComponentLayout
+        showSwitchMode={true}
+        title="Pricing card 6"
+        element={<PricingCard6 />}
+        component={PricingCard6}
       />
     </AppLayout>
   );

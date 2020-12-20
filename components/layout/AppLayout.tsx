@@ -38,6 +38,10 @@ const menuEntry = [
     label: "Navigation",
     link: "/components#navigation",
   },
+  {
+    label: "Sections",
+    link: "/components#pagesection",
+  },
 ];
 
 const AppLayout: FC = ({ children }) => {

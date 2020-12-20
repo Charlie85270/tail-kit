@@ -4,6 +4,7 @@ import ComponentLayout from "../../../components/layout/ComponentLayout";
 import SectionHeader from "../../../components/site/header/SectionHeader";
 import SimpleTextCta from "../../../components/kit/components/pagesection/cta/SimpleTextCta";
 import SubscribeCta from "../../../components/kit/components/pagesection/cta/SubscribeCta";
+import NotifyMeCta from "../../../components/kit/components/pagesection/cta/NotifyMeCta";
 
 const ComponentsPage: FC = () => {
   const title = "Want to be millionaire ?";
@@ -104,6 +105,13 @@ const ComponentsPage: FC = () => {
         title="with sub and image"
         element={<SubscribeCta />}
         component={SubscribeCta}
+      />
+      <ComponentLayout
+        vertical={true}
+        showSwitchMode={true}
+        title="Notify cta"
+        element={<NotifyMeCta />}
+        component={NotifyMeCta}
       />
     </AppLayout>
   );

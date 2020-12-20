@@ -17,7 +17,7 @@ const Elements: FC = () => {
     },
     {
       title: "Avatar",
-      items: 10,
+      items: 11,
       img: "images/sections/avatar.svg",
       link: "/components/avatar",
     },
@@ -29,13 +29,13 @@ const Elements: FC = () => {
     },
     {
       title: "Alert",
-      items: 10,
+      items: 11,
       img: "images/sections/banner.svg",
       link: "/components/alert",
     },
     {
       title: "Data display",
-      items: 8,
+      items: 10,
       img: "images/sections/data.svg",
       link: "/components/data",
     },

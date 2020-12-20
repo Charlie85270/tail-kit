@@ -5,7 +5,7 @@ const Commerce: FC = () => {
   const commerceSections = [
     {
       title: "Pricing card",
-      items: 4,
+      items: 6,
       img: "images/sections/pricing.svg",
       link: "/components/pricing",
     },

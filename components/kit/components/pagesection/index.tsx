@@ -23,9 +23,15 @@ const Pagesection: FC = () => {
     },
     {
       title: "Team",
-      items: 5,
+      items: 6,
       img: "images/sections/team.svg",
       link: "/components/team",
+    },
+    {
+      title: "Faq",
+      items: 6,
+      img: "images/sections/faq.svg",
+      link: "/components/faq",
     },
   ];
 

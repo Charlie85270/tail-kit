@@ -7,6 +7,7 @@ import SimpleTeams from "../../../components/kit/components/pagesection/team/Sim
 import ShadowTeam from "../../../components/kit/components/pagesection/team/ShadowTeam";
 import ShadowTeams from "../../../components/kit/components/pagesection/team/ShadowTeams";
 import AllTeam from "../../../components/kit/components/pagesection/team/AllTeam";
+import DoubleTeam from "../../../components/kit/components/pagesection/team/DoubleTeam";
 
 const TeamPage: FC = () => {
   return (
@@ -56,6 +57,11 @@ const TeamPage: FC = () => {
         title="Big team"
         element={<AllTeam />}
         component={AllTeam}
+      />
+      <ComponentLayout
+        title="Double team"
+        element={<DoubleTeam />}
+        component={DoubleTeam}
       />
     </AppLayout>
   );
