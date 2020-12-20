@@ -20,7 +20,7 @@ const PricingCard5: FC = () => {
               stroke="currentColor"
               stroke-linecap="round"
               stroke-linejoin="round"
-              stroke-width="2"
+              strokeWidth="2"
               viewBox="0 0 24 24"
               className="w-8 h-8 text-indigo-800 dark:text-white font-bold"
             >
@@ -34,7 +34,7 @@ const PricingCard5: FC = () => {
               stroke="currentColor"
               stroke-linecap="round"
               stroke-linejoin="round"
-              stroke-width="2"
+              strokeWidth="2"
               viewBox="0 0 24 24"
               className="w-8 h-8 text-indigo-800 dark:text-white font-bold"
             >
@@ -48,7 +48,7 @@ const PricingCard5: FC = () => {
               stroke="currentColor"
               stroke-linecap="round"
               stroke-linejoin="round"
-              stroke-width="2"
+              strokeWidth="2"
               viewBox="0 0 24 24"
               className="w-8 h-8 text-indigo-800 dark:text-white font-bold"
             >
@@ -62,7 +62,7 @@ const PricingCard5: FC = () => {
               stroke="currentColor"
               stroke-linecap="round"
               stroke-linejoin="round"
-              stroke-width="2"
+              strokeWidth="2"
               viewBox="0 0 24 24"
               className="w-8 h-8 font-bold dark:text-white text-indigo-800"
             >

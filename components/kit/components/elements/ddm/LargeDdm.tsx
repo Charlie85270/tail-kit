@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { DDMItem } from "./Ddm";
 
 interface Props {
   forceOpen?: boolean;
@@ -8,7 +7,12 @@ interface Props {
   items: DDMItem[];
   withBackground?: boolean;
 }
-
+interface DDMItem {
+  icon?: string;
+  label: string;
+  desc?: string;
+  link?: string;
+}
 const LargeDdm = (props: Props) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
