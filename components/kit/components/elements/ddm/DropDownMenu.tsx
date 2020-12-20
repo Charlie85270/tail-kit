@@ -16,7 +16,7 @@ export interface DDMItem {
   link?: string;
 }
 
-const Ddm = (props: Props) => {
+const DropDownMenu = (props: Props) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="relative inline-block text-left">
@@ -80,4 +80,4 @@ const Ddm = (props: Props) => {
     </div>
   );
 };
-export default Ddm;
+export default DropDownMenu;

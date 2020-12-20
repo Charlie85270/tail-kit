@@ -3,8 +3,8 @@ import AppLayout from "../../../components/layout/AppLayout";
 import ComponentLayout from "../../../components/layout/ComponentLayout";
 import SectionHeader from "../../../components/site/header/SectionHeader";
 import Button from "../../../components/kit/components/elements/buttons/Button";
-import LargeDdm from "../../../components/kit/components/elements/ddm/LargeDdm";
-import Ddm from "../../../components/kit/components/elements/ddm/Ddm";
+import LargeDdm from "../../../components/kit/components/elements/ddm/LargeDropDownMenu";
+import Ddm from "../../../components/kit/components/elements/ddm/DropDownMenu";
 
 const DdmPages: FC = () => {
   const ddmItems = [
