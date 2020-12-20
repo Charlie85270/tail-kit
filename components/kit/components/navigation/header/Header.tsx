@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import FormSubscribe from "../../form/layout/FormSubscribe";
-import Ddm, { DDMItem } from "../../elements/ddm/Ddm";
+import Ddm from "../../elements/ddm/Ddm";
 
 interface Props {
   forceMenuOpenInMobile?: boolean;
@@ -17,6 +17,12 @@ interface HeaderLink {
   label: string;
   link?: string;
   isSelected?: boolean;
+}
+interface DDMItem {
+  icon?: string;
+  label: string;
+  desc?: string;
+  link?: string;
 }
 
 const Header = (props: Props) => {
