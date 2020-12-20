@@ -32,7 +32,11 @@ const SignIn = (props: Props) => {
             <InputText icon="far fa-envelope" placeholder="Your email" />
           </div>
           <div className="flex flex-col mb-6">
-            <InputText icon="fas fa-unlock-alt" placeholder="Your password" />
+            <InputText
+              icon="fas fa-unlock-alt"
+              type="password"
+              placeholder="Your password"
+            />
           </div>
 
           <div className="flex items-center mb-6 -mt-4">

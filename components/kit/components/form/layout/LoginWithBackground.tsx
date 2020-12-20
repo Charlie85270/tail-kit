@@ -16,7 +16,7 @@ const LoginWithBackground = () => {
                 <InputText placeholder="email" />
               </div>
               <div className="mb-2">
-                <InputText placeholder="password" />
+                <InputText placeholder="password" type="password" />
               </div>
 
               <div className="mt-4 items-center flex justify-between">

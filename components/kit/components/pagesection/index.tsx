@@ -33,6 +33,12 @@ const Pagesection: FC = () => {
       img: "images/sections/faq.svg",
       link: "/components/faq",
     },
+    {
+      title: "Feature",
+      items: 6,
+      img: "images/sections/feature.svg",
+      link: "/components/feature",
+    },
   ];
 
   return (

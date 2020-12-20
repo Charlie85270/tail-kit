@@ -51,6 +51,13 @@ const ComponentsPage: FC = () => {
         element={<PricingCard6 />}
         component={PricingCard6}
       />
+      <ComponentLayout
+        showSwitchMode={true}
+        vertical={true}
+        title="Pricing card 7"
+        element={<PricingCard7 />}
+        component={PricingCard7}
+      />
     </AppLayout>
   );
 };

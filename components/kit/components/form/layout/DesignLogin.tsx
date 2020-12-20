@@ -25,6 +25,7 @@ const DesignLogin = () => {
 
             <div className="flex flex-col pt-4 mb-12">
               <InputText
+                type="password"
                 square={true}
                 icon="fas fa-unlock-alt"
                 placeholder="Password"
