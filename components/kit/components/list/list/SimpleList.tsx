@@ -4,6 +4,7 @@ import Avatar from "../../elements/avatars/Avatar";
 interface Props {
   withAction?: boolean;
   withEffect?: boolean;
+  withHeader?: boolean;
 }
 
 const SimpleList = (props: Props) => {
@@ -35,7 +36,17 @@ const SimpleList = (props: Props) => {
   ];
 
   return (
-    <div className="container flex mx-auto w-full items-center justify-center bg-white dark:bg-gray-800 rounded-lg shadow">
+    <div className="container flex flex-col mx-auto w-full items-center justify-center bg-white dark:bg-gray-800 rounded-lg shadow">
+      {props.withHeader && (
+        <div className="px-4 py-5 sm:px-6 border-b w-full">
+          <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-white">
+            User database
+          </h3>
+          <p className="mt-1 max-w-2xl text-sm text-gray-500 dark:text-gray-200">
+            Details and informations about user.
+          </p>
+        </div>
+      )}
       <ul className="flex flex-col divide divide-y">
         {lists.map((el) => {
           return (

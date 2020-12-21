@@ -5,6 +5,7 @@ interface Props {
   withDesc?: boolean;
   withEffect?: boolean;
   withAction?: boolean;
+  withHeader?: boolean;
 }
 
 const BlockList = (props: Props) => {
@@ -32,7 +33,17 @@ const BlockList = (props: Props) => {
   ];
 
   return (
-    <div className="container flex mx-auto w-full items-center justify-center">
+    <div className="container flex flex-col mx-auto w-full items-center justify-center">
+      {props.withHeader && (
+        <div className="px-4 py-5 sm:px-6 w-full border dark:bg-gray-800 bg-white shadow mb-2 rounded-md">
+          <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-white">
+            User database
+          </h3>
+          <p className="mt-1 max-w-2xl text-sm text-gray-500 dark:text-gray-200">
+            Details and informations about user.
+          </p>
+        </div>
+      )}
       <ul className="flex flex-col">
         {lists.map((el) => {
           return (
@@ -41,7 +52,7 @@ const BlockList = (props: Props) => {
                 className={`${
                   props.withEffect
                     ? "transition duration-500 shadow ease-in-out transform hover:-translate-y-1 hover:shadow-lg "
-                    : "shadow border"
+                    : "shadow border "
                 }select-none cursor-pointer bg-white dark:bg-gray-800 rounded-md flex flex-1 items-center p-4`}
               >
                 <div className="flex flex-col w-10 h-10 justify-center items-center mr-4">

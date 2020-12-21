@@ -24,6 +24,12 @@ const ListPages: FC = () => {
       />
       <ComponentLayout
         showSwitchMode={true}
+        title="With header"
+        element={<SimpleList withAction={true} withHeader={true} />}
+        component={SimpleList}
+      />
+      <ComponentLayout
+        showSwitchMode={true}
         title="Bloc list"
         element={<BlockList />}
         component={BlockList}
@@ -42,9 +48,22 @@ const ListPages: FC = () => {
       />
       <ComponentLayout
         showSwitchMode={true}
+        title="With header"
+        element={
+          <BlockList withDesc={true} withAction={true} withHeader={true} />
+        }
+        component={BlockList}
+      />
+      <ComponentLayout
+        showSwitchMode={true}
         title="With hover effect"
         element={
-          <BlockList withDesc={true} withEffect={true} withAction={true} />
+          <BlockList
+            withDesc={true}
+            withEffect={true}
+            withAction={true}
+            withHeader={true}
+          />
         }
         component={BlockList}
       />
