@@ -32,8 +32,9 @@ const IndexPage: FC = () => {
             </span>
           </h1>
           <p className="mt-3  text-gray-500 sm:mt-5 text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-            Fast UI gives you access to over 200 CSS components based on
-            Tailwind css 2.0 and fontawesome. FastUI is free and open source.
+            Fast UI gives you access to over 150 CSS components,accessible and
+            responsive, based on Tailwind css 2.0 and fontawesome. All it's free
+            and open source.
           </p>
           <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start w-full">
             <div className="rounded-md shadow">

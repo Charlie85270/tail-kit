@@ -3,7 +3,7 @@ import Button from "../../elements/buttons/Button";
 
 const PricingCard8: FC = () => {
   return (
-    <div className="w-72 mx-auto bg-white border-t-4 rounded border-indigo-500 shadow text-center p-4">
+    <div className="w-72 mx-auto bg-white border-t-4 rounded border-indigo-500 dark:bg-gray-800 shadow text-center p-4">
       <div className="overflow-hidden">
         <div className="text-2xl font-medium mb-8 text-gray-800 dark:text-white">
           Basic
@@ -13,7 +13,7 @@ const PricingCard8: FC = () => {
           <div>Free support</div>
         </div>
         <div className="font-bold text-2xl mb-2 text-gray-500 dark:text-gray-200">
-          <span>249 DKK</span>
+          <span>249 $</span>
         </div>
         <div className="text-gray-500 dark:text-gray-200 text-sm">/ month</div>
         <div className="px-4 mt-8">

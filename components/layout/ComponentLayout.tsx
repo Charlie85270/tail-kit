@@ -4,6 +4,7 @@ import EDITOR_THEME from "../../editorTheme";
 import ReactDOMServer from "react-dom/server";
 import { formatHtml } from "../../utils/Utils";
 import Toggle from "../kit/components/form/toggle/Toggle";
+import Link from "next/link";
 
 interface Props {
   element: JSX.Element;
@@ -71,13 +72,12 @@ const ComponentLayout = (props: Props) => {
             </a>
           )}
           {props.needConfiguration && (
-            <a
-              className="text-black border border-gray-800 bg-yellow-300 hover:bg-yellow-400 rounded-lg p-2"
-              href="/configuration"
-            >
-              <i className="fas fa-exclamation-circle mr-2"></i>Need
-              configuration
-            </a>
+            <Link href="/started#configuration">
+              <a className="text-black border border-gray-800 bg-yellow-300 hover:bg-yellow-400 rounded-lg p-2">
+                <i className="fas fa-exclamation-circle mr-2"></i>Need
+                configuration
+              </a>
+            </Link>
           )}
           <div className="w-32">
             <button
