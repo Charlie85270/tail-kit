@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import FormSubscribe from "../../form/layout/FormSubscribe";
 import Ddm from "../../elements/ddm/DropDownMenu";
+import Link from "next/link";
 
 interface Props {
   forceMenuOpenInMobile?: boolean;
@@ -10,6 +11,7 @@ interface Props {
   withShadow?: boolean;
   hideGitHubLink?: boolean;
   alignRight?: boolean;
+  hideHelp?: boolean;
   withSearchBar?: boolean;
   isFat?: boolean;
 }
@@ -78,10 +80,17 @@ const Header = (props: Props) => {
                 </div>
               )}
               <div className="ml-4 flex items-center md:ml-6">
+                {!props.hideHelp && (
+                  <Link href="/started">
+                    <a className="">
+                      <i className="fas fa-cogs mr-2 w-8 h-8 text-gray-400 hover:text-gray-200" />
+                    </a>
+                  </Link>
+                )}
                 {!props.hideGitHubLink && (
                   <a
                     href="https://github.com/Charlie85270/fastUI"
-                    className="p-1 rounded-full text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                    className="p-1 rounded-full text-gray-400 focus:outline-none hover:text-gray-200 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                   >
                     <span className="sr-only">View github</span>
                     <i className="fab fa-github h-8 w-8" />

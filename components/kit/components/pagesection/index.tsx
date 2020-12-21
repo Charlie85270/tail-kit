@@ -29,13 +29,13 @@ const Pagesection: FC = () => {
     },
     {
       title: "Faq",
-      items: 6,
+      items: 2,
       img: "images/sections/faq.svg",
       link: "/components/faq",
     },
     {
       title: "Feature",
-      items: 6,
+      items: 5,
       img: "images/sections/feature.svg",
       link: "/components/feature",
     },

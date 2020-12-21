@@ -12,6 +12,7 @@ import TimerEvent from "../../../components/kit/components/elements/data/TimerEv
 import CovidInfo from "../../../components/kit/components/elements/data/CovidInfo";
 import InfoNumberCard2 from "../../../components/kit/components/elements/data/InfoNumberCard2";
 import BandeauInfo from "../../../components/kit/components/elements/data/BandeauInfo";
+import TagsCard from "../../../components/kit/components/elements/data/TagsCard";
 
 const DataPage = () => {
   return (
@@ -25,7 +26,7 @@ const DataPage = () => {
       />
       <ComponentLayout
         vertical={false}
-        title="Number card"
+        title="Bitcoin card"
         element={<InfoNumberCard2 />}
         component={InfoNumberCard2}
       />
@@ -40,6 +41,12 @@ const DataPage = () => {
         title="Information card"
         element={<InformationIconCard />}
         component={InformationIconCard}
+      />
+      <ComponentLayout
+        vertical={false}
+        title="Tags card"
+        element={<TagsCard />}
+        component={TagsCard}
       />
       <ComponentLayout
         vertical={false}

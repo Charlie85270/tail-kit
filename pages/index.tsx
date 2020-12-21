@@ -10,12 +10,12 @@ import MultipleShoppingCard from "../components/kit/components/commerce/shopping
 import PricingCard from "../components/kit/components/commerce/pricing/PricingCard";
 import ClassicShoppingCard from "../components/kit/components/commerce/shopping/ClassicShoppingCard";
 import DeleteConfirmation from "../components/kit/components/elements/alert/ConfirmationCard";
-import TagsCard from "../components/kit/components/cards/TagsCard";
 import SimplePhotoDescCard from "../components/kit/components/elements/data/SimplePhotoDescCard";
 import SimpleNotificationCard from "../components/kit/components/elements/data/SimpleNotificationCard";
 import SimpleIconDescCard from "../components/kit/components/elements/data/SimpleIconDescCard";
 import CustomSelect from "../components/kit/components/form/select/CustomSelect";
 import InfoNumberCard from "../components/kit/components/elements/data/InfoNumberCard";
+import TagsCard from "../components/kit/components/elements/data/TagsCard";
 
 const IndexPage: FC = () => {
   return (
@@ -32,13 +32,12 @@ const IndexPage: FC = () => {
             </span>
           </h1>
           <p className="mt-3  text-gray-500 sm:mt-5 text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-            Fast UI gives you access to over 100 CSS components based on
-            Tailwind css 2.0. FastUI is free and open source, by the community,
-            for the community.
+            Fast UI gives you access to over 200 CSS components based on
+            Tailwind css 2.0 and fontawesome. FastUI is free and open source.
           </p>
           <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start w-full">
             <div className="rounded-md shadow">
-              <Link href="/components">
+              <Link href="/started">
                 <a className="w-full flex items-center justify-center px-8 py-3  text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 px-4 py-2">
                   Get started
                 </a>

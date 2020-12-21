@@ -8,7 +8,7 @@ const LoginWithBackground = () => {
       <div className="container mx-auto h-full flex flex-1 justify-center items-center">
         <div className="w-full max-w-lg">
           <div className="leading-loose">
-            <form className="max-w-sm m-4 p-10 bg-white bg-opacity-25 rounded shadow-xl">
+            <form className="max-w-sm m-auto p-10 bg-white bg-opacity-25 rounded shadow-xl">
               <p className="text-white mb-8 font-light text-center text-2xl">
                 Login
               </p>

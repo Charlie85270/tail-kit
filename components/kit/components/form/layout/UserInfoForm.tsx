@@ -11,7 +11,7 @@ const UserInfoForm = () => {
           <div className="max-w-sm mx-auto md:w-full md:mx-0">
             <div className="inline-flex items-center space-x-4">
               <Avatar />
-              <h1 className="text-gray-600">Charlie Vérole</h1>
+              <h1 className="text-gray-600">Charlie</h1>
             </div>
           </div>
         </div>

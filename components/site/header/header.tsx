@@ -34,7 +34,7 @@ const menuEntry = [
   },
 ];
 
-const Header = ({ hideGithub }) => {
+const Header = ({ hideGithub, hideHelp }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSectionOpen, setIsSectionOpen] = useState(false);
   return (
@@ -110,6 +110,13 @@ const Header = ({ hideGithub }) => {
               </div>
             </nav>
           </div>
+          {!hideHelp && (
+            <Link href="/components">
+              <a className="">
+                <i className="fas fa-question-circle mr-2 w-10 h-10 text-gray-400 hover:text-gray-200" />
+              </a>
+            </Link>
+          )}
           {!hideGithub && (
             <a href="https://github.com/Charlie85270/fastUI" className="">
               <i className="fab fa-github mr-2 w-10 h-10 text-gray-400 hover:text-gray-200" />

@@ -53,6 +53,19 @@ const InputTextPage: FC = () => {
         component={InputText}
       />
       <ComponentLayout
+        title="With indications"
+        element={
+          <InputText
+            label="Password"
+            withForceIndications={true}
+            required
+            name="passwor"
+            placeholder="Password"
+          />
+        }
+        component={InputText}
+      />
+      <ComponentLayout
         title="Disabled"
         element={
           <InputText

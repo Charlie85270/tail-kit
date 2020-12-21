@@ -4,6 +4,7 @@ import ComponentLayout from "../../../components/layout/ComponentLayout";
 import SectionHeader from "../../../components/site/header/SectionHeader";
 import Footer from "../../../components/kit/components/navigation/footer/Footer";
 import SimpleFooter from "../../../components/kit/components/navigation/footer/SimpleFooter";
+import FooterLight from "../../../components/kit/components/navigation/footer/FooterLight";
 
 const FooterPage: FC = () => {
   const links = [
@@ -45,7 +46,7 @@ const FooterPage: FC = () => {
       <ComponentLayout
         vertical={true}
         showSwitchMode={true}
-        title="Light"
+        title="Simple"
         element={<SimpleFooter links={simpleLinks} withSocial={false} />}
         component={Footer}
       />
@@ -119,6 +120,7 @@ const FooterPage: FC = () => {
       <ComponentLayout
         vertical={true}
         title="Multiple full"
+        showSwitchMode={true}
         element={
           <Footer
             links={links}
@@ -128,6 +130,13 @@ const FooterPage: FC = () => {
             showSubLinks={true}
           />
         }
+        component={Footer}
+      />
+      <ComponentLayout
+        vertical={true}
+        showSwitchMode={true}
+        title="Light"
+        element={<FooterLight links={links} />}
         component={Footer}
       />
     </AppLayout>

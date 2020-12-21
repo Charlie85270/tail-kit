@@ -48,7 +48,7 @@ const TeamPage: FC = () => {
       />
       <ComponentLayout
         showSwitchMode={true}
-        title="With background"
+        title="Multiple"
         element={<ShadowTeams />}
         component={ShadowTeams}
       />

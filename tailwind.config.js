@@ -1,5 +1,6 @@
 module.exports = {
   important: true,
+  // Active dark mode on class basis
   darkMode: "class",
   purge: {
     content: ["./pages/**/*.tsx", "./components/**/*.tsx"],

@@ -14,11 +14,13 @@ const ShoppingPage: FC = () => {
   return (
     <AppLayout>
       <SectionHeader title="Shopping" />
+
       <ComponentLayout
-        title="Elegant"
+        title="Simple"
         element={<SimpleShoppingCard />}
         component={SimpleShoppingCard}
       />
+
       <ComponentLayout
         title="Colorful"
         element={<ShoppingColorChoice />}

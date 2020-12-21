@@ -85,9 +85,11 @@ const PricingCard7: FC = () => {
             </ul>
           </div>
         </div>
-        <div className="py-8 px-6 text-center bg-gray-50 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
-          <p className="text-lg leading-6 font-bold text-gray-900">Free</p>
-          <div className="mt-4 flex items-center justify-center text-5xl leading-none font-extrabold text-gray-900">
+        <div className="py-8 px-6 text-center bg-gray-50 dark:bg-gray-700 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
+          <p className="text-lg leading-6 font-bold text-gray-900 dark:text-white">
+            Free
+          </p>
+          <div className="mt-4 flex items-center justify-center text-5xl leading-none font-extrabold text-gray-900 dark:text-white">
             <span>$0/mo</span>
           </div>
           <p className="mt-4 text-sm leading-5">

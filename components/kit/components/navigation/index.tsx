@@ -11,7 +11,7 @@ const Navigation: FC = () => {
     },
     {
       title: "Footer",
-      items: 8,
+      items: 9,
       img: "images/sections/footer.svg",
       link: "/components/footer",
     },

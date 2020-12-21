@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 interface Props {
+  //boolean to always open ddm (for presentation)
   forceOpen?: boolean;
   label?: string;
   withDivider?: boolean;

@@ -23,7 +23,7 @@ const Elements: FC = () => {
     },
     {
       title: "Ddm",
-      items: 6,
+      items: 7,
       img: "images/sections/ddm.svg",
       link: "/components/ddm",
     },
@@ -38,6 +38,12 @@ const Elements: FC = () => {
       items: 10,
       img: "images/sections/data.svg",
       link: "/components/data",
+    },
+    {
+      title: "Progress bar",
+      items: 5,
+      img: "images/sections/progress.svg",
+      link: "/components/progress",
     },
   ];
 

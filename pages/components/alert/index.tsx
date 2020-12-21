@@ -9,8 +9,9 @@ import SimpleTeam from "../../../components/kit/components/pagesection/team/Simp
 import SimpleTextCta from "../../../components/kit/components/pagesection/cta/SimpleTextCta";
 import SimpleAlert from "../../../components/kit/components/elements/alert/SimpleAlert";
 import ClosableLongAlert from "../../../components/kit/components/elements/alert/ClosableLongAlert";
-import CookieAlert from "../../../components/kit/components/elements/alert/CookieAlert";
 import CookieAlert2 from "../../../components/kit/components/elements/alert/CookieAlert2";
+import BandeauAlert from "../../../components/kit/components/elements/alert/BandeauAlert";
+import BandeauLineAlert from "../../../components/kit/components/elements/alert/BandeauLineAlert";
 
 const AlertPage = () => {
   const title = "Become millionaire ?";
@@ -63,19 +64,39 @@ const AlertPage = () => {
         }
         component={ClosableLongAlert}
       />
+
+      <ComponentLayout
+        vertical={true}
+        title="Cookie alert"
+        showSwitchMode={true}
+        element={
+          <BandeauAlert
+            title="We use cookie ! Something not ideal might be happening."
+            shortTitle="This site use cookie!"
+            link="#"
+            linkLabel="Learn more"
+            closeAction={() => null}
+          />
+        }
+        component={BandeauAlert}
+      />
+      <ComponentLayout
+        vertical={true}
+        title="Line alert"
+        element={
+          <BandeauLineAlert
+            title="We use cookie ! Something not ideal might be happening."
+            closeAction={() => null}
+          />
+        }
+        component={BandeauLineAlert}
+      />
       <ComponentLayout
         vertical={false}
         title="Cookie alert 2"
         showSwitchMode={true}
         element={<CookieAlert2 />}
         component={CookieAlert2}
-      />
-      <ComponentLayout
-        vertical={true}
-        title="Cookie alert"
-        showSwitchMode={true}
-        element={<CookieAlert />}
-        component={CookieAlert}
       />
       <ComponentLayout
         showSwitchMode={true}

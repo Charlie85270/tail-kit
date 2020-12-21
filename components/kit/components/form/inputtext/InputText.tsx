@@ -11,6 +11,7 @@ interface Props {
   name?: string;
   disabled?: boolean;
   square?: boolean;
+  withForceIndications?: boolean;
 }
 
 const InputText = (props: Props) => {
@@ -52,6 +53,17 @@ const InputText = (props: Props) => {
         name={props.name}
         placeholder={props.placeholder}
       />
+      {props.withForceIndications && (
+        <>
+          <div className="w-full grid grid-cols-12 gap-4 h-1 mt-3">
+            <div className="col-span-3 h-full rounded bg-green-500"></div>
+            <div className="col-span-3 h-full rounded bg-green-500"></div>
+            <div className="col-span-3 h-full rounded bg-green-500"></div>
+            <div className="col-span-3 h-full rounded bg-gray-200 dark:bg-dark-1"></div>
+          </div>
+          <div className="text-green-500 mt-2">Valid password</div>
+        </>
+      )}
       {props.error && (
         <>
           <i className="fas fa-exclamation-circle absolute right-2 text-red-500 bottom-3"></i>

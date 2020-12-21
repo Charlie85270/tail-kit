@@ -5,6 +5,7 @@ import SectionHeader from "../../../components/site/header/SectionHeader";
 import Button from "../../../components/kit/components/elements/buttons/Button";
 import LargeDdm from "../../../components/kit/components/elements/ddm/LargeDropDownMenu";
 import Ddm from "../../../components/kit/components/elements/ddm/DropDownMenu";
+import DropDownMenuWithForm from "../../../components/kit/components/elements/ddm/DropDownMenuWithForm";
 
 const DdmPages: FC = () => {
   const ddmItems = [
@@ -128,6 +129,13 @@ const DdmPages: FC = () => {
           />
         }
         component={LargeDdm}
+      />
+      <ComponentLayout
+        containerClasses="pb-60"
+        title="Ddm with form"
+        jsLink="https://github.com/Charlie85270/fastUI"
+        element={<DropDownMenuWithForm label="By Name" forceOpen={true} />}
+        component={DropDownMenuWithForm}
       />
     </AppLayout>
   );

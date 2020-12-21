@@ -48,7 +48,7 @@ const ComponentsPage: FC = () => {
       />
       <ComponentLayout
         title="Button with information"
-        element={<ButtonWithIndications />}
+        element={<ButtonWithIndications label="Star" indication="654" />}
         component={ButtonWithIndications}
       />
       <ComponentLayout
