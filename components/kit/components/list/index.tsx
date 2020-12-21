@@ -11,7 +11,7 @@ const ListPage: FC = () => {
     },
     {
       title: "List",
-      items: 6,
+      items: 8,
       img: "images/sections/list.svg",
       link: "/components/list",
     },

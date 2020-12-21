@@ -4,6 +4,7 @@ import ComponentLayout from "../../../components/layout/ComponentLayout";
 import SectionHeader from "../../../components/site/header/SectionHeader";
 import BlockList from "../../../components/kit/components/list/list/BlockList";
 import SimpleList from "../../../components/kit/components/list/list/SimpleList";
+import DescriptionList from "../../../components/kit/components/list/list/DescriptionList";
 
 const ListPages: FC = () => {
   return (
@@ -46,6 +47,16 @@ const ListPages: FC = () => {
           <BlockList withDesc={true} withEffect={true} withAction={true} />
         }
         component={BlockList}
+      />
+      <ComponentLayout
+        title="Desc bloc list"
+        element={<DescriptionList />}
+        component={DescriptionList}
+      />
+      <ComponentLayout
+        title="With header"
+        element={<DescriptionList withHeader={true} />}
+        component={DescriptionList}
       />
     </AppLayout>
   );
