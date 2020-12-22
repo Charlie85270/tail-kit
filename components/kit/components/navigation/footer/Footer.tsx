@@ -89,8 +89,7 @@ const Footer = (props: Props) => {
           <div
             className={`text-center pt-10 sm:pt-12 font-light flex items-center justify-center`}
           >
-            Copyright © 2020 by Charlie Rabiller
-            <i className="fas ml-2 fa-heart text-red-500"></i>
+            Created by Charlie
           </div>
         )}
       </div>

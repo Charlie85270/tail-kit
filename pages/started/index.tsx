@@ -90,7 +90,7 @@ const StartedPage: FC = () => {
 
           <p className="pt-4 text-xl text-gray-700">
             <i className="fas fa-check mr-4 text-green-500" />
-            Once these libraries are installed, you can get started !
+            Once these libraries are installed, you can started !
             <Link href="/components">
               <a className="w-28 mb-4 w-44 px-4 py-2 ml-4 text-base font-medium rounded-md text-white bg-gray-700 hover:bg-black">
                 Let's go !

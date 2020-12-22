@@ -52,7 +52,7 @@ const ComplexTable = (props: Props) => {
   ];
 
   if (props.withAction) {
-    headers.push("Add");
+    headers.push("");
   }
   return (
     <div className="container mx-auto px-4 sm:px-8 max-w-3xl">
@@ -75,6 +75,7 @@ const ComplexTable = (props: Props) => {
                   {headers.map((header) => {
                     return (
                       <th
+                        scope="col"
                         key={header}
                         className="px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-left text-sm text-white uppercase font-normal"
                       >
@@ -85,7 +86,7 @@ const ComplexTable = (props: Props) => {
                 </tr>
               </thead>
               <tbody>
-                {rows.map((row, index) => {
+                {rows.map((row) => {
                   return (
                     <tr key={row.user.name}>
                       <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
@@ -121,9 +122,12 @@ const ComplexTable = (props: Props) => {
                       </td>
                       {props.withAction && (
                         <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                          <button>
-                            <i className="text-gray-500 hover:text-gray-800 fas fa-plus"></i>
-                          </button>
+                          <a
+                            href="#"
+                            className="text-indigo-600 hover:text-indigo-900"
+                          >
+                            Edit
+                          </a>
                         </td>
                       )}
                     </tr>

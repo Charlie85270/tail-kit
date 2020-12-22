@@ -91,7 +91,7 @@ const ComponentsPage: FC = () => {
           <SimpleTextCta
             isLeft={true}
             description={desc}
-            image="/images/car/1.jpg"
+            image="/images/object/1.png"
             isVertical={true}
             title={title}
             subtitle={subtitle}

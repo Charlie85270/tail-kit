@@ -10,7 +10,7 @@ interface Props {
 
 interface FooterLinks {
   label: string;
-  links?: string;
+  link?: string;
 }
 
 const SimpleFooter = (props: Props) => {
@@ -23,7 +23,7 @@ const SimpleFooter = (props: Props) => {
               <li className="my-2" key={link.label}>
                 <a
                   className={`text-gray-400 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors duration-200`}
-                  href={link.links || "#"}
+                  href={link.link || "#"}
                 >
                   {link.label}
                 </a>
@@ -80,8 +80,7 @@ const SimpleFooter = (props: Props) => {
           <div
             className={`text-center text-gray-500 dark:text-gray-200 pt-10 sm:pt-12 font-light flex items-center justify-center`}
           >
-            Copyright © 2020 by Charlie Rabiller
-            <i className="fas ml-2 fa-heart text-red-500"></i>
+            Created by Charlie
           </div>
         )}
       </div>

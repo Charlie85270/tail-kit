@@ -36,7 +36,7 @@ const Button = (props: Props) => {
           }`}
         />
       )}
-      {props.label && <span className="w-full">{props.label}</span>}
+      {props.label && props.label}
     </button>
   );
 };

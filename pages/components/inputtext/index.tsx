@@ -4,6 +4,7 @@ import ComponentLayout from "../../../components/layout/ComponentLayout";
 import SectionHeader from "../../../components/site/header/SectionHeader";
 import InputText from "../../../components/kit/components/form/inputtext/InputText";
 import InputArea from "../../../components/kit/components/form/inputtext/InputArea";
+import InputGroup from "../../../components/kit/components/form/inputtext/InputGroup";
 
 const InputTextPage: FC = () => {
   return (
@@ -93,6 +94,11 @@ const InputTextPage: FC = () => {
         element={
           <InputText helper="http://" name="url" placeholder="www.google.com" />
         }
+        component={InputText}
+      />
+      <ComponentLayout
+        title="Group"
+        element={<InputGroup />}
         component={InputText}
       />
       <ComponentLayout

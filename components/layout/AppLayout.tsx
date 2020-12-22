@@ -4,20 +4,16 @@ import SimpleFooter from "../kit/components/navigation/footer/SimpleFooter";
 import Header from "../kit/components/navigation/header/Header";
 const footerLink = [
   {
-    label: "FAQ",
-    link: "/components#elements",
-  },
-  {
     label: "Configuration",
-    link: "/components#forms",
+    link: "/started",
   },
   {
     label: "Github",
-    link: "/components#commerce",
+    link: "https://github.com/Charlie85270/fastUI",
   },
   {
     label: "LinkedIn",
-    link: "/components#navigation",
+    link: "https://www.linkedin.com/in/crabiller/",
   },
 ];
 
