@@ -1,10 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useCallback, useEffect } from "react";
 import Link from "next/link";
 import { menuEntry } from "../../layout/AppLayout";
 
 const Header = ({ hideGithub, hideHelp }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSectionOpen, setIsSectionOpen] = useState(false);
+  const listElement = useRef<HTMLDivElement>();
+  const selectButton = useRef<HTMLButtonElement>();
+  const handleClickOutside = useCallback((event) => {
+    const myHTMLWrapper = listElement.current;
+    const btnElement = selectButton.current;
+    if (
+      myHTMLWrapper &&
+      btnElement &&
+      !myHTMLWrapper.contains(event.target) &&
+      !btnElement.contains(event.target)
+    ) {
+      setIsSectionOpen(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [handleClickOutside]);
   return (
     <div className="relative bg-white z-40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -29,6 +50,7 @@ const Header = ({ hideGithub, hideHelp }) => {
             <nav className="hidden md:flex space-x-10">
               <div className="relative">
                 <button
+                  ref={selectButton}
                   type="button"
                   onClick={() => setIsSectionOpen(!isSectionOpen)}
                   className="group bg-white rounded-md text-gray-800 inline-flex items-center text-base font-normal hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 text-xl"
@@ -50,7 +72,10 @@ const Header = ({ hideGithub, hideHelp }) => {
                   </svg>
                 </button>
                 {isSectionOpen && (
-                  <div className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                  <div
+                    ref={listElement}
+                    className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2"
+                  >
                     <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                       <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                         {menuEntry.map((entry) => {

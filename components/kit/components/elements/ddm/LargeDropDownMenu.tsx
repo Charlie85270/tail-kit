@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useCallback, useEffect } from "react";
 
 interface Props {
   forceOpen?: boolean;
@@ -15,10 +15,32 @@ interface DDMItem {
 }
 const LargeDropDownMenu = (props: Props) => {
   const [isOpen, setIsOpen] = useState(false);
+  const listElement = useRef<HTMLDivElement>();
+  const selectButton = useRef<HTMLButtonElement>();
+  const handleClickOutside = useCallback((event) => {
+    const myHTMLWrapper = listElement.current;
+    const btnElement = selectButton.current;
+    if (
+      myHTMLWrapper &&
+      btnElement &&
+      !myHTMLWrapper.contains(event.target) &&
+      !btnElement.contains(event.target)
+    ) {
+      setIsOpen(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [handleClickOutside]);
   return (
     <div className="relative inline-block text-left">
       <div>
         <button
+          ref={selectButton}
           type="button"
           onClick={() => setIsOpen(!isOpen)}
           className={` ${
@@ -41,7 +63,10 @@ const LargeDropDownMenu = (props: Props) => {
       </div>
 
       {(props.forceOpen || isOpen) && (
-        <div className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+        <div
+          ref={listElement}
+          className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2"
+        >
           <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
             <div className="relative grid gap-6 bg-white dark:bg-gray-800 px-5 py-6 sm:gap-8 sm:p-8 divide-y divide-gray-100">
               {props.items.map((item) => {
