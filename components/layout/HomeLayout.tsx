@@ -1,7 +1,11 @@
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import Header from "../site/header/header";
+import ReactGA from "react-ga";
 
 const HomeLayout: FC = ({ children }) => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, []);
   return (
     <div className="relative bg-white overflow-hidden h-screen overflow-hidden">
       <div className="max-w-7xl mx-auto h-full">

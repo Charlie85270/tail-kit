@@ -7,7 +7,7 @@ import LittleSidebar from "../../../components/kit/components/navigation/sidebar
 
 const SideBar: FC = () => {
   const headerImg = "/icons/rocket.svg";
-  const headerText = "FastUI";
+  const headerText = "Tailwind-kit";
   const links = [
     {
       label: "Element",

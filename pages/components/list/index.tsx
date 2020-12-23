@@ -5,6 +5,7 @@ import SectionHeader from "../../../components/site/header/SectionHeader";
 import BlockList from "../../../components/kit/components/list/list/BlockList";
 import SimpleList from "../../../components/kit/components/list/list/SimpleList";
 import DescriptionList from "../../../components/kit/components/list/list/DescriptionList";
+import TodoList from "../../../components/kit/components/list/list/TodoList";
 
 const ListPages: FC = () => {
   return (
@@ -66,6 +67,12 @@ const ListPages: FC = () => {
           />
         }
         component={BlockList}
+      />
+      <ComponentLayout
+        title="Todo list"
+        showSwitchMode={true}
+        element={<TodoList />}
+        component={TodoList}
       />
       <ComponentLayout
         title="Desc bloc list"

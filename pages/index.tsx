@@ -8,7 +8,6 @@ import SimpleProfilCard from "../components/kit/components/pagesection/profile/S
 import Button from "../components/kit/components/elements/buttons/Button";
 import MultipleShoppingCard from "../components/kit/components/commerce/shopping/MultipleShoppingCard";
 import PricingCard from "../components/kit/components/commerce/pricing/PricingCard";
-import ClassicShoppingCard from "../components/kit/components/commerce/shopping/ClassicShoppingCard";
 import DeleteConfirmation from "../components/kit/components/elements/alert/ConfirmationCard";
 import SimplePhotoDescCard from "../components/kit/components/elements/data/SimplePhotoDescCard";
 import SimpleNotificationCard from "../components/kit/components/elements/data/SimpleNotificationCard";
@@ -16,6 +15,8 @@ import SimpleIconDescCard from "../components/kit/components/elements/data/Simpl
 import CustomSelect from "../components/kit/components/form/select/CustomSelect";
 import InfoNumberCard from "../components/kit/components/elements/data/InfoNumberCard";
 import TagsCard from "../components/kit/components/elements/data/TagsCard";
+import CookieAlert2 from "../components/kit/components/elements/alert/CookieAlert2";
+import PricingCard2 from "../components/kit/components/commerce/pricing/PricingCard2";
 
 const IndexPage: FC = () => {
   return (
@@ -28,14 +29,15 @@ const IndexPage: FC = () => {
             </span>
             <span className="flex w-40 m-auto text-indigo-600 xl:inline">
               {" "}
-              fastUI
+              Tailwind-kit
             </span>
           </h1>
-          <p className="mt-3  text-gray-500 sm:mt-5 text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-            Fast UI gives you access to over 150 CSS components,accessible and
-            responsive, based on Tailwind css 2.0 and fontawesome. All it's free
+          <h2 className="mt-3  text-gray-500 sm:mt-5 text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+            Fast UI gives you access to over{" "}
+            <span className="text-gray-700 font-bold">200</span> CSS responsive
+            components, based on Tailwind css 2.0 and fontawesome. All it's free
             and open source.
-          </p>
+          </h2>
           <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start w-full">
             <div className="rounded-md shadow">
               <Link href="/started">
@@ -119,7 +121,10 @@ const IndexPage: FC = () => {
               </div>
 
               <div className="mb-4">
-                <ClassicShoppingCard />
+                <CookieAlert2 />
+              </div>
+              <div className="mb-4">
+                <PricingCard2 />
               </div>
             </div>
           </div>

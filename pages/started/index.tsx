@@ -49,7 +49,7 @@ const StartedPage: FC = () => {
         </div>
 
         <p className="mt-1 text-lg text-gray-500">
-          FastUI is based on{" "}
+          Tailwind-kit is based on{" "}
           <a
             href="https://tailwindcss.com/"
             className="text-gray-700 underline hover:text-gray-800"
@@ -110,8 +110,8 @@ const StartedPage: FC = () => {
         </div>
 
         <p className="mt-1 mb-4">
-          Some FastUI components need to override basic Tailwind configuration
-          to work.
+          Some Tailwind-kit components need to override basic Tailwind
+          configuration to work.
         </p>
         <p>
           All components who needs configuration are indicated with this sign:
@@ -135,7 +135,7 @@ const StartedPage: FC = () => {
           </p>
 
           <p className="pt-4 text-xl text-gray-700 mb-4">
-            Below you will find the necessary configuration for all FastUI
+            Below you will find the necessary configuration for all Tailwind-kit
             components (tailwind.config.js file):
           </p>
           <LiveProvider

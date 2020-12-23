@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import AppLayout from "../../../components/layout/AppLayout";
 import SectionHeader from "../../../components/site/header/SectionHeader";
 import ComponentLayout from "../../../components/layout/ComponentLayout";

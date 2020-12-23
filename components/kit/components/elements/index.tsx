@@ -5,7 +5,7 @@ const Elements: FC = () => {
   const elementsSection = [
     {
       title: "Buttons",
-      items: 14,
+      items: 15,
       img: "images/sections/button.svg",
       link: "/components/buttons",
     },
@@ -16,31 +16,31 @@ const Elements: FC = () => {
       link: "/components/badges",
     },
     {
-      title: "Avatar",
+      title: "Avatars",
       items: 11,
       img: "images/sections/avatar.svg",
       link: "/components/avatar",
     },
     {
-      title: "Ddm",
+      title: "Menu list",
       items: 7,
       img: "images/sections/ddm.svg",
       link: "/components/ddm",
     },
     {
-      title: "Alert",
+      title: "Alerts",
       items: 11,
       img: "images/sections/banner.svg",
       link: "/components/alert",
     },
     {
-      title: "Data display",
+      title: "Datas display",
       items: 10,
       img: "images/sections/data.svg",
       link: "/components/data",
     },
     {
-      title: "Progress bar",
+      title: "Progress bars",
       items: 5,
       img: "images/sections/progress.svg",
       link: "/components/progress",

@@ -22,7 +22,9 @@ const BigTestimonial = () => {
             Jean Miguel
           </span>
           <span className="text-gray-400 text-xl font-light">/</span>
-          <span className="text-gray-400 text-md ml-2">User of FastUI</span>
+          <span className="text-gray-400 text-md ml-2">
+            User of Tailwind-kit
+          </span>
         </div>
       </div>
     </div>

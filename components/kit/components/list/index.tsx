@@ -4,20 +4,20 @@ import SectionDesc from "../../../site/section/SectionDesc";
 const ListPage: FC = () => {
   const tableSections = [
     {
-      title: "Table",
+      title: "Tables",
       items: 6,
       img: "images/sections/table.svg",
       link: "/components/table",
     },
     {
-      title: "List",
-      items: 10,
+      title: "Lists",
+      items: 11,
       img: "images/sections/list.svg",
       link: "/components/list",
     },
   ];
 
-  return <SectionDesc id="table" items={tableSections} title="Table" />;
+  return <SectionDesc id="List" items={tableSections} title="List" />;
 };
 
 export default ListPage;

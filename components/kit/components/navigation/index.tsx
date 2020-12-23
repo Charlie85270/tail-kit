@@ -4,19 +4,19 @@ import SectionDesc from "../../../site/section/SectionDesc";
 const Navigation: FC = () => {
   const formSections = [
     {
-      title: "Header",
+      title: "Headers",
       items: 7,
       img: "images/sections/header.svg",
       link: "/components/header",
     },
     {
-      title: "Footer",
+      title: "Footers",
       items: 9,
       img: "images/sections/footer.svg",
       link: "/components/footer",
     },
     {
-      title: "Sidebar",
+      title: "Sidebars",
       items: 7,
       img: "images/sections/sidebar.svg",
       link: "/components/sidebar",

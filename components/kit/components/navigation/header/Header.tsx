@@ -19,6 +19,8 @@ interface HeaderLink {
   label: string;
   link?: string;
   isSelected?: boolean;
+  desc?: string;
+  icon?: string;
 }
 interface DDMItem {
   icon?: string;
@@ -61,7 +63,7 @@ const Header = (props: Props) => {
                         className={`${
                           link.isSelected
                             ? "text-gray-800 dark:text-white"
-                            : "text-gray-400"
+                            : "text-gray-300"
                         }  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md ${
                           props.isFat ? "text-md" : "text-sm"
                         } font-medium`}
@@ -137,7 +139,7 @@ const Header = (props: Props) => {
                     className={`${
                       link.isSelected
                         ? "text-gray-800 dark:text-white"
-                        : "text-gray-400"
+                        : "text-gray-300 hover:text-gray-800 dark:hover:text-white"
                     } block px-3 py-2 rounded-md text-base font-medium`}
                   >
                     {link.label}

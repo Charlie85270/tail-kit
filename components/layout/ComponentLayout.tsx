@@ -1,10 +1,11 @@
 import { LiveProvider, LiveEditor, LivePreview } from "react-live";
-import { FC, useState, useCallback, Component, useRef } from "react";
+import { useState, useCallback, useRef } from "react";
 import EDITOR_THEME from "../../editorTheme";
 import ReactDOMServer from "react-dom/server";
 import { formatHtml } from "../../utils/Utils";
 import Toggle from "../kit/components/form/toggle/Toggle";
 import Link from "next/link";
+import ReactGA from "react-ga";
 
 interface Props {
   element: JSX.Element;
@@ -35,6 +36,7 @@ const ComponentLayout = (props: Props) => {
   }, [props.element]);
 
   const [isDarkMode, setDarkMode] = useState(false);
+  const [hasCopied, setHasCopied] = useState(false);
   const previewRef = useRef<HTMLDivElement>();
 
   const changeMode = (isDark) => {
@@ -44,6 +46,39 @@ const ComponentLayout = (props: Props) => {
     } else {
       previewRef.current.classList.remove("dark");
     }
+  };
+
+  const copyCode = () => {
+    const el = document.createElement("textarea");
+    el.value = code();
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand("copy");
+    document.body.removeChild(el);
+    // This is just personal preference.
+    // I prefer to not show the whole text area selected.
+
+    setHasCopied(true);
+    ReactGA.event({
+      category: "action",
+      label: props.title,
+      action: "Copy code",
+    });
+  };
+
+  const COPY_BTN = () => {
+    return (
+      <button
+        onClick={copyCode}
+        className={`w-28 px-4 py-2  text-base font-medium rounded-md ${
+          hasCopied
+            ? "text-white bg-green-500 hover:bg-green-700"
+            : "text-gray-800 bg-white hover:bg-gray-200"
+        }`}
+      >
+        <i className="far fa-copy mr-2"></i> {hasCopied ? "Copied" : "Copy"}
+      </button>
+    );
   };
 
   const [status, setStatus] = useState<STATUS>(STATUS.DEFAULT);
@@ -88,9 +123,7 @@ const ComponentLayout = (props: Props) => {
             </button>
           </div>
 
-          <button className="w-28 px-4 py-2  text-base font-medium rounded-md text-gray-800 bg-white hover:bg-gray-200">
-            <i className="far fa-copy mr-2"></i> copy
-          </button>
+          {COPY_BTN()}
         </div>
       </div>
 
@@ -120,12 +153,10 @@ const ComponentLayout = (props: Props) => {
               className={`${props.vertical ? "" : "md:w-3/4"} relative w-full`}
             >
               <div>
-                <button className="w-28 absolute z-30 right-16 top-2 px-4 py-2  text-base font-medium rounded-md text-gray-800 bg-gray-100 hover:bg-gray-200">
-                  Copy
-                </button>
+                {COPY_BTN()}
                 <button
                   onClick={() => setStatus(STATUS.DEFAULT)}
-                  className="w-12 p-2 absolute top-2 right-2 z-30  text-base font-medium rounded-md bg-red-300 hover:bg-red-400 "
+                  className="w-12 p-2 absolute top-2 right-2 z-30 text-base font-medium rounded-md bg-red-300 hover:bg-red-400 "
                 >
                   <i className="text-gray-800 fas fa-times" />
                 </button>

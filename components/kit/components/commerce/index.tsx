@@ -4,13 +4,13 @@ import SectionDesc from "../../../site/section/SectionDesc";
 const Commerce: FC = () => {
   const commerceSections = [
     {
-      title: "Pricing card",
+      title: "Pricing cards",
       items: 8,
       img: "images/sections/pricing.svg",
       link: "/components/pricing",
     },
     {
-      title: "Shopping card",
+      title: "Shopping cards",
       items: 7,
       img: "images/sections/shopping.svg",
       link: "/components/shopping",

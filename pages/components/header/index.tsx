@@ -38,13 +38,14 @@ const HeaderPage: FC = () => {
       <ComponentLayout
         vertical={true}
         title="Light"
-        jsLink="https://github.com/Charlie85270/fastUI"
+        jsLink="https://github.com/Charlie85270/fastUI/blob/main/components/kit/components/elements/ddm/DropDownMenu.tsx"
         element={
           <Header
             forceMenuOpenInMobile={true}
             forceDDMOpenInMobile={true}
             links={links}
             hideGitHubLink={true}
+            hideHelp={true}
           />
         }
         component={Header}
@@ -52,7 +53,7 @@ const HeaderPage: FC = () => {
       <ComponentLayout
         vertical={true}
         title="Light with shadow"
-        jsLink="https://github.com/Charlie85270/fastUI"
+        jsLink="https://github.com/Charlie85270/fastUI/blob/main/components/kit/components/elements/ddm/DropDownMenu.tsx"
         element={
           <Header
             links={links}
@@ -60,6 +61,7 @@ const HeaderPage: FC = () => {
             forceDDMOpenInMobile={true}
             withShadow={true}
             hideGitHubLink={true}
+            hideHelp={true}
           />
         }
         component={Header}
@@ -68,7 +70,7 @@ const HeaderPage: FC = () => {
       <ComponentLayout
         vertical={true}
         title="Align right"
-        jsLink="https://github.com/Charlie85270/fastUI"
+        jsLink="https://github.com/Charlie85270/fastUI/blob/main/components/kit/components/elements/ddm/DropDownMenu.tsx"
         element={
           <Header
             links={links}
@@ -76,6 +78,7 @@ const HeaderPage: FC = () => {
             forceDDMOpenInMobile={true}
             withShadow={true}
             hideGitHubLink={true}
+            hideHelp={true}
             alignRight={true}
           />
         }
@@ -84,13 +87,15 @@ const HeaderPage: FC = () => {
       <ComponentLayout
         vertical={true}
         title="With profile ddm"
-        jsLink="https://github.com/Charlie85270/fastUI"
+        containerClasses="pb-32"
+        jsLink="https://github.com/Charlie85270/fastUI/blob/main/components/kit/components/elements/ddm/DropDownMenu.tsx"
         element={
           <Header
             links={links}
             forceMenuOpenInMobile={true}
             forceDDMOpenInMobile={true}
             withShadow={true}
+            hideHelp={true}
             hideGitHubLink={true}
             ddmItems={ddmItems}
             alignRight={false}
@@ -101,13 +106,15 @@ const HeaderPage: FC = () => {
       <ComponentLayout
         vertical={true}
         title="With icon on right"
-        jsLink="https://github.com/Charlie85270/fastUI"
+        containerClasses="pb-32"
+        jsLink="https://github.com/Charlie85270/fastUI/blob/main/components/kit/components/elements/ddm/DropDownMenu.tsx"
         element={
           <Header
             links={links}
             forceMenuOpenInMobile={true}
             forceDDMOpenInMobile={true}
             withShadow={true}
+            hideHelp={true}
             hideGitHubLink={false}
             ddmItems={ddmItems}
             alignRight={false}
@@ -118,7 +125,8 @@ const HeaderPage: FC = () => {
       <ComponentLayout
         vertical={true}
         title="Fat"
-        jsLink="https://github.com/Charlie85270/fastUI"
+        containerClasses="pb-32"
+        jsLink="https://github.com/Charlie85270/fastUI/blob/main/components/kit/components/elements/ddm/DropDownMenu.tsx"
         element={
           <Header
             links={links}
@@ -126,6 +134,7 @@ const HeaderPage: FC = () => {
             forceDDMOpenInMobile={true}
             hideGitHubLink={true}
             withShadow={true}
+            hideHelp={true}
             ddmItems={ddmItems}
             alignRight={false}
             isFat={true}
@@ -136,7 +145,8 @@ const HeaderPage: FC = () => {
       <ComponentLayout
         vertical={true}
         title="With search bar"
-        jsLink="https://github.com/Charlie85270/fastUI"
+        containerClasses="pb-32"
+        jsLink="https://github.com/Charlie85270/fastUI/blob/main/components/kit/components/elements/ddm/DropDownMenu.tsx"
         element={
           <Header
             links={links}
@@ -144,6 +154,7 @@ const HeaderPage: FC = () => {
             forceMenuOpenInMobile={true}
             forceDDMOpenInMobile={true}
             withShadow={true}
+            hideHelp={true}
             hideGitHubLink={true}
             alignRight={false}
             isFat={true}

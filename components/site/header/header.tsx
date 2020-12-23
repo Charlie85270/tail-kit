@@ -1,38 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
-
-const menuEntry = [
-  {
-    title: "Elements",
-    icon: "far fa-address-card",
-    desc: "Buttons, avatars, badges ....",
-    link: "/components#elements",
-  },
-  {
-    title: "Forms",
-    icon: "fab fa-wpforms",
-    desc: "Input text, select, textarea, signin layout ...",
-    link: "/components#forms",
-  },
-  {
-    title: "Commerce",
-    icon: "fas fa-store",
-    desc: "Pricing card, shooping item, basket layout...",
-    link: "/components#commerce",
-  },
-  {
-    title: "Navigation",
-    icon: "fas fa-location-arrow",
-    desc: "Header, footer...",
-    link: "/components#navigation",
-  },
-  {
-    title: "Sections",
-    icon: "fas fa-location-arrow",
-    desc: "Faq, profile, team ...",
-    link: "/components#pagesection",
-  },
-];
+import { menuEntry } from "../../layout/AppLayout";
 
 const Header = ({ hideGithub, hideHelp }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -53,7 +21,7 @@ const Header = ({ hideGithub, hideHelp }) => {
                 alt=""
               />
               <span className="text-indigo-600 ml-2 text-2xl font-bold">
-                FastUI
+                Tailwind-kit
               </span>
             </a>
             <nav className="hidden md:flex space-x-10">
@@ -93,7 +61,7 @@ const Header = ({ hideGithub, hideHelp }) => {
 
                                 <div className="ml-4 font-normal">
                                   <p className="text-base text-gray-900">
-                                    {entry.title}
+                                    {entry.label}
                                   </p>
                                   <p className="mt-1 text-sm text-gray-500">
                                     {entry.desc}
@@ -195,10 +163,10 @@ const Header = ({ hideGithub, hideHelp }) => {
                       <Link href={entry.link}>
                         <a className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
                           <i
-                            className={`${entry.icon} far fa-address-card flex-shrink-0 h-6 w-6 text-indigo-600`}
+                            className={`${entry.icon} flex-shrink-0 h-6 w-6 text-indigo-600`}
                           />
                           <span className="ml-3 text-base font-normal text-gray-900">
-                            {entry.title}
+                            {entry.label}
                           </span>
                         </a>
                       </Link>

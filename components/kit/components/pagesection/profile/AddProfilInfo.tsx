@@ -9,7 +9,7 @@ const AddProfilInfo: FC = () => {
         <div className="h-28 w-full flex flex-col justify-between">
           <div>
             <p className="text-gray-800 dark:text-white text-xl font-medium">
-              Charlie Rabiller
+              John Jackson
             </p>
             <p className="text-gray-400 text-xs">FullStack dev</p>
           </div>

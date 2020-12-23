@@ -11,7 +11,7 @@ const HeadProfil = () => {
       <div className="w-full">
         <div className="text-center mb-6">
           <p className="text-gray-800 dark:text-white text-xl font-medium">
-            Charlie Rabiller
+            John Jackson
           </p>
           <p className="text-gray-400 text-xs">FullStack dev</p>
         </div>

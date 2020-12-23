@@ -7,6 +7,7 @@ import ButtonWithIndications from "../../../components/kit/components/elements/b
 import MultipleButton from "../../../components/kit/components/elements/buttons/MultipleButton";
 import PagerButton from "../../../components/kit/components/elements/buttons/PagerButton";
 import RoundedButton from "../../../components/kit/components/elements/buttons/RoundedButton";
+import StoreButton from "../../../components/kit/components/elements/buttons/StoreButton";
 
 const ComponentsPage: FC = () => {
   return (
@@ -93,6 +94,11 @@ const ComponentsPage: FC = () => {
           />
         }
         component={Button}
+      />
+      <ComponentLayout
+        title="Sotre button"
+        element={<StoreButton />}
+        component={StoreButton}
       />
       <ComponentLayout
         title="Rounded button"
