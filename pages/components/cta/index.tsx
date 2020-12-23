@@ -12,7 +12,10 @@ const ComponentsPage: FC = () => {
   const desc =
     "I had noticed that both in the very poor and very rich extremes of society the mad were often allowed to mingle freely";
   return (
-    <AppLayout>
+    <AppLayout
+      title="CTA free Tailwind components"
+      desc="CTA, Banners and more components for tailwind css"
+    >
       <SectionHeader title="Buttons" />
       <ComponentLayout
         vertical={true}

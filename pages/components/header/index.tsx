@@ -33,7 +33,10 @@ const ddmItems = [
 
 const HeaderPage: FC = () => {
   return (
-    <AppLayout>
+    <AppLayout
+      title="Headers sections free Tailwind components"
+      desc="Headers, TopBar, Navbar and more components for tailwind css"
+    >
       <SectionHeader title="Header" />
       <ComponentLayout
         vertical={true}

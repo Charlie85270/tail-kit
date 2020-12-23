@@ -13,7 +13,10 @@ import SearchForm from "../../../components/kit/components/form/layout/SearchFor
 
 const TogglePage: FC = () => {
   return (
-    <AppLayout>
+    <AppLayout
+      title="Input sections free Tailwind components"
+      desc="Input, Form sections more components for tailwind css"
+    >
       <SectionHeader title="Form layout" />
       <ComponentLayout
         title="Subscribe"

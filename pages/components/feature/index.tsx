@@ -10,7 +10,10 @@ import FeaturesSquare from "../../../components/kit/components/pagesection/featu
 
 const FeaturePage = () => {
   return (
-    <AppLayout>
+    <AppLayout
+      title="Features sections free Tailwind components"
+      desc="Features sections more components for tailwind css"
+    >
       <SectionHeader title="Features" />
       <ComponentLayout
         vertical={true}

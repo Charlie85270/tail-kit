@@ -8,7 +8,10 @@ import InputGroup from "../../../components/kit/components/form/inputtext/InputG
 
 const InputTextPage: FC = () => {
   return (
-    <AppLayout>
+    <AppLayout
+      title="Inputs text free Tailwind components"
+      desc="Input and more components for tailwind css"
+    >
       <SectionHeader title="Input" />
 
       <ComponentLayout

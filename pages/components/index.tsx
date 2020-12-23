@@ -9,7 +9,10 @@ import ListPage from "../../components/kit/components/list";
 
 const ComponentsPage: FC = () => {
   return (
-    <AppLayout>
+    <AppLayout
+      title="200 free beautiful tailwind css components"
+      desc="Over 200 freen and open source build components for tailwind css"
+    >
       <Elements />
       <Forms />
       <Commerce />

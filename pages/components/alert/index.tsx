@@ -18,7 +18,10 @@ const AlertPage = () => {
   const subtitle = "It's today or never.";
 
   return (
-    <AppLayout>
+    <AppLayout
+      title="Alert free Tailwind components"
+      desc="Alerts, Modales, Banners ... components for tailwind css"
+    >
       <SectionHeader title="Alert" />
       <ComponentLayout
         vertical={false}

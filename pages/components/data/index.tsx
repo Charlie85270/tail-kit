@@ -16,7 +16,10 @@ import TagsCard from "../../../components/kit/components/elements/data/TagsCard"
 
 const DataPage = () => {
   return (
-    <AppLayout>
+    <AppLayout
+      title="Data display free Tailwind components"
+      desc="Data, Cards and more components for tailwind css"
+    >
       <SectionHeader title="Alert" />
       <ComponentLayout
         vertical={false}

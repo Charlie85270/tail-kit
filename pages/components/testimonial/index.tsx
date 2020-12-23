@@ -12,7 +12,10 @@ import SimpleReview from "../../../components/kit/components/pagesection/testimo
 
 const ComponentsPage: FC = () => {
   return (
-    <AppLayout>
+    <AppLayout
+      title="Testimonials section free Tailwind components"
+      desc="Testimonials and more components for tailwind css"
+    >
       <SectionHeader title="Testimonials" />
       <ComponentLayout
         showSwitchMode={true}

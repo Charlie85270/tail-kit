@@ -2,6 +2,7 @@ import { FC, useEffect } from "react";
 import Header from "../kit/components/navigation/header/Header";
 import FooterLight from "../kit/components/navigation/footer/FooterLight";
 import ReactGA from "react-ga";
+import Meta from "../site/Meta";
 
 const footerLink = [
   {
@@ -28,7 +29,7 @@ export const menuEntry = [
   {
     label: "Forms",
     icon: "fab fa-wpforms",
-    desc: "Input text, Select, Textarea, Login pages ...",
+    desc: "Input text, Select, Textarea, Login pages, Signin templates ...",
     link: "/components#forms",
   },
   {
@@ -52,17 +53,18 @@ export const menuEntry = [
   {
     label: "List",
     icon: "fas fa-list-ul",
-    desc: "Bloc list, Table, Todo list...",
+    desc: "List, Tables, Todo list, Description List, Actions list...",
     link: "/components#list",
   },
 ];
 
-const AppLayout: FC = ({ children }) => {
+const AppLayout = ({ title, desc, children }) => {
   useEffect(() => {
     ReactGA.pageview(window.location.pathname);
   }, []);
   return (
     <div className="relative bg-white">
+      <Meta pageTitle={title} description={desc} />
       <div className="mx-auto h-full">
         <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20  lg:w-full lg:pb-28 xl:pb-32 h-full">
           <div className="dark">

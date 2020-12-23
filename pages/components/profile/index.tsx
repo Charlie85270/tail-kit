@@ -11,7 +11,10 @@ import HeadProfil from "../../../components/kit/components/pagesection/profile/H
 
 const ComponentsPage: FC = () => {
   return (
-    <AppLayout>
+    <AppLayout
+      title="Profile cards free Tailwind components"
+      desc="Profile cards and more components for tailwind css"
+    >
       <SectionHeader title="Profile / Team" />
       <ComponentLayout
         showSwitchMode={true}

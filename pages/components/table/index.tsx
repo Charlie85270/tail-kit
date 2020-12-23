@@ -7,7 +7,10 @@ import ComplexTable from "../../../components/kit/components/list/table/ComplexT
 
 const TablesPage: FC = () => {
   return (
-    <AppLayout>
+    <AppLayout
+      title="Tables free Tailwind components"
+      desc="Tables and more components for tailwind css"
+    >
       <SectionHeader title="Table" />
       <ComponentLayout
         title="Simple Table"

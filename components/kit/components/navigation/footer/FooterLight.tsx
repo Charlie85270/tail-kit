@@ -49,12 +49,11 @@ const FooterLight = (props: Props) => {
           <div className="mt-7 md:mt-0 flex-1 flex flex-col items-center justify-center md:items-start md:pl-5">
             <span className="">© 2020</span>
             <span className="mt-7 md:mt-1">
-              Created by
+              Created by{" "}
               <a
                 className="underline hover:text-primary-gray-20"
                 href="https://www.linkedin.com/in/crabiller/"
               >
-                {" "}
                 Charlie
               </a>
             </span>

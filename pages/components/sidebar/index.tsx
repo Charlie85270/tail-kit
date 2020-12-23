@@ -69,7 +69,10 @@ const SideBar: FC = () => {
   };
 
   return (
-    <AppLayout>
+    <AppLayout
+      title="Sidebar free Tailwind components"
+      desc="Sidebar and more components for tailwind css"
+    >
       <SectionHeader title="Sidebar" />
       <ComponentLayout
         title="Light"

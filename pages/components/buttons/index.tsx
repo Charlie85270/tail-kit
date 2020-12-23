@@ -11,7 +11,10 @@ import StoreButton from "../../../components/kit/components/elements/buttons/Sto
 
 const ComponentsPage: FC = () => {
   return (
-    <AppLayout>
+    <AppLayout
+      title="Buttons free Tailwind components"
+      desc="Buttons, Social buttons and more components for tailwind css"
+    >
       <SectionHeader title="Buttons" />
       <ComponentLayout
         title="button"

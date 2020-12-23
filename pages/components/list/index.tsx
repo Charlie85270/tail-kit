@@ -9,7 +9,10 @@ import TodoList from "../../../components/kit/components/list/list/TodoList";
 
 const ListPages: FC = () => {
   return (
-    <AppLayout>
+    <AppLayout
+      title="List display text free Tailwind components"
+      desc="List, Ordered list and more components for tailwind css"
+    >
       <SectionHeader title="List" />
       <ComponentLayout
         showSwitchMode={true}

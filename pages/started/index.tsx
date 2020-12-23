@@ -40,7 +40,10 @@ const confCode = `module.exports = {
 
 const StartedPage: FC = () => {
   return (
-    <AppLayout>
+    <AppLayout
+      title="Configuration to use Tailwind-kit for tailwind components"
+      desc="Over 200 freen and open source build components for tailwind css"
+    >
       <div className="pb-10 border-b border-gray-200 mb-10" id="installation">
         <div className="flex items-center">
           <h1 className="text-3xl font-extrabold text-gray-900 tracking-tight mb-4">

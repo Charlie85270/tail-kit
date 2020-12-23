@@ -27,7 +27,10 @@ const DdmPages: FC = () => {
   ];
 
   return (
-    <AppLayout>
+    <AppLayout
+      title="Drop down menu free Tailwind components"
+      desc="Drop down menu and more components for tailwind css"
+    >
       <SectionHeader title="Drop Down" />
       <ComponentLayout
         containerClasses="pb-40"

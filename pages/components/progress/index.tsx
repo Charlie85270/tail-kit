@@ -6,7 +6,10 @@ import ProgressBar from "../../../components/kit/components/elements/progress/Pr
 
 const ProgressPage = () => {
   return (
-    <AppLayout>
+    <AppLayout
+      title="Progress bar free Tailwind components"
+      desc="Progress bar and more components for tailwind css"
+    >
       <SectionHeader title="Progress bar" />
       <ComponentLayout
         vertical={true}

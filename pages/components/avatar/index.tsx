@@ -7,7 +7,10 @@ import MultipleAvatar from "../../../components/kit/components/elements/avatars/
 
 const AvatarPage: FC = () => {
   return (
-    <AppLayout>
+    <AppLayout
+      title="Avatars free Tailwind components"
+      desc="Avatars, profile pictures... components for tailwind css"
+    >
       <SectionHeader title="Avatar" />
       <ComponentLayout
         title="Simple full rounded avatar"
