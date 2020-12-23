@@ -17,7 +17,7 @@ const ListPage: FC = () => {
     },
   ];
 
-  return <SectionDesc id="List" items={tableSections} title="List" />;
+  return <SectionDesc id="list" items={tableSections} title="List" />;
 };
 
 export default ListPage;
