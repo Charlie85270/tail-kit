@@ -55,9 +55,6 @@ const ComponentLayout = (props: Props) => {
     el.select();
     document.execCommand("copy");
     document.body.removeChild(el);
-    // This is just personal preference.
-    // I prefer to not show the whole text area selected.
-
     setHasCopied(true);
     ReactGA.event({
       category: "action",
@@ -138,7 +135,7 @@ const ComponentLayout = (props: Props) => {
           className={`${
             props.vertical
               ? "flex-col justify-center"
-              : "md:flex-row justify-between "
+              : "flex-col md:flex-row justify-between "
           } flex gap-4 mx-4 items-start py-16`}
         >
           <div

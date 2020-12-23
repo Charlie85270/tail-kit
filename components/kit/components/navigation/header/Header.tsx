@@ -134,17 +134,17 @@ const Header = (props: Props) => {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {props.links.map((link) => {
                 return (
-                  <a
-                    key={link.label}
-                    href="#"
-                    className={`${
-                      link.isSelected
-                        ? "text-gray-800 dark:text-white"
-                        : "text-gray-300 hover:text-gray-800 dark:hover:text-white"
-                    } block px-3 py-2 rounded-md text-base font-medium`}
-                  >
-                    {link.label}
-                  </a>
+                  <Link key={link.label} href={link.link || "#"}>
+                    <a
+                      className={`${
+                        link.isSelected
+                          ? "text-gray-800 dark:text-white"
+                          : "text-gray-300 hover:text-gray-800 dark:hover:text-white"
+                      } block px-3 py-2 rounded-md text-base font-medium`}
+                    >
+                      {link.label}
+                    </a>
+                  </Link>
                 );
               })}
             </div>
