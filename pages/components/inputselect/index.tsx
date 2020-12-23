@@ -8,7 +8,10 @@ import SelectWithLabel from "../../../components/kit/components/form/select/Sele
 
 const InputTextPage: FC = () => {
   return (
-    <AppLayout>
+    <AppLayout
+      title="Select input free Tailwind components"
+      desc="Select input and more components for tailwind css"
+    >
       <SectionHeader title="Select" />
       <ComponentLayout title="simple" element={<Select />} component={Select} />
       <ComponentLayout
