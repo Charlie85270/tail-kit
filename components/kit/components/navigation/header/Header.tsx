@@ -57,19 +57,20 @@ const Header = (props: Props) => {
                 <div className="ml-10 flex items-baseline space-x-4">
                   {props.links.map((link) => {
                     return (
-                      <a
-                        key={link.label}
-                        href={link.link || "#"}
-                        className={`${
-                          link.isSelected
-                            ? "text-gray-800 dark:text-white"
-                            : "text-gray-300"
-                        }  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md ${
-                          props.isFat ? "text-md" : "text-sm"
-                        } font-medium`}
-                      >
-                        {link.label}
-                      </a>
+                      <Link href={link.link || "#"}>
+                        <a
+                          key={link.label}
+                          className={`${
+                            link.isSelected
+                              ? "text-gray-800 dark:text-white"
+                              : "text-gray-300"
+                          }  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md ${
+                            props.isFat ? "text-md" : "text-sm"
+                          } font-medium`}
+                        >
+                          {link.label}
+                        </a>
+                      </Link>
                     );
                   })}
                 </div>

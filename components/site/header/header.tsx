@@ -14,16 +14,18 @@ const Header = ({ hideGithub, hideHelp }) => {
           } flex justify-between items-center  border-gray-100 py-6  md:space-x-10`}
         >
           <div className="flex justify-start items-center gap-12">
-            <a href="/" className="flex items-center">
-              <img
-                className="h-12 w-auto sm:h-12"
-                src="/icons/rocket.svg"
-                alt=""
-              />
-              <span className="text-indigo-600 ml-2 text-2xl font-bold">
-                Tailwind-kit
-              </span>
-            </a>
+            <Link href="/">
+              <a className="flex items-center">
+                <img
+                  className="h-12 w-auto sm:h-12"
+                  src="/icons/rocket.svg"
+                  alt=""
+                />
+                <span className="text-indigo-600 ml-2 text-2xl font-bold">
+                  Tailwind-kit
+                </span>
+              </a>
+            </Link>
             <nav className="hidden md:flex space-x-10">
               <div className="relative">
                 <button
