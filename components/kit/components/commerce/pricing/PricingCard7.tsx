@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import Button from "../../elements/buttons/Button";
+import { prices, notIncluded } from "./PricingCard";
 
 const PricingCard7: FC = () => {
   return (
@@ -22,38 +23,28 @@ const PricingCard7: FC = () => {
               <div className="flex-1 border-t-2 border-gray-200"></div>
             </div>
             <ul className="mt-8 lg:grid lg:grid-cols-2 lg:col-gap-8 lg:row-gap-5">
-              <li className="flex items-start lg:col-span-1">
-                <div className="flex-shrink-0">
-                  <i className="fas fa-check-circle h-5 w-5 text-green-400" />
-                </div>
-                <p className="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
-                  Unlimited stores
-                </p>
-              </li>
-              <li className="mt-5 flex items-start lg:col-span-1 lg:mt-0">
-                <div className="flex-shrink-0">
-                  <i className="fas fa-check-circle h-5 w-5 text-green-400" />
-                </div>
-                <p className="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
-                  Instant setup
-                </p>
-              </li>
-              <li className="mt-5 flex items-start lg:col-span-1 lg:mt-0">
-                <div className="flex-shrink-0">
-                  <i className="fas fa-check-circle h-5 w-5 text-green-400" />
-                </div>
-                <p className="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
-                  Offer local delivery &amp; collection
-                </p>
-              </li>
-              <li className="mt-5 flex items-start lg:col-span-1 lg:mt-0">
-                <div className="flex-shrink-0">
-                  <i className="fas fa-check-circle h-5 w-5 text-green-400" />
-                </div>
-                <p className="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
-                  Online payment processing
-                </p>
-              </li>
+              {prices.map((price) => {
+                return (
+                  <li className="flex items-start lg:col-span-1">
+                    <div className="flex-shrink-0">
+                      <svg
+                        className="h-6 w-6 mr-2"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="6"
+                        height="6"
+                        stroke="currentColor"
+                        fill="#10b981"
+                        viewBox="0 0 1792 1792"
+                      >
+                        <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z" />
+                      </svg>
+                    </div>
+                    <p className="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
+                      {price.label}
+                    </p>
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div className="mt-8">
@@ -63,25 +54,27 @@ const PricingCard7: FC = () => {
               </h4>
             </div>
             <ul className="mt-8 lg:grid lg:grid-cols-2 lg:col-gap-8 lg:row-gap-5">
-              <li className="flex items-start lg:col-span-1">
-                <div className="flex-shrink-0">
-                  <i className="fas fa-times-circle h-5 w-5 text-red-400" />
-                </div>
-                <p className="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
-                  No Contracts. No monthly, setup, or additional payment
-                  processor fees
-                </p>
-              </li>
-              <li className="mt-5 flex items-start lg:col-span-1 lg:mt-0">
-                <div className="flex-shrink-0">
-                  <div className="flex-shrink-0">
-                    <i className="fas fa-times-circle h-5 w-5 text-red-400" />
-                  </div>
-                </div>
-                <p className="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
-                  No 2-week on-boarding, it takes 20 minutes!
-                </p>
-              </li>
+              {notIncluded.map((not) => {
+                return (
+                  <li className="flex items-start lg:col-span-1">
+                    <div className="flex-shrink-0">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="6"
+                        height="6"
+                        className="h-6 w-6 mr-2"
+                        fill="red"
+                        viewBox="0 0 1792 1792"
+                      >
+                        <path d="M1277 1122q0-26-19-45l-181-181 181-181q19-19 19-45 0-27-19-46l-90-90q-19-19-46-19-26 0-45 19l-181 181-181-181q-19-19-45-19-27 0-46 19l-90 90q-19 19-19 46 0 26 19 45l181 181-181 181q-19 19-19 45 0 27 19 46l90 90q19 19 46 19 26 0 45-19l181-181 181 181q19 19 45 19 27 0 46-19l90-90q19-19 19-46zm387-226q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z" />
+                      </svg>
+                    </div>
+                    <p className="ml-3 text-sm leading-5 text-gray-700 dark:text-gray-200">
+                      {not}
+                    </p>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>

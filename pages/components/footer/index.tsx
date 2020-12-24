@@ -10,17 +10,14 @@ const FooterPage: FC = () => {
   const links = [
     {
       label: "Components",
-      icon: "far fa-address-card",
       subLinks: ["Elements", "Forms", "Commerces", "Navigation"],
     },
     {
       label: "Contacts",
-      icon: "fab fa-wpforms",
       subLinks: ["Github", "Facebook", "Twitter", "LinkedIn"],
     },
     {
       label: "Customization",
-      icon: "fas fa-store",
       subLinks: ["Settings", "Themes", "Plugins", "LinkedIn"],
     },
   ];

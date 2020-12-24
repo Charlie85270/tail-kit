@@ -8,7 +8,7 @@ interface Props {
 interface Links {
   label: string;
   selected?: boolean;
-  icon?: string;
+  icon?: JSX.Element;
 }
 
 const LittleSidebar = (props: Props) => {
@@ -31,10 +31,13 @@ const LittleSidebar = (props: Props) => {
                 return (
                   <li className="my-12 text-center">
                     <a href="#">
-                      <span>
-                        <i
+                      <span
+                        className={`h-6 w-6 text-gray-500 dark:text-gray-300 mx-auto hover:text-gray-800 dark:hover:text-white transition-colors duration-200`}
+                      >
+                        {link.icon}
+                        {/* <i
                           className={`${link.icon} h-6 w-6 text-gray-500 dark:text-gray-300 mx-auto hover:text-gray-800 dark:hover:text-white transition-colors duration-200`}
-                        />
+                        /> */}
                       </span>
                     </a>
                   </li>

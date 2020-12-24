@@ -23,15 +23,6 @@ const HomeComps: FC = () => {
       <div className="flex gap-4 gap-y-1">
         <div className="col-1">
           <div className="mb-4">
-            <div className="flex items-center justify-center w-full gap-4">
-              <Button icon="fas fa-step-backward" color="blue" />
-              <Button icon="fas fa-pause" color="blue" />
-              <Button icon="fas fa-upload" color="blue" />
-              <Button icon="fas fa-step-forward" color="blue" />
-            </div>
-          </div>
-
-          <div className="mb-4">
             <TagsCard />
           </div>
           <div className="mb-4">

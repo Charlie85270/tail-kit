@@ -6,13 +6,13 @@ interface Props {
   headerImg?: string;
   withBorder?: boolean;
   links: Links[];
-  bottomLink?: { label: string; icon?: string; link?: string };
+  bottomLink?: { label: string; icon?: JSX.Element; link?: string };
   withDivider?: boolean;
 }
 interface Links {
   label: string;
   selected?: boolean;
-  icon?: string;
+  icon?: JSX.Element;
   notifications?: number;
 }
 
@@ -59,7 +59,7 @@ const Sidebar = (props: Props) => {
                   }`}
                   href="#"
                 >
-                  {link.icon && <i className={`${link.icon} h-6 w-6 mr-2`} />}
+                  {link.icon}
 
                   <span className="mx-4 text-lg font-normal">{link.label}</span>
                   <span className="flex-grow text-right">
@@ -81,9 +81,7 @@ const Sidebar = (props: Props) => {
                 className={`text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 transition-colors duration-200 flex items-center py-2 px-8`}
                 href={props.bottomLink.link || "#"}
               >
-                {props.bottomLink.icon && (
-                  <i className={`h-5 w-5 ${props.bottomLink.icon}`} />
-                )}
+                {props.bottomLink.icon}
 
                 <span className="mx-4 font-medium">
                   {props.bottomLink.label}

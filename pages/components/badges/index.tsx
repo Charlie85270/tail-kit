@@ -39,7 +39,7 @@ const BadgesPage: FC = () => {
         title="Stroke with icon"
         element={
           <Badge
-            icon="fab fa-facebook-f"
+            icon={true}
             label="Facebook"
             color="bg-blue-200"
             textColor="text-blue-600"
@@ -51,7 +51,7 @@ const BadgesPage: FC = () => {
         title="Line with icon"
         element={
           <Badge
-            icon="fab fa-facebook-f"
+            icon={true}
             label="Facebook"
             borderColor="border border-indigo-500"
             textColor="text-indigo-500"
@@ -63,7 +63,7 @@ const BadgesPage: FC = () => {
         title="Line with button"
         element={
           <Badge
-            icon="fab fa-facebook-f"
+            icon={true}
             label="Facebook"
             removeAction={() => null}
             borderColor="border border-indigo-500"

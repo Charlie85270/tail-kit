@@ -5,13 +5,13 @@ interface Props {
   forceOpen?: boolean;
   label?: string;
   withDivider?: boolean;
-  icon?: string;
+  icon?: JSX.Element;
   items: DDMItem[];
   withBackground?: boolean;
 }
 
 export interface DDMItem {
-  icon?: string;
+  icon?: JSX.Element;
   label: string;
   desc?: string;
   link?: string;
@@ -36,11 +36,17 @@ const DropDownMenu = (props: Props) => {
         >
           {props.label}
 
-          <i
-            className={`${props.icon || "fas fa-caret-down"}${
-              props.label ? " ml-4 h-4" : " h-8 w-8 text-lg"
-            }`}
-          />
+          {props.icon || (
+            <svg
+              width="20"
+              height="20"
+              fill="currentColor"
+              viewBox="0 0 1792 1792"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M1408 704q0 26-19 45l-448 448q-19 19-45 19t-45-19l-448-448q-19-19-19-45t19-45 45-19h896q26 0 45 19t19 45z" />
+            </svg>
+          )}
         </button>
       </div>
 
@@ -64,7 +70,7 @@ const DropDownMenu = (props: Props) => {
                   } block px-4 py-2 text-md text-gray-700 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-100 dark:hover:text-white dark:hover:bg-gray-600`}
                   role="menuitem"
                 >
-                  {item.icon && <i className={`${item.icon} mr-2`} />}
+                  {item.icon}
 
                   <span className="flex flex-col">
                     <span>{item.label}</span>

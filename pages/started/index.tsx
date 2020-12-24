@@ -59,17 +59,10 @@ const StartedPage: FC = () => {
           >
             Tailwind CSS framework{" "}
           </a>
-          and{" "}
-          <a
-            href="https://fontawesome.com/"
-            className="text-gray-700 underline hover:text-gray-800"
-          >
-            FontAwesome
-          </a>
           .
         </p>
         <p className="mt-1 text-lg text-gray-500">
-          You need to install both library to take full advantage of FastUI.
+          You need to install the library to take full advantage of FastUI.
         </p>
         <div className="mt-4">
           <p className="mt-1 text-lg text-gray-500">
@@ -81,21 +74,22 @@ const StartedPage: FC = () => {
               Documentation
             </a>
           </p>
-          <p className="mt-1 text-lg text-gray-500">
-            Link to install FontAwesome :{" "}
-            <a
-              href="https://fontawesome.com/how-to-use/on-the-web/setup/using-package-managers"
-              className="underline text-xl text-gray-700"
-            >
-              Documentation
-            </a>
-          </p>
 
-          <p className="pt-4 text-xl text-gray-700">
-            <i className="fas fa-check mr-4 text-green-500" />
-            Once these libraries are installed, you can started !
+          <p className="pt-4 text-xl text-gray-700 flex items-center">
+            <svg
+              className="h-6 w-6 mr-2"
+              xmlns="http://www.w3.org/2000/svg"
+              width="6"
+              height="6"
+              stroke="currentColor"
+              fill="#10b981"
+              viewBox="0 0 1792 1792"
+            >
+              <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z" />
+            </svg>
+            Once Tailwin css is installed, you can started !
             <Link href="/components">
-              <a className="w-28 mb-4 w-44 px-4 py-2 ml-4 text-base font-medium rounded-md text-white bg-gray-700 hover:bg-black">
+              <a className="w-28 mb-4 px-4 py-2 ml-4 text-base font-medium rounded-md text-center text-white bg-green-500 hover:bg-green-700">
                 Let's go !
               </a>
             </Link>
@@ -116,13 +110,23 @@ const StartedPage: FC = () => {
           Some Tailwind-kit components need to override basic Tailwind
           configuration to work.
         </p>
-        <p>
+        <p className="block md:flex items-center">
           All components who needs configuration are indicated with this sign:
           <a
-            className="ml-4 text-black border border-gray-800 bg-yellow-300 hover:bg-yellow-400 rounded-lg p-2"
+            className="ml-4 w-52 justify-between text-black border border-gray-800 bg-yellow-300 hover:bg-yellow-400 rounded-lg p-2 flex items-center"
             href="#"
           >
-            <i className="fas fa-exclamation-circle mr-2"></i>Need configuration
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              className="mr-2"
+              viewBox="0 0 1792 1792"
+            >
+              <path d="M1024 1375v-190q0-14-9.5-23.5t-22.5-9.5h-192q-13 0-22.5 9.5t-9.5 23.5v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19-13-11-24-11h-220q-11 0-24 11-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126-17 29-46.5 46t-63.5 17h-1536q-34 0-63.5-17t-46.5-46q-37-63-2-126l768-1408q17-31 47-49t65-18 65 18 47 49z" />
+            </svg>
+            Need configuration
           </a>
         </p>
 

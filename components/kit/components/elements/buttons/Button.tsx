@@ -2,11 +2,10 @@ import React from "react";
 
 interface Props {
   color?: string;
-  icon?: string;
+  icon?: JSX.Element;
   disabled?: boolean;
   submit?: boolean;
   isFat?: boolean;
-  animated?: boolean;
   label?: string;
   onClick?: () => void;
 }
@@ -29,13 +28,8 @@ const Button = (props: Props) => {
         props.disabled ? " opacity-70 cursor-not-allowed" : ""
       }${!props.label ? " w-12 h-12" : ""}`}
     >
-      {props.icon && (
-        <i
-          className={`${props.icon} ${props.animated ? "animate-spin" : ""} ${
-            props.label ? " mr-4" : ""
-          }`}
-        />
-      )}
+      {props.icon && props.icon}
+
       {props.label && props.label}
     </button>
   );

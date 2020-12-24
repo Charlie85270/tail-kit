@@ -8,7 +8,7 @@ interface Props {
   withBackground?: boolean;
 }
 interface DDMItem {
-  icon?: string;
+  icon?: JSX.Element;
   label: string;
   desc?: string;
   link?: string;
@@ -75,11 +75,7 @@ const LargeDropDownMenu = (props: Props) => {
                     href={item.link || "#"}
                     className="-m-3 p-3 flex items-center hover:bg-gray-50"
                   >
-                    {item.icon && (
-                      <i
-                        className={`${item.icon} dark:text-white flex-shrink-0 h-6 w-6`}
-                      />
-                    )}
+                    {item.icon}
 
                     <div className="ml-4">
                       <p className="text-base font-medium text-gray-900 dark:text-white">
