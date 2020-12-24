@@ -57,7 +57,7 @@ const Header = (props: Props) => {
                 <div className="ml-10 flex items-baseline space-x-4">
                   {props.links.map((link) => {
                     return (
-                      <Link href={link.link || "#"}>
+                      <Link key={link.label} href={link.link || "#"}>
                         <a
                           key={link.label}
                           className={`${

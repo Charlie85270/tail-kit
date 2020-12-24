@@ -20,6 +20,7 @@ const FooterLight = (props: Props) => {
             {props.links.map((link) => {
               return (
                 <a
+                  key={link.label}
                   aria-current="page"
                   href={link.link || "#"}
                   className="hover:text-gray-700 dark:hover:text-white"

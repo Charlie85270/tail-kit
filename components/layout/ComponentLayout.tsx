@@ -150,7 +150,8 @@ const ComponentLayout = (props: Props) => {
               className={`${props.vertical ? "" : "md:w-3/4"} relative w-full`}
             >
               <div>
-                {COPY_BTN()}
+                <div className="absolute top-2 right-24 z-10">{COPY_BTN()}</div>
+
                 <button
                   onClick={() => setStatus(STATUS.DEFAULT)}
                   className="w-12 p-2 absolute top-2 right-2 z-30 text-base font-medium rounded-md bg-red-300 hover:bg-red-400 "
