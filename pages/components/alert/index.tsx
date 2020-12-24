@@ -154,7 +154,6 @@ const AlertPage = () => {
       <ComponentLayout
         vertical={true}
         title="Modale with footer actions"
-        jsLink="http://google.com"
         element={
           <InformationModale
             withFooter={true}

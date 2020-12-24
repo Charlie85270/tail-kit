@@ -5,9 +5,6 @@ module.exports = {
   purge: {
     content: ["./pages/**/*.tsx", "./components/**/*.tsx"],
     // These options are passed through directly to PurgeCSS
-    options: {
-      safelist: [/bg-/, /focus:ring/, /text-/],
-    },
   },
   theme: {
     extend: {
