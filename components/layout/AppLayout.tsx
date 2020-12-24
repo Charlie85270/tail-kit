@@ -1,7 +1,6 @@
 import Header from "../kit/components/navigation/header/Header";
 import FooterLight from "../kit/components/navigation/footer/FooterLight";
 import Meta from "../site/Meta";
-import "@fortawesome/fontawesome-svg-core/styles.css";
 
 const footerLink = [
   {
