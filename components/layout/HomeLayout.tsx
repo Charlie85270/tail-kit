@@ -1,6 +1,5 @@
-import { FC, useEffect } from "react";
+import { FC } from "react";
 import Header from "../site/header/header";
-import ReactGA from "react-ga";
 import Meta from "../site/Meta";
 
 const HomeLayout: FC = ({ children }) => {

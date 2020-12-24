@@ -1,23 +1,8 @@
 import { FC } from "react";
 
-import TextButton from "../components/kit/components/elements/buttons/Button";
 import HomeLayout from "../components/layout/HomeLayout";
 import Link from "next/link";
-import CoverAndButtonsProfilCard from "../components/kit/components/pagesection/profile/CoverAndButtonsProfilCard";
-import SimpleProfilCard from "../components/kit/components/pagesection/profile/SimpleProfil";
-import Button from "../components/kit/components/elements/buttons/Button";
-import MultipleShoppingCard from "../components/kit/components/commerce/shopping/MultipleShoppingCard";
-import PricingCard from "../components/kit/components/commerce/pricing/PricingCard";
-import DeleteConfirmation from "../components/kit/components/elements/alert/ConfirmationCard";
-import SimplePhotoDescCard from "../components/kit/components/elements/data/SimplePhotoDescCard";
-import SimpleNotificationCard from "../components/kit/components/elements/data/SimpleNotificationCard";
-import SimpleIconDescCard from "../components/kit/components/elements/data/SimpleIconDescCard";
-import CustomSelect from "../components/kit/components/form/select/CustomSelect";
-import InfoNumberCard from "../components/kit/components/elements/data/InfoNumberCard";
-import TagsCard from "../components/kit/components/elements/data/TagsCard";
-import CookieAlert2 from "../components/kit/components/elements/alert/CookieAlert2";
-import PricingCard2 from "../components/kit/components/commerce/pricing/PricingCard2";
-import PricingCard3 from "../components/kit/components/commerce/pricing/PricingCard3";
+import HomeComps from "../components/site/home/HomeComps";
 
 const IndexPage: FC = () => {
   return (
@@ -58,81 +43,7 @@ const IndexPage: FC = () => {
             </div>
           </div>
         </div>
-        <div className="opacity-10 z-10 md:z-50 md:opacity-70 sm:text-center  absolute perspective lg:text-left transform  w-full right-0  md:right-20 -top-56  md:w-1/2">
-          <div className="flex gap-4 gap-y-1">
-            <div className="col-1">
-              <div className="mb-4">
-                <div className="flex items-center justify-center w-full gap-4">
-                  <Button icon="fas fa-step-backward" color="blue" />
-                  <Button icon="fas fa-pause" color="blue" />
-                  <Button icon="fas fa-upload" color="blue" />
-                  <Button icon="fas fa-step-forward" color="blue" />
-                </div>
-              </div>
-
-              <div className="mb-4">
-                <TagsCard />
-              </div>
-              <div className="mb-4">
-                <SimplePhotoDescCard />
-              </div>
-
-              <div className="mb-4">
-                <DeleteConfirmation />
-              </div>
-              <div className="mb-4">
-                <MultipleShoppingCard showOne={true} />
-              </div>
-              <div className="mb-4">
-                <PricingCard3 />
-              </div>
-            </div>
-            <div className="col-1">
-              <div className="mb-4 flex gap-4">
-                <TextButton label="Annuler" color="red" />
-                <TextButton label="Confirmer" color="green" />
-              </div>
-              <div className="mb-4">
-                <CoverAndButtonsProfilCard />
-              </div>
-              <div className="mb-4">
-                <SimpleNotificationCard />
-              </div>
-
-              <div className="mb-4">
-                <SimpleIconDescCard />
-              </div>
-              <div className="mb-4">
-                <CustomSelect />
-              </div>
-
-              <div className="mb-4">
-                <PricingCard />
-              </div>
-            </div>
-            <div className="col-1">
-              <div className="mb-4">
-                <SimpleProfilCard />
-              </div>
-              <div className="mb-4">
-                <SimpleProfilCard />
-              </div>
-              <div className="mb-4">
-                <InfoNumberCard />
-              </div>
-              <div className="mb-4">
-                <SimpleProfilCard />
-              </div>
-
-              <div className="mb-4">
-                <CookieAlert2 />
-              </div>
-              <div className="mb-4">
-                <PricingCard2 />
-              </div>
-            </div>
-          </div>
-        </div>
+        <HomeComps />
       </div>
     </HomeLayout>
   );
