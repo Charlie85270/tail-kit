@@ -60,9 +60,6 @@ export const menuEntry = [
 ];
 
 const AppLayout = ({ title, desc, children }) => {
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
-  }, []);
   return (
     <div className="relative bg-white">
       <Meta pageTitle={title} description={desc} />

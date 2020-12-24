@@ -4,9 +4,6 @@ import ReactGA from "react-ga";
 import Meta from "../site/Meta";
 
 const HomeLayout: FC = ({ children }) => {
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
-  }, []);
   return (
     <>
       <Meta
