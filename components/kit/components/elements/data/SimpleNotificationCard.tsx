@@ -5,7 +5,7 @@ const SimpleNotificationCard: FC = () => {
       <div className="w-2/6">
         <img
           src="/images/person/2.jpeg"
-          alt=""
+          alt="person"
           className="h-12 w-12 rounded-full"
         />
       </div>

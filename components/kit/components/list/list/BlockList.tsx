@@ -72,9 +72,9 @@ const BlockList = (props: Props) => {
                 {props.withAction && (
                   <button className="w-24 text-right">
                     <svg
-                      width="20"
+                      width="12"
                       fill="currentColor"
-                      height="20"
+                      height="12"
                       className="hover:text-gray-800 dark:hover:text-white dark:text-gray-200 text-gray-500"
                       viewBox="0 0 1792 1792"
                       xmlns="http://www.w3.org/2000/svg"

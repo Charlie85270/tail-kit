@@ -6,7 +6,7 @@ const HomeLayout: FC = ({ children }) => {
   return (
     <>
       <Meta
-        pageTitle="Tailwind UI KIT"
+        pageTitle="Tailwind UI KIT 200 Free and open source components"
         description="Over 200 free and open source components and templates for tailwind css to build beautiful UI"
       />
 

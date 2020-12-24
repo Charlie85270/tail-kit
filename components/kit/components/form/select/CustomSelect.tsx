@@ -44,7 +44,7 @@ const CustomSelect = (props: Props) => {
             {!props.hideImage && (
               <img
                 src="/images/person/2.jpeg"
-                alt=""
+                alt="person"
                 className="flex-shrink-0 h-6 w-6 rounded-full"
               />
             )}
@@ -89,7 +89,7 @@ const CustomSelect = (props: Props) => {
                   {!props.hideImage && (
                     <img
                       src="/images/person/1.jpg"
-                      alt=""
+                      alt="person"
                       className="flex-shrink-0 h-6 w-6 rounded-full"
                     />
                   )}
@@ -122,8 +122,8 @@ const CustomSelect = (props: Props) => {
                 <div className="flex items-center">
                   {!props.hideImage && (
                     <img
-                      src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
-                      alt=""
+                      src="/images/person/1.jpg"
+                      alt="person"
                       className="flex-shrink-0 h-6 w-6 rounded-full"
                     />
                   )}

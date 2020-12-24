@@ -6,7 +6,7 @@ const ClassicShoppingCard: FC = () => {
       <div className="flex-none w-48 relative">
         <img
           src="/images/object/8.jpg"
-          alt=""
+          alt="shopping image"
           className="absolute rounded-lg inset-0 w-full h-full object-cover"
         />
       </div>

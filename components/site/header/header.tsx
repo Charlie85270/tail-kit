@@ -40,7 +40,7 @@ const Header = ({ hideGithub, hideHelp }) => {
                 <img
                   className="h-12 w-auto sm:h-12"
                   src="/icons/rocket.svg"
-                  alt=""
+                  alt="site"
                 />
                 <span className="text-indigo-600 ml-2 text-2xl font-bold">
                   Tailwind-kit
