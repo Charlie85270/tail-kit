@@ -17,6 +17,7 @@ import InfoNumberCard from "../components/kit/components/elements/data/InfoNumbe
 import TagsCard from "../components/kit/components/elements/data/TagsCard";
 import CookieAlert2 from "../components/kit/components/elements/alert/CookieAlert2";
 import PricingCard2 from "../components/kit/components/commerce/pricing/PricingCard2";
+import PricingCard3 from "../components/kit/components/commerce/pricing/PricingCard3";
 
 const IndexPage: FC = () => {
   return (
@@ -80,7 +81,10 @@ const IndexPage: FC = () => {
                 <DeleteConfirmation />
               </div>
               <div className="mb-4">
-                <MultipleShoppingCard />
+                <MultipleShoppingCard showOne={true} />
+              </div>
+              <div className="mb-4">
+                <PricingCard3 />
               </div>
             </div>
             <div className="col-1">
