@@ -12,12 +12,12 @@ const IndexPage: FC = () => {
   return (
     <HomeLayout>
       <div className="flex flex-col md:flex-row w-full items-start justify-between md:justify-start h-full md:h-1/2">
-        <div className="sm:text-center z-20 md:z-30 lg:text-left w-full md:w-1/2 flex flex-col items-center md:items-start justify-start md:justify-center h-full">
+        <div className="text-left z-20 md:z-30 w-full md:w-1/2 flex flex-col items-center md:items-start justify-start md:justify-center h-full">
           <h1 className="tracking-tight font-extrabold text-gray-900 text-5xl md:text-6xl">
             <span className="block xl:inline">
               Quickly and easily create stunning UI with
             </span>
-            <span className="flex w-40 m-auto text-indigo-600 xl:inline">
+            <span className="flex w-full m-auto text-indigo-600 xl:inline">
               {" "}
               Tailwind-kit
             </span>
