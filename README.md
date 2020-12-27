@@ -1,4 +1,4 @@
-# Tailwind Starter Kit 
+# Tailwind-Kit 
 
 ![version](https://img.shields.io/badge/version-1.0.0-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) ![GitHub issues](https://img.shields.io/github/issues/Charlie85270/fastUI) <a href="https://www.tailwind-kit.com/" target="_blank">
 ![GitHub Repo stars](https://img.shields.io/github/stars/Charlie85270/fastUI?style=social)
