@@ -29,7 +29,7 @@ const PricingCard3: FC = () => {
       <ul className="text-sm text-black dark:text-white w-full mt-6 mb-6">
         {includes.map((price) => {
           return (
-            <li className="mb-3 flex items-center">
+            <li key={price} className="mb-3 flex items-center">
               <svg
                 className="mr-2"
                 xmlns="http://www.w3.org/2000/svg"
@@ -44,11 +44,11 @@ const PricingCard3: FC = () => {
           );
         })}
       </ul>
-      <span className="w-56 block bg-gray-100 h-1 rounded-lg my-2"></span>
+      <span className="w-56 block bg-gray-100 h-1 rounded-lg my-2" />
       <ul className="text-sm text-black dark:text-white w-full mt-6 mb-6">
         {bonus.map((bon, index) => {
           return (
-            <li className="mb-3 flex items-center">
+            <li key={index} className="mb-3 flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
