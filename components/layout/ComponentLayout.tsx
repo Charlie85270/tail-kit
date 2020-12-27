@@ -5,6 +5,7 @@ import ReactDOMServer from "react-dom/server";
 import { formatHtml } from "../../utils/Utils";
 import Toggle from "../kit/components/form/toggle/Toggle";
 import Link from "next/link";
+import * as gtag from "../../lib/gtag";
 
 interface Props {
   element: JSX.Element;
@@ -55,11 +56,12 @@ const ComponentLayout = (props: Props) => {
     document.execCommand("copy");
     document.body.removeChild(el);
     setHasCopied(true);
-    // ReactGA.event({
-    //   category: "action",
-    //   label: props.title,
-    //   action: "Copy code",
-    // });
+    gtag.event({
+      category: "action",
+      value: props.title,
+      label: "Copy code",
+      action: "Copy",
+    });
   };
 
   const COPY_BTN = () => {
