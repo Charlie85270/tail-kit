@@ -172,7 +172,7 @@ const ComponentsPage: FC = () => {
         component={Button}
       />
       <ComponentLayout
-        title="Sotre button"
+        title="Store button"
         element={<StoreButton />}
         component={StoreButton}
       />
