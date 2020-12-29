@@ -101,7 +101,7 @@ const ComponentLayout = (props: Props) => {
         <p className="text-xl font-light text-gray-600 mb-2 md:mb-0">
           {props.title}
         </p>
-        <div className="flex items-center flex-row gap-4 justify-center">
+        <div className="flex flex-wrap items-center flex-row gap-4 justify-center">
           {props.showSwitchMode && (
             <Toggle label="Dark mode" onChange={(mode) => changeMode(mode)} />
           )}
