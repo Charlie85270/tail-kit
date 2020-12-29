@@ -4,7 +4,7 @@ import SectionHeader from "../../../components/site/header/SectionHeader";
 import ComponentLayout from "../../../components/layout/ComponentLayout";
 import InformationCard from "../../../components/kit/components/elements/alert/InformationCard";
 import ConfirmationCard from "../../../components/kit/components/elements/alert/ConfirmationCard";
-import InformationModale from "../../../components/kit/components/elements/alert/InformationModale";
+import InformationModal from "../../../components/kit/components/elements/alert/InformationModal";
 import SimpleTeam from "../../../components/kit/components/pagesection/team/SimpleTeam";
 import SimpleTextCta from "../../../components/kit/components/pagesection/cta/SimpleTextCta";
 import SimpleAlert from "../../../components/kit/components/elements/alert/SimpleAlert";
@@ -20,7 +20,7 @@ const AlertPage = () => {
   return (
     <AppLayout
       title="Alert free Tailwind components"
-      desc="Alerts, Modales, Banners ... components for tailwind css"
+      desc="Alerts, Modals, Banners ... components for tailwind css"
     >
       <SectionHeader title="Alert" />
       <ComponentLayout
@@ -115,9 +115,9 @@ const AlertPage = () => {
       />
       <ComponentLayout
         vertical={true}
-        title="Modale"
+        title="Modal"
         element={
-          <InformationModale
+          <InformationModal
             withFooter={false}
             onClose={() => null}
             withCloseBtn={false}
@@ -127,16 +127,16 @@ const AlertPage = () => {
               title={title}
               subtitle={subtitle}
             />
-          </InformationModale>
+          </InformationModal>
         }
-        component={InformationModale}
+        component={InformationModal}
       />
       <ComponentLayout
         vertical={true}
-        title="Modale with close btn"
+        title="Modal with close btn"
         jsLink="http://google.com"
         element={
-          <InformationModale
+          <InformationModal
             withFooter={false}
             onClose={() => null}
             withCloseBtn={true}
@@ -147,15 +147,15 @@ const AlertPage = () => {
               job="Lead dev"
               desc=""
             />
-          </InformationModale>
+          </InformationModal>
         }
-        component={InformationModale}
+        component={InformationModal}
       />
       <ComponentLayout
         vertical={true}
-        title="Modale with footer actions"
+        title="Modal with footer actions"
         element={
-          <InformationModale
+          <InformationModal
             withFooter={true}
             onClose={() => null}
             withCloseBtn={false}
@@ -166,9 +166,9 @@ const AlertPage = () => {
               job="Lead dev"
               desc=""
             />
-          </InformationModale>
+          </InformationModal>
         }
-        component={InformationModale}
+        component={InformationModal}
       />
     </AppLayout>
   );

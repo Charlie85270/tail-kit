@@ -23,7 +23,7 @@ const ConfirmationCard: FC = () => {
             Are you sure you want to delete this card ?
           </p>
           <div className="flex items-center justify-between gap-4 w-full mt-8">
-            <Button color="indigo" label="cancel" />
+            <Button color="indigo" label="Cancel" />
             <Button color="red" label="Delete" />
           </div>
         </div>
