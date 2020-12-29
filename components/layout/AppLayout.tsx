@@ -124,6 +124,7 @@ const AppLayout = ({ title, desc, children }) => {
         <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20  lg:w-full lg:pb-28 xl:pb-32 h-full">
           <div className="dark">
             <Header
+              withRequestLink={true}
               links={menuEntry}
               withShadow={true}
               hideGitHubLink={false}
