@@ -28,4 +28,5 @@ const SectionHeader = ({ title }: Props) => {
     </div>
   );
 };
+
 export default SectionHeader;

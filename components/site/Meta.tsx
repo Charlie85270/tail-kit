@@ -23,4 +23,5 @@ const Meta = ({ pageTitle, description }: Props) => {
     </Head>
   );
 };
+
 export default Meta;

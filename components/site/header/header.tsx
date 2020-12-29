@@ -196,4 +196,5 @@ const Header = ({ hideGithub, hideHelp }: Props) => {
     </div>
   );
 };
+
 export default Header;
