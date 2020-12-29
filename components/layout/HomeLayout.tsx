@@ -1,6 +1,6 @@
 import React, { FC } from "react";
-import Header from "../site/header/Header";
 import Meta from "../site/Meta";
+import Header from "../site/header/Header";
 
 interface Props {
   children: React.ReactNode;
