@@ -34,7 +34,7 @@ const Elements: FC = () => {
       link: "/components/alert",
     },
     {
-      title: "Datas display",
+      title: "Data dashboards",
       items: 10,
       img: "images/sections/data.svg",
       link: "/components/data",

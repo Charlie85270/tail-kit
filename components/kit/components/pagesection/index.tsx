@@ -4,7 +4,7 @@ import SectionDesc from "../../../site/section/SectionDesc";
 const Pagesection: FC = () => {
   const pageSections = [
     {
-      title: "CTA",
+      title: "CTAs",
       items: 8,
       img: "images/sections/cta.svg",
       link: "/components/cta",
@@ -28,7 +28,7 @@ const Pagesection: FC = () => {
       link: "/components/team",
     },
     {
-      title: "Faqs",
+      title: "FAQs",
       items: 2,
       img: "images/sections/faq.svg",
       link: "/components/faq",

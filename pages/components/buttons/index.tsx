@@ -17,12 +17,12 @@ const ComponentsPage: FC = () => {
     >
       <SectionHeader title="Buttons" />
       <ComponentLayout
-        title="button"
+        title="Button"
         element={<Button label="Valider" color="indigo" />}
         component={Button}
       />
       <ComponentLayout
-        title="button with icon"
+        title="Button with icon"
         element={
           <Button
             label="Upload"
@@ -44,7 +44,7 @@ const ComponentsPage: FC = () => {
         component={Button}
       />
       <ComponentLayout
-        title="icon button"
+        title="Icon button"
         element={
           <Button
             icon={
@@ -64,7 +64,7 @@ const ComponentsPage: FC = () => {
         component={Button}
       />
       <ComponentLayout
-        title="Animate button"
+        title="Animated button"
         element={
           <Button
             icon={
@@ -150,10 +150,10 @@ const ComponentsPage: FC = () => {
         component={Button}
       />
       <ComponentLayout
-        title="Github button"
+        title="GitHub button"
         element={
           <Button
-            label="Sign in with Github"
+            label="Sign in with GitHub"
             icon={
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -172,7 +172,7 @@ const ComponentsPage: FC = () => {
         component={Button}
       />
       <ComponentLayout
-        title="Sotre button"
+        title="Store button"
         element={<StoreButton />}
         component={StoreButton}
       />
