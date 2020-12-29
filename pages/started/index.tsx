@@ -63,11 +63,11 @@ const StartedPage: FC = () => {
           .
         </p>
         <p className="mt-1 text-lg text-gray-500">
-          You need to install the library to take full advantage of FastUI.
+          You need to install the library to take the full advantage of FastUI.
         </p>
         <div className="mt-4">
           <p className="mt-1 text-lg text-gray-500">
-            Link to install tailwind CSS :{" "}
+            Link to install Tailwind CSS :{" "}
             <a
               href="https://tailwindcss.com/docs"
               className="underline text-xl text-gray-700"
@@ -88,7 +88,7 @@ const StartedPage: FC = () => {
             >
               <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z" />
             </svg>
-            Once Tailwin css is installed, you can get started !
+            Once Tailwind CSS is installed, you can get started!
             <Link href="/components">
               <a className="w-28 mb-4 px-4 py-2 ml-4 text-base font-medium rounded-md text-center text-white bg-green-500 hover:bg-green-700">
                 Let's go !
@@ -112,7 +112,7 @@ const StartedPage: FC = () => {
           configuration to work.
         </p>
         <p className="block md:flex items-center">
-          All components who needs configuration are indicated with this sign:
+          All components that need configuration are indicated with this sign:
           <a
             className="ml-4 w-52 justify-between text-black border border-gray-800 bg-yellow-300 hover:bg-yellow-400 rounded-lg p-2 flex items-center"
             href="#"
@@ -133,7 +133,7 @@ const StartedPage: FC = () => {
 
         <div className="mt-4">
           <p className="mt-1 text-lg text-gray-500">
-            For more infirmation about tailwind configuration :{" "}
+            For more information about Tailwind configuration:{" "}
             <a
               href="https://tailwindcss.com/docs/configuration"
               className="underline text-xl text-gray-700"
@@ -143,8 +143,7 @@ const StartedPage: FC = () => {
           </p>
 
           <p className="pt-4 text-xl text-gray-700 mb-4">
-            Below you will find the necessary configuration for all Tailwind-kit
-            components (tailwind.config.js file):
+            The necessary configuration for all Tailwind-kit components (tailwind.config.js file) are available below:
           </p>
           <LiveProvider
             theme={EDITOR_THEME}
