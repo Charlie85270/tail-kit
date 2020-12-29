@@ -39,4 +39,5 @@ const SectionDesc = ({ title, items, id }: Props) => {
     </div>
   );
 };
+
 export default SectionDesc;
