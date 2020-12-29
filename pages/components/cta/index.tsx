@@ -5,6 +5,7 @@ import SectionHeader from "../../../components/site/header/SectionHeader";
 import SimpleTextCta from "../../../components/kit/components/pagesection/cta/SimpleTextCta";
 import SubscribeCta from "../../../components/kit/components/pagesection/cta/SubscribeCta";
 import NotifyMeCta from "../../../components/kit/components/pagesection/cta/NotifyMeCta";
+import MultipleImagesCta from "../../../components/kit/components/pagesection/cta/MultipleImagesCta";
 
 const ComponentsPage: FC = () => {
   const title = "Want to be millionaire ?";
@@ -115,6 +116,18 @@ const ComponentsPage: FC = () => {
         title="Notify cta"
         element={<NotifyMeCta />}
         component={NotifyMeCta}
+      />
+      <ComponentLayout
+        vertical={true}
+        showSwitchMode={true}
+        title="Multiple images cta"
+        element={
+          <MultipleImagesCta
+            title="Mother hearth host your travel"
+            description="The state of Utah in the united states is home to lots of beautiful National parks, Bryce national canion park ranks as three of the most magnificient & awe inspiring."
+          />
+        }
+        component={MultipleImagesCta}
       />
     </AppLayout>
   );
