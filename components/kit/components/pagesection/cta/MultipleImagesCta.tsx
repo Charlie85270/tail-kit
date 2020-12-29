@@ -12,9 +12,7 @@ const MultipleImagesCta = (props: Props) => {
     <div
       className={`bg-white dark:bg-gray-800 overflow-hidden relative lg:flex lg:items-center`}
     >
-      <div
-        className={`w-full lg:w-2/3 py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20`}
-      >
+      <div className={`w-full py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20`}>
         <h2
           className={`text-3xl font-extrabold text-black dark:text-white sm:text-4xl`}
         >
@@ -30,7 +28,7 @@ const MultipleImagesCta = (props: Props) => {
         </div>
       </div>
 
-      <div className="flex items-center gap-8 p-8">
+      <div className="flex items-center gap-8 p-8 lg:p-24">
         <img
           src="/images/landscape/3.jpg"
           className="rounded-lg w-1/2"
