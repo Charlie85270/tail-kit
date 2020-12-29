@@ -8,36 +8,13 @@ const MultipleShoppingCard = (props: Props) => {
   return (
     <div className="flex flex-wrap items-center justify-center">
       <div className="flex-shrink-0 mx-2 mb-6 relative overflow-hidden bg-yellow-500 rounded-lg max-w-xs shadow-lg">
-        <svg
-          className="absolute bottom-0 left-0 mb-8"
-          viewBox="0 0 375 283"
-          fill="none"
-        >
-          <rect
-            x="159.52"
-            y="175"
-            width="152"
-            height="152"
-            rx="8"
-            transform="rotate(-45 159.52 175)"
-            fill="#f3c06b"
-          />
-          <rect
-            y="107.48"
-            width="152"
-            height="152"
-            rx="8"
-            transform="rotate(-45 0 107.48)"
-            fill="#f3c06b"
-          />
+        <svg className="absolute bottom-0 left-0 mb-8" viewBox="0 0 375 283" fill="none">
+          <rect x="159.52" y="175" width="152" height="152" rx="8" transform="rotate(-45 159.52 175)" fill="#f3c06b" />
+          <rect y="107.48" width="152" height="152" rx="8" transform="rotate(-45 0 107.48)" fill="#f3c06b" />
         </svg>
         <div className="relative pt-10 px-10 flex items-center justify-center">
           <div className="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"></div>
-          <img
-            className="relative w-40"
-            src="/images/object/5.png"
-            alt="shopping"
-          />
+          <img className="relative w-40" src="/images/object/5.png" alt="shopping" />
         </div>
         <div className="relative text-white px-6 pb-6 mt-6">
           <span className="block opacity-75 -mb-1">Indoor</span>
@@ -52,11 +29,7 @@ const MultipleShoppingCard = (props: Props) => {
       {!props.showOne && (
         <>
           <div className="flex-shrink-0 mx-2 relative overflow-hidden bg-blue-500 rounded-lg max-w-xs shadow-lg">
-            <svg
-              className="absolute bottom-0 left-0 mb-8"
-              viewBox="0 0 375 283"
-              fill="none"
-            >
+            <svg className="absolute bottom-0 left-0 mb-8" viewBox="0 0 375 283" fill="none">
               <rect
                 x="159.52"
                 y="175"
@@ -66,22 +39,11 @@ const MultipleShoppingCard = (props: Props) => {
                 transform="rotate(-45 159.52 175)"
                 fill="#6da3fb"
               />
-              <rect
-                y="107.48"
-                width="152"
-                height="152"
-                rx="8"
-                transform="rotate(-45 0 107.48)"
-                fill="#6da3fb"
-              />
+              <rect y="107.48" width="152" height="152" rx="8" transform="rotate(-45 0 107.48)" fill="#6da3fb" />
             </svg>
             <div className="relative pt-10 px-10 flex items-center justify-center">
               <div className="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"></div>
-              <img
-                className="relative w-40"
-                src="/images/object/6.png"
-                alt="shopping"
-              />
+              <img className="relative w-40" src="/images/object/6.png" alt="shopping" />
             </div>
             <div className="relative text-white px-6 pb-6 mt-6">
               <span className="block opacity-75 -mb-1">Outdoor</span>
@@ -94,11 +56,7 @@ const MultipleShoppingCard = (props: Props) => {
             </div>
           </div>
           <div className="flex-shrink-0 mx-2 -mb-6 relative overflow-hidden bg-purple-500 rounded-lg max-w-xs shadow-lg">
-            <svg
-              className="absolute bottom-0 left-0 mb-8"
-              viewBox="0 0 375 283"
-              fill="none"
-            >
+            <svg className="absolute bottom-0 left-0 mb-8" viewBox="0 0 375 283" fill="none">
               <rect
                 x="159.52"
                 y="175"
@@ -108,22 +66,11 @@ const MultipleShoppingCard = (props: Props) => {
                 transform="rotate(-45 159.52 175)"
                 fill="#a17cf3"
               />
-              <rect
-                y="107.48"
-                width="152"
-                height="152"
-                rx="8"
-                transform="rotate(-45 0 107.48)"
-                fill="#a17cf3"
-              />
+              <rect y="107.48" width="152" height="152" rx="8" transform="rotate(-45 0 107.48)" fill="#a17cf3" />
             </svg>
             <div className="relative pt-10 px-10 flex items-center justify-center">
               <div className="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"></div>
-              <img
-                className="relative w-40"
-                src="/images/object/7.png"
-                alt="shopping"
-              />
+              <img className="relative w-40" src="/images/object/7.png" alt="shopping" />
             </div>
             <div className="relative text-white px-6 pb-6 mt-6">
               <span className="block opacity-75 -mb-1">Outdoor</span>

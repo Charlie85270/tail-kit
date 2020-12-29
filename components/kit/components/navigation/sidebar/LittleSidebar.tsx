@@ -18,18 +18,15 @@ const LittleSidebar = (props: Props) => {
         <div className="mt-10 mb-10">
           {props.withHeader && (
             <a href="#">
-              <img
-                src="/images/person/2.jpeg"
-                className="rounded-full w-10 h-10 mb-3 mx-auto"
-              />
+              <img src="/images/person/2.jpeg" className="rounded-full w-10 h-10 mb-3 mx-auto" />
             </a>
           )}
 
           <div className="mt-10">
             <ul>
-              {props.links.map((link) => {
+              {props.links.map((link, index) => {
                 return (
-                  <li className="my-12 text-center">
+                  <li key={index} className="my-12 text-center">
                     <a href="#">
                       <span
                         className={`h-6 w-6 text-gray-500 dark:text-gray-300 mx-auto hover:text-gray-800 dark:hover:text-white transition-colors duration-200`}

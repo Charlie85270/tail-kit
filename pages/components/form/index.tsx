@@ -29,12 +29,7 @@ const TogglePage: FC = () => {
         element={<CreateAccount />}
         component={CreateAccount}
       />
-      <ComponentLayout
-        title="Login"
-        showSwitchMode={true}
-        element={<SignIn />}
-        component={SignIn}
-      />
+      <ComponentLayout title="Login" showSwitchMode={true} element={<SignIn />} component={SignIn} />
       <ComponentLayout
         showSwitchMode={true}
         title="With Facebook"
@@ -47,36 +42,21 @@ const TogglePage: FC = () => {
         element={<SignIn withGoogle={true} withFacebook={true} />}
         component={SignIn}
       />
-      <ComponentLayout
-        showSwitchMode={true}
-        title="Contact form"
-        element={<ContactForm />}
-        component={ContactForm}
-      />
+      <ComponentLayout showSwitchMode={true} title="Contact form" element={<ContactForm />} component={ContactForm} />
       <ComponentLayout
         vertical={true}
         title="Login with background"
         element={<LoginWithBackground />}
         component={LoginWithBackground}
       />
-      <ComponentLayout
-        vertical={true}
-        title="Login design"
-        element={<DesignLogin />}
-        component={DesignLogin}
-      />
+      <ComponentLayout vertical={true} title="Login design" element={<DesignLogin />} component={DesignLogin} />
       <ComponentLayout
         vertical={true}
         title="User information form"
         element={<UserInfoForm />}
         component={UserInfoForm}
       />
-      <ComponentLayout
-        vertical={true}
-        title="Search form"
-        element={<SearchForm />}
-        component={SearchForm}
-      />
+      <ComponentLayout vertical={true} title="Search form" element={<SearchForm />} component={SearchForm} />
     </AppLayout>
   );
 };

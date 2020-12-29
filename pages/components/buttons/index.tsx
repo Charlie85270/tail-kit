@@ -16,11 +16,7 @@ const ComponentsPage: FC = () => {
       desc="Buttons, Social buttons and more components for tailwind css"
     >
       <SectionHeader title="Buttons" />
-      <ComponentLayout
-        title="Button"
-        element={<Button label="Valider" color="indigo" />}
-        component={Button}
-      />
+      <ComponentLayout title="Button" element={<Button label="Valider" color="indigo" />} component={Button} />
       <ComponentLayout
         title="Button with icon"
         element={
@@ -95,16 +91,8 @@ const ComponentsPage: FC = () => {
         element={<ButtonWithIndications label="Star" indication="654" />}
         component={ButtonWithIndications}
       />
-      <ComponentLayout
-        title="Multiple buttons"
-        element={<MultipleButton />}
-        component={MultipleButton}
-      />
-      <ComponentLayout
-        title="Pager button"
-        element={<PagerButton />}
-        component={PagerButton}
-      />
+      <ComponentLayout title="Multiple buttons" element={<MultipleButton />} component={MultipleButton} />
+      <ComponentLayout title="Pager button" element={<PagerButton />} component={PagerButton} />
       <ComponentLayout
         title="Facebook button"
         element={
@@ -171,26 +159,14 @@ const ComponentsPage: FC = () => {
         }
         component={Button}
       />
-      <ComponentLayout
-        title="Store button"
-        element={<StoreButton />}
-        component={StoreButton}
-      />
-      <ComponentLayout
-        title="Rounded button"
-        element={<RoundedButton label="Play" />}
-        component={Button}
-      />
+      <ComponentLayout title="Store button" element={<StoreButton />} component={StoreButton} />
+      <ComponentLayout title="Rounded button" element={<RoundedButton label="Play" />} component={Button} />
       <ComponentLayout
         title="Rounded button with icon"
         element={<RoundedButton label="Play" icon={true} />}
         component={Button}
       />
-      <ComponentLayout
-        title="Rounded icon"
-        element={<RoundedButton icon={true} />}
-        component={Button}
-      />
+      <ComponentLayout title="Rounded icon" element={<RoundedButton icon={true} />} component={Button} />
     </AppLayout>
   );
 };

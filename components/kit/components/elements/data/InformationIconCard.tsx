@@ -18,9 +18,8 @@ const InformationIconCard: FC = () => {
 
         <p className="text-gray-800 text-xl font-medium mb-4 mt-4">Justice</p>
         <p className="text-gray-400 text-center text-xs px-2">
-          I therefore look forward to further developments in this area so that
-          we can ease the path in bringing these reckless individuals to
-          justice.
+          I therefore look forward to further developments in this area so that we can ease the path in bringing these
+          reckless individuals to justice.
         </p>
       </div>
     </div>

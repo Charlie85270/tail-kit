@@ -13,18 +13,10 @@ import PricingCard8 from "../../../components/kit/components/commerce/pricing/Pr
 
 const ComponentsPage: FC = () => {
   return (
-    <AppLayout
-      title="Pricing cards free Tailwind components"
-      desc="Pricing cards and more components for tailwind css"
-    >
+    <AppLayout title="Pricing cards free Tailwind components" desc="Pricing cards and more components for tailwind css">
       <SectionHeader title="Pricing" />
 
-      <ComponentLayout
-        showSwitchMode={true}
-        title="Pricing card 1"
-        element={<PricingCard />}
-        component={PricingCard}
-      />
+      <ComponentLayout showSwitchMode={true} title="Pricing card 1" element={<PricingCard />} component={PricingCard} />
       <ComponentLayout
         showSwitchMode={true}
         title="Pricing card 2"

@@ -4,12 +4,8 @@ import ShadowTeam from "./ShadowTeam";
 const ShadowTeams = () => {
   return (
     <div className="p-4">
-      <p className="text-center text-3xl font-bold text-gray-800">
-        Professional team
-      </p>
-      <p className="text-center mb-32 text-xl font-normal text-gray-500">
-        Meat the best team in wolrd
-      </p>
+      <p className="text-center text-3xl font-bold text-gray-800">Professional team</p>
+      <p className="text-center mb-32 text-xl font-normal text-gray-500">Meat the best team in wolrd</p>
       <div className="flex items-center flex-col md:flex-row justify evenly">
         <ShadowTeam
           img="/images/person/1.jpg"

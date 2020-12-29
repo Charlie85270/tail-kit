@@ -4,9 +4,7 @@ import Button from "../../elements/buttons/Button";
 const PricingCard6: FC = () => {
   return (
     <div className="rounded-lg w-72 p-4 bg-white shadow-lg dark:bg-gray-800 max-w-xs">
-      <p className="text-2xl leading-normal text-center font-bold text-black dark:text-white pt-4">
-        Pro
-      </p>
+      <p className="text-2xl leading-normal text-center font-bold text-black dark:text-white pt-4">Pro</p>
       <p className="text-4xl font-inter leading-normal text-center font-bold text-black dark:text-white pb-4">
         <span className="font-inter text-base leading-loose text-center font-medium text-black  dark:text-white uppercase">
           $

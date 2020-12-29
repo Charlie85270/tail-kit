@@ -3,11 +3,7 @@ const SimpleNotificationCard: FC = () => {
   return (
     <div className="shadow-lg rounded-2xl w-64 p-4 bg-white flex justify-between items-center">
       <div className="w-2/6">
-        <img
-          src="/images/person/2.jpeg"
-          alt="person"
-          className="h-12 w-12 rounded-full"
-        />
+        <img src="/images/person/2.jpeg" alt="person" className="h-12 w-12 rounded-full" />
       </div>
       <div className="w-3/6">
         <p className="text-gray-500 text-sm">

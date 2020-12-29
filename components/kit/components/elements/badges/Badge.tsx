@@ -11,11 +11,9 @@ interface Props {
 const Badge = (props: Props) => {
   return (
     <span
-      className={`w-full px-4 py-2 ${
-        props.icon ? "flex items-center" : ""
-      } text-base rounded-full ${props.textColor ? props.textColor : ""} ${
-        props.borderColor ? props.borderColor : ""
-      } ${props.color}`}
+      className={`w-full px-4 py-2 ${props.icon ? "flex items-center" : ""} text-base rounded-full ${
+        props.textColor ? props.textColor : ""
+      } ${props.borderColor ? props.borderColor : ""} ${props.color}`}
     >
       {props.icon && (
         <svg

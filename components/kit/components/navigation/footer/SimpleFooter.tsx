@@ -33,9 +33,7 @@ const SimpleFooter = (props: Props) => {
         </ul>
 
         {props.withSocial && (
-          <div
-            className={`pt-8 flex max-w-xs mx-auto items-center justify-between`}
-          >
+          <div className={`pt-8 flex max-w-xs mx-auto items-center justify-between`}>
             <a
               href="#"
               className="text-gray-400 hover:text-gray-800 dark:hover:text-white hover:text-gray-800 transition-colors duration-200"
@@ -115,9 +113,7 @@ const SimpleFooter = (props: Props) => {
         )}
 
         {props.withSearch && (
-          <div
-            className={`text-center pt-10 sm:pt-12 font-light flex items-center justify-center`}
-          >
+          <div className={`text-center pt-10 sm:pt-12 font-light flex items-center justify-center`}>
             <FormSubscribe label="Subscribe" placeholder="Email" />
           </div>
         )}

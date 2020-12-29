@@ -8,9 +8,7 @@ const AddProfilInfo: FC = () => {
 
         <div className="h-28 w-full flex flex-col justify-between">
           <div>
-            <p className="text-gray-800 dark:text-white text-xl font-medium">
-              John Jackson
-            </p>
+            <p className="text-gray-800 dark:text-white text-xl font-medium">John Jackson</p>
             <p className="text-gray-400 text-xs">FullStack dev</p>
           </div>
 
@@ -18,21 +16,15 @@ const AddProfilInfo: FC = () => {
             <div className="flex items-center justify-between text-xs text-gray-400 dark:text-black">
               <p className="flex flex-col">
                 Articles
-                <span className="text-black dark:text-indigo-500 font-bold">
-                  34
-                </span>
+                <span className="text-black dark:text-indigo-500 font-bold">34</span>
               </p>
               <p className="flex flex-col">
                 Followers
-                <span className="text-black dark:text-indigo-500 font-bold">
-                  455
-                </span>
+                <span className="text-black dark:text-indigo-500 font-bold">455</span>
               </p>
               <p className="flex flex-col">
                 Rating
-                <span className="text-black dark:text-indigo-500 font-bold">
-                  9.3
-                </span>
+                <span className="text-black dark:text-indigo-500 font-bold">9.3</span>
               </p>
             </div>
           </div>

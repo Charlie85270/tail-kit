@@ -21,16 +21,8 @@ const ProgressBar = (props: Props) => {
             </span>
           </div>
         )}
-        <div
-          className={`w-full ${
-            props.isFat ? "h-4" : "h-2"
-          } bg-gray-400 rounded-full mt-3`}
-        >
-          <div
-            className={`w-3/4 h-full text-center text-xs text-white ${props.color} rounded-full`}
-          >
-            {props.label}
-          </div>
+        <div className={`w-full ${props.isFat ? "h-4" : "h-2"} bg-gray-400 rounded-full mt-3`}>
+          <div className={`w-3/4 h-full text-center text-xs text-white ${props.color} rounded-full`}>{props.label}</div>
         </div>
       </div>
     </div>

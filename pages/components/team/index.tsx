@@ -11,10 +11,7 @@ import DoubleTeam from "../../../components/kit/components/pagesection/team/Doub
 
 const TeamPage: FC = () => {
   return (
-    <AppLayout
-      title="Teams section free Tailwind components"
-      desc="Teams and more components for tailwind css"
-    >
+    <AppLayout title="Teams section free Tailwind components" desc="Teams and more components for tailwind css">
       <SectionHeader title="Team" />
       <ComponentLayout
         title="Simple"
@@ -29,12 +26,7 @@ const TeamPage: FC = () => {
         }
         component={SimpleTeam}
       />
-      <ComponentLayout
-        title="Composition"
-        showSwitchMode={true}
-        element={<SimpleTeams />}
-        component={SimpleTeams}
-      />
+      <ComponentLayout title="Composition" showSwitchMode={true} element={<SimpleTeams />} component={SimpleTeams} />
       <ComponentLayout
         title="With background"
         showSwitchMode={true}
@@ -49,23 +41,9 @@ const TeamPage: FC = () => {
         }
         component={ShadowTeam}
       />
-      <ComponentLayout
-        showSwitchMode={true}
-        title="Multiple"
-        element={<ShadowTeams />}
-        component={ShadowTeams}
-      />
-      <ComponentLayout
-        showSwitchMode={true}
-        title="Big team"
-        element={<AllTeam />}
-        component={AllTeam}
-      />
-      <ComponentLayout
-        title="Double team"
-        element={<DoubleTeam />}
-        component={DoubleTeam}
-      />
+      <ComponentLayout showSwitchMode={true} title="Multiple" element={<ShadowTeams />} component={ShadowTeams} />
+      <ComponentLayout showSwitchMode={true} title="Big team" element={<AllTeam />} component={AllTeam} />
+      <ComponentLayout title="Double team" element={<DoubleTeam />} component={DoubleTeam} />
     </AppLayout>
   );
 };

@@ -52,12 +52,7 @@ const ComponentsPage: FC = () => {
         element={<MultipleTestimonial />}
         component={MultipleTestimonial}
       />
-      <ComponentLayout
-        showSwitchMode={true}
-        title="Review"
-        element={<SimpleReview />}
-        component={SimpleReview}
-      />
+      <ComponentLayout showSwitchMode={true} title="Review" element={<SimpleReview />} component={SimpleReview} />
     </AppLayout>
   );
 };

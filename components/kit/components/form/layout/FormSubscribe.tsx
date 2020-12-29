@@ -1,7 +1,12 @@
 import React from "react";
 import InputText from "../inputtext/InputText";
 
-const FormSubscribe = ({ label, placeholder }) => {
+interface Props {
+  label?: string;
+  placeholder?: string;
+}
+
+const FormSubscribe = ({ label, placeholder }: Props) => {
   return (
     <form className="flex w-full max-w-sm space-x-3">
       <InputText placeholder={placeholder} />

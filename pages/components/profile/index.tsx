@@ -11,10 +11,7 @@ import HeadProfil from "../../../components/kit/components/pagesection/profile/H
 
 const ComponentsPage: FC = () => {
   return (
-    <AppLayout
-      title="Profile cards free Tailwind components"
-      desc="Profile cards and more components for tailwind css"
-    >
+    <AppLayout title="Profile cards free Tailwind components" desc="Profile cards and more components for tailwind css">
       <SectionHeader title="Profile / Team" />
       <ComponentLayout
         showSwitchMode={true}
@@ -40,18 +37,8 @@ const ComponentsPage: FC = () => {
         element={<CoverAndButtonsProfilCard />}
         component={CoverAndButtonsProfilCard}
       />
-      <ComponentLayout
-        showSwitchMode={true}
-        title="Head"
-        element={<HeadProfil />}
-        component={HeadProfil}
-      />
-      <ComponentLayout
-        showSwitchMode={true}
-        title="Add"
-        element={<AddProfilInfo />}
-        component={AddProfilInfo}
-      />
+      <ComponentLayout showSwitchMode={true} title="Head" element={<HeadProfil />} component={HeadProfil} />
+      <ComponentLayout showSwitchMode={true} title="Add" element={<AddProfilInfo />} component={AddProfilInfo} />
 
       <ComponentLayout
         showSwitchMode={true}
@@ -60,11 +47,7 @@ const ComponentsPage: FC = () => {
         component={CoverAndInfoProfil}
       />
 
-      <ComponentLayout
-        title="Photo Full"
-        element={<FullPhotoCard />}
-        component={FullPhotoCard}
-      />
+      <ComponentLayout title="Photo Full" element={<FullPhotoCard />} component={FullPhotoCard} />
     </AppLayout>
   );
 };

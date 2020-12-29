@@ -6,10 +6,7 @@ import ProgressBar from "../../../components/kit/components/elements/progress/Pr
 
 const ProgressPage = () => {
   return (
-    <AppLayout
-      title="Progress bar free Tailwind components"
-      desc="Progress bar and more components for tailwind css"
-    >
+    <AppLayout title="Progress bar free Tailwind components" desc="Progress bar and more components for tailwind css">
       <SectionHeader title="Progress bar" />
       <ComponentLayout
         vertical={true}
@@ -45,15 +42,7 @@ const ProgressPage = () => {
       <ComponentLayout
         vertical={true}
         title="With badge"
-        element={
-          <ProgressBar
-            color="bg-pink-300"
-            textColor="text-white"
-            isFat={true}
-            withBadge={true}
-            label="75%"
-          />
-        }
+        element={<ProgressBar color="bg-pink-300" textColor="text-white" isFat={true} withBadge={true} label="75%" />}
         component={ProgressBar}
       />
     </AppLayout>

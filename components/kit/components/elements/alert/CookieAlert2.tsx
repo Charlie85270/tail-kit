@@ -9,8 +9,7 @@ const CookieAlert2 = () => {
       </div>
 
       <p className="w-full sm:w-48  block leading-normal text-gray-800 text-md mb-3">
-        We care about your data, and we'd love to use cookies to make your
-        experience better.
+        We care about your data, and we'd love to use cookies to make your experience better.
       </p>
 
       <div className="flex items-center justify-between">

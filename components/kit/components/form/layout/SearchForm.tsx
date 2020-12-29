@@ -34,9 +34,7 @@ const SearchForm = () => {
         </div>
       </div>
       <div className="px-4 py-6 bg-gray-50 border-t-2 border-gray-200 sm:px-10">
-        <p className="text-xs leading-5 text-gray-500">
-          This data are display for information and can change
-        </p>
+        <p className="text-xs leading-5 text-gray-500">This data are display for information and can change</p>
       </div>
     </div>
   );

@@ -29,9 +29,7 @@ const Table = (props: Props) => {
         <tr>
           {headers.map((head) => {
             return (
-              <th
-                className={`${borderClasses} p-4 dark:border-dark-5 whitespace-nowrap font-normal text-gray-900`}
-              >
+              <th className={`${borderClasses} p-4 dark:border-dark-5 whitespace-nowrap font-normal text-gray-900`}>
                 {head}
               </th>
             );
@@ -44,10 +42,7 @@ const Table = (props: Props) => {
             <tr className="text-gray-700" key={index}>
               {row.data.map((text) => {
                 return (
-                  <td
-                    key={text}
-                    className={`${borderClasses} p-4 dark:border-dark-5`}
-                  >
+                  <td key={text} className={`${borderClasses} p-4 dark:border-dark-5`}>
                     {text}
                   </td>
                 );

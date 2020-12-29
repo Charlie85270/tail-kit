@@ -14,9 +14,7 @@ const ColoredTextAndBadge = (props: Props) => {
       >
         {props.badgeLabel}
       </span>
-      <span className={`inline-flex px-2 ${props.textColor}`}>
-        {props.label}
-      </span>
+      <span className={`inline-flex px-2 ${props.textColor}`}>{props.label}</span>
     </div>
   );
 };

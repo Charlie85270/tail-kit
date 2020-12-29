@@ -11,51 +11,28 @@ import ColoredTextAndBadge from "../../../components/kit/components/elements/bad
 
 const BadgesPage: FC = () => {
   return (
-    <AppLayout
-      title="Badges free Tailwind components"
-      desc="Badges, Popins... components for tailwind css"
-    >
+    <AppLayout title="Badges free Tailwind components" desc="Badges, Popins... components for tailwind css">
       <SectionHeader title="Badges" />
 
       <ComponentLayout
         title="Badge stroke"
-        element={
-          <Badge label="Hello" color="bg-red-200" textColor="text-red-600" />
-        }
+        element={<Badge label="Hello" color="bg-red-200" textColor="text-red-600" />}
         component={Badge}
       />
       <ComponentLayout
         title="Badge line"
-        element={
-          <Badge
-            label="Hello"
-            borderColor="border border-indigo-500"
-            textColor="text-indigo-500"
-          />
-        }
+        element={<Badge label="Hello" borderColor="border border-indigo-500" textColor="text-indigo-500" />}
         component={Badge}
       />
       <ComponentLayout
         title="Stroke with icon"
-        element={
-          <Badge
-            icon={true}
-            label="Facebook"
-            color="bg-blue-200"
-            textColor="text-blue-600"
-          />
-        }
+        element={<Badge icon={true} label="Facebook" color="bg-blue-200" textColor="text-blue-600" />}
         component={Badge}
       />
       <ComponentLayout
         title="Line with icon"
         element={
-          <Badge
-            icon={true}
-            label="Facebook"
-            borderColor="border border-indigo-500"
-            textColor="text-indigo-500"
-          />
+          <Badge icon={true} label="Facebook" borderColor="border border-indigo-500" textColor="text-indigo-500" />
         }
         component={Badge}
       />
@@ -72,16 +49,8 @@ const BadgesPage: FC = () => {
         }
         component={Badge}
       />
-      <ComponentLayout
-        title="Full button"
-        element={<ClickableBadge />}
-        component={ClickableBadge}
-      />
-      <ComponentLayout
-        title="List of badges"
-        element={<BadgeList />}
-        component={BadgeList}
-      />
+      <ComponentLayout title="Full button" element={<ClickableBadge />} component={ClickableBadge} />
+      <ComponentLayout title="List of badges" element={<BadgeList />} component={BadgeList} />
       <ComponentLayout
         title="Pink badge"
         element={

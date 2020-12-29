@@ -13,10 +13,7 @@ const ComponentsPage: FC = () => {
   const desc =
     "I had noticed that both in the very poor and very rich extremes of society the mad were often allowed to mingle freely";
   return (
-    <AppLayout
-      title="CTA free Tailwind components"
-      desc="CTA, Banners and more components for tailwind css"
-    >
+    <AppLayout title="CTA free Tailwind components" desc="CTA, Banners and more components for tailwind css">
       <SectionHeader title="Buttons" />
       <ComponentLayout
         vertical={true}
@@ -30,46 +27,28 @@ const ComponentsPage: FC = () => {
         vertical={true}
         showSwitchMode={true}
         title="with 2 actions"
-        element={
-          <SimpleTextCta twoButton={true} title={title} subtitle={subtitle} />
-        }
+        element={<SimpleTextCta twoButton={true} title={title} subtitle={subtitle} />}
         component={SimpleTextCta}
       />
       <ComponentLayout
         vertical={true}
         showSwitchMode={true}
         title="Vertical"
-        element={
-          <SimpleTextCta isVertical={true} title={title} subtitle={subtitle} />
-        }
+        element={<SimpleTextCta isVertical={true} title={title} subtitle={subtitle} />}
         component={SimpleTextCta}
       />
       <ComponentLayout
         vertical={true}
         showSwitchMode={true}
         title="With description"
-        element={
-          <SimpleTextCta
-            description={desc}
-            isVertical={true}
-            title={title}
-            subtitle={subtitle}
-          />
-        }
+        element={<SimpleTextCta description={desc} isVertical={true} title={title} subtitle={subtitle} />}
         component={SimpleTextCta}
       />
       <ComponentLayout
         showSwitchMode={true}
         vertical={true}
         title="On left"
-        element={
-          <SimpleTextCta
-            isLeft={true}
-            isVertical={true}
-            title={title}
-            subtitle={subtitle}
-          />
-        }
+        element={<SimpleTextCta isLeft={true} isVertical={true} title={title} subtitle={subtitle} />}
         component={SimpleTextCta}
       />
       <ComponentLayout
@@ -77,13 +56,7 @@ const ComponentsPage: FC = () => {
         showSwitchMode={true}
         title="With image"
         element={
-          <SimpleTextCta
-            isLeft={true}
-            image="/images/car/1.jpg"
-            isVertical={true}
-            title={title}
-            subtitle={subtitle}
-          />
+          <SimpleTextCta isLeft={true} image="/images/car/1.jpg" isVertical={true} title={title} subtitle={subtitle} />
         }
         component={SimpleTextCta}
       />

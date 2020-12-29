@@ -17,9 +17,7 @@ const Commerce: FC = () => {
     },
   ];
 
-  return (
-    <SectionDesc id="commerce" items={commerceSections} title="Commerce" />
-  );
+  return <SectionDesc id="commerce" items={commerceSections} title="Commerce" />;
 };
 
 export default Commerce;

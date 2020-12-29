@@ -8,12 +8,8 @@ const TimerEvent: FC = () => {
             <h6 className="uppercase font-semibold text-xs md:text-base text-indigo-800 dark:text-gray-100">
               Opening tickets
             </h6>
-            <h3 className="font-bold font-heading text-2xl md:text-4xl text-white">
-              Saturday 17
-            </h3>
-            <h3 className="font-bold font-heading text-lg md:text-xl text-white leading-tight">
-              @ 10:00 AM
-            </h3>
+            <h3 className="font-bold font-heading text-2xl md:text-4xl text-white">Saturday 17</h3>
+            <h3 className="font-bold font-heading text-lg md:text-xl text-white leading-tight">@ 10:00 AM</h3>
           </div>
           <div className="w-full md:w-auto px-5">
             <div className="flex justify-center text-white text-center">

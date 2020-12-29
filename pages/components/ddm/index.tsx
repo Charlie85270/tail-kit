@@ -151,15 +151,7 @@ const DdmPages: FC = () => {
         containerClasses="pb-40"
         title="With icon on items with desc"
         jsLink="https://github.com/Charlie85270/fastUI"
-        element={
-          <Ddm
-            label="Pay with"
-            withBackground={true}
-            forceOpen={true}
-            withDivider={true}
-            items={ddmItems}
-          />
-        }
+        element={<Ddm label="Pay with" withBackground={true} forceOpen={true} withDivider={true} items={ddmItems} />}
         component={Button}
       />
       <ComponentLayout
@@ -167,14 +159,7 @@ const DdmPages: FC = () => {
         containerClasses="pb-60"
         title="Large ddm"
         jsLink="https://github.com/Charlie85270/fastUI"
-        element={
-          <LargeDdm
-            withBackground={true}
-            label="Pay with"
-            forceOpen={true}
-            items={ddmItems}
-          />
-        }
+        element={<LargeDdm withBackground={true} label="Pay with" forceOpen={true} items={ddmItems} />}
         component={LargeDdm}
       />
       <ComponentLayout

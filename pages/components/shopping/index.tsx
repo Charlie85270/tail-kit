@@ -12,50 +12,22 @@ import ProductWithEval from "../../../components/kit/components/commerce/shoppin
 
 const ShoppingPage: FC = () => {
   return (
-    <AppLayout
-      title="Shopping cards free Tailwind components"
-      desc="Shopping cards components for tailwind css"
-    >
+    <AppLayout title="Shopping cards free Tailwind components" desc="Shopping cards components for tailwind css">
       <SectionHeader title="Shopping" />
 
-      <ComponentLayout
-        title="Simple"
-        element={<SimpleShoppingCard />}
-        component={SimpleShoppingCard}
-      />
+      <ComponentLayout title="Simple" element={<SimpleShoppingCard />} component={SimpleShoppingCard} />
 
-      <ComponentLayout
-        title="Colorful"
-        element={<ShoppingColorChoice />}
-        component={ShoppingColorChoice}
-      />
-      <ComponentLayout
-        title="Multiple"
-        element={<MultipleShoppingCard />}
-        component={MultipleShoppingCard}
-      />
-      <ComponentLayout
-        title="With eval"
-        element={<ProductWithEval />}
-        component={ProductWithEval}
-      />
+      <ComponentLayout title="Colorful" element={<ShoppingColorChoice />} component={ShoppingColorChoice} />
+      <ComponentLayout title="Multiple" element={<MultipleShoppingCard />} component={MultipleShoppingCard} />
+      <ComponentLayout title="With eval" element={<ProductWithEval />} component={ProductWithEval} />
       <ComponentLayout
         title="Classic"
         showSwitchMode={true}
         element={<ClassicShoppingCard />}
         component={ClassicShoppingCard}
       />
-      <ComponentLayout
-        title="Shopping"
-        element={<ShoppingDetailsCard />}
-        component={ShoppingDetailsCard}
-      />
-      <ComponentLayout
-        showSwitchMode={true}
-        title="Shipped"
-        element={<ShippedCard />}
-        component={ShippedCard}
-      />
+      <ComponentLayout title="Shopping" element={<ShoppingDetailsCard />} component={ShoppingDetailsCard} />
+      <ComponentLayout showSwitchMode={true} title="Shipped" element={<ShippedCard />} component={ShippedCard} />
     </AppLayout>
   );
 };

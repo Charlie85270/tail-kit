@@ -5,17 +5,11 @@ import Button from "../../elements/buttons/Button";
 const CoverAndButtonsProfilCard: FC = () => {
   return (
     <div className="shadow-lg rounded-2xl w-64 bg-white dark:bg-gray-800">
-      <img
-        alt="profil"
-        src="/images/landscape/1.jpg"
-        className="rounded-t-lg h-28 w-full mb-4"
-      />
+      <img alt="profil" src="/images/landscape/1.jpg" className="rounded-t-lg h-28 w-full mb-4" />
       <div className="flex flex-col items-center justify-center p-4 -mt-16">
         <Avatar />
 
-        <p className="text-gray-800 dark:text-white text-xl font-medium mt-2">
-          Charlie
-        </p>
+        <p className="text-gray-800 dark:text-white text-xl font-medium mt-2">Charlie</p>
         <p className="text-gray-400 text-xs flex items-center">
           <svg
             width="10"

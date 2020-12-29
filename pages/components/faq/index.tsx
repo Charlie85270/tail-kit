@@ -23,8 +23,7 @@ const FaqPage = () => {
         "Simple energy rating prices vary greatly on the size and type of building, generally an energy rating will cost somewhere between $130 to $700+.",
     },
     {
-      question:
-        "What information do I need to supply for an energy rating to be completed??",
+      question: "What information do I need to supply for an energy rating to be completed??",
       response:
         "The information required to complete a full and comprehensive energy report are the following final working drawings: Site Plan, Floor Plan, Elevations, Sections, Lighting layout and window schedule (including sizes of the existing windows).",
     },
@@ -41,23 +40,10 @@ const FaqPage = () => {
   ];
 
   return (
-    <AppLayout
-      title="Faq free Tailwind components"
-      desc="Faq, layouts and more components for tailwind css"
-    >
+    <AppLayout title="Faq free Tailwind components" desc="Faq, layouts and more components for tailwind css">
       <SectionHeader title="Faq" />
-      <ComponentLayout
-        vertical={false}
-        title="Simple faq"
-        element={<Faq questions={questions} />}
-        component={Faq}
-      />
-      <ComponentLayout
-        vertical={false}
-        title="Hirzontal faq"
-        element={<FaqHori />}
-        component={FaqHori}
-      />
+      <ComponentLayout vertical={false} title="Simple faq" element={<Faq questions={questions} />} component={Faq} />
+      <ComponentLayout vertical={false} title="Hirzontal faq" element={<FaqHori />} component={FaqHori} />
     </AppLayout>
   );
 };

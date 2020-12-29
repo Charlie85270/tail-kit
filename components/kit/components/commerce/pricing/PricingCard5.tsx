@@ -4,9 +4,7 @@ const PricingCard5: FC = () => {
   return (
     <section className="px-2 mb-4 w-72 border-t-8 px-2 py-1 bg-white dark:bg-gray-800 rounded border-purple-600 border-2">
       <section className="w-full">
-        <header className="text-3xl text-center md:mt-5 dark:text-white">
-          Recruiter
-        </header>
+        <header className="text-3xl text-center md:mt-5 dark:text-white">Recruiter</header>
         <header className="w-full md:flex justify-center text-center mb-2">
           <span className="text-6xl text-purple-600">50</span>
           <span className="text-2xl dark:text-white">$</span>
@@ -18,8 +16,8 @@ const PricingCard5: FC = () => {
             <svg
               fill="none"
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               strokeWidth="2"
               viewBox="0 0 24 24"
               className="w-8 h-8 text-indigo-800 dark:text-white font-bold"
@@ -32,8 +30,8 @@ const PricingCard5: FC = () => {
             <svg
               fill="none"
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               strokeWidth="2"
               viewBox="0 0 24 24"
               className="w-8 h-8 text-indigo-800 dark:text-white font-bold"
@@ -46,8 +44,8 @@ const PricingCard5: FC = () => {
             <svg
               fill="none"
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               strokeWidth="2"
               viewBox="0 0 24 24"
               className="w-8 h-8 text-indigo-800 dark:text-white font-bold"
@@ -60,8 +58,8 @@ const PricingCard5: FC = () => {
             <svg
               fill="none"
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               strokeWidth="2"
               viewBox="0 0 24 24"
               className="w-8 h-8 font-bold dark:text-white text-indigo-800"

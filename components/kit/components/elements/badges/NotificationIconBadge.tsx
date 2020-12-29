@@ -2,9 +2,7 @@ import React, { FC } from "react";
 const NotificationIconBadge: FC = () => {
   return (
     <button type="button" className="text-md text-white text-4xl relative">
-      <span className="w-4 h-4 rounded-full absolute right-2 leading text-xs bg-red-500">
-        2
-      </span>
+      <span className="w-4 h-4 rounded-full absolute right-2 leading text-xs bg-red-500">2</span>
       <svg
         width="20"
         height="20"

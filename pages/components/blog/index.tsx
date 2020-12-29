@@ -7,10 +7,7 @@ import BlogCard from "../../../components/kit/components/pagesection/blog/BlogCa
 
 const BlogPage = () => {
   return (
-    <AppLayout
-      title="Blogs free Tailwind components"
-      desc="Blogs cards, Blogs layouts,... components for tailwind css"
-    >
+    <AppLayout title="Blogs free Tailwind components" desc="Blogs cards, Blogs layouts,... components for tailwind css">
       <SectionHeader title="Blog" />
       <ComponentLayout
         vertical={false}

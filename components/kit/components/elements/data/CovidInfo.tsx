@@ -3,9 +3,7 @@ const CovidInfo: FC = () => {
   return (
     <div className="md:p-8 p-6 bg-white shadow-xl rounded-lg flex justify-between dark:bg-gray-800 md:flex-row flex-col gap-12">
       <div>
-        <span className="text-bold text-gray-700 dark:text-gray-400">
-          Total Cases
-        </span>
+        <span className="text-bold text-gray-700 dark:text-gray-400">Total Cases</span>
         <h2 className="text-yellow-500 text-5xl mt-2 font-black">75,858,724</h2>
       </div>
       <div className="pt-5">

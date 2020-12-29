@@ -18,9 +18,7 @@ const StoreButton = () => {
           </div>
           <div>
             <div className="text-xs">Download on the</div>
-            <div className="text-xl font-semibold font-sans -mt-1">
-              App Store
-            </div>
+            <div className="text-xl font-semibold font-sans -mt-1">App Store</div>
           </div>
         </button>
 
@@ -38,9 +36,7 @@ const StoreButton = () => {
           </div>
           <div>
             <div className="text-xs">Download on the</div>
-            <div className="text-2xl font-semibold font-sans -mt-1">
-              App Store
-            </div>
+            <div className="text-2xl font-semibold font-sans -mt-1">App Store</div>
           </div>
         </button>
 
@@ -58,9 +54,7 @@ const StoreButton = () => {
           </div>
           <div>
             <div className="text-xs">Download on the</div>
-            <div className="text-2xl font-semibold font-sans -mt-1">
-              Mac App Store
-            </div>
+            <div className="text-2xl font-semibold font-sans -mt-1">Mac App Store</div>
           </div>
         </button>
 
@@ -90,9 +84,7 @@ const StoreButton = () => {
           </div>
           <div>
             <div className="text-xs">GET IT ON</div>
-            <div className="text-xl font-semibold font-sans -mt-1">
-              Google Play
-            </div>
+            <div className="text-xl font-semibold font-sans -mt-1">Google Play</div>
           </div>
         </button>
       </div>

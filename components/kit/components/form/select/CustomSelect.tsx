@@ -42,11 +42,7 @@ const CustomSelect = (props: Props) => {
         >
           <span className="flex items-center">
             {!props.hideImage && (
-              <img
-                src="/images/person/2.jpeg"
-                alt="person"
-                className="flex-shrink-0 h-6 w-6 rounded-full"
-              />
+              <img src="/images/person/2.jpeg" alt="person" className="flex-shrink-0 h-6 w-6 rounded-full" />
             )}
 
             <span className="ml-3 block truncate">John Jackson</span>
@@ -69,10 +65,7 @@ const CustomSelect = (props: Props) => {
         </button>
 
         {(showList || props.forceOpen) && (
-          <div
-            ref={panelResultElement}
-            className="absolute mt-1 w-full z-10 rounded-md bg-white shadow-lg"
-          >
+          <div ref={panelResultElement} className="absolute mt-1 w-full z-10 rounded-md bg-white shadow-lg">
             <ul
               tabIndex={-1}
               role="listbox"
@@ -87,15 +80,9 @@ const CustomSelect = (props: Props) => {
               >
                 <div className="flex items-center">
                   {!props.hideImage && (
-                    <img
-                      src="/images/person/1.jpg"
-                      alt="person"
-                      className="flex-shrink-0 h-6 w-6 rounded-full"
-                    />
+                    <img src="/images/person/1.jpg" alt="person" className="flex-shrink-0 h-6 w-6 rounded-full" />
                   )}
-                  <span className="ml-3 block font-normal truncate">
-                    Mick Poulaz
-                  </span>
+                  <span className="ml-3 block font-normal truncate">Mick Poulaz</span>
                 </div>
 
                 <span className="absolute inset-y-0 right-0 flex items-center pr-4">
@@ -121,15 +108,9 @@ const CustomSelect = (props: Props) => {
               >
                 <div className="flex items-center">
                   {!props.hideImage && (
-                    <img
-                      src="/images/person/1.jpg"
-                      alt="person"
-                      className="flex-shrink-0 h-6 w-6 rounded-full"
-                    />
+                    <img src="/images/person/1.jpg" alt="person" className="flex-shrink-0 h-6 w-6 rounded-full" />
                   )}
-                  <span className="ml-3 block font-normal truncate">
-                    Julien Schiano
-                  </span>
+                  <span className="ml-3 block font-normal truncate">Julien Schiano</span>
                 </div>
               </li>
             </ul>

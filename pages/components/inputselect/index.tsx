@@ -8,17 +8,10 @@ import SelectWithLabel from "../../../components/kit/components/form/select/Sele
 
 const InputTextPage: FC = () => {
   return (
-    <AppLayout
-      title="Select input free Tailwind components"
-      desc="Select input and more components for tailwind css"
-    >
+    <AppLayout title="Select input free Tailwind components" desc="Select input and more components for tailwind css">
       <SectionHeader title="Select" />
       <ComponentLayout title="simple" element={<Select />} component={Select} />
-      <ComponentLayout
-        title="with label"
-        element={<SelectWithLabel />}
-        component={SelectWithLabel}
-      />
+      <ComponentLayout title="with label" element={<SelectWithLabel />} component={SelectWithLabel} />
       <ComponentLayout
         title="custom"
         jsLink="https://github.com/Charlie85270/fastUI"

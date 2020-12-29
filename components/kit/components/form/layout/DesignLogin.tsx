@@ -71,10 +71,7 @@ const DesignLogin = () => {
       </div>
 
       <div className="w-1/2 shadow-2xl">
-        <img
-          className="object-cover w-full h-screen hidden md:block"
-          src="/images/object/9.jpg"
-        />
+        <img className="object-cover w-full h-screen hidden md:block" src="/images/object/9.jpg" />
       </div>
     </div>
   );
