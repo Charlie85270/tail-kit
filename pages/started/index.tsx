@@ -53,12 +53,12 @@ const StartedPage: FC = () => {
         </div>
 
         <p className="mt-1 text-lg text-gray-500">
-          Tailwind-kit is based on{" "}
+          Tailwind-kit is based on the{" "}
           <a
             href="https://tailwindcss.com/"
             className="text-gray-700 underline hover:text-gray-800"
           >
-            Tailwind CSS framework{" "}
+            Tailwind CSS framework
           </a>
           .
         </p>
@@ -67,7 +67,7 @@ const StartedPage: FC = () => {
         </p>
         <div className="mt-4">
           <p className="mt-1 text-lg text-gray-500">
-            Link to install Tailwind CSS :{" "}
+            Link to install Tailwind CSS:{" "}
             <a
               href="https://tailwindcss.com/docs"
               className="underline text-xl text-gray-700"
@@ -91,7 +91,7 @@ const StartedPage: FC = () => {
             Once Tailwind CSS is installed, you can get started!
             <Link href="/components">
               <a className="w-28 mb-4 px-4 py-2 ml-4 text-base font-medium rounded-md text-center text-white bg-green-500 hover:bg-green-700">
-                Let's go !
+                Let's go!
               </a>
             </Link>
           </p>

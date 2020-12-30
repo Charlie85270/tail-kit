@@ -14,13 +14,13 @@ import BandeauAlert from "../../../components/kit/components/elements/alert/Band
 import BandeauLineAlert from "../../../components/kit/components/elements/alert/BandeauLineAlert";
 
 const AlertPage = () => {
-  const title = "Become millionaire ?";
-  const subtitle = "It's today or never.";
+  const title = "Want to be a millionaire?";
+  const subtitle = "It starts today.";
 
   return (
     <AppLayout
-      title="Alert free Tailwind components"
-      desc="Alerts, Modales, Banners ... components for tailwind css"
+      title="Tailwind Kit: Free Alerts Components"
+      desc="Alerts, Modales, Banners, and more components for Tailwind CSS"
     >
       <SectionHeader title="Alert" />
       <ComponentLayout
@@ -29,7 +29,7 @@ const AlertPage = () => {
         element={
           <SimpleAlert
             title="Danger"
-            text="Battery is low, your phone can't take photo"
+            text="Battery is low! Your phone can't take a photo."
             type="alert"
           />
         }
@@ -37,11 +37,11 @@ const AlertPage = () => {
       />
       <ComponentLayout
         vertical={false}
-        title="Simple text succes"
+        title="Simple text success"
         element={
           <SimpleAlert
             title="Success"
-            text="Congratulation, you are the best player."
+            text="Congratulations! You are the best player!"
             type="success"
           />
         }
@@ -53,7 +53,7 @@ const AlertPage = () => {
         element={
           <SimpleAlert
             title="Be Warned"
-            text="Something not ideal might be happening."
+            text="Something dangerous might be happening!"
             type="danger"
           />
         }
@@ -63,19 +63,19 @@ const AlertPage = () => {
         vertical={true}
         title="Closable long alert"
         element={
-          <ClosableLongAlert text="Something not ideal might be happening." />
+          <ClosableLongAlert text="Something dangerous might be happening!" />
         }
         component={ClosableLongAlert}
       />
 
       <ComponentLayout
         vertical={true}
-        title="Cookie alert"
+        title="Cookies alert"
         showSwitchMode={true}
         element={
           <BandeauAlert
-            title="We use cookie ! Something not ideal might be happening."
-            shortTitle="This site use cookie!"
+            title="We use cookies! Something dangerous might be happening."
+            shortTitle="This site use cookies!"
             link="#"
             linkLabel="Learn more"
             closeAction={() => null}
@@ -88,7 +88,7 @@ const AlertPage = () => {
         title="Line alert"
         element={
           <BandeauLineAlert
-            title="We use cookie ! Something not ideal might be happening."
+            title="We use cookies! Something dangerous might be happening."
             closeAction={() => null}
           />
         }
@@ -133,7 +133,7 @@ const AlertPage = () => {
       />
       <ComponentLayout
         vertical={true}
-        title="Modale with close btn"
+        title="Modale with close button"
         jsLink="http://google.com"
         element={
           <InformationModale

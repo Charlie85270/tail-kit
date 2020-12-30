@@ -12,8 +12,8 @@ import ColoredTextAndBadge from "../../../components/kit/components/elements/bad
 const BadgesPage: FC = () => {
   return (
     <AppLayout
-      title="Badges free Tailwind components"
-      desc="Badges, Popins... components for tailwind css"
+      title="Tailwind Kit: Free Badges Components"
+      desc="Badges, Popins, and more components for Tailwind CSS"
     >
       <SectionHeader title="Badges" />
 
@@ -87,7 +87,7 @@ const BadgesPage: FC = () => {
         element={
           <ColoredTextAndBadge
             badgeLabel="Pink"
-            label="Im a sexy badge and you can use me everyday at every hour."
+            label="I'm a sexy badge and you can use me everyday, at every hour :)"
             backgroundBadgeColor="bg-pink-600"
             textColor="text-pink-600"
           />
@@ -99,7 +99,7 @@ const BadgesPage: FC = () => {
         element={
           <ColoredTextAndBadge
             badgeLabel="Black"
-            label="Im a sexy badge and you can use me everyday at every hour."
+            label="I'm a sexy badge and you can use me everyday, at every hour :)"
             backgroundBadgeColor="bg-gray-700"
             textColor="text-gray-700"
           />

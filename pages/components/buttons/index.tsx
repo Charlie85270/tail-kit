@@ -12,13 +12,13 @@ import StoreButton from "../../../components/kit/components/elements/buttons/Sto
 const ComponentsPage: FC = () => {
   return (
     <AppLayout
-      title="Buttons free Tailwind components"
-      desc="Buttons, Social buttons and more components for tailwind css"
+      title="Tailwind Kit: Free Button Components"
+      desc="Buttons, social buttons, and more components for Tailwind CSS"
     >
       <SectionHeader title="Buttons" />
       <ComponentLayout
         title="Button"
-        element={<Button label="Valider" color="indigo" />}
+        element={<Button label="Validate" color="indigo" />}
         component={Button}
       />
       <ComponentLayout

@@ -8,8 +8,8 @@ import MultipleAvatar from "../../../components/kit/components/elements/avatars/
 const AvatarPage: FC = () => {
   return (
     <AppLayout
-      title="Avatars free Tailwind components"
-      desc="Avatars, profile pictures... components for tailwind css"
+      title="Tailwind Kit: Free Avatars Components"
+      desc="Avatars, profile pictures, and more components for Tailwind CSS"
     >
       <SectionHeader title="Avatar" />
       <ComponentLayout
@@ -18,7 +18,7 @@ const AvatarPage: FC = () => {
         component={Avatar}
       />
       <ComponentLayout
-        title="small full rounded avatar"
+        title="Small full rounded avatar"
         element={<Avatar size="small" />}
         component={Avatar}
       />
@@ -43,23 +43,23 @@ const AvatarPage: FC = () => {
         component={Avatar}
       />
       <ComponentLayout
-        title="Multiple avatar"
+        title="Multiple avatars"
         element={<MultipleAvatar />}
         component={MultipleAvatar}
       />
       <ComponentLayout
-        title="Multiple small avatar"
+        title="Multiple small avatars"
         element={<MultipleAvatar size="small" />}
         component={MultipleAvatar}
       />
       <ComponentLayout
-        title="Multiple big avatar"
+        title="Multiple big avatars"
         element={<MultipleAvatar size="big" />}
         component={MultipleAvatar}
       />
       <ComponentLayout
         needConfiguration={true}
-        title="With hover effect"
+        title="Multiple avatars with hover effect"
         element={<MultipleAvatar size="big" withHoverEffect={true} />}
         component={MultipleAvatar}
       />
