@@ -5,43 +5,44 @@
 
 ![Tailwind-Kit](https://www.tailwind-kit.com/home.png)
 </a>
-### A beautiful and large components kit for TailwindCSS 2.0
+### A large, beautiful components kit for Tailwind CSS 2.0
 
-Tailwind-kit is Free and Open Source. It does not change or add any CSS to the already one from TailwindCSS 2.0. It features multiple HTML elements that can be used in all web projects who's use tailwind CSS.
+Tailwind-kit is free and open source. It does not change or add any CSS to Tailwind CSS 2.0. It features multiple HTML elements that can be used in all web projects that utilize Tailwind CSS!
 
 ## CSS Components
 
-Tailwind Starter Kit comes with 180+ Fully Coded CSS elements and layouts.
+The Tailwind Starter Kit comes with 180+ fully coded CSS elements and layouts.
 
 ## Live code editor
 ![Tailwind-Kit](https://i.ibb.co/g3n4NMg/Capture-d-e-cran-2020-12-27-a-12-06-16.png)
-Tailwind-kit include a live code editor to change the components code and see in live the modification.
+
+Tailwind-kit includes a live code editor to edit the components and see the modifications, live.
 
 
 ## Dark mode
 ![Tailwind-Kit](https://www.tailwind-kit.com/demo.gif)
 
-Most components are implemented with a light and dark version, with the new dark mode 2.0 feature of tailwind CSS. 
+Most components are implemented with a light and dark version, with the new dark mode feature of Tailwind CSS 2.0. 
 
 
 ## Documentation
-The documentation for the Tailwind-kit is hosted at our <a href="https://www.tailwind-kit.com/started" target="_blank">website</a>.
+The documentation for the Tailwind-kit is hosted on our <a href="https://www.tailwind-kit.com/started" target="_blank">website</a>.
 
 
 
 ## Browser Support
 
-At present, we officially aim to support the last two versions of the following browsers:
+In the current moment, we officially aim to support the latest two versions of the following browsers:
 
 | Chrome | Firefox | Edge | Safari | Opera |
 |:---:|:---:|:---:|:---:|:---:|
 | <img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/chrome-logo.png?raw=true" width="64" height="64"> | <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/firefox-logo.png" width="64" height="64"> | <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/edge-logo.png" width="64" height="64"> | <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/safari-logo.png" width="64" height="64"> | <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/opera-logo.png" width="64" height="64"> |
 
-## Reporting Issues/ make Pull request
+## Reporting Issues / Pull requests
 
-Every Issues, and PR are welcome ! 
-the site is not perfect, there must be typos, bugs, improvements. 
-Do not hesitate to contribe and add your own components/layout.
+Every issue and PR is welcome!
+
+The site is not perfect. There may be typos, bugs, and definitely improvements. Do not hesitate to contribe and add your own components and/or layout!
 
 
 
@@ -50,7 +51,7 @@ Do not hesitate to contribe and add your own components/layout.
 ![Tailwind-Kit](https://camo.githubusercontent.com/6202639220e8972265da4543eb10e428adbf579b8a07fc427bc90b383647a3c9/68747470733a2f2f7777772e6a6f616f706564726f2e63632f696d672f6769746875622f747970657363726970742d6e6578746a732d737461727465722e706e67)
 
 
-Tailwind-kit is a static site build with [Next.js](https://nextjs.org/) and typescript.
+Tailwind-kit is a static site build with [Next.js](https://nextjs.org/) and [Typescript](https://www.typescriptlang.org/).
 
 Install dependencies:
 
@@ -97,7 +98,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 - Copyright 2020 Charlie Rabiller</a>
 
 
-- Licensed under <a href="https://github.com/Charlie85270/fastUI/blob/main/README.md" target="_blank">MIT</a>
+- Licensed under <a href="https://opensource.org/licenses/MIT" target="_blank">MIT</a>
 
 
 
