@@ -6,13 +6,13 @@ const ListPage: FC = () => {
     {
       title: "Tables",
       items: 6,
-      img: "images/sections/table.svg",
+      img: "images/sections/table.png",
       link: "/components/table",
     },
     {
       title: "Lists",
       items: 11,
-      img: "images/sections/list.svg",
+      img: "images/sections/list.png",
       link: "/components/list",
     },
   ];

@@ -6,19 +6,19 @@ const Navigation: FC = () => {
     {
       title: "Headers",
       items: 7,
-      img: "images/sections/header.svg",
+      img: "images/sections/header.png",
       link: "/components/header",
     },
     {
       title: "Footers",
       items: 9,
-      img: "images/sections/footer.svg",
+      img: "images/sections/footer.png",
       link: "/components/footer",
     },
     {
       title: "Sidebars",
       items: 7,
-      img: "images/sections/sidebar.svg",
+      img: "images/sections/sidebar.png",
       link: "/components/sidebar",
     },
   ];
