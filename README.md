@@ -42,7 +42,7 @@ In the current moment, we officially aim to support the latest two versions of t
 
 Every issue and PR is welcome!
 
-The site is not perfect. There may be typos, bugs, and definitely improvements. Do not hesitate to contribe and add your own components and/or layout!
+The site is not perfect. There may be typos, bugs, and definitely improvements. Do not hesitate to contribute and add your own components and/or layout!
 
 
 
