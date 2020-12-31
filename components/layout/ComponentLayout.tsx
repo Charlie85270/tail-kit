@@ -1,11 +1,13 @@
-import { LiveProvider, LiveEditor, LivePreview } from "react-live";
-import { useState, useCallback, useRef } from "react";
-import EDITOR_THEME from "../../editorTheme";
-import ReactDOMServer from "react-dom/server";
-import { formatHtml } from "../../utils/Utils";
-import Toggle from "../kit/components/form/toggle/Toggle";
-import Link from "next/link";
 import * as gtag from "../../lib/gtag";
+
+import { LiveEditor, LivePreview, LiveProvider } from "react-live";
+import { useCallback, useRef, useState } from "react";
+
+import EDITOR_THEME from "../../editorTheme";
+import Link from "next/link";
+import ReactDOMServer from "react-dom/server";
+import Toggle from "../kit/components/form/toggle/Toggle";
+import { formatHtml } from "../../utils/Utils";
 
 interface Props {
   element: JSX.Element;
@@ -101,7 +103,7 @@ const ComponentLayout = (props: Props) => {
         <p className="text-xl font-light text-gray-600 mb-2 md:mb-0">
           {props.title}
         </p>
-        <div className="flex items-center flex-row gap-4 justify-center">
+        <div className="flex items-center flex-row flex-wrap gap-4 justify-center">
           {props.showSwitchMode && (
             <Toggle label="Dark mode" onChange={(mode) => changeMode(mode)} />
           )}
