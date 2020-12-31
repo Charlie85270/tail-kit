@@ -6,25 +6,25 @@ const Forms: FC = () => {
     {
       title: "Inputs",
       items: 10,
-      img: "images/sections/inputtext.svg",
+      img: "images/sections/input.png",
       link: "/components/inputtext",
     },
     {
       title: "Selects",
       items: 4,
-      img: "images/sections/inputselect.svg",
+      img: "images/sections/select.png",
       link: "/components/inputselect",
     },
     {
       title: "Toggles",
       items: 3,
-      img: "images/sections/toggle.svg",
+      img: "images/sections/toggle.png",
       link: "/components/toggle",
     },
     {
       title: "Layouts",
       items: 10,
-      img: "images/sections/form.svg",
+      img: "images/sections/login.png",
       link: "/components/form",
     },
   ];

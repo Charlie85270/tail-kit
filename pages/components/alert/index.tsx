@@ -29,7 +29,7 @@ const AlertPage = () => {
         element={
           <SimpleAlert
             title="Danger"
-            text="Battery is low, your phone can't take photo"
+            text="Battery is low, your phone can't take a photo"
             type="alert"
           />
         }
@@ -41,7 +41,7 @@ const AlertPage = () => {
         element={
           <SimpleAlert
             title="Success"
-            text="Congratulation, you are the best player."
+            text="Congratulations, you are the best player."
             type="success"
           />
         }
@@ -74,8 +74,8 @@ const AlertPage = () => {
         showSwitchMode={true}
         element={
           <BandeauAlert
-            title="We use cookie ! Something not ideal might be happening."
-            shortTitle="This site use cookie!"
+            title="We use cookies! Something not ideal might be happening."
+            shortTitle="This site use cookies!"
             link="#"
             linkLabel="Learn more"
             closeAction={() => null}
@@ -88,7 +88,7 @@ const AlertPage = () => {
         title="Line alert"
         element={
           <BandeauLineAlert
-            title="We use cookie ! Something not ideal might be happening."
+            title="We use cookies! Something not ideal might be happening."
             closeAction={() => null}
           />
         }
