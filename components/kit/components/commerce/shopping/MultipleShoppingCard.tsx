@@ -51,7 +51,7 @@ const MultipleShoppingCard = (props: Props) => {
       </div>
       {!props.showOne && (
         <>
-          <div className="flex-shrink-0 mx-2 relative overflow-hidden bg-blue-500 rounded-lg max-w-xs shadow-lg">
+          <div className="flex-shrink-0 mx-2 mb-6 sm:mb-0 relative overflow-hidden bg-blue-500 rounded-lg max-w-xs shadow-lg">
             <svg
               className="absolute bottom-0 left-0 mb-8"
               viewBox="0 0 375 283"
