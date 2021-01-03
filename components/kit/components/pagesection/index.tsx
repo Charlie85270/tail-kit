@@ -35,7 +35,7 @@ const Pagesection: FC = () => {
     },
     {
       title: "Features",
-      items: 5,
+      items: 6,
       img: "images/sections/feature.png",
       link: "/components/feature",
     },
