@@ -7,6 +7,7 @@ import FeaturesImage from "../../../components/kit/components/pagesection/featur
 import FeaturesCards from "../../../components/kit/components/pagesection/feature/FeaturesCards";
 import FeaturesAndDesc from "../../../components/kit/components/pagesection/feature/FeaturesAndDesc";
 import FeaturesSquare from "../../../components/kit/components/pagesection/feature/FeaturesSquare";
+import FeaturesImage2 from "../../../components/kit/components/pagesection/feature/FeaturesImage2";
 
 const FeaturePage = () => {
   return (
@@ -49,6 +50,13 @@ const FeaturePage = () => {
         title="With border"
         element={<FeaturesSquare />}
         component={FeaturesSquare}
+      />
+      <ComponentLayout
+        vertical={true}
+        showSwitchMode={true}
+        title="With 4 images"
+        element={<FeaturesImage2 />}
+        component={FeaturesImage2}
       />
     </AppLayout>
   );

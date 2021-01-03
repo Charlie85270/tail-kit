@@ -34,23 +34,24 @@ const PricingCard3: FC = () => {
       <ul className="text-sm text-black dark:text-white w-full mt-6 mb-6">
         {bonus.map((bon, index) => {
           return (
-            <li key={index} className="mb-3 flex items-center">
+            <li key={index} className="mb-3 flex items-center space-x-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
-                className="mr-2"
                 fill="#10b981"
                 viewBox="0 0 1792 1792"
               >
                 <path d="M1600 736v192q0 40-28 68t-68 28h-416v416q0 40-28 68t-68 28h-192q-40 0-68-28t-28-68v-416h-416q-40 0-68-28t-28-68v-192q0-40 28-68t68-28h416v-416q0-40 28-68t68-28h192q40 0 68 28t28 68v416h416q40 0 68 28t28 68z" />
               </svg>
-              {bon}
-              {index === 0 && (
-                <a href="#" className="text-red-500 font-semibold">
-                  free plan
-                </a>
-              )}
+              <div>
+                {bon}
+                {index === 0 && (
+                  <a href="#" className="text-red-500 font-semibold">
+                    free plan
+                  </a>
+                )}
+              </div>
             </li>
           );
         })}

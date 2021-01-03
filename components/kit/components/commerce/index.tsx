@@ -6,13 +6,13 @@ const Commerce: FC = () => {
     {
       title: "Pricing cards",
       items: 8,
-      img: "images/sections/pricing.svg",
+      img: "images/sections/pricing.png",
       link: "/components/pricing",
     },
     {
       title: "Shopping cards",
       items: 7,
-      img: "images/sections/shopping.svg",
+      img: "images/sections/shopping.png",
       link: "/components/shopping",
     },
   ];

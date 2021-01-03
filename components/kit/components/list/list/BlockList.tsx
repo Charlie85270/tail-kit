@@ -1,5 +1,5 @@
-import React from "react";
 import Avatar from "../../elements/avatars/Avatar";
+import React from "react";
 
 interface Props {
   withDesc?: boolean;
@@ -62,7 +62,7 @@ const BlockList = (props: Props) => {
                 </div>
                 {props.withDesc && <div className="text-gray-600 dark:text-gray-200 text-xs">6:00 AM</div>}
                 {props.withAction && (
-                  <button className="w-24 text-right">
+                  <button className="w-24 text-right flex justify-end">
                     <svg
                       width="12"
                       fill="currentColor"

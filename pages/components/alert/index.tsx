@@ -51,8 +51,8 @@ const AlertPage = () => {
         showSwitchMode={true}
         element={
           <BandeauAlert
-            title="We use cookie ! Something not ideal might be happening."
-            shortTitle="This site use cookie!"
+            title="We use cookies! Something not ideal might be happening."
+            shortTitle="This site use cookies!"
             link="#"
             linkLabel="Learn more"
             closeAction={() => null}
