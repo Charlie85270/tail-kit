@@ -1,6 +1,6 @@
-import React from "react";
-import InputText from "../inputtext/InputText";
 import Button from "../../elements/buttons/Button";
+import InputText from "../inputtext/InputText";
+import React from "react";
 
 const DesignLogin = () => {
   return (
@@ -54,7 +54,7 @@ const DesignLogin = () => {
 
             <button
               type="submit"
-              className="py-2 px-4 bg-black text-white w-full transition ease-in duration-200 text-center text-base font-semibold py-2 px-4 shadow-md hover:text-black hover:bg-white focus:outline-none focus:ring-2"
+              className="py-2 px-4 bg-black text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md hover:text-black hover:bg-white focus:outline-none focus:ring-2"
             >
               <span className="w-full">Submit</span>
             </button>

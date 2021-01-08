@@ -39,7 +39,7 @@ const Button = (props: Props) => {
         props.icon ? "flex justify-center items-center " : ""
       } ${
         colors[props.color]
-      } text-white w-full transition ease-in duration-200 text-center text-base font-semibold py-2 px-4 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 ${
+      } text-white w-full transition ease-in duration-200 text-center text-base font-semibold rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 ${
         props.disabled ? " opacity-70 cursor-not-allowed" : ""
       }${!props.label ? " w-12 h-12" : ""}`}
     >
