@@ -1,7 +1,8 @@
 import React, { FC } from "react";
+
 import Avatar from "../../elements/avatars/Avatar";
-import PagerButton from "../../elements/buttons/PagerButton";
 import FormSubscribe from "../../form/layout/FormSubscribe";
+import PagerButton from "../../elements/buttons/PagerButton";
 
 interface Props {
   withHeader?: boolean;
@@ -77,7 +78,7 @@ const ComplexTable = (props: Props) => {
                       <th
                         scope="col"
                         key={header}
-                        className="px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-left text-sm text-white uppercase font-normal"
+                        className="px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal"
                       >
                         {header}
                       </th>
