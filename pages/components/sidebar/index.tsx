@@ -4,6 +4,7 @@ import ComponentLayout from "../../../components/layout/ComponentLayout";
 import SectionHeader from "../../../components/site/header/SectionHeader";
 import Sidebar from "../../../components/kit/components/navigation/sidebar/Sidebar";
 import LittleSidebar from "../../../components/kit/components/navigation/sidebar/LittleSidebar";
+import SidebarWithCateg from "../../../components/kit/components/navigation/sidebar/SidebarWithCateg";
 
 const SideBar: FC = () => {
   const headerImg = "/icons/rocket.svg";
@@ -175,6 +176,12 @@ const SideBar: FC = () => {
           />
         }
         component={Sidebar}
+      />
+      <ComponentLayout
+        showSwitchMode={true}
+        title="With Divider"
+        element={<SidebarWithCateg />}
+        component={SidebarWithCateg}
       />
       <ComponentLayout
         title="Just icon"
