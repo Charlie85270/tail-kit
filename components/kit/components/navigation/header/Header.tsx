@@ -79,7 +79,7 @@ const Header = (props: Props) => {
             </div>
             <div className="block">
               {props.withSearchBar && (
-                <div className="-mr-2 flex">
+                <div className="hidden md:block -mr-2 flex">
                   <FormSubscribe label="Search" placeholder="components" />
                 </div>
               )}
@@ -199,6 +199,11 @@ const Header = (props: Props) => {
                 );
               })}
             </div>
+            {props.withSearchBar && (
+              <div className="p-2 flex">
+                <FormSubscribe label="Search" placeholder="components" />
+              </div>
+            )}
           </div>
         )}
       </nav>

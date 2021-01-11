@@ -5,7 +5,7 @@ const Elements: FC = () => {
   const elementsSection = [
     {
       title: "Buttons",
-      items: 15,
+      items: 19,
       img: "images/sections/button.png",
       link: "/components/buttons",
     },
@@ -35,7 +35,7 @@ const Elements: FC = () => {
     },
     {
       title: "Dashboards",
-      items: 10,
+      items: 13,
       img: "images/sections/data.png",
       link: "/components/data",
     },

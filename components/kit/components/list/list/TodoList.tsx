@@ -30,7 +30,7 @@ const TodoList = () => {
                 <a className="block hover:bg-gray-50 dark:hover:bg-gray-900">
                   <div className="px-4 py-4 sm:px-6">
                     <div className="flex items-center justify-between">
-                      <p className="text-md text-gray-700 dark:text-white truncate">
+                      <p className="text-md text-gray-700 dark:text-white md:truncate">
                         {list.title}
                       </p>
                       <div className="ml-2 flex-shrink-0 flex">
