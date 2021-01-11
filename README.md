@@ -15,6 +15,7 @@ Tailwind Starter Kit comes with 180+ Fully Coded CSS elements and layouts.
 
 ## Live code editor
 ![Tailwind-Kit](https://i.ibb.co/g3n4NMg/Capture-d-e-cran-2020-12-27-a-12-06-16.png)
+
 Tailwind-kit include a live code editor to change the components code and see in live the modification.
 
 
