@@ -33,11 +33,11 @@ const SectionDesc = ({ title, items, id }: Props) => {
                   <img
                     src={section.img}
                     alt={section.title}
-                    className="rounded-lg w-60 md:h-36 opacity-50 hover:opacity-100"
+                    className="rounded-lg w-full object-cover w-60 md:h-36 opacity-70 hover:opacity-100"
                   />
-                  <p className="text-gray-600 text-md p-2">
+                  <p className="text-gray-700 text-md p-2">
                     {section.title}{" "}
-                    <span className="text-gray-400 font-thin text-sm">
+                    <span className="text-gray-500 font-thin text-sm">
                       ({section.items} components)
                     </span>
                   </p>
