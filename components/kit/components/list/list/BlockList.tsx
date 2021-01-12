@@ -56,7 +56,7 @@ const BlockList = (props: Props) => {
                 <div className="flex flex-col w-10 h-10 justify-center items-center mr-4">
                   <Avatar size="small" img={el.img} />
                 </div>
-                <div className="flex-1 pl-1 mr-16">
+                <div className="flex-1 pl-1 md:mr-16">
                   <div className="font-medium dark:text-white">{el.label}</div>
                   <div className="text-gray-600 dark:text-gray-200 text-sm">{el.desc}</div>
                 </div>

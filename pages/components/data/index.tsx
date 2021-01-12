@@ -13,12 +13,27 @@ import CovidInfo from "../../../components/kit/components/elements/data/CovidInf
 import InfoNumberCard2 from "../../../components/kit/components/elements/data/InfoNumberCard2";
 import BandeauInfo from "../../../components/kit/components/elements/data/BandeauInfo";
 import TagsCard from "../../../components/kit/components/elements/data/TagsCard";
+import TaskCard from "../../../components/kit/components/elements/data/TaskCard";
+import MutlipleTask from "../../../components/kit/components/elements/data/MutlipleTask";
 
 const DataPage = () => {
   return (
     <AppLayout title="Data display free Tailwind components" desc="Data, Cards and more components for tailwind css">
       <SectionHeader title="Alert" />
       <ComponentLayout vertical={false} title="Sales card" element={<InfoNumberCard />} component={InfoNumberCard} />
+      <ComponentLayout
+        vertical={false}
+        title="Tasks card"
+        element={<MutlipleTask />}
+        component={MutlipleTask}
+      />
+      <ComponentLayout
+        vertical={false}
+        title="Details Task card"
+        element={<TaskCard />}
+        component={TaskCard}
+      />
+
       <ComponentLayout
         vertical={false}
         title="Bitcoin card"

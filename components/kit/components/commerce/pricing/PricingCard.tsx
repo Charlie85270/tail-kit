@@ -51,7 +51,7 @@ const PricingCard: FC = () => {
       <ul className="text-sm text-gray-600 dark:text-gray-100 w-full mt-6 mb-6">
         {prices.map((price) => {
           return (
-            <li className={`mb-3 flex items-center ${price.include ? "" : "opacity-50"}`}>
+            <li key={price.label} className={`mb-3 flex items-center ${price.include ? "" : "opacity-50"}`}>
               {price.include ? (
                 <svg
                   className="h-6 w-6 mr-2"

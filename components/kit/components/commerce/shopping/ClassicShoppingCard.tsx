@@ -1,9 +1,10 @@
 import React, { FC } from "react";
 import Button from "../../elements/buttons/Button";
+
 const ClassicShoppingCard: FC = () => {
   return (
     <div className="flex bg-white dark:bg-gray-800 rounded-lg shadow">
-      <div className="flex-none w-48 relative">
+      <div className="flex-none w-24 md:w-48  relative">
         <img
           src="/images/object/8.jpg"
           alt="shopping image"
@@ -41,7 +42,8 @@ const ClassicShoppingCard: FC = () => {
               XL
             </label>
           </div>
-          <a href="#" className="ml-auto text-sm text-gray-500 dark:text-gray-300 underline">
+          <a href="#" className="ml-auto hidden md:block text-sm text-gray-500 dark:text-gray-300 underline">
+
             Size Guide
           </a>
         </div>
@@ -53,4 +55,5 @@ const ClassicShoppingCard: FC = () => {
     </div>
   );
 };
+
 export default ClassicShoppingCard;

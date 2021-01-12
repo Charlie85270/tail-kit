@@ -17,7 +17,7 @@ const Navigation: FC = () => {
     },
     {
       title: "Sidebars",
-      items: 7,
+      items: 8,
       img: "images/sections/sidebar.png",
       link: "/components/sidebar",
     },

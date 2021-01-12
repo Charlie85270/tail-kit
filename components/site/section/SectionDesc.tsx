@@ -18,10 +18,12 @@ const SectionDesc = ({ title, items, id }: Props) => {
             <div key={section.title} className="hover:opacity-80 border rounded-lg w-1/3 m-2 md:m-0  md:w-1/5">
               <Link href={section.link}>
                 <a className="">
-                  <img src={section.img} alt={section.title} className="rounded-lg rounded-lg w-60 md:h-36 opacity-50 hover:opacity-100" />
-                  <p className="text-gray-600 text-md p-2">
+                  <img src={section.img} alt={section.title} className="rounded-lg w-full object-cover w-60 md:h-36 opacity-70 hover:opacity-100" />
+                  <p className="text-gray-700 text-md p-2">
                     {section.title}{" "}
-                    <span className="text-gray-400 font-thin text-sm">({section.items} components)</span>
+                    <span className="text-gray-500 font-thin text-sm">
+                      ({section.items} components)
+                    </span>
                   </p>
                 </a>
               </Link>

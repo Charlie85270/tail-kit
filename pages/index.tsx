@@ -21,6 +21,7 @@ const IndexPage: FC = () => {
             Fast UI gives you access to over <span className="text-gray-700 font-bold">200</span> CSS responsive
             components, based on Tailwind CSS 2.0 and Font Awesome. It's all free and open-source.
           </h2>
+
           <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start w-full">
             <div className="rounded-md shadow">
               <Link href="/started">
