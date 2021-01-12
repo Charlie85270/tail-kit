@@ -28,7 +28,6 @@ const IndexPage: FC = () => {
             components, based on Tailwind CSS 2.0 and Font Awesome. It's all
             free and open-source.
           </h2>
-          <p>Tail-kit</p>
 
           <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start w-full">
             <div className="rounded-md shadow">
