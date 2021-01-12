@@ -8,7 +8,7 @@ import SidebarWithCateg from "../../../components/kit/components/navigation/side
 
 const SideBar: FC = () => {
   const headerImg = "/icons/rocket.svg";
-  const headerText = "Tailwind-kit";
+  const headerText = "Tail-Kit";
   const links = [
     {
       label: "Element",

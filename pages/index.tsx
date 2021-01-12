@@ -19,15 +19,16 @@ const IndexPage: FC = () => {
             </span>
             <span className="flex w-full m-auto text-indigo-600 xl:inline">
               {" "}
-              Tailwind-kit
+              Tail-kit
             </span>
           </h1>
           <h2 className="mt-3  text-gray-500 sm:mt-5 text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-            Fast UI gives you access to over{" "}
+            Tail-kit gives you access to over{" "}
             <span className="text-gray-700 font-bold">200</span> CSS responsive
             components, based on Tailwind CSS 2.0 and Font Awesome. It's all
             free and open-source.
           </h2>
+          <p>Tail-kit</p>
 
           <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start w-full">
             <div className="rounded-md shadow">

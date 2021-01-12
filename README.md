@@ -1,4 +1,4 @@
-# Tailwind-Kit 
+# Tail-Kit 
 
 ![version](https://img.shields.io/badge/version-1.0.0-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) ![GitHub issues](https://img.shields.io/github/issues/Charlie85270/fastUI) <a href="https://www.tailwind-kit.com/" target="_blank">
 ![GitHub Repo stars](https://img.shields.io/github/stars/Charlie85270/fastUI?style=social)
@@ -7,7 +7,7 @@
 </a>
 ### A beautiful and large components kit for TailwindCSS 2.0
 
-Tailwind-kit is Free and Open Source. It does not change or add any CSS to the already one from TailwindCSS 2.0. It features multiple HTML elements that can be used in all web projects who's use tailwind CSS.
+Tail-Kit is Free and Open Source. It does not change or add any CSS to the already one from TailwindCSS 2.0. It features multiple HTML elements that can be used in all web projects who's use tailwind CSS.
 
 ## CSS Components
 
@@ -51,7 +51,7 @@ Do not hesitate to contribe and add your own components/layout.
 ![Tailwind-Kit](https://camo.githubusercontent.com/6202639220e8972265da4543eb10e428adbf579b8a07fc427bc90b383647a3c9/68747470733a2f2f7777772e6a6f616f706564726f2e63632f696d672f6769746875622f747970657363726970742d6e6578746a732d737461727465722e706e67)
 
 
-Tailwind-kit is a static site build with [Next.js](https://nextjs.org/) and typescript.
+Tail-Kit is a static site build with [Next.js](https://nextjs.org/) and typescript.
 
 Install dependencies:
 

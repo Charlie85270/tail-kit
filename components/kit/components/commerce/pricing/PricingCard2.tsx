@@ -18,6 +18,7 @@ const PricingCard2: FC = () => {
         {prices.map((price) => {
           return (
             <li
+              key={price.label}
               className={`mb-3 flex items-center ${
                 price.include ? "" : "opacity-50"
               }`}

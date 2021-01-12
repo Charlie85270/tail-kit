@@ -42,7 +42,7 @@ const confCode = `module.exports = {
 const StartedPage: FC = () => {
   return (
     <AppLayout
-      title="Configuration to use Tailwind-kit for tailwind components"
+      title="Configuration to use Tail-Kit for tailwind components"
       desc="Over 200 freen and open source build components for tailwind css"
     >
       <div className="pb-10 border-b border-gray-200 mb-10" id="installation">
@@ -53,7 +53,7 @@ const StartedPage: FC = () => {
         </div>
 
         <p className="mt-1 text-lg text-gray-500">
-          Tailwind-kit is based on{" "}
+          Tail-Kit is based on{" "}
           <a
             href="https://tailwindcss.com/"
             className="text-gray-700 underline hover:text-gray-800"
@@ -108,8 +108,8 @@ const StartedPage: FC = () => {
         </div>
 
         <p className="mt-1 mb-4">
-          Some Tailwind-kit components need to override basic Tailwind
-          configuration to work.
+          Some Tail-Kit components need to override basic Tailwind configuration
+          to work.
         </p>
         <p className="block md:flex items-center">
           All components that need configuration are indicated with this sign:
@@ -143,7 +143,8 @@ const StartedPage: FC = () => {
           </p>
 
           <p className="pt-4 text-xl text-gray-700 mb-4">
-            The necessary configuration for all Tailwind-kit components (tailwind.config.js file) are available below:
+            The necessary configuration for all Tail-Kit components
+            (tailwind.config.js file) are available below:
           </p>
           <LiveProvider
             theme={EDITOR_THEME}

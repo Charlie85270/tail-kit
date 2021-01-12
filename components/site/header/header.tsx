@@ -43,7 +43,7 @@ const Header = ({ hideGithub, hideHelp }) => {
                   alt="site"
                 />
                 <span className="text-indigo-600 ml-2 text-2xl font-bold">
-                  Tailwind-kit
+                  Tail-Kit
                 </span>
               </a>
             </Link>

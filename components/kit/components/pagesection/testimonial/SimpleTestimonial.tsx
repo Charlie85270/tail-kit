@@ -25,7 +25,7 @@ const SimpleTestimonial = (props: Props) => {
             Jean Miguel
           </span>
           <span className="dark:text-gray-400 text-xs flex items-center">
-            User of Tailwind-kit{" "}
+            User of Tail-Kit
             <img src="/icons/rocket.svg" className="ml-2 h-4 w-4" />
           </span>
         </div>
