@@ -52,10 +52,10 @@ const FooterLight = (props: Props) => {
               <a className="ml-4 hover:text-primary-gray-20" href="#">
                 <span className="sr-only">Settings</span>
                 <svg
-                  width="2048"
-                  height="1792"
+                  width="30"
+                  height="30"
                   fill="currentColor"
-                  className="w-8 h-8 text-gray-200 hover:text-gray-100"
+                  className="text-xl hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
                   viewBox="0 0 2048 1792"
                   xmlns="http://www.w3.org/2000/svg"
                 >

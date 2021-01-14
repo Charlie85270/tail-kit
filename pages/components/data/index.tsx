@@ -32,11 +32,13 @@ const DataPage = () => {
       <ComponentLayout
         vertical={false}
         title="Tasks card"
+        showSwitchMode={true}
         element={<MutlipleTask />}
         component={MutlipleTask}
       />
       <ComponentLayout
         vertical={false}
+        showSwitchMode={true}
         title="Details Task card"
         element={<TaskCard />}
         component={TaskCard}
