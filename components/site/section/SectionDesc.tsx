@@ -17,17 +17,12 @@ interface section {
 const SectionDesc = ({ title, items, id }: Props) => {
   return (
     <div className="mb-8" id={id}>
-      <h1 className="w-full text-left text-2xl font-light mb-4 text-gray-600">
-        {title}
-      </h1>
+      <h1 className="w-full text-left text-2xl font-light mb-4 text-gray-600">{title}</h1>
 
       <div className="flex w-full gap-0 md:gap-4 flex-wrap justify-evenly md:justify-start items-center">
         {items.map((section) => {
           return (
-            <div
-              key={section.title}
-              className="hover:opacity-80 border rounded-lg w-1/3 m-2 md:m-0  md:w-1/5"
-            >
+            <div key={section.title} className="hover:opacity-80 border rounded-lg w-1/3 m-2 md:m-0  md:w-1/5">
               <Link href={section.link}>
                 <a className="">
                   <img
@@ -37,9 +32,7 @@ const SectionDesc = ({ title, items, id }: Props) => {
                   />
                   <p className="text-gray-700 text-md p-2">
                     {section.title}{" "}
-                    <span className="text-gray-500 font-thin text-sm">
-                      ({section.items} components)
-                    </span>
+                    <span className="text-gray-500 font-thin text-sm">({section.items} components)</span>
                   </p>
                 </a>
               </Link>

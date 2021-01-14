@@ -47,9 +47,7 @@ const Pagesection: FC = () => {
     },
   ];
 
-  return (
-    <SectionDesc id="pagesection" items={pageSections} title="Page sections" />
-  );
+  return <SectionDesc id="pagesection" items={pageSections} title="Page sections" />;
 };
 
 export default Pagesection;

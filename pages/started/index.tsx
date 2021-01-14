@@ -47,17 +47,12 @@ const StartedPage: FC = () => {
     >
       <div className="pb-10 border-b border-gray-200 mb-10" id="installation">
         <div className="flex items-center">
-          <h1 className="text-3xl font-extrabold text-gray-900 tracking-tight mb-4">
-            Installation
-          </h1>
+          <h1 className="text-3xl font-extrabold text-gray-900 tracking-tight mb-4">Installation</h1>
         </div>
 
         <p className="mt-1 text-lg text-gray-500">
           Tail-Kit is based on{" "}
-          <a
-            href="https://tailwindcss.com/"
-            className="text-gray-700 underline hover:text-gray-800"
-          >
+          <a href="https://tailwindcss.com/" className="text-gray-700 underline hover:text-gray-800">
             Tailwind CSS framework{" "}
           </a>
           .
@@ -68,10 +63,7 @@ const StartedPage: FC = () => {
         <div className="mt-4">
           <p className="mt-1 text-lg text-gray-500">
             Link to install Tailwind CSS :{" "}
-            <a
-              href="https://tailwindcss.com/docs"
-              className="underline text-xl text-gray-700"
-            >
+            <a href="https://tailwindcss.com/docs" className="underline text-xl text-gray-700">
               Documentation
             </a>
           </p>
@@ -97,20 +89,12 @@ const StartedPage: FC = () => {
           </p>
         </div>
       </div>
-      <div
-        className="pb-10 border-b border-gray-200 mb-10 text-lg text-gray-500"
-        id="configuration"
-      >
+      <div className="pb-10 border-b border-gray-200 mb-10 text-lg text-gray-500" id="configuration">
         <div className="flex items-center">
-          <h1 className="text-3xl font-extrabold text-gray-900 tracking-tight mb-4">
-            Configuration
-          </h1>
+          <h1 className="text-3xl font-extrabold text-gray-900 tracking-tight mb-4">Configuration</h1>
         </div>
 
-        <p className="mt-1 mb-4">
-          Some Tail-Kit components need to override basic Tailwind configuration
-          to work.
-        </p>
+        <p className="mt-1 mb-4">Some Tail-Kit components need to override basic Tailwind configuration to work.</p>
         <p className="block md:flex items-center">
           All components that need configuration are indicated with this sign:
           <a
@@ -134,24 +118,15 @@ const StartedPage: FC = () => {
         <div className="mt-4">
           <p className="mt-1 text-lg text-gray-500">
             For more information about Tailwind configuration:{" "}
-            <a
-              href="https://tailwindcss.com/docs/configuration"
-              className="underline text-xl text-gray-700"
-            >
+            <a href="https://tailwindcss.com/docs/configuration" className="underline text-xl text-gray-700">
               Documentation
             </a>
           </p>
 
           <p className="pt-4 text-xl text-gray-700 mb-4">
-            The necessary configuration for all Tail-Kit components
-            (tailwind.config.js file) are available below:
+            The necessary configuration for all Tail-Kit components (tailwind.config.js file) are available below:
           </p>
-          <LiveProvider
-            theme={EDITOR_THEME}
-            disabled={true}
-            language="javascript"
-            code={confCode}
-          >
+          <LiveProvider theme={EDITOR_THEME} disabled={true} language="javascript" code={confCode}>
             <LiveEditor className="rounded-lg" />
           </LiveProvider>
         </div>

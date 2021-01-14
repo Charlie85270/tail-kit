@@ -18,53 +18,30 @@ const AlertPage = () => {
   const subtitle = "It's today or never.";
 
   return (
-    <AppLayout
-      title="Alert free Tailwind components"
-      desc="Alerts, Modales, Banners ... components for tailwind css"
-    >
+    <AppLayout title="Alert free Tailwind components" desc="Alerts, Modales, Banners ... components for tailwind css">
       <SectionHeader title="Alert" />
       <ComponentLayout
         vertical={false}
         title="Simple text alert"
-        element={
-          <SimpleAlert
-            title="Danger"
-            text="Battery is low, your phone can't take a photo"
-            type="alert"
-          />
-        }
+        element={<SimpleAlert title="Danger" text="Battery is low, your phone can't take a photo" type="alert" />}
         component={SimpleAlert}
       />
       <ComponentLayout
         vertical={false}
         title="Simple text succes"
-        element={
-          <SimpleAlert
-            title="Success"
-            text="Congratulations, you are the best player."
-            type="success"
-          />
-        }
+        element={<SimpleAlert title="Success" text="Congratulations, you are the best player." type="success" />}
         component={SimpleAlert}
       />
       <ComponentLayout
         vertical={false}
         title="Simple text danger"
-        element={
-          <SimpleAlert
-            title="Be Warned"
-            text="Something not ideal might be happening."
-            type="danger"
-          />
-        }
+        element={<SimpleAlert title="Be Warned" text="Something not ideal might be happening." type="danger" />}
         component={SimpleAlert}
       />
       <ComponentLayout
         vertical={true}
         title="Closable long alert"
-        element={
-          <ClosableLongAlert text="Something not ideal might be happening." />
-        }
+        element={<ClosableLongAlert text="Something not ideal might be happening." />}
         component={ClosableLongAlert}
       />
 
@@ -87,10 +64,7 @@ const AlertPage = () => {
         vertical={true}
         title="Line alert"
         element={
-          <BandeauLineAlert
-            title="We use cookies! Something not ideal might be happening."
-            closeAction={() => null}
-          />
+          <BandeauLineAlert title="We use cookies! Something not ideal might be happening." closeAction={() => null} />
         }
         component={BandeauLineAlert}
       />
@@ -117,16 +91,8 @@ const AlertPage = () => {
         vertical={true}
         title="Modale"
         element={
-          <InformationModale
-            withFooter={false}
-            onClose={() => null}
-            withCloseBtn={false}
-          >
-            <SimpleTextCta
-              isVertical={true}
-              title={title}
-              subtitle={subtitle}
-            />
+          <InformationModale withFooter={false} onClose={() => null} withCloseBtn={false}>
+            <SimpleTextCta isVertical={true} title={title} subtitle={subtitle} />
           </InformationModale>
         }
         component={InformationModale}
@@ -136,17 +102,8 @@ const AlertPage = () => {
         title="Modale with close btn"
         jsLink="http://google.com"
         element={
-          <InformationModale
-            withFooter={false}
-            onClose={() => null}
-            withCloseBtn={true}
-          >
-            <SimpleTeam
-              name="Charlie"
-              img="/images/person/5.jpg"
-              job="Lead dev"
-              desc=""
-            />
+          <InformationModale withFooter={false} onClose={() => null} withCloseBtn={true}>
+            <SimpleTeam name="Charlie" img="/images/person/5.jpg" job="Lead dev" desc="" />
           </InformationModale>
         }
         component={InformationModale}
@@ -155,17 +112,8 @@ const AlertPage = () => {
         vertical={true}
         title="Modale with footer actions"
         element={
-          <InformationModale
-            withFooter={true}
-            onClose={() => null}
-            withCloseBtn={false}
-          >
-            <SimpleTeam
-              name="Charlie"
-              img="/images/person/5.jpg"
-              job="Lead dev"
-              desc=""
-            />
+          <InformationModale withFooter={true} onClose={() => null} withCloseBtn={false}>
+            <SimpleTeam name="Charlie" img="/images/person/5.jpg" job="Lead dev" desc="" />
           </InformationModale>
         }
         component={InformationModale}

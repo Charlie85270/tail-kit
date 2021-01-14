@@ -13,8 +13,7 @@ const BlogList = (props: Props) => {
       title: "Work at home",
       categ: "Video",
       img: "/images/blog/1.jpg",
-      desc:
-        "Work at home, remote, is the new age of the job, every person can work at home....",
+      desc: "Work at home, remote, is the new age of the job, every person can work at home....",
     },
     {
       tags: ["Car", "Money"],
@@ -55,9 +54,7 @@ const BlogList = (props: Props) => {
     <div className="w-full bg-white p-12">
       <div className="header flex items-end justify-between mb-12">
         <div className="title">
-          <p className="text-4xl font-bold text-gray-800 mb-4">
-            Lastest articles
-          </p>
+          <p className="text-4xl font-bold text-gray-800 mb-4">Lastest articles</p>
           <p className="text-2xl font-light text-gray-400">
             All article are verified by 2 experts and valdiate by the CTO
           </p>
@@ -69,9 +66,10 @@ const BlogList = (props: Props) => {
         )}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12">
-        {blogs.map((blog) => {
+        {blogs.map((blog, idx) => {
           return (
             <BlogCard
+              key={idx}
               tags={blog.tags}
               title={blog.title}
               categ={blog.categ}

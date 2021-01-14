@@ -9,12 +9,8 @@ const InfoNumberCard2: FC = () => {
       />
       <div className="px-4 py-5 sm:p-6">
         <dl>
-          <dt className="text-sm leading-5 font-medium text-gray-500 truncate">
-            Valeur de la transaction
-          </dt>
-          <dd className="mt-1 text-3xl leading-9 font-semibold text-gray-900">
-            $ 5,749,480
-          </dd>
+          <dt className="text-sm leading-5 font-medium text-gray-500 truncate">Valeur de la transaction</dt>
+          <dd className="mt-1 text-3xl leading-9 font-semibold text-gray-900">$ 5,749,480</dd>
           <dd className="text-gray-500 font-semibold">
             <span>
               500<span className="text-xs">.000</span>

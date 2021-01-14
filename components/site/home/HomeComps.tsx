@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React, { FC } from "react";
 import Button from "../../kit/components/elements/buttons/Button";
 import TagsCard from "../../kit/components/elements/data/TagsCard";
 import SimplePhotoDescCard from "../../kit/components/elements/data/SimplePhotoDescCard";

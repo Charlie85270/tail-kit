@@ -11,11 +11,7 @@ const CreateAccount = () => {
       </div>
       <span className="flex-items-center text-gray-500 dark:text-gray-400 justify-center text-center text-sm">
         Already have an account ?
-        <a
-          href="#"
-          target="_blank"
-          className="text-blue-500 hover:text-blue-700 text-sm underline"
-        >
+        <a href="#" target="_blank" className="text-blue-500 hover:text-blue-700 text-sm underline">
           Sign in
         </a>
       </span>

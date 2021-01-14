@@ -35,24 +35,12 @@ const Header = (props: Props) => {
 
   return (
     <div>
-      <nav
-        className={`bg-white dark:bg-gray-800 ${
-          props.withShadow ? " shadow" : ""
-        }${props.isFat ? " py-4" : ""} `}
-      >
+      <nav className={`bg-white dark:bg-gray-800 ${props.withShadow ? " shadow" : ""}${props.isFat ? " py-4" : ""} `}>
         <div className="max-w-7xl mx-auto px-8">
           <div className="flex items-center justify-between h-16">
-            <div
-              className={`${
-                props.alignRight ? "w-full justify-between" : ""
-              } flex items-center`}
-            >
+            <div className={`${props.alignRight ? "w-full justify-between" : ""} flex items-center`}>
               <a className="flex-shrink-0" href="/">
-                <img
-                  className="h-8 w-8"
-                  src="/icons/rocket.svg"
-                  alt="Workflow"
-                />
+                <img className="h-8 w-8" src="/icons/rocket.svg" alt="Workflow" />
               </a>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
@@ -62,9 +50,7 @@ const Header = (props: Props) => {
                         <a
                           key={link.label}
                           className={`${
-                            link.isSelected
-                              ? "text-gray-800 dark:text-white"
-                              : "text-gray-300"
+                            link.isSelected ? "text-gray-800 dark:text-white" : "text-gray-300"
                           }  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md ${
                             props.isFat ? "text-md" : "text-sm"
                           } font-medium`}

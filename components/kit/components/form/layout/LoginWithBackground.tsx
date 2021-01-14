@@ -9,9 +9,7 @@ const LoginWithBackground = () => {
         <div className="w-full max-w-lg">
           <div className="leading-loose">
             <form className="max-w-sm m-auto p-10 bg-white bg-opacity-25 rounded shadow-xl">
-              <p className="text-white mb-8 font-light text-center text-2xl">
-                Login
-              </p>
+              <p className="text-white mb-8 font-light text-center text-2xl">Login</p>
               <div className="mb-2">
                 <InputText placeholder="email" />
               </div>

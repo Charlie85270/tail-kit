@@ -1,8 +1,12 @@
-import { FC } from "react";
+import React, { FC } from "react";
 import Header from "../site/header/header";
 import Meta from "../site/Meta";
 
-const HomeLayout: FC = ({ children }) => {
+interface IProps {
+  children: React.ReactNode;
+}
+
+const HomeLayout: FC = ({ children }: IProps) => {
   return (
     <>
       <Meta

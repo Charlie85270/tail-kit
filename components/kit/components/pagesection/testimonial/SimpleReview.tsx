@@ -19,12 +19,8 @@ const SimpleReview = () => {
         </div>
         <div className="ml-6">
           <p className="flex items-baseline">
-            <span className="text-gray-600 dark:text-gray-200 font-bold">
-              A Msan
-            </span>
-            <span className="text-gray-500 dark:text-gray-300  ml-2 text-sm">
-              2 months ago
-            </span>
+            <span className="text-gray-600 dark:text-gray-200 font-bold">A Msan</span>
+            <span className="text-gray-500 dark:text-gray-300  ml-2 text-sm">2 months ago</span>
           </p>
           <div className="flex items-center mt-1">
             <svg
@@ -80,9 +76,8 @@ const SimpleReview = () => {
           </div>
           <div className="mt-3">
             <p className="mt-1 max-w-xs dark:text-white">
-              My first job of scanning photos at the Memories 2 Digital Photo
-              Scanning was fantastic. She completed the work quickly while I was
-              waiting. Thanks for a great service..
+              My first job of scanning photos at the Memories 2 Digital Photo Scanning was fantastic. She completed the
+              work quickly while I was waiting. Thanks for a great service..
             </p>
           </div>
         </div>

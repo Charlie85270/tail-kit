@@ -107,17 +107,9 @@ const SideBar: FC = () => {
   };
 
   return (
-    <AppLayout
-      title="Sidebar free Tailwind components"
-      desc="Sidebar and more components for tailwind css"
-    >
+    <AppLayout title="Sidebar free Tailwind components" desc="Sidebar and more components for tailwind css">
       <SectionHeader title="Sidebar" />
-      <ComponentLayout
-        title="Light"
-        showSwitchMode={true}
-        element={<Sidebar links={links} />}
-        component={Sidebar}
-      />
+      <ComponentLayout title="Light" showSwitchMode={true} element={<Sidebar links={links} />} component={Sidebar} />
       <ComponentLayout
         title="With icons"
         showSwitchMode={true}
@@ -128,26 +120,13 @@ const SideBar: FC = () => {
       <ComponentLayout
         showSwitchMode={true}
         title="With header"
-        element={
-          <Sidebar
-            links={linksWithIcons}
-            headerImg={headerImg}
-            headerText={headerText}
-          />
-        }
+        element={<Sidebar links={linksWithIcons} headerImg={headerImg} headerText={headerText} />}
         component={Sidebar}
       />
       <ComponentLayout
         showSwitchMode={true}
         title="With border"
-        element={
-          <Sidebar
-            links={linksWithIcons}
-            withBorder={true}
-            headerImg={headerImg}
-            headerText={headerText}
-          />
-        }
+        element={<Sidebar links={linksWithIcons} withBorder={true} headerImg={headerImg} headerText={headerText} />}
         component={Sidebar}
       />
 
@@ -155,12 +134,7 @@ const SideBar: FC = () => {
         showSwitchMode={true}
         title="With footer"
         element={
-          <Sidebar
-            links={linksWithIcons}
-            bottomLink={bottomLink}
-            headerImg={headerImg}
-            headerText={headerText}
-          />
+          <Sidebar links={linksWithIcons} bottomLink={bottomLink} headerImg={headerImg} headerText={headerText} />
         }
         component={Sidebar}
       />
@@ -168,12 +142,7 @@ const SideBar: FC = () => {
         showSwitchMode={true}
         title="With notifications"
         element={
-          <Sidebar
-            links={linksWithIcons}
-            bottomLink={bottomLink}
-            headerImg={headerImg}
-            headerText={headerText}
-          />
+          <Sidebar links={linksWithIcons} bottomLink={bottomLink} headerImg={headerImg} headerText={headerText} />
         }
         component={Sidebar}
       />
@@ -199,13 +168,7 @@ const SideBar: FC = () => {
       <ComponentLayout
         title="With footer"
         showSwitchMode={true}
-        element={
-          <LittleSidebar
-            links={linksWithIcons}
-            withHeader={true}
-            withBottomLink={true}
-          />
-        }
+        element={<LittleSidebar links={linksWithIcons} withHeader={true} withBottomLink={true} />}
         component={LittleSidebar}
       />
     </AppLayout>

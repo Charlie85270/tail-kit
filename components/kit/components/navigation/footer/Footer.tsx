@@ -22,11 +22,7 @@ const Footer = (props: Props) => {
             return (
               <li key={link.label} className="w-1/2 md:w-1/3 lg:w-1/3">
                 <div className="text-center">
-                  <h2
-                    className={`text-gray-500 dark:text-gray-200 text-md uppercase mb-4`}
-                  >
-                    {link.label}
-                  </h2>
+                  <h2 className={`text-gray-500 dark:text-gray-200 text-md uppercase mb-4`}>{link.label}</h2>
                   {link.subLinks && props.showSubLinks && (
                     <ul>
                       {link.subLinks.map((sub) => {
@@ -47,9 +43,7 @@ const Footer = (props: Props) => {
           })}
         </ul>
         {props.withSocialLink && (
-          <div
-            className={`pt-8 flex border-t border-gray-200 max-w-xs mx-auto items-center justify-between`}
-          >
+          <div className={`pt-8 flex border-t border-gray-200 max-w-xs mx-auto items-center justify-between`}>
             <a href="#">
               <svg
                 width="20"
@@ -114,16 +108,12 @@ const Footer = (props: Props) => {
         )}
 
         {props.withSearch && (
-          <div
-            className={`text-center pt-10 sm:pt-12 font-light flex items-center justify-center`}
-          >
+          <div className={`text-center pt-10 sm:pt-12 font-light flex items-center justify-center`}>
             <FormSubscribe label="Subscribe" placeholder="Email" />
           </div>
         )}
         {props.withCredits && (
-          <div
-            className={`text-center pt-10 sm:pt-12 font-light flex items-center justify-center`}
-          >
+          <div className={`text-center pt-10 sm:pt-12 font-light flex items-center justify-center`}>
             Created by Charlie
           </div>
         )}

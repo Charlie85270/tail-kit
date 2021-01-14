@@ -1,11 +1,11 @@
+import React, { useCallback, useRef, useState } from "react";
+import ReactDOMServer from "react-dom/server";
+import { LiveEditor, LivePreview, LiveProvider } from "react-live";
+import Link from "next/link";
+
 import * as gtag from "../../lib/gtag";
 
-import { LiveEditor, LivePreview, LiveProvider } from "react-live";
-import { useCallback, useRef, useState } from "react";
-
 import EDITOR_THEME from "../../editorTheme";
-import Link from "next/link";
-import ReactDOMServer from "react-dom/server";
 import Toggle from "../kit/components/form/toggle/Toggle";
 import { formatHtml } from "../../utils/Utils";
 
@@ -71,9 +71,7 @@ const ComponentLayout = (props: Props) => {
       <button
         onClick={copyCode}
         className={`w-28 px-4 py-2 flex items-center text-base font-medium rounded-md ${
-          hasCopied
-            ? "text-white bg-green-500 hover:bg-green-700"
-            : "text-gray-800 bg-white hover:bg-gray-200"
+          hasCopied ? "text-white bg-green-500 hover:bg-green-700" : "text-gray-800 bg-white hover:bg-gray-200"
         }`}
       >
         <svg
@@ -94,19 +92,13 @@ const ComponentLayout = (props: Props) => {
   const [status, setStatus] = useState<STATUS>(STATUS.DEFAULT);
   return (
     <div
-      className={`bg-gray-100 shadow rounded-xl mb-4 ${
-        props.containerClasses ? props.containerClasses : ""
-      }`}
+      className={`bg-gray-100 shadow rounded-xl mb-4 ${props.containerClasses ? props.containerClasses : ""}`}
       key={props.title}
     >
       <div className="flex flex-col md:flex-row items-center justify-between mb-8 bg-white p-4 border rounded-xl">
-        <p className="text-xl font-light text-gray-600 mb-2 md:mb-0">
-          {props.title}
-        </p>
+        <p className="text-xl font-light text-gray-600 mb-2 md:mb-0">{props.title}</p>
         <div className="flex items-center flex-row flex-wrap gap-4 justify-center">
-          {props.showSwitchMode && (
-            <Toggle label="Dark mode" onChange={(mode) => changeMode(mode)} />
-          )}
+          {props.showSwitchMode && <Toggle label="Dark mode" onChange={(mode) => changeMode(mode)} />}
 
           {props.jsLink && (
             <a
@@ -174,22 +166,15 @@ const ComponentLayout = (props: Props) => {
       >
         <div
           className={`${
-            props.vertical
-              ? "flex-col justify-center"
-              : "flex-col md:flex-row justify-between "
+            props.vertical ? "flex-col justify-center" : "flex-col md:flex-row justify-between "
           } flex gap-4 mx-4 items-start py-16`}
         >
-          <div
-            ref={previewRef}
-            className={`${props.vertical ? "w-full " : ""}mx-auto`}
-          >
+          <div ref={previewRef} className={`${props.vertical ? "w-full " : ""}mx-auto`}>
             <LivePreview />
           </div>
 
           {status !== STATUS.DEFAULT && (
-            <div
-              className={`${props.vertical ? "" : "md:w-3/4"} relative w-full`}
-            >
+            <div className={`${props.vertical ? "" : "md:w-3/4"} relative w-full`}>
               <div>
                 <div className="absolute top-2 right-24 z-10">{COPY_BTN()}</div>
 

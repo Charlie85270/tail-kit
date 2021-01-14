@@ -27,10 +27,11 @@ const Table = (props: Props) => {
     <table className="table p-4 bg-white shadow rounded-lg">
       <thead>
         <tr>
-          {headers.map((head) => {
+          {headers.map((head, idx) => {
             return (
               <th
                 className={`${borderClasses} p-4 dark:border-dark-5 whitespace-nowrap font-normal text-gray-900`}
+                key={idx}
               >
                 {head}
               </th>
@@ -44,10 +45,7 @@ const Table = (props: Props) => {
             <tr className="text-gray-700" key={index}>
               {row.data.map((text) => {
                 return (
-                  <td
-                    key={text}
-                    className={`${borderClasses} p-4 dark:border-dark-5`}
-                  >
+                  <td key={text} className={`${borderClasses} p-4 dark:border-dark-5`}>
                     {text}
                   </td>
                 );

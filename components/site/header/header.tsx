@@ -2,7 +2,12 @@ import React, { useState, useRef, useCallback, useEffect } from "react";
 import Link from "next/link";
 import { menuEntry } from "../../layout/AppLayout";
 
-const Header = ({ hideGithub, hideHelp }) => {
+interface IProps {
+  hideGithub: boolean;
+  hideHelp: boolean;
+}
+
+const Header = ({ hideGithub, hideHelp }: IProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSectionOpen, setIsSectionOpen] = useState(false);
   const listElement = useRef<HTMLDivElement>();
@@ -10,12 +15,7 @@ const Header = ({ hideGithub, hideHelp }) => {
   const handleClickOutside = useCallback((event) => {
     const myHTMLWrapper = listElement.current;
     const btnElement = selectButton.current;
-    if (
-      myHTMLWrapper &&
-      btnElement &&
-      !myHTMLWrapper.contains(event.target) &&
-      !btnElement.contains(event.target)
-    ) {
+    if (myHTMLWrapper && btnElement && !myHTMLWrapper.contains(event.target) && !btnElement.contains(event.target)) {
       setIsSectionOpen(false);
     }
   }, []);
@@ -26,6 +26,7 @@ const Header = ({ hideGithub, hideHelp }) => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [handleClickOutside]);
+
   return (
     <div className="relative bg-white z-40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -37,14 +38,8 @@ const Header = ({ hideGithub, hideHelp }) => {
           <div className="flex justify-start items-center gap-12">
             <Link href="/">
               <a className="flex items-center">
-                <img
-                  className="h-12 w-auto sm:h-12"
-                  src="/icons/rocket.svg"
-                  alt="site"
-                />
-                <span className="text-indigo-600 ml-2 text-2xl font-bold">
-                  Tail-Kit
-                </span>
+                <img className="h-12 w-auto sm:h-12" src="/icons/rocket.svg" alt="site" />
+                <span className="text-indigo-600 ml-2 text-2xl font-bold">Tail-Kit</span>
               </a>
             </Link>
             <nav className="hidden md:flex space-x-10">
@@ -78,19 +73,15 @@ const Header = ({ hideGithub, hideHelp }) => {
                   >
                     <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                       <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                        {menuEntry.map((entry) => {
+                        {menuEntry.map((entry, idx) => {
                           return (
-                            <Link href={entry.link}>
+                            <Link href={entry.link} key={idx}>
                               <a className="-m-3 p-3 flex items-center rounded-lg text-indigo-600 hover:bg-gray-50">
                                 {entry.icon}
 
                                 <div className="ml-4 font-normal">
-                                  <p className="text-base text-gray-900">
-                                    {entry.label}
-                                  </p>
-                                  <p className="mt-1 text-sm text-gray-500">
-                                    {entry.desc}
-                                  </p>
+                                  <p className="text-base text-gray-900">{entry.label}</p>
+                                  <p className="mt-1 text-sm text-gray-500">{entry.desc}</p>
                                 </div>
                               </a>
                             </Link>
@@ -150,12 +141,7 @@ const Header = ({ hideGithub, hideHelp }) => {
                 stroke="currentColor"
                 aria-hidden="true"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             </button>
           </div>
@@ -167,11 +153,7 @@ const Header = ({ hideGithub, hideHelp }) => {
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
                 <div>
-                  <img
-                    className="h-8 w-auto"
-                    src="/icons/rocket.svg"
-                    alt="Workflow"
-                  />
+                  <img className="h-8 w-auto" src="/icons/rocket.svg" alt="Workflow" />
                 </div>
                 <div className="-mr-2">
                   <button
@@ -189,28 +171,19 @@ const Header = ({ hideGithub, hideHelp }) => {
                       stroke="currentColor"
                       aria-hidden="true"
                     >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        strokeWidth="2"
-                        d="M6 18L18 6M6 6l12 12"
-                      />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                   </button>
                 </div>
               </div>
               <div className="mt-6">
                 <nav>
-                  {menuEntry.map((entry) => {
+                  {menuEntry.map((entry, idx) => {
                     return (
-                      <Link href={entry.link}>
+                      <Link href={entry.link} key={idx}>
                         <a className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
-                          <i
-                            className={`${entry.icon} flex-shrink-0 h-6 w-6 text-indigo-600`}
-                          />
-                          <span className="ml-3 text-base font-normal text-gray-900">
-                            {entry.label}
-                          </span>
+                          <i className={`${entry.icon} flex-shrink-0 h-6 w-6 text-indigo-600`} />
+                          <span className="ml-3 text-base font-normal text-gray-900">{entry.label}</span>
                         </a>
                       </Link>
                     );
@@ -224,4 +197,5 @@ const Header = ({ hideGithub, hideHelp }) => {
     </div>
   );
 };
+
 export default Header;

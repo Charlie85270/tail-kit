@@ -4,9 +4,7 @@ import SimpleTeam from "./SimpleTeam";
 const SimpleTeams = () => {
   return (
     <div className="p-8 bg-white dark:bg-gray-800 rounded-lg shadow">
-      <p className="text-center text-3xl font-bold text-gray-800 dark:text-white">
-        Professional team
-      </p>
+      <p className="text-center text-3xl font-bold text-gray-800 dark:text-white">Professional team</p>
       <p className="text-center mb-12 text-xl font-normal text-gray-500 dark:text-gray-200">
         Meat the best team in wolrd
       </p>

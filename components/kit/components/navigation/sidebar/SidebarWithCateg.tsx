@@ -7,13 +7,7 @@ const links = [
       {
         label: "Gérer sa boutique",
         icon: (
-          <svg
-            width="20"
-            height="20"
-            fill="currentColor"
-            viewBox="0 0 2048 1792"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 2048 1792" xmlns="http://www.w3.org/2000/svg">
             <path
               fill="#5e72e4"
               d="M1070 1178l306-564h-654l-306 564h654zm722-282q0 182-71 348t-191 286-286 191-348 71-348-71-286-191-191-286-71-348 71-348 191-286 286-191 348-71 348 71 286 191 191 286 71 348z"
@@ -47,13 +41,7 @@ const links = [
       {
         label: "Notifications",
         icon: (
-          <svg
-            width="20"
-            height="20"
-            fill="currentColor"
-            viewBox="0 0 2048 1792"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 2048 1792" xmlns="http://www.w3.org/2000/svg">
             <path
               fill="#5e72e4"
               d="M1070 1178l306-564h-654l-306 564h654zm722-282q0 182-71 348t-191 286-286 191-348 71-348-71-286-191-191-286-71-348 71-348 191-286 286-191 348-71 348 71 286 191 191 286 71 348z"
@@ -87,13 +75,7 @@ const links = [
       {
         label: "Nouveau client",
         icon: (
-          <svg
-            width="20"
-            height="20"
-            fill="currentColor"
-            viewBox="0 0 2048 1792"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 2048 1792" xmlns="http://www.w3.org/2000/svg">
             <path
               fill="#5e72e4"
               d="M1070 1178l306-564h-654l-306 564h654zm722-282q0 182-71 348t-191 286-286 191-348 71-348-71-286-191-191-286-71-348 71-348 191-286 286-191 348-71 348 71 286 191 191 286 71 348z"
@@ -148,23 +130,22 @@ const SidebarWithCateg = () => {
 
               <span className="mx-4 text-md font-normal">Dashboard</span>
             </a>
-            {links.map((link) => {
+            {links.map((link, idx) => {
               return (
-                <div>
+                <div key={idx}>
                   <p className="text-gray-300 ml-2 w-full border-b-2 pb-2 border-gray-100 mb-4 text-md font-normal">
                     {link.label}
                   </p>
-                  {link.links.map((entry) => {
+                  {link.links.map((entry, idx) => {
                     return (
                       <a
+                        key={idx}
                         className="hover:text-gray-800 font-thin text-gray-500 dark:text-gray-400 hover:bg-gray-100 flex items-center p-2 my-4 transition-colors dark:hover:text-white dark:hover:bg-gray-600 duration-200 justify-start"
                         href="#"
                       >
                         <span className="text-left">{entry.icon}</span>
 
-                        <span className="mx-4 text-md font-normal">
-                          {entry.label}
-                        </span>
+                        <span className="mx-4 text-md font-normal">{entry.label}</span>
                       </a>
                     );
                   })}

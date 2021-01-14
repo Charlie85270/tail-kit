@@ -14,12 +14,7 @@ const ListPages: FC = () => {
       desc="List, Ordered list and more components for tailwind css"
     >
       <SectionHeader title="List" />
-      <ComponentLayout
-        showSwitchMode={true}
-        title="Simple list"
-        element={<SimpleList />}
-        component={SimpleList}
-      />
+      <ComponentLayout showSwitchMode={true} title="Simple list" element={<SimpleList />} component={SimpleList} />
       <ComponentLayout
         showSwitchMode={true}
         title="With action"
@@ -32,12 +27,7 @@ const ListPages: FC = () => {
         element={<SimpleList withAction={true} withHeader={true} />}
         component={SimpleList}
       />
-      <ComponentLayout
-        showSwitchMode={true}
-        title="Bloc list"
-        element={<BlockList />}
-        component={BlockList}
-      />
+      <ComponentLayout showSwitchMode={true} title="Bloc list" element={<BlockList />} component={BlockList} />
       <ComponentLayout
         showSwitchMode={true}
         title="With desc"
@@ -53,35 +43,17 @@ const ListPages: FC = () => {
       <ComponentLayout
         showSwitchMode={true}
         title="With header"
-        element={
-          <BlockList withDesc={true} withAction={true} withHeader={true} />
-        }
+        element={<BlockList withDesc={true} withAction={true} withHeader={true} />}
         component={BlockList}
       />
       <ComponentLayout
         showSwitchMode={true}
         title="With hover effect"
-        element={
-          <BlockList
-            withDesc={true}
-            withEffect={true}
-            withAction={true}
-            withHeader={true}
-          />
-        }
+        element={<BlockList withDesc={true} withEffect={true} withAction={true} withHeader={true} />}
         component={BlockList}
       />
-      <ComponentLayout
-        title="Todo list"
-        showSwitchMode={true}
-        element={<TodoList />}
-        component={TodoList}
-      />
-      <ComponentLayout
-        title="Desc bloc list"
-        element={<DescriptionList />}
-        component={DescriptionList}
-      />
+      <ComponentLayout title="Todo list" showSwitchMode={true} element={<TodoList />} component={TodoList} />
+      <ComponentLayout title="Desc bloc list" element={<DescriptionList />} component={DescriptionList} />
       <ComponentLayout
         title="With header"
         element={<DescriptionList withHeader={true} />}

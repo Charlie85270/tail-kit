@@ -18,17 +18,9 @@ import MutlipleTask from "../../../components/kit/components/elements/data/Mutli
 
 const DataPage = () => {
   return (
-    <AppLayout
-      title="Data display free Tailwind components"
-      desc="Data, Cards and more components for tailwind css"
-    >
+    <AppLayout title="Data display free Tailwind components" desc="Data, Cards and more components for tailwind css">
       <SectionHeader title="Data display" />
-      <ComponentLayout
-        vertical={false}
-        title="Sales card"
-        element={<InfoNumberCard />}
-        component={InfoNumberCard}
-      />
+      <ComponentLayout vertical={false} title="Sales card" element={<InfoNumberCard />} component={InfoNumberCard} />
       <ComponentLayout
         vertical={false}
         title="Tasks card"
@@ -50,24 +42,14 @@ const DataPage = () => {
         element={<InfoNumberCard2 />}
         component={InfoNumberCard2}
       />
-      <ComponentLayout
-        showSwitchMode={true}
-        title="Covid data"
-        element={<CovidInfo />}
-        component={CovidInfo}
-      />
+      <ComponentLayout showSwitchMode={true} title="Covid data" element={<CovidInfo />} component={CovidInfo} />
       <ComponentLayout
         vertical={false}
         title="Information card"
         element={<InformationIconCard />}
         component={InformationIconCard}
       />
-      <ComponentLayout
-        vertical={false}
-        title="Tags card"
-        element={<TagsCard />}
-        component={TagsCard}
-      />
+      <ComponentLayout vertical={false} title="Tags card" element={<TagsCard />} component={TagsCard} />
       <ComponentLayout
         vertical={false}
         title="Desc icon card"
@@ -87,12 +69,7 @@ const DataPage = () => {
         component={SimplePhotoDescCard}
       />
 
-      <ComponentLayout
-        vertical={true}
-        title="Bandeau number"
-        element={<BandeauNumber />}
-        component={BandeauNumber}
-      />
+      <ComponentLayout vertical={true} title="Bandeau number" element={<BandeauNumber />} component={BandeauNumber} />
       <ComponentLayout
         vertical={true}
         title="Bandeau Info"

@@ -10,9 +10,7 @@ const HeadProfil = () => {
       </div>
       <div className="w-full">
         <div className="text-center mb-6">
-          <p className="text-gray-800 dark:text-white text-xl font-medium">
-            John Jackson
-          </p>
+          <p className="text-gray-800 dark:text-white text-xl font-medium">John Jackson</p>
           <p className="text-gray-400 text-xs">FullStack dev</p>
         </div>
 
@@ -20,21 +18,15 @@ const HeadProfil = () => {
           <div className="flex items-center justify-between text-xs text-gray-400 dark:text-black">
             <p className="flex flex-col">
               Art.
-              <span className="text-black dark:text-indigo-500 font-bold">
-                34
-              </span>
+              <span className="text-black dark:text-indigo-500 font-bold">34</span>
             </p>
             <p className="flex flex-col">
               Foll.
-              <span className="text-black dark:text-indigo-500 font-bold">
-                455
-              </span>
+              <span className="text-black dark:text-indigo-500 font-bold">455</span>
             </p>
             <p className="flex flex-col">
               Rat.
-              <span className="text-black dark:text-indigo-500 font-bold">
-                9.3
-              </span>
+              <span className="text-black dark:text-indigo-500 font-bold">9.3</span>
             </p>
           </div>
         </div>

@@ -30,9 +30,7 @@ const TodoList = () => {
                 <a className="block hover:bg-gray-50 dark:hover:bg-gray-900">
                   <div className="px-4 py-4 sm:px-6">
                     <div className="flex items-center justify-between">
-                      <p className="text-md text-gray-700 dark:text-white md:truncate">
-                        {list.title}
-                      </p>
+                      <p className="text-md text-gray-700 dark:text-white md:truncate">{list.title}</p>
                       <div className="ml-2 flex-shrink-0 flex">
                         <p className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
                           {list.categ}

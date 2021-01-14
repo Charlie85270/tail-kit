@@ -7,29 +7,20 @@ const PricingCard9: FC = () => {
       <div className="flex h-full items-center justify-between">
         <div className="flex h-full flex-col justify-between">
           <div>
-            <span className="bg-gray-700 dark:bg-gray-400 rounded mr-2 text-white p-2">
-              Business
-            </span>
+            <span className="bg-gray-700 dark:bg-gray-400 rounded mr-2 text-white p-2">Business</span>
             <span className="dark:text-white"> Plan </span>
           </div>
           <div>
-            <p className="mb-0 text-left text-gray-500 dark:text-gray-300">
-              12 of 20 user
-            </p>
+            <p className="mb-0 text-left text-gray-500 dark:text-gray-300">12 of 20 user</p>
             <div className="w-full h-4 bg-gray-400 rounded-full mt-3">
-              <div
-                className={`w-2/3 h-full text-center text-xs text-white bg-indigo-500 rounded-full`}
-              >
-                60%
-              </div>
+              <div className={`w-2/3 h-full text-center text-xs text-white bg-indigo-500 rounded-full`}>60%</div>
             </div>
           </div>
         </div>
 
         <div className="flex h-full flex-col justify-between">
           <p className="text-gray-900 dark:text-white text-4xl font-bold">
-            <span className="text-sm">$</span> 199{" "}
-            <span className="text-gray-300 text-sm">/ month </span>
+            <span className="text-sm">$</span> 199 <span className="text-gray-300 text-sm">/ month </span>
           </p>
           <Button color="indigo" label="Upgrade plan" />
         </div>

@@ -1,4 +1,4 @@
-import { FC, useEffect } from "react";
+import React, { FC, useEffect } from "react";
 import { AppProps } from "next/app";
 import "../global.css";
 import { useRouter } from "next/dist/client/router";

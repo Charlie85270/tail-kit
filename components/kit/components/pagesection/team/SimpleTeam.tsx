@@ -17,12 +17,8 @@ const SimpleTeam = (props: Props) => {
       </div>
       <div className="text-center">
         <p className="text-2xl text-gray-800 dark:text-white">{props.name}</p>
-        <p className="text-xl text-gray-500 dark:text-gray-200 font-light">
-          {props.job}
-        </p>
-        <p className="text-md text-gray-500 dark:text-gray-400 max-w-xs py-4 font-light">
-          {props.desc}
-        </p>
+        <p className="text-xl text-gray-500 dark:text-gray-200 font-light">{props.job}</p>
+        <p className="text-md text-gray-500 dark:text-gray-400 max-w-xs py-4 font-light">{props.desc}</p>
       </div>
       <div className="pt-8 flex border-t border-gray-200 w-44 mx-auto text-gray-500 items-center justify-between">
         <a href="#">

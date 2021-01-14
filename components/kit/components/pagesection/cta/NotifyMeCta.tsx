@@ -8,8 +8,8 @@ const NotifyMeCta = () => {
           Receive alert about new commit or pull request on your github
         </h2>
         <p className="mt-3 max-w-3xl text-lg leading-6 text-indigo-200">
-          No account or email required. We use push notifications. You can
-          choose between several modes and define your own alert threshold.
+          No account or email required. We use push notifications. You can choose between several modes and define your
+          own alert threshold.
         </p>
       </div>
       <div className="mt-8 sm:w-full sm:max-w-md xl:mt-0 xl:ml-8">
@@ -19,12 +19,10 @@ const NotifyMeCta = () => {
           </button>
         </div>
         <p className="mt-3 text-sm leading-5 text-indigo-200">
-          We care about the protection of your data. Your data is safe and never
-          used for commercial purposes.
+          We care about the protection of your data. Your data is safe and never used for commercial purposes.
         </p>
         <p className="text-sm leading-5 text-indigo-200">
-          In order to receive the notifications, you must give permission
-          sufficient to your web browser.
+          In order to receive the notifications, you must give permission sufficient to your web browser.
         </p>
       </div>
     </div>

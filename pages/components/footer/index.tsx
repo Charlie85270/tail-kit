@@ -62,13 +62,7 @@ const FooterPage: FC = () => {
         vertical={true}
         showSwitchMode={true}
         title="With socials and credits"
-        element={
-          <SimpleFooter
-            links={simpleLinks}
-            withSocial={true}
-            withCredits={true}
-          />
-        }
+        element={<SimpleFooter links={simpleLinks} withSocial={true} withCredits={true} />}
         component={Footer}
       />
 
@@ -76,14 +70,7 @@ const FooterPage: FC = () => {
         vertical={true}
         showSwitchMode={true}
         title="full"
-        element={
-          <SimpleFooter
-            links={simpleLinks}
-            withSocial={true}
-            withSearch={true}
-            withCredits={true}
-          />
-        }
+        element={<SimpleFooter links={simpleLinks} withSocial={true} withSearch={true} withCredits={true} />}
         component={Footer}
       />
       <ComponentLayout
@@ -98,23 +85,14 @@ const FooterPage: FC = () => {
         vertical={true}
         showSwitchMode={true}
         title="With socials"
-        element={
-          <Footer links={links} withSocialLink={true} showSubLinks={true} />
-        }
+        element={<Footer links={links} withSocialLink={true} showSubLinks={true} />}
         component={Footer}
       />
       <ComponentLayout
         vertical={true}
         showSwitchMode={true}
         title="With socials and credits"
-        element={
-          <Footer
-            links={links}
-            withSocialLink={true}
-            withCredits={true}
-            showSubLinks={true}
-          />
-        }
+        element={<Footer links={links} withSocialLink={true} withCredits={true} showSubLinks={true} />}
         component={Footer}
       />
       <ComponentLayout
@@ -122,13 +100,7 @@ const FooterPage: FC = () => {
         title="Multiple full"
         showSwitchMode={true}
         element={
-          <Footer
-            links={links}
-            withSocialLink={true}
-            withCredits={true}
-            withSearch={true}
-            showSubLinks={true}
-          />
+          <Footer links={links} withSocialLink={true} withCredits={true} withSearch={true} showSubLinks={true} />
         }
         component={Footer}
       />

@@ -3,7 +3,7 @@
  * @param level
  */
 const getIndent = (level) => {
-  var result = "",
+  let result = "",
     i = level * 4;
   if (level < 0) {
     throw "Level is below 0";
@@ -11,6 +11,7 @@ const getIndent = (level) => {
   while (i--) {
     result += " ";
   }
+
   return result;
 };
 
@@ -20,11 +21,11 @@ const getIndent = (level) => {
  */
 export const formatHtml = (html: string) => {
   html = html.trim();
-  var result = "",
-    indentLevel = 0,
-    tokens = html.split(/</);
-  for (var i = 0, l = tokens.length; i < l; i++) {
-    var parts = tokens[i].split(/>/);
+  let result = "",
+    indentLevel = 0;
+  const tokens = html.split(/</);
+  for (let i = 0, l = tokens.length; i < l; i++) {
+    const parts = tokens[i].split(/>/);
     if (parts.length === 2) {
       if (tokens[i][0] === "/") {
         indentLevel--;
@@ -40,8 +41,7 @@ export const formatHtml = (html: string) => {
 
       result += parts[0].trim() + ">\n";
       if (parts[1].trim() !== "") {
-        result +=
-          getIndent(indentLevel) + parts[1].trim().replace(/\s+/g, " ") + "\n";
+        result += getIndent(indentLevel) + parts[1].trim().replace(/\s+/g, " ") + "\n";
       }
 
       if (parts[0].match(/^(img|hr|br)/)) {
@@ -51,5 +51,6 @@ export const formatHtml = (html: string) => {
       result += getIndent(indentLevel) + parts[0] + "\n";
     }
   }
+
   return result;
 };
