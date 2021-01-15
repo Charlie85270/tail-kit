@@ -5,9 +5,9 @@ import Button from "../../elements/buttons/Button";
 
 const UserInfoForm = () => {
   return (
-    <section className="bg-gray-100 bg-opacity-50 h-screen">
-      <form className="mx-auto container max-w-2xl md:w-3/4 shadow-md">
-        <div className="bg-gray-100 p-4 border-t-2 bg-opacity-5 border-indigo-400 rounded-lg">
+    <section className="h-screen bg-gray-100 bg-opacity-50">
+      <form className="container max-w-2xl mx-auto shadow-md md:w-3/4">
+        <div className="p-4 bg-gray-100 border-t-2 border-indigo-400 rounded-lg bg-opacity-5">
           <div className="max-w-sm mx-auto md:w-full md:mx-0">
             <div className="inline-flex items-center space-x-4">
               <Avatar />
@@ -15,42 +15,42 @@ const UserInfoForm = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white space-y-6">
-          <div className="md:inline-flex space-y-4 md:space-y-0 w-full p-4 text-gray-500 items-center">
-            <h2 className="md:w-1/3 max-w-sm mx-auto">Account</h2>
-            <div className="md:w-2/3 max-w-sm mx-auto">
-              <InputText placeholder="Email" />
+        <div className="space-y-6 bg-white">
+          <div className="items-center w-full p-4 space-y-4 text-gray-500 md:inline-flex md:space-y-0">
+            <h2 className="max-w-sm mx-auto md:w-1/3">Account</h2>
+            <div className="max-w-sm mx-auto md:w-2/3">
+              <InputText placeholder="Email"  id="user-info-email"  />
             </div>
           </div>
 
           <hr />
-          <div className="md:inline-flex space-y-4 md:space-y-0  w-full p-4 text-gray-500 items-center">
-            <h2 className="md:w-1/3 mx-auto max-w-sm">Personal info</h2>
-            <div className="md:w-2/3 mx-auto max-w-sm space-y-5">
+          <div className="items-center w-full p-4 space-y-4 text-gray-500 md:inline-flex md:space-y-0">
+            <h2 className="max-w-sm mx-auto md:w-1/3">Personal info</h2>
+            <div className="max-w-sm mx-auto space-y-5 md:w-2/3">
               <div>
-                <InputText placeholder="Name" />
+                <InputText placeholder="Name" id="user-info-name" />
               </div>
               <div>
-                <InputText placeholder="Phone number" />
+                <InputText placeholder="Phone number" id="user-info-phone" />
               </div>
             </div>
           </div>
 
           <hr />
-          <div className="md:inline-flex w-full space-y-4 md:space-y-0 p-8 text-gray-500 items-center">
-            <h2 className="md:w-4/12 max-w-sm mx-auto">Change password</h2>
+          <div className="items-center w-full p-8 space-y-4 text-gray-500 md:inline-flex md:space-y-0">
+            <h2 className="max-w-sm mx-auto md:w-4/12">Change password</h2>
 
-            <div className="md:w-5/12 w-full md:pl-9 max-w-sm mx-auto space-y-5 md:inline-flex pl-2">
-              <InputText placeholder="Password" />
+            <div className="w-full max-w-sm pl-2 mx-auto space-y-5 md:w-5/12 md:pl-9 md:inline-flex">
+              <InputText placeholder="Password" id="user-info-password" />
             </div>
 
-            <div className="md:w-3/12 text-center md:pl-6">
+            <div className="text-center md:w-3/12 md:pl-6">
               <Button color="pink" label="Change" />
             </div>
           </div>
 
           <hr />
-          <div className="w-full md:w-1/3 px-4 pb-4 ml-auto text-gray-500">
+          <div className="w-full px-4 pb-4 ml-auto text-gray-500 md:w-1/3">
             <Button submit={true} color="blue" label="Save" />
           </div>
         </div>
