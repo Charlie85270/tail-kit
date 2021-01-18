@@ -18,12 +18,50 @@ const BadgesPage: FC = () => {
       <SectionHeader title="Badges" />
 
       <ComponentLayout
-        title="Badge stroke"
+        title="Badge"
         element={
-          <Badge label="Hello" color="bg-red-200" textColor="text-red-600" />
+          <Badge label="Hello" color="bg-indigo-500" textColor="text-white" />
         }
         component={Badge}
       />
+      <ComponentLayout
+        title="Badge with remove button"
+        element={
+          <Badge
+            label="Hello"
+            color="bg-indigo-500"
+            textColor="text-white"
+            removeAction={() => null}
+          />
+        }
+        component={Badge}
+      />
+      <ComponentLayout
+        title="Badge with remove button and icon"
+        element={
+          <Badge
+            label="Hello"
+            icon={true}
+            color="bg-indigo-500"
+            textColor="text-white"
+            removeAction={() => null}
+          />
+        }
+        component={Badge}
+      />
+      <ComponentLayout
+        title="Badge stroke with border"
+        element={
+          <Badge
+            label="Hello"
+            color="bg-red-200"
+            borderColor="border border-red-600"
+            textColor="text-red-600"
+          />
+        }
+        component={Badge}
+      />
+
       <ComponentLayout
         title="Badge line"
         element={

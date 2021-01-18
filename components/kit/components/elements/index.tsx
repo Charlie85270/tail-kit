@@ -5,13 +5,13 @@ const Elements: FC = () => {
   const elementsSection = [
     {
       title: "Buttons",
-      items: 19,
+      items: 22,
       img: "images/sections/button.png",
       link: "/components/buttons",
     },
     {
       title: "Badges",
-      items: 11,
+      items: 14,
       img: "images/sections/badges.png",
       link: "/components/badges",
     },
@@ -35,7 +35,7 @@ const Elements: FC = () => {
     },
     {
       title: "Dashboards",
-      items: 13,
+      items: 10,
       img: "images/sections/data.png",
       link: "/components/data",
     },

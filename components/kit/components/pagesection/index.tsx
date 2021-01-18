@@ -5,7 +5,7 @@ const Pagesection: FC = () => {
   const pageSections = [
     {
       title: "CTAs",
-      items: 9,
+      items: 13,
       img: "images/sections/cta.png",
       link: "/components/cta",
     },

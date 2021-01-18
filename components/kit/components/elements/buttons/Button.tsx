@@ -1,6 +1,7 @@
 import React from "react";
 
 interface Props {
+  rounded?: boolean;
   color?: string;
   icon?: JSX.Element;
   disabled?: boolean;
@@ -11,6 +12,8 @@ interface Props {
 }
 
 const colors = {
+  white:
+    "bg-white hover:bg-gray-100 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-indigo-500",
   gray:
     "bg-gray-600 hover:bg-gray-700 focus:ring-gray-500 focus:ring-offset-gray-200",
   red:
@@ -18,7 +21,7 @@ const colors = {
   yellow:
     "bg-yellow-600 hover:bg-yellow-700 focus:ring-yellow-500 focus:ring-offset-yellow-200",
   green:
-    "bg-green-600 hover:bg-green-700 focus:ring-green-500 focus:ring-offset-green-200",
+    "bg-green-500 hover:bg-green-700 focus:ring-green-500 focus:ring-offset-green-200",
   blue:
     "bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200",
   indigo:
@@ -39,9 +42,11 @@ const Button = (props: Props) => {
         props.icon ? "flex justify-center items-center " : ""
       } ${
         colors[props.color]
-      } text-white w-full transition ease-in duration-200 text-center text-base font-semibold rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 ${
+      } text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 ${
         props.disabled ? " opacity-70 cursor-not-allowed" : ""
-      }${!props.label ? " w-12 h-12" : ""}`}
+      }${!props.label ? " w-12 h-12" : ""} ${
+        props.rounded ? "rounded-full" : "rounded-lg "
+      }`}
     >
       {props.icon && props.icon}
 
