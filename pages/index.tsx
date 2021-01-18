@@ -40,7 +40,7 @@ const IndexPage: FC = () => {
             <div className="mt-3 sm:mt-0 sm:ml-3">
               <a
                 target="_blank"
-                href="https://github.com/Charlie85270/fastUI"
+                href="https://github.com/Charlie85270/tail-kit"
                 className="w-full flex items-center justify-center px-8 py-3  text-base font-medium rounded-md text-gray-800 bg-gray-100 hover:bg-gray-200 px-4 py-2"
               >
                 <svg

@@ -63,7 +63,8 @@ const StartedPage: FC = () => {
           .
         </p>
         <p className="mt-1 text-lg text-gray-500">
-          You need to install the library to take the full advantage of FastUI.
+          You need to install the library to take the full advantage of
+          tail-kit.
         </p>
         <div className="mt-4">
           <p className="mt-1 text-lg text-gray-500">

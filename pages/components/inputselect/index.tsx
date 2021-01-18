@@ -21,12 +21,12 @@ const InputTextPage: FC = () => {
       />
       <ComponentLayout
         title="custom"
-        jsLink="https://github.com/Charlie85270/fastUI"
+        jsLink="https://github.com/Charlie85270/tail-kit"
         element={<CustomSelect forceOpen={true} hideImage={true} />}
         component={CustomSelect}
       />
       <ComponentLayout
-        jsLink="https://github.com/Charlie85270/fastUI"
+        jsLink="https://github.com/Charlie85270/tail-kit"
         title="custom with image"
         element={<CustomSelect forceOpen={true} />}
         component={CustomSelect}

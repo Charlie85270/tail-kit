@@ -9,7 +9,7 @@ const footerLink = [
   },
   {
     label: "Github",
-    link: "https://github.com/Charlie85270/fastUI",
+    link: "https://github.com/Charlie85270/tail-kit",
   },
   {
     label: "LinkedIn",

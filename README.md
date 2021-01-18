@@ -1,7 +1,7 @@
 # Tail-Kit 
 
-![version](https://img.shields.io/badge/version-1.0.0-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) ![GitHub issues](https://img.shields.io/github/issues/Charlie85270/fastUI) <a href="https://www.tailwind-kit.com/" target="_blank">
-![GitHub Repo stars](https://img.shields.io/github/stars/Charlie85270/fastUI?style=social)
+![version](https://img.shields.io/badge/version-1.0.0-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) ![GitHub issues](https://img.shields.io/github/issues/Charlie85270/tail-kit) <a href="https://www.tailwind-kit.com/" target="_blank">
+![GitHub Repo stars](https://img.shields.io/github/stars/Charlie85270/tail-kit?style=social)
 
 ![Tailwind-Kit](https://www.tailwind-kit.com/home.png)
 </a>
@@ -98,7 +98,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 - Copyright 2020 Charlie Rabiller</a>
 
 
-- Licensed under <a href="https://github.com/Charlie85270/fastUI/blob/main/README.md" target="_blank">MIT</a>
+- Licensed under <a href="https://github.com/Charlie85270/tail-kit/blob/main/README.md" target="_blank">MIT</a>
 
 
 

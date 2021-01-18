@@ -69,7 +69,7 @@ const DdmPages: FC = () => {
         containerClasses="pb-40"
         title="Simple ddm"
         showSwitchMode={true}
-        jsLink="https://github.com/Charlie85270/fastUI"
+        jsLink="https://github.com/Charlie85270/tail-kit"
         element={
           <Ddm
             label="Pay with"
@@ -87,7 +87,7 @@ const DdmPages: FC = () => {
         title="With icon"
         containerClasses="pb-40"
         showSwitchMode={true}
-        jsLink="https://github.com/Charlie85270/fastUI"
+        jsLink="https://github.com/Charlie85270/tail-kit"
         element={
           <Ddm
             icon={
@@ -115,7 +115,7 @@ const DdmPages: FC = () => {
         containerClasses="pb-40"
         title="With icon on items"
         showSwitchMode={true}
-        jsLink="https://github.com/Charlie85270/fastUI"
+        jsLink="https://github.com/Charlie85270/tail-kit"
         element={
           <Ddm
             label="Pay with"
@@ -132,7 +132,7 @@ const DdmPages: FC = () => {
         showSwitchMode={true}
         containerClasses="pb-40"
         title="With icon on items with divider"
-        jsLink="https://github.com/Charlie85270/fastUI"
+        jsLink="https://github.com/Charlie85270/tail-kit"
         element={
           <Ddm
             label="Pay with"
@@ -150,7 +150,7 @@ const DdmPages: FC = () => {
         showSwitchMode={true}
         containerClasses="pb-40"
         title="With icon on items with desc"
-        jsLink="https://github.com/Charlie85270/fastUI"
+        jsLink="https://github.com/Charlie85270/tail-kit"
         element={
           <Ddm
             label="Pay with"
@@ -166,7 +166,7 @@ const DdmPages: FC = () => {
         showSwitchMode={true}
         containerClasses="pb-60"
         title="Large ddm"
-        jsLink="https://github.com/Charlie85270/fastUI"
+        jsLink="https://github.com/Charlie85270/tail-kit"
         element={
           <LargeDdm
             withBackground={true}
@@ -180,7 +180,7 @@ const DdmPages: FC = () => {
       <ComponentLayout
         containerClasses="pb-60"
         title="Ddm with form"
-        jsLink="https://github.com/Charlie85270/fastUI"
+        jsLink="https://github.com/Charlie85270/tail-kit"
         element={<DropDownMenuWithForm label="By Name" forceOpen={true} />}
         component={DropDownMenuWithForm}
       />

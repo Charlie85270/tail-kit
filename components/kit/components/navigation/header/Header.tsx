@@ -118,7 +118,7 @@ const Header = (props: Props) => {
                 )}
                 {!props.hideGitHubLink && (
                   <a
-                    href="https://github.com/Charlie85270/fastUI"
+                    href="https://github.com/Charlie85270/tail-kit"
                     className="p-1 rounded-full text-gray-400 focus:outline-none hover:text-gray-200 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                   >
                     <span className="sr-only">View github</span>
