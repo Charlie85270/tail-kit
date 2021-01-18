@@ -45,11 +45,16 @@ const StartedPage: FC = () => {
       title="Configuration to use Tail-Kit for tailwind components"
       desc="Over 200 freen and open source build components for tailwind css"
     >
+      <h1 className="text-lg mb-4 italic text-gray-700">
+        Tail-kit is a fully coded components KIT for Tailwind css 2.0. All
+        components are free and open source and can be used in React, Angular or
+        VueJS applications.
+      </h1>
       <div className="pb-10 border-b border-gray-200 mb-10" id="installation">
         <div className="flex items-center">
-          <h1 className="text-3xl font-extrabold text-gray-900 tracking-tight mb-4">
+          <p className="text-3xl font-extrabold text-gray-900 tracking-tight mb-4">
             Installation
-          </h1>
+          </p>
         </div>
 
         <p className="mt-1 text-lg text-gray-500">
