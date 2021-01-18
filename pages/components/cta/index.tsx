@@ -6,9 +6,9 @@ import SimpleTextCta from "../../../components/kit/components/pagesection/cta/Si
 import SubscribeCta from "../../../components/kit/components/pagesection/cta/SubscribeCta";
 import NotifyMeCta from "../../../components/kit/components/pagesection/cta/NotifyMeCta";
 import MultipleImagesCta from "../../../components/kit/components/pagesection/cta/MultipleImagesCta";
-import TimerEvent from "../../../components/kit/components/pagesection/cta/TimerEvent";
 import BandeauNumber from "../../../components/kit/components/pagesection/cta/BandeauNumber";
 import BandeauInfo from "../../../components/kit/components/pagesection/cta/BandeauInfo";
+import TimerEvent from "../../../components/kit/components/pagesection/cta/TimerEvent";
 
 const ComponentsPage: FC = () => {
   const title = "Want to be millionaire ?";
