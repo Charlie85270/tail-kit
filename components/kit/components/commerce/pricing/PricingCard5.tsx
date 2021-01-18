@@ -2,7 +2,7 @@ import React, { FC } from "react";
 
 const PricingCard5: FC = () => {
   return (
-    <section className="px-2 mb-4 w-72 border-t-8 px-2 py-1 bg-white dark:bg-gray-800 rounded border-purple-600 border-2">
+    <section className="mb-4 w-72 border-t-8 px-2 py-1 bg-white dark:bg-gray-800 rounded border-purple-600 border-2">
       <section className="w-full">
         <header className="text-3xl text-center md:mt-5 dark:text-white">
           Recruiter

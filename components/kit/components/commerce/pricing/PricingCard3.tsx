@@ -21,7 +21,7 @@ const PricingCard3: FC = () => {
 
       <button
         type="button"
-        className="w-56 m-auto px-3 py-3 text-xs text-sm shadow border border-black rounded-lg text-black bg-white hover:bg-black hover:text-white dark:hover-text-gray-900 dark:hover:bg-gray-100 "
+        className="w-56 m-auto px-3 py-3 text-sm shadow border border-black rounded-lg text-black bg-white hover:bg-black hover:text-white dark:hover-text-gray-900 dark:hover:bg-gray-100 "
       >
         Request demo
       </button>
