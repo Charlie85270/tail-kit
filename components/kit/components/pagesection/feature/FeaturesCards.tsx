@@ -3,7 +3,7 @@ import React from "react";
 const FeaturesCards = () => {
   return (
     <div className="sm:flex flex-wrap justify-center items-center text-center gap-8">
-      <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-4 py-4 bg-white shadow-lg rounded-lg dark:bg-gray-800">
+      <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-4 py-4 bg-white mt-6  shadow-lg rounded-lg dark:bg-gray-800">
         <div className="flex-shrink-0">
           <div className="flex items-center mx-auto justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
             <svg
@@ -27,7 +27,7 @@ const FeaturesCards = () => {
           solutions relevant to your business.
         </p>
       </div>
-      <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-4 py-4 sm:mt-16 md:mt-20 lg:mt-24 bg-white shadow-lg rounded-lg dark:bg-gray-800">
+      <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-4 py-4 mt-6 sm:mt-16 md:mt-20 lg:mt-24 bg-white shadow-lg rounded-lg dark:bg-gray-800">
         <div className="flex-shrink-0">
           <div className="flex items-center mx-auto justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
             <svg
@@ -50,7 +50,7 @@ const FeaturesCards = () => {
           connection with your audience.
         </p>
       </div>
-      <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 px-4 py-4 bg-white shadow-lg rounded-lg dark:bg-gray-800">
+      <div className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 mt-6  px-4 py-4 bg-white shadow-lg rounded-lg dark:bg-gray-800">
         <div className="flex-shrink-0">
           <div className="flex items-center mx-auto justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
             <svg

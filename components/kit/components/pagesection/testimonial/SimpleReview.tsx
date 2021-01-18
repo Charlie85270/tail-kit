@@ -3,7 +3,7 @@ import Avatar from "../../elements/avatars/Avatar";
 
 const SimpleReview = () => {
   return (
-    <div className="bg-white dark:bg-gray-800 w-full rounded-lg p-4 mb-6 shadow sm:inline-block hidden">
+    <div className="bg-white dark:bg-gray-800 w-full rounded-lg p-4 mb-6 shadow sm:inline-block">
       <div className="flex items-start text-left">
         <div className="flex-shrink-0">
           <div className="inline-block relative">

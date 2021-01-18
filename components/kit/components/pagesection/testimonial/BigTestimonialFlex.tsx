@@ -4,7 +4,7 @@ import Avatar from "../../elements/avatars/Avatar";
 const BigTestimonialFlex = () => {
   return (
     <div className={`bg-white dark:bg-gray-800 w-full mx-auto p-8`}>
-      <div className="flex items-start justify-center">
+      <div className="flex items-center md:items-start flex-col md:flex-row justify-center">
         <Avatar size="monster" />
 
         <div className="w-full md:w-2/3">

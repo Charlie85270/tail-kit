@@ -18,7 +18,7 @@ const AllTeam = () => {
       <p className="text-center mb-12 text-xl font-normal text-gray-500 dark:text-gray-300">
         Meat the best team in wolrd
       </p>
-      <div className="grid grid-cols-6 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
         <SimpleProfile
           size="big"
           name="Hean Hiut"
