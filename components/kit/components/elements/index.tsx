@@ -35,7 +35,7 @@ const Elements: FC = () => {
     },
     {
       title: "Dashboards",
-      items: 11,
+      items: 12,
       img: "images/sections/data.png",
       link: "/components/data",
     },

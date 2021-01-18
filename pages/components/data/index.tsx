@@ -13,6 +13,7 @@ import TagsCard from "../../../components/kit/components/elements/data/TagsCard"
 import TaskCard from "../../../components/kit/components/elements/data/TaskCard";
 import MutlipleTask from "../../../components/kit/components/elements/data/MutlipleTask";
 import CalendarCard from "../../../components/kit/components/elements/data/CalendarCard";
+import PaymentCard from "../../../components/kit/components/elements/data/PaymentCard";
 
 const DataPage = () => {
   return (
@@ -48,6 +49,13 @@ const DataPage = () => {
         title="Calendar event card"
         element={<CalendarCard />}
         component={CalendarCard}
+      />
+      <ComponentLayout
+        vertical={false}
+        showSwitchMode={true}
+        title="Payment card"
+        element={<PaymentCard />}
+        component={PaymentCard}
       />
       <ComponentLayout
         vertical={false}
