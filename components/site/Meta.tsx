@@ -19,6 +19,20 @@ const Meta = ({ pageTitle, description }) => {
       <link rel="alternate icon" href="/icons/favicon.ico" />
       <link rel="mask-icon" href="/icons/rocket.svg" />
       <meta property="og:type" content="website" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content="https://www.tailwind-kit.com/" />
+      <meta
+        name="twitter:title"
+        content="200 free and open source Tailwind UI components"
+      />
+      <meta
+        name="twitter:description"
+        content="Over 200 free and open source components and templates for tailwind css to build beautiful UI. All are fully coded and work with React, Angular and VueJS."
+      />
+      <meta
+        name="twitter:image"
+        content="https://www.tailwind-kit.com/home.png"
+      />
       <meta
         name="og:title"
         property="og:title"
