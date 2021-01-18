@@ -10,7 +10,7 @@ const CovidInfo: FC = () => {
       </div>
       <div className="pt-5">
         <div className="relative md:text-right text-left md:block inline-block">
-          <p className="text-xl md:mb-2 mb-0 dark:text-gray-100 inline-block flex items-center increase">
+          <p className="text-xl md:mb-2 mb-0 dark:text-gray-100 flex items-center increase">
             <svg
               width="20"
               height="20"

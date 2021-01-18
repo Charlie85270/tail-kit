@@ -38,7 +38,7 @@ const SimpleFooter = (props: Props) => {
           >
             <a
               href="#"
-              className="text-gray-400 hover:text-gray-800 dark:hover:text-white hover:text-gray-800 transition-colors duration-200"
+              className="text-gray-400 hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
             >
               <svg
                 width="20"
@@ -53,7 +53,7 @@ const SimpleFooter = (props: Props) => {
             </a>
             <a
               href="#"
-              className="text-gray-400 hover:text-gray-800 dark:hover:text-white hover:text-gray-800 transition-colors duration-200"
+              className="text-gray-400 hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
             >
               <svg
                 width="20"
@@ -68,7 +68,7 @@ const SimpleFooter = (props: Props) => {
             </a>
             <a
               href="#"
-              className="text-gray-400 hover:text-gray-800 dark:hover:text-white hover:text-gray-800 transition-colors duration-200"
+              className="text-gray-400 hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +83,7 @@ const SimpleFooter = (props: Props) => {
             </a>
             <a
               href="#"
-              className="text-gray-400 hover:text-gray-800 dark:hover:text-white hover:text-gray-800 transition-colors duration-200"
+              className="text-gray-400 hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
             >
               <svg
                 width="20"
@@ -98,7 +98,7 @@ const SimpleFooter = (props: Props) => {
             </a>
             <a
               href="#"
-              className="text-gray-400 hover:text-gray-800 dark:hover:text-white hover:text-gray-800 transition-colors duration-200"
+              className="text-gray-400 hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
             >
               <svg
                 width="20"

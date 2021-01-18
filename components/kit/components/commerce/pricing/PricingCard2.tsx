@@ -56,7 +56,7 @@ const PricingCard2: FC = () => {
 
       <button
         type="button"
-        className="w-full px-3 py-3 text-xs text-sm shadow rounded-lg text-indigo-500 bg-white hover:bg-gray-100 "
+        className="w-full px-3 py-3 text-sm shadow rounded-lg text-indigo-500 bg-white hover:bg-gray-100 "
       >
         Choose plan
       </button>

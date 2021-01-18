@@ -15,7 +15,7 @@ const ShoppingDetailsCard: FC = () => {
           <p className="text-white">$98.00</p>
           <button
             type="button"
-            className="w-10 h-10 text-base font-medium rounded-full text-white bg-pink-500 hover:bg-pink-700 "
+            className="w-10 h-10 text-base font-medium rounded-full text-white bg-pink-500 hover:bg-pink-700"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
