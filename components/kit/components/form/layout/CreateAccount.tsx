@@ -5,39 +5,39 @@ import Checkbox from "../toggle/Checkbox";
 
 const CreateAccount = () => {
   return (
-    <div className="flex flex-col bg-white dark:bg-gray-800 shadow px-4 sm:px-6 md:px-8 lg:px-10 py-8 rounded-lg max-w-md">
-      <div className="font-light self-center text-xl sm:text-2xl text-gray-800 dark:text-white mb-2">
+    <div className="flex flex-col max-w-md px-4 py-8 bg-white rounded-lg shadow dark:bg-gray-800 sm:px-6 md:px-8 lg:px-10">
+      <div className="self-center mb-2 text-xl font-light text-gray-800 sm:text-2xl dark:text-white">
         Create a new account
       </div>
-      <span className="flex-items-center text-gray-500 dark:text-gray-400 justify-center text-center text-sm">
+      <span className="justify-center text-sm text-center text-gray-500 flex-items-center dark:text-gray-400">
         Already have an account ?
         <a
           href="#"
           target="_blank"
-          className="text-blue-500 hover:text-blue-700 text-sm underline"
+          className="text-sm text-blue-500 underline hover:text-blue-700"
         >
           Sign in
         </a>
       </span>
 
-      <div className="mt-8 p-6">
+      <div className="p-6 mt-8">
         <form action="#">
           <div className="flex flex-col mb-2">
-            <InputText name="pseudo" type="text" placeholder="Pseudo" />
+            <InputText name="pseudo" type="text" placeholder="Pseudo" id="create-account-pseudo"  />
           </div>
           <div className="flex gap-4 mb-2">
-            <InputText name="First name" type="text" placeholder="First name" />
-            <InputText name="Last name" type="text" placeholder="Last name" />
+            <InputText name="First name" type="text" placeholder="First name" id="create-account-first-name"  />
+            <InputText name="Last name" type="text" placeholder="Last name" id="create-account-last-name"  />
           </div>
           <div className="flex flex-col mb-2">
-            <InputText type="text" placeholder="Email" />
+            <InputText type="text" placeholder="Email" id="create-account-email"  />
           </div>
 
           <div className="flex w-full my-4">
             <Button submit={true} label="Login" color="purple" />
           </div>
         </form>
-        <div className="flex justify-center items-center mt-6">
+        <div className="flex items-center justify-center mt-6">
           <Checkbox label="I have read and agree term of services " />
         </div>
       </div>

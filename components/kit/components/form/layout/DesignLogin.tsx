@@ -4,16 +4,16 @@ import React from "react";
 
 const DesignLogin = () => {
   return (
-    <div className="w-full flex flex-wrap">
-      <div className="w-full md:w-1/2 flex flex-col">
-        <div className="flex justify-center md:justify-start pt-12 md:pl-12 md:-mb-24">
-          <a href="#" className="bg-black text-white font-bold text-xl p-4">
+    <div className="flex flex-wrap w-full">
+      <div className="flex flex-col w-full md:w-1/2">
+        <div className="flex justify-center pt-12 md:justify-start md:pl-12 md:-mb-24">
+          <a href="#" className="p-4 text-xl font-bold text-white bg-black">
             Design.
           </a>
         </div>
 
-        <div className="flex flex-col justify-center md:justify-start my-auto pt-8 md:pt-0 px-8 md:px-24 lg:px-32">
-          <p className="text-center text-3xl">Welcome.</p>
+        <div className="flex flex-col justify-center px-8 pt-8 my-auto md:justify-start md:pt-0 md:px-24 lg:px-32">
+          <p className="text-3xl text-center">Welcome.</p>
           <form className="flex flex-col pt-3 md:pt-8">
             <div className="flex flex-col pt-4">
               <InputText
@@ -30,6 +30,7 @@ const DesignLogin = () => {
                   </svg>
                 }
                 placeholder="Email"
+                id="design-login-email"
               />
             </div>
 
@@ -49,20 +50,21 @@ const DesignLogin = () => {
                   </svg>
                 }
                 placeholder="Password"
+                id="design-login-password"
               />
             </div>
 
             <button
               type="submit"
-              className="py-2 px-4 bg-black text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md hover:text-black hover:bg-white focus:outline-none focus:ring-2"
+              className="w-full px-4 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in bg-black shadow-md hover:text-black hover:bg-white focus:outline-none focus:ring-2"
             >
               <span className="w-full">Submit</span>
             </button>
           </form>
-          <div className="text-center pt-12 pb-12">
+          <div className="pt-12 pb-12 text-center">
             <p>
               Don't have an account?{" "}
-              <a href="register.html" className="underline font-semibold">
+              <a href="register.html" className="font-semibold underline">
                 Register here.
               </a>
             </p>
@@ -72,7 +74,7 @@ const DesignLogin = () => {
 
       <div className="w-1/2 shadow-2xl">
         <img
-          className="object-cover w-full h-screen hidden md:block"
+          className="hidden object-cover w-full h-screen md:block"
           src="/images/object/9.jpg"
         />
       </div>

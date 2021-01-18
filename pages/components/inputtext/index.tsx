@@ -16,18 +16,18 @@ const InputTextPage: FC = () => {
 
       <ComponentLayout
         title="Simple"
-        element={<InputText square={true} placeholder="Your email" />}
+        element={<InputText square={true} placeholder="Your email" id="simple-email"  />}
         component={InputText}
       />
       <ComponentLayout
         title="Rounded"
-        element={<InputText placeholder="Your email" />}
+        element={<InputText placeholder="Your email" id="rounded-email"  />}
         component={InputText}
       />
       <ComponentLayout
         title="with label"
         element={
-          <InputText label="Email" name="email" placeholder="Your name" />
+          <InputText label="Email" name="email" placeholder="Your name" id="name-with-label"  />
         }
         component={InputText}
       />
@@ -39,6 +39,7 @@ const InputTextPage: FC = () => {
             required
             name="email"
             placeholder="Your email"
+            id="required-email"
           />
         }
         component={InputText}
@@ -52,6 +53,7 @@ const InputTextPage: FC = () => {
             required
             name="email"
             placeholder="Your email"
+            id="on-error-email"
           />
         }
         component={InputText}
@@ -65,6 +67,7 @@ const InputTextPage: FC = () => {
             required
             name="passwor"
             placeholder="Password"
+            id="with-indications"
           />
         }
         component={InputText}
@@ -77,6 +80,7 @@ const InputTextPage: FC = () => {
             disabled={true}
             name="email"
             placeholder="Your email"
+            id="disabled-email"
           />
         }
         component={InputText}
@@ -98,6 +102,7 @@ const InputTextPage: FC = () => {
             }
             name="email"
             placeholder="Your email"
+            id="email-with-icon"
           />
         }
         component={InputText}
@@ -105,7 +110,7 @@ const InputTextPage: FC = () => {
       <ComponentLayout
         title="with helper"
         element={
-          <InputText helper="http://" name="url" placeholder="www.google.com" />
+          <InputText helper="http://" name="url" placeholder="www.google.com" id="with-email"  />
         }
         component={InputText}
       />
