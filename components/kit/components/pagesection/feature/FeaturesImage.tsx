@@ -26,7 +26,7 @@ const FeaturesImage = () => {
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h5 className="text-lg leading-6 font-medium text-gray-900 dark:text-white font-bold">
+                  <h5 className="text-lg leading-6 text-gray-900 dark:text-white font-bold">
                     One-look dashboard
                   </h5>
                   <p className="mt-2 text-base leading-6 text-gray-500 dark:text-gray-300">
@@ -53,7 +53,7 @@ const FeaturesImage = () => {
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h5 className="text-lg leading-6 font-medium text-gray-900 dark:text-white font-bold">
+                  <h5 className="text-lg leading-6 text-gray-900 dark:text-white font-bold">
                     Orders, managed
                   </h5>
                   <p className="mt-2 text-base leading-6 text-gray-500 dark:text-gray-300">
@@ -80,7 +80,7 @@ const FeaturesImage = () => {
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h5 className="text-lg leading-6 font-medium text-gray-900 dark:text-white font-bold">
+                  <h5 className="text-lg leading-6 text-gray-900 dark:text-white font-bold">
                     Email &amp; SMS Notifications
                   </h5>
                   <p className="mt-2 text-base leading-6 text-gray-500 dark:text-gray-300">

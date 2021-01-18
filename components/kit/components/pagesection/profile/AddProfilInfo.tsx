@@ -41,13 +41,13 @@ const AddProfilInfo: FC = () => {
       <div className="flex items-center justify-between gap-4 mt-6">
         <button
           type="button"
-          className="w-1/2 px-4 py-2 text-base text-sm border rounded-lg text-grey-500 bg-white hover:bg-gray-200 "
+          className="w-1/2 px-4 py-2 text-base border rounded-lg text-grey-500 bg-white hover:bg-gray-200 "
         >
           Chat
         </button>
         <button
           type="button"
-          className="w-1/2 px-4 py-2 text-base text-sm border rounded-lg text-white bg-indigo-500 hover:bg-indigo-700 "
+          className="w-1/2 px-4 py-2 text-base border rounded-lg text-white bg-indigo-500 hover:bg-indigo-700 "
         >
           Add friend
         </button>

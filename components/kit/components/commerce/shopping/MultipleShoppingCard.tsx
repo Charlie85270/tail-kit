@@ -87,7 +87,7 @@ const MultipleShoppingCard = (props: Props) => {
               <span className="block opacity-75 -mb-1">Outdoor</span>
               <div className="flex justify-between">
                 <span className="block font-semibold text-xl">Monstera</span>
-                <span className="block bg-white rounded-full text-blue-500 text-xs font-bold px-3 py-2 leading-none flex items-center">
+                <span className="bg-white rounded-full text-blue-500 text-xs font-bold px-3 py-2 leading-none flex items-center">
                   $45.00
                 </span>
               </div>
@@ -129,7 +129,7 @@ const MultipleShoppingCard = (props: Props) => {
               <span className="block opacity-75 -mb-1">Outdoor</span>
               <div className="flex justify-between">
                 <span className="block font-semibold text-xl">Oak Tree</span>
-                <span className="block bg-white rounded-full text-purple-500 text-xs font-bold px-3 py-2 leading-none flex items-center">
+                <span className="bg-white rounded-full text-purple-500 text-xs font-bold px-3 py-2 leading-none flex items-center">
                   $68.50
                 </span>
               </div>
