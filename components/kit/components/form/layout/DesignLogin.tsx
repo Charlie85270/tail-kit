@@ -64,7 +64,7 @@ const DesignLogin = () => {
           <div className="pt-12 pb-12 text-center">
             <p>
               Don't have an account?{" "}
-              <a href="register.html" className="font-semibold underline">
+              <a href="#" className="font-semibold underline">
                 Register here.
               </a>
             </p>
