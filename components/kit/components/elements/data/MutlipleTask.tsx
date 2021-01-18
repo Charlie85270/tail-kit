@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 const MutlipleTask: FC = () => {
   return (
-    <div className="shadow-lg rounded w-72 p-4 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-100 relative overflow-hidden">
+    <div className="shadow-lg rounded-xl w-72 p-4 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-100 relative overflow-hidden">
       <a href="#" className="absolute w-full h-full"></a>
       <div className="w-full">
         <p className="text-gray-800 dark:text-white text-2xl font-medium mb-6">

@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import MultipleAvatar from "../avatars/MultipleAvatar";
 const TaskCard: FC = () => {
   return (
-    <div className="shadow-lg rounded max-w-md p-4 bg-white dark:bg-gray-800 relative overflow-hidden">
+    <div className="shadow-lg rounded-xl max-w-xs p-4 bg-white dark:bg-gray-800 relative overflow-hidden">
       <a href="#" className="absolute w-full h-full"></a>
       <div className="w-full">
         <p className="text-gray-800 dark:text-white text-xl font-medium mb-2">
