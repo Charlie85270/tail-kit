@@ -13,13 +13,16 @@ const IndexPage: FC = () => {
     <HomeLayout>
       <div className="flex flex-col md:flex-row w-full items-start justify-between md:justify-start h-full md:h-1/2">
         <div className="text-left z-20 md:z-30 w-full md:w-1/2 flex flex-col items-center md:items-start justify-start md:justify-center h-full">
-          <h1 className="tracking-tight font-extrabold text-gray-900 text-5xl md:text-6xl">
+          <h1 className="tracking-tight font-extrabold text-gray-900 text-5xl">
             <span className="block xl:inline">Ceate a stunning UI with</span>
             <span className="flex w-full m-auto text-indigo-600 xl:inline">
               {" "}
               Tail-kit{" "}
             </span>
-            <span className="block xl:inline">for Tailwind CSS 2.0</span>
+            <span className="block xl:inline">
+              {" "}
+              Components for Tailwind CSS 2.0
+            </span>
           </h1>
           <h2 className="mt-3  text-gray-500 sm:mt-5 text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
             Tail-kit gives you access to over{" "}
