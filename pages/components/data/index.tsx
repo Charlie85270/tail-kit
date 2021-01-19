@@ -14,6 +14,9 @@ import TaskCard from "../../../components/kit/components/elements/data/TaskCard"
 import MutlipleTask from "../../../components/kit/components/elements/data/MutlipleTask";
 import CalendarCard from "../../../components/kit/components/elements/data/CalendarCard";
 import PaymentCard from "../../../components/kit/components/elements/data/PaymentCard";
+import SimpleTask from "../../../components/kit/components/elements/data/SimpleTask";
+import RecapCard from "../../../components/kit/components/elements/data/RecapCard";
+import ActivityCard from "../../../components/kit/components/elements/data/ActivityCard";
 
 const DataPage = () => {
   return (
@@ -37,6 +40,13 @@ const DataPage = () => {
       />
       <ComponentLayout
         vertical={false}
+        title="Simple task card"
+        showSwitchMode={true}
+        element={<SimpleTask />}
+        component={SimpleTask}
+      />
+      <ComponentLayout
+        vertical={false}
         showSwitchMode={true}
         title="Details Task card"
         element={<TaskCard />}
@@ -56,6 +66,20 @@ const DataPage = () => {
         title="Payment card"
         element={<PaymentCard />}
         component={PaymentCard}
+      />
+      <ComponentLayout
+        vertical={false}
+        showSwitchMode={true}
+        title="Activity card"
+        element={<ActivityCard />}
+        component={ActivityCard}
+      />
+      <ComponentLayout
+        vertical={false}
+        showSwitchMode={true}
+        title="Recap card"
+        element={<RecapCard />}
+        component={RecapCard}
       />
       <ComponentLayout
         vertical={false}

@@ -3,10 +3,8 @@ import React from "react";
 const PaymentCard = () => {
   return (
     <div className="shadow-lg rounded-xl w-full md:w-80 p-4 bg-white dark:bg-gray-800 relative overflow-hidden">
-      <div className="w-full flex items-center justify-between mb-6">
-        <p className="text-gray-800 dark:text-white text-xl font-medium">
-          Account
-        </p>
+      <div className="w-full flex items-center justify-between mb-8">
+        <p className="text-gray-800 dark:text-white text-xl">Account</p>
         <a
           href="#"
           className="flex items-center text-sm hover:text-gray-600 dark:text-gray-50 dark:hover:text-white text-gray-300 border-0 focus:outline-none"
