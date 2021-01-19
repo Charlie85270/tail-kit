@@ -1,120 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
-    <loc>http://www.tailwind-kit.com/</loc>
+    <loc>https://www.tailwind-kit.com/</loc>
     <lastmod>2021-01-18</lastmod>
   </url>
   <url>
-    <loc>http://www.tailwind-kit.com/started</loc>
+    <loc>https://www.tailwind-kit.com/started</loc>
     <lastmod>2021-01-18</lastmod>
   </url>
   <url>
-    <loc>http://www.tailwind-kit.com/components</loc>
+    <loc>https://www.tailwind-kit.com/components</loc>
     <lastmod>2021-01-18</lastmod>
   </url>
   <url>
-    <loc>http://www.tailwind-kit.com/request</loc>
+    <loc>https://www.tailwind-kit.com/request</loc>
     <lastmod>2021-01-18</lastmod>
   </url>
   <url>
-    <loc>http://www.tailwind-kit.com/components/table</loc>
+    <loc>https://www.tailwind-kit.com/components/table</loc>
     <lastmod>2021-01-18</lastmod>
   </url>
   <url>
-    <loc>http://www.tailwind-kit.com/components/list</loc>
+    <loc>https://www.tailwind-kit.com/components/list</loc>
     <lastmod>2021-01-18</lastmod>
   </url>
   <url>
-    <loc>http://www.tailwind-kit.com/components/blog</loc>
+    <loc>https://www.tailwind-kit.com/components/blog</loc>
     <lastmod>2021-01-18</lastmod>
   </url>
   <url>
-    <loc>http://www.tailwind-kit.com/components/faq</loc>
+    <loc>https://www.tailwind-kit.com/components/faq</loc>
     <lastmod>2021-01-18</lastmod>
   </url>
   <url>
-    <loc>http://www.tailwind-kit.com/components/feature</loc>
+    <loc>https://www.tailwind-kit.com/components/feature</loc>
     <lastmod>2021-01-18</lastmod>
   </url>
   <url>
-    <loc>http://www.tailwind-kit.com/components/team</loc>
+    <loc>https://www.tailwind-kit.com/components/team</loc>
     <lastmod>2021-01-18</lastmod>
   </url>
   <url>
-    <loc>http://www.tailwind-kit.com/components/testimonial</loc>
+    <loc>https://www.tailwind-kit.com/components/testimonial</loc>
     <lastmod>2021-01-18</lastmod>
   </url>
   <url>
-    <loc>http://www.tailwind-kit.com/components/cta</loc>
+    <loc>https://www.tailwind-kit.com/components/cta</loc>
     <lastmod>2021-01-18</lastmod>
   </url>
   <url>
-    <loc>http://www.tailwind-kit.com/components/profile</loc>
+    <loc>https://www.tailwind-kit.com/components/profile</loc>
     <lastmod>2021-01-18</lastmod>
   </url>
   <url>
-    <loc>http://www.tailwind-kit.com/components/footer</loc>
+    <loc>https://www.tailwind-kit.com/components/footer</loc>
     <lastmod>2021-01-18</lastmod>
   </url>
   <url>
-    <loc>http://www.tailwind-kit.com/components/header</loc>
+    <loc>https://www.tailwind-kit.com/components/header</loc>
     <lastmod>2021-01-18</lastmod>
   </url>
   <url>
-    <loc>http://www.tailwind-kit.com/components/pricing</loc>
+    <loc>https://www.tailwind-kit.com/components/pricing</loc>
     <lastmod>2021-01-18</lastmod>
   </url>
   <url>
-    <loc>http://www.tailwind-kit.com/components/sidebar</loc>
+    <loc>https://www.tailwind-kit.com/components/sidebar</loc>
     <lastmod>2021-01-18</lastmod>
   </url>
   <url>
-    <loc>http://www.tailwind-kit.com/components/inputselect</loc>
+    <loc>https://www.tailwind-kit.com/components/inputselect</loc>
     <lastmod>2021-01-18</lastmod>
   </url>
   <url>
-    <loc>http://www.tailwind-kit.com/components/shopping</loc>
+    <loc>https://www.tailwind-kit.com/components/shopping</loc>
     <lastmod>2021-01-18</lastmod>
   </url>
   <url>
-    <loc>http://www.tailwind-kit.com/components/data</loc>
+    <loc>https://www.tailwind-kit.com/components/data</loc>
     <lastmod>2021-01-18</lastmod>
   </url>
   <url>
-    <loc>http://www.tailwind-kit.com/components/toggle</loc>
+    <loc>https://www.tailwind-kit.com/components/toggle</loc>
     <lastmod>2021-01-18</lastmod>
   </url>
   <url>
-    <loc>http://www.tailwind-kit.com/components/form</loc>
+    <loc>https://www.tailwind-kit.com/components/form</loc>
     <lastmod>2021-01-18</lastmod>
   </url>
   <url>
-    <loc>http://www.tailwind-kit.com/components/avatar</loc>
+    <loc>https://www.tailwind-kit.com/components/avatar</loc>
     <lastmod>2021-01-18</lastmod>
   </url>
   <url>
-    <loc>http://www.tailwind-kit.com/components/progress</loc>
+    <loc>https://www.tailwind-kit.com/components/progress</loc>
     <lastmod>2021-01-18</lastmod>
   </url>
   <url>
-    <loc>http://www.tailwind-kit.com/components/inputtext</loc>
+    <loc>https://www.tailwind-kit.com/components/inputtext</loc>
     <lastmod>2021-01-18</lastmod>
   </url>
   <url>
-    <loc>http://www.tailwind-kit.com/components/alert</loc>
+    <loc>https://www.tailwind-kit.com/components/alert</loc>
     <lastmod>2021-01-18</lastmod>
   </url>
   <url>
-    <loc>http://www.tailwind-kit.com/components/ddm</loc>
+    <loc>https://www.tailwind-kit.com/components/ddm</loc>
     <lastmod>2021-01-18</lastmod>
   </url>
   <url>
-    <loc>http://www.tailwind-kit.com/components/badges</loc>
+    <loc>https://www.tailwind-kit.com/components/badges</loc>
     <lastmod>2021-01-18</lastmod>
   </url>
   <url>
-    <loc>http://www.tailwind-kit.com/components/buttons</loc>
+    <loc>https://www.tailwind-kit.com/components/buttons</loc>
     <lastmod>2021-01-18</lastmod>
   </url>
 </urlset>

@@ -1,7 +1,13 @@
 import React from "react";
 import Head from "next/head";
+import { useRouter } from 'next/router'
 
 const Meta = ({ pageTitle, description }) => {
+  const router = useRouter();
+
+  const url = 'https://www.tailwind-kit.com';
+  const path = router.pathname;
+
   return (
     <Head>
       <title>{pageTitle}</title>
@@ -13,33 +19,19 @@ const Meta = ({ pageTitle, description }) => {
       <meta
         name="image"
         property="og:image"
-        content="https://www.tailwind-kit.com/home.png"
+        content={`${url}/home.png`}
       />
       <link rel="icon" type="image/svg+xml" href="/icons/rocket.svg" />
-      <link rel="alternate icon" href="/icons/favicon.ico" />
       <link rel="mask-icon" href="/icons/rocket.svg" />
       <meta property="og:type" content="website" />
       <meta name="twitter:card" content="summary" />
-      <meta name="twitter:site" content="https://www.tailwind-kit.com/" />
+      <meta name="twitter:site" content="" />
       <meta
-        name="twitter:title"
-        content="200 free and open source Tailwind UI components"
-      />
-      <meta
-        name="twitter:description"
-        content="Over 200 free and open source components and templates for tailwind css to build beautiful UI. All are fully coded and work with React, Angular and VueJS."
-      />
-      <meta
-        name="twitter:image"
-        content="https://www.tailwind-kit.com/home.png"
-      />
-      <meta
-        name="og:title"
         property="og:title"
-        content="200 free and open source Tailwind UI components"
+        content={`${pageTitle}`}
       />
-      <meta property="og:url" content="https://www.tailwind-kit.com" />
-      <link rel="canonical" href="https://www.tailwind-kit.com" />
+      <meta property="og:url" content={`${url}${path}`} />
+      <link rel="canonical" href={`${url}${path}`} />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
   );

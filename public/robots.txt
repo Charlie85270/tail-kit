@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Allow: /sitemap.htm
-Sitemap: http://www.tailwind-kit.com/sitemap.xml
+Sitemap: https://www.tailwind-kit.com/sitemap.xml
