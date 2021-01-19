@@ -16,7 +16,6 @@ const Meta = ({ pageTitle, description }) => {
         content="https://www.tailwind-kit.com/home.png"
       />
       <link rel="icon" type="image/svg+xml" href="/icons/rocket.svg" />
-      <link rel="alternate icon" href="/icons/favicon.ico" />
       <link rel="mask-icon" href="/icons/rocket.svg" />
       <meta property="og:type" content="website" />
       <meta name="twitter:card" content="summary" />
