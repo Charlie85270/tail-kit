@@ -17,6 +17,7 @@ import PaymentCard from "../../../components/kit/components/elements/data/Paymen
 import SimpleTask from "../../../components/kit/components/elements/data/SimpleTask";
 import RecapCard from "../../../components/kit/components/elements/data/RecapCard";
 import ActivityCard from "../../../components/kit/components/elements/data/ActivityCard";
+import JobCard from "../../../components/kit/components/elements/data/JobCard";
 
 const DataPage = () => {
   return (
@@ -80,6 +81,13 @@ const DataPage = () => {
         title="Recap card"
         element={<RecapCard />}
         component={RecapCard}
+      />
+      <ComponentLayout
+        vertical={false}
+        showSwitchMode={true}
+        title="Job card"
+        element={<JobCard />}
+        component={JobCard}
       />
       <ComponentLayout
         vertical={false}
