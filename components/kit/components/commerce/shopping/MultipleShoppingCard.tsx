@@ -43,7 +43,7 @@ const MultipleShoppingCard = (props: Props) => {
           <span className="block opacity-75 -mb-1">Indoor</span>
           <div className="flex justify-between">
             <span className="block font-semibold text-xl">Peace Lily</span>
-            <span className="block bg-white rounded-full text-yellow-500 text-xs font-bold px-3 py-2 leading-none flex items-center">
+            <span className="bg-white rounded-full text-yellow-500 text-xs font-bold px-3 py-2 leading-none flex items-center">
               $36.00
             </span>
           </div>
