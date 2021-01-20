@@ -3,7 +3,7 @@ import AppLayout from "../../../components/layout/AppLayout";
 import ComponentLayout from "../../../components/layout/ComponentLayout";
 import SectionHeader from "../../../components/site/header/SectionHeader";
 import Checkbox from "../../../components/kit/components/form/toggle/Checkbox";
-import Toggle from "../../../components/kit/components/form/toggle/Toggle";
+import MultipleToggle from "../../../components/kit/components/form/toggle/MultipleToggle";
 import Radio from "../../../components/kit/components/form/toggle/Radio";
 
 const TogglePage: FC = () => {
@@ -22,8 +22,8 @@ const TogglePage: FC = () => {
       <ComponentLayout
         title="toggle"
         needConfiguration={true}
-        element={<Toggle onChange={() => null} label="Accept" />}
-        component={Toggle}
+        element={<MultipleToggle onChange={() => null} />}
+        component={MultipleToggle}
       />
       <ComponentLayout title="radio" element={<Radio />} component={Radio} />
     </AppLayout>

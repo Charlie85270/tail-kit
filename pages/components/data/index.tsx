@@ -52,18 +52,19 @@ const DataPage = () => {
       />
       <ComponentLayout
         vertical={false}
-        title="Tasks card"
-        showSwitchMode={true}
-        element={<MutlipleTask />}
-        component={MutlipleTask}
-      />
-      <ComponentLayout
-        vertical={false}
         title="Simple task card"
         showSwitchMode={true}
         element={<SimpleTask />}
         component={SimpleTask}
       />
+      <ComponentLayout
+        vertical={false}
+        title="Tasks card"
+        showSwitchMode={true}
+        element={<MutlipleTask />}
+        component={MutlipleTask}
+      />
+
       <ComponentLayout
         vertical={false}
         showSwitchMode={true}
