@@ -9,6 +9,7 @@ import MultipleTestimonial from "../../../components/kit/components/pagesection/
 import BigTestimonialFlex from "../../../components/kit/components/pagesection/testimonial/BigTestimonialFlex";
 import HeadTestimonial from "../../../components/kit/components/pagesection/testimonial/HeadTestimonial";
 import SimpleReview from "../../../components/kit/components/pagesection/testimonial/SimpleReview";
+import ReviewWithRate from "../../../components/kit/components/pagesection/testimonial/ReviewWithRate";
 
 const ComponentsPage: FC = () => {
   return (
@@ -57,6 +58,11 @@ const ComponentsPage: FC = () => {
         title="Review"
         element={<SimpleReview />}
         component={SimpleReview}
+      />
+      <ComponentLayout
+        title="Review with rate"
+        element={<ReviewWithRate />}
+        component={ReviewWithRate}
       />
     </AppLayout>
   );
