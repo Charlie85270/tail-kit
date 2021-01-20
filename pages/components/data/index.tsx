@@ -19,6 +19,8 @@ import RecapCard from "../../../components/kit/components/elements/data/RecapCar
 import ActivityCard from "../../../components/kit/components/elements/data/ActivityCard";
 import JobCard from "../../../components/kit/components/elements/data/JobCard";
 import InfoNumberCard3 from "../../../components/kit/components/elements/data/InfoNumberCard3";
+import PopularPerson from "../../../components/kit/components/elements/data/PopularPerson";
+import VideoDetailsCard from "../../../components/kit/components/elements/data/VideoDetailsCard";
 
 const DataPage = () => {
   return (
@@ -40,6 +42,13 @@ const DataPage = () => {
         title="Finance card"
         element={<InfoNumberCard3 />}
         component={InfoNumberCard3}
+      />
+      <ComponentLayout
+        vertical={false}
+        showSwitchMode={true}
+        title="People card"
+        element={<PopularPerson />}
+        component={PopularPerson}
       />
       <ComponentLayout
         vertical={false}
@@ -97,6 +106,13 @@ const DataPage = () => {
         title="Job card"
         element={<JobCard />}
         component={JobCard}
+      />
+      <ComponentLayout
+        vertical={false}
+        showSwitchMode={true}
+        title="Video details card"
+        element={<VideoDetailsCard />}
+        component={VideoDetailsCard}
       />
       <ComponentLayout
         vertical={false}
