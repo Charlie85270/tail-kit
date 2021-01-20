@@ -18,6 +18,7 @@ import SimpleTask from "../../../components/kit/components/elements/data/SimpleT
 import RecapCard from "../../../components/kit/components/elements/data/RecapCard";
 import ActivityCard from "../../../components/kit/components/elements/data/ActivityCard";
 import JobCard from "../../../components/kit/components/elements/data/JobCard";
+import InfoNumberCard3 from "../../../components/kit/components/elements/data/InfoNumberCard3";
 
 const DataPage = () => {
   return (
@@ -28,9 +29,17 @@ const DataPage = () => {
       <SectionHeader title="Data display" />
       <ComponentLayout
         vertical={false}
+        showSwitchMode={true}
         title="Sales card"
         element={<InfoNumberCard />}
         component={InfoNumberCard}
+      />
+      <ComponentLayout
+        vertical={false}
+        showSwitchMode={true}
+        title="Finance card"
+        element={<InfoNumberCard3 />}
+        component={InfoNumberCard3}
       />
       <ComponentLayout
         vertical={false}
@@ -95,6 +104,7 @@ const DataPage = () => {
         element={<InfoNumberCard2 />}
         component={InfoNumberCard2}
       />
+
       <ComponentLayout
         showSwitchMode={true}
         title="Covid data"
