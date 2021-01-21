@@ -18,8 +18,8 @@ const PricingCard5: FC = () => {
             <svg
               fill="none"
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               strokeWidth="2"
               viewBox="0 0 24 24"
               className="w-8 h-8 text-indigo-800 dark:text-white font-bold"
@@ -32,8 +32,8 @@ const PricingCard5: FC = () => {
             <svg
               fill="none"
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               strokeWidth="2"
               viewBox="0 0 24 24"
               className="w-8 h-8 text-indigo-800 dark:text-white font-bold"
@@ -46,8 +46,8 @@ const PricingCard5: FC = () => {
             <svg
               fill="none"
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               strokeWidth="2"
               viewBox="0 0 24 24"
               className="w-8 h-8 text-indigo-800 dark:text-white font-bold"
@@ -60,8 +60,8 @@ const PricingCard5: FC = () => {
             <svg
               fill="none"
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               strokeWidth="2"
               viewBox="0 0 24 24"
               className="w-8 h-8 font-bold dark:text-white text-indigo-800"

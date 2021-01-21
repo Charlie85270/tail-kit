@@ -1,34 +1,30 @@
 import { FC } from "react";
-
-import dynamic from "next/dynamic";
 import HomeLayout from "../components/layout/HomeLayout";
 import Link from "next/link";
+import HomeComps from "../components/site/home/HomeComps";
 
-const HomeComps = dynamic(() => import("../components/site/home/HomeComps"), {
-  loading: () => <p>Loading</p>,
-});
-
-const IndexPage: FC = () => {
+export const IndexPage: FC = () => {
   return (
     <HomeLayout>
       <div className="flex flex-col md:flex-row w-full items-start justify-between md:justify-start h-full md:h-1/2">
         <div className="text-left z-20 md:z-30 w-full md:w-1/2 flex flex-col items-center md:items-start justify-start md:justify-center h-full">
-          <h1 className="tracking-tight font-extrabold text-gray-900 text-5xl">
-            <span className="block xl:inline">Ceate a stunning UI with</span>
-            <span className="flex w-full m-auto text-indigo-600 xl:inline">
+          <h1 className="tracking-tight font-extrabold text-gray-900 titleHome text-6xl md:mt-24 lg:mt-0">
+            <span className="flex w-full m-auto text-indigo-600">
               {" "}
-              Tail-kit{" "}
+              Tail-kit
             </span>
-            <span className="block xl:inline">
-              {" "}
-              Components for Tailwind CSS 2.0
+            <span className="block font-bold xl:inline">
+              <span className="fade-A absolute">Components</span>{" "}
+              <span className="fade-B absolute">Templates</span>
+              <br />
+              for Tailwind CSS 2.0
             </span>
           </h1>
-          <h2 className="mt-3  text-gray-500 sm:mt-5 text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+          <h2 className="mt-3 text-gray-500 sm:mt-5 text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
             Tail-kit gives you access to over{" "}
             <span className="text-gray-700 font-bold">200</span> fully coded and
-            responsive components, based on Tailwind CSS 2.0. It's all free and
-            open-source.
+            responsive components and templates, based on Tailwind CSS 2.0. It's
+            all free and open-source.
           </h2>
 
           <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start w-full">

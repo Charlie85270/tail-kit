@@ -1,7 +1,36 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-.perspective {
-    transform: perspective(1500px) rotateY(-5deg) rotateX(25deg) rotate(20deg) translateY(-150px) !important;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;900&display=swap");
+.fade-A {
+  animation: animA 10s infinite alternate;
+}
+.fade-B {
+  animation: animB 10s infinite alternate;
+}
+.titleHome {
+  font-family: "Poppins", sans-serif;
+}
+
+@keyframes animA {
+  0%,
+  40% {
+    opacity: 1;
+  }
+  60%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animB {
+  0%,
+  40% {
+    opacity: 0;
+  }
+  60%,
+  100% {
+    opacity: 1;
+  }
 }

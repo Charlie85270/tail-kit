@@ -82,7 +82,7 @@ const StartedPage: FC = () => {
             </a>
           </p>
 
-          <p className="pt-4 text-xl text-gray-700 flex items-center">
+          <p className="pt-4 text-xl mb-6 text-gray-700 flex items-center">
             <svg
               className="h-6 w-6 mr-2"
               xmlns="http://www.w3.org/2000/svg"
@@ -95,12 +95,17 @@ const StartedPage: FC = () => {
               <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z" />
             </svg>
             Once Tailwind CSS is installed, you can get started!
-            <Link href="/components">
-              <a className="w-28 mb-4 px-4 py-2 ml-4 text-base font-medium rounded-md text-center text-white bg-green-500 hover:bg-green-700">
-                Let's go !
-              </a>
-            </Link>
           </p>
+          <Link href="/components">
+            <a className="w-44 mb-4 px-4 py-3 mt-8 text-base font-medium rounded-md text-center text-white bg-gray-800 hover:bg-gray-700">
+              &#129513; See components!
+            </a>
+          </Link>
+          <Link href="/templates">
+            <a className="w-44 mb-4 px-4 py-3 ml-4 text-base font-medium rounded-md text-center text-white bg-gray-800 hover:bg-gray-700">
+              &#127912; See templates!
+            </a>
+          </Link>
         </div>
       </div>
       <div

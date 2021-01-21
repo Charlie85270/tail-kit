@@ -99,7 +99,7 @@ const ComponentLayout = (props: Props) => {
       }`}
       key={props.title}
     >
-      <div className="flex flex-col md:flex-row items-center justify-between mb-8 bg-white p-4 border rounded-xl">
+      <div className="flex flex-col md:flex-row items-center justify-between bg-white p-4 border rounded-xl">
         <p className="text-xl font-light text-gray-600 mb-2 md:mb-0">
           {props.title}
         </p>
@@ -177,7 +177,7 @@ const ComponentLayout = (props: Props) => {
             props.vertical
               ? "flex-col justify-center"
               : "flex-col md:flex-row justify-between "
-          } flex gap-4 mx-4 items-start py-16`}
+          } flex gap-4 mx-4 items-start py-12`}
         >
           <div
             ref={previewRef}
