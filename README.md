@@ -33,7 +33,7 @@ Tailwind-kit include a live code editor to change the components code and see in
 ## Dark mode
 ![Tailwind-Kit](https://www.tailwind-kit.com/demo.gif)
 
-Most components ad templates are implemented with a light and dark version, with the new dark mode 2.0 feature of tailwind CSS. 
+Most components and templates are implemented with a light and dark version, with the new dark mode 2.0 feature of tailwind CSS. 
 
 
 ## Documentation
