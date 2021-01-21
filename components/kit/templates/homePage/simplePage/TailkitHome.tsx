@@ -58,7 +58,7 @@ const TailkitHome = () => {
                       aria-hidden="true"
                     >
                       <path
-                        stroke-linecap="round"
+                        strokeLinecap="round"
                         strokeLinejoin="round"
                         stroke-width="2"
                         d="M4 6h16M4 12h16M4 18h16"
