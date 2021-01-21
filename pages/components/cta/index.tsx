@@ -10,6 +10,7 @@ import BandeauNumber from "../../../components/kit/components/pagesection/cta/Ba
 import BandeauInfo from "../../../components/kit/components/pagesection/cta/BandeauInfo";
 import TimerEvent from "../../../components/kit/components/pagesection/cta/TimerEvent";
 import WatchCta from "../../../components/kit/components/pagesection/cta/WatchCta";
+import NextJSCta from "../../../components/kit/components/pagesection/cta/NextJSCta";
 
 const ComponentsPage: FC = () => {
   const title = "Want to be millionaire ?";
@@ -139,6 +140,12 @@ const ComponentsPage: FC = () => {
         title="Watch cta"
         element={<WatchCta />}
         component={MultipleImagesCta}
+      />
+      <ComponentLayout
+        vertical={true}
+        title="Next Cta"
+        element={<NextJSCta />}
+        component={NextJSCta}
       />
       <ComponentLayout
         showSwitchMode={true}
