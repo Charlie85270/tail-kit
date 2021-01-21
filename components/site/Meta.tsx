@@ -6,7 +6,7 @@ const Meta = ({ pageTitle, description }) => {
   const router = useRouter();
 
   const url = "https://www.tailwind-kit.com";
-  const path = router.pathname;
+  const path = router.asPath;
 
   return (
     <Head>
@@ -21,7 +21,7 @@ const Meta = ({ pageTitle, description }) => {
       <link rel="mask-icon" href="/icons/rocket.svg" />
       <meta property="og:type" content="website" />
       <meta name="twitter:card" content="summary" />
-      <meta name="twitter:site" content="" />
+      <meta name="twitter:site" content="@92f5236c58d94ef" />
       <meta property="og:title" content={`${pageTitle}`} />
       <meta property="og:url" content={`${url}${path}`} />
       <link rel="canonical" href={`${url}${path}`} />
