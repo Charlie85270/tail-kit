@@ -6,7 +6,7 @@ const Meta = ({ pageTitle, description }) => {
   const router = useRouter();
 
   const url = 'https://www.tailwind-kit.com';
-  const path = router.pathname;
+  const path = router.asPath;
 
   return (
     <Head>
