@@ -81,11 +81,9 @@ const Header = ({ hideGithub, hideHelp }) => {
                         {menuEntry.map((entry) => {
                           return (
                             <Link href={entry.link}>
-                              <a className="-m-3 p-3 flex items-center rounded-lg text-indigo-600 hover:bg-gray-50">
-                                {entry.icon}
-
-                                <div className="ml-4 font-normal">
-                                  <p className="text-base text-gray-900">
+                              <a className="p-2 flex items-center rounded-lg text-indigo-600 hover:bg-gray-50">
+                                <div className="font-normal">
+                                  <p className="text-lg text-gray-900">
                                     {entry.label}
                                   </p>
                                   <p className="mt-1 text-sm text-gray-500">
@@ -191,7 +189,7 @@ const Header = ({ hideGithub, hideHelp }) => {
                     >
                       <path
                         stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinejoin="round"
                         strokeWidth="2"
                         d="M6 18L18 6M6 6l12 12"
                       />
@@ -206,7 +204,7 @@ const Header = ({ hideGithub, hideHelp }) => {
                       <Link href={entry.link}>
                         <a className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
                           <i
-                            className={`${entry.icon} flex-shrink-0 h-6 w-6 text-indigo-600`}
+                            className={`flex-shrink-0 h-6 w-6 text-indigo-600`}
                           />
                           <span className="ml-3 text-base font-normal text-gray-900">
                             {entry.label}

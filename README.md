@@ -4,14 +4,25 @@
 ![GitHub Repo stars](https://img.shields.io/github/stars/Charlie85270/tail-kit?style=social)
 
 ![Tailwind-Kit](https://www.tailwind-kit.com/home.png)
+
 </a>
-### A beautiful and large components kit for TailwindCSS 2.0
+### A beautiful and large components and templates kit for TailwindCSS 2.0
 
 Tail-Kit is Free and Open Source. It does not change or add any CSS to the already one from TailwindCSS 2.0. It features multiple HTML elements that can be used in all web projects who's use tailwind CSS.
 
-## CSS Components
+##  Components
 
-Tailwind Starter Kit comes with 180+ Fully Coded CSS elements and layouts.
+Tailwind Starter Kit comes with 230+ Fully Coded CSS elements.
+
+## Templates
+
+Tailwind Starter Kit contains many templates like landing pages, login pages ect. All are fully Coded and ready to copy paste.
+
+![Tailwind-Kit](https://www.tailwind-kit.com/template.png)
+
+![Tailwind-Kit](https://www.tailwind-kit.com/template2.png)
+
+and much more !!
 
 ## Live code editor
 ![Tailwind-Kit](https://i.ibb.co/g3n4NMg/Capture-d-e-cran-2020-12-27-a-12-06-16.png)
@@ -22,7 +33,7 @@ Tailwind-kit include a live code editor to change the components code and see in
 ## Dark mode
 ![Tailwind-Kit](https://www.tailwind-kit.com/demo.gif)
 
-Most components are implemented with a light and dark version, with the new dark mode 2.0 feature of tailwind CSS. 
+Most components ad templates are implemented with a light and dark version, with the new dark mode 2.0 feature of tailwind CSS. 
 
 
 ## Documentation

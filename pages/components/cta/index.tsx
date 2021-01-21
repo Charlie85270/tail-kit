@@ -9,6 +9,7 @@ import MultipleImagesCta from "../../../components/kit/components/pagesection/ct
 import BandeauNumber from "../../../components/kit/components/pagesection/cta/BandeauNumber";
 import BandeauInfo from "../../../components/kit/components/pagesection/cta/BandeauInfo";
 import TimerEvent from "../../../components/kit/components/pagesection/cta/TimerEvent";
+import WatchCta from "../../../components/kit/components/pagesection/cta/WatchCta";
 
 const ComponentsPage: FC = () => {
   const title = "Want to be millionaire ?";
@@ -130,6 +131,13 @@ const ComponentsPage: FC = () => {
             description="The state of Utah in the united states is home to lots of beautiful National parks, Bryce national canion park ranks as three of the most magnificient & awe inspiring."
           />
         }
+        component={MultipleImagesCta}
+      />
+      <ComponentLayout
+        vertical={true}
+        showSwitchMode={true}
+        title="Watch cta"
+        element={<WatchCta />}
         component={MultipleImagesCta}
       />
       <ComponentLayout
