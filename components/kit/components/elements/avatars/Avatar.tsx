@@ -30,7 +30,7 @@ const Avatar = ({ withBorder, size, withInfo, type, img }: Props) => {
         }`}
       />
       {withInfo && (
-        <span className="absolute w-3 border-2 w-full left-1/2 -bottom-2 transform -translate-x-1/2 border-white h-3 bg-green-500 rounded-full"></span>
+        <span className="absolute w-3 border-2 left-1/2 -bottom-2 transform -translate-x-1/2 border-white h-3 bg-green-500 rounded-full"></span>
       )}
     </a>
   );
