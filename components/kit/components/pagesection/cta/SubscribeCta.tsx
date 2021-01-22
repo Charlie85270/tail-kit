@@ -22,11 +22,15 @@ const SubscribeCta = () => {
         </form>
 
         <div className="hidden lg:block absolute inset-y-0 lg:left-2/3 xl:left-1/2 right-0">
-          <img
-            className="w-1/2 object-cover maw-w-44 mx-auto"
-            src="/images/object/5.png"
-            alt="car"
-          />
+          <picture>
+            <source srcSet="/images/object/5.webp" type="image/webp" />
+            <source srcSet="/images/object/5.png" />
+            <img
+              className="w-1/2 object-cover maw-w-44 mx-auto"
+              src="/images/object/5.png"
+              alt="shopping item"
+            />
+          </picture>
         </div>
       </div>
     </div>
