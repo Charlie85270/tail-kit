@@ -15,6 +15,12 @@ const HomePage = () => {
       img: "images/sections/homePage.png",
       link: "/templates/getStarted",
     },
+    {
+      title: "Portfolio",
+      items: 1,
+      img: "images/sections/folio.png",
+      link: "/templates/folio",
+    },
   ];
 
   return (
