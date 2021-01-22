@@ -507,9 +507,6 @@ const TailkitHome = () => {
                         <div className="mt-1 relative">
                           <button
                             type="button"
-                            aria-haspopup="listbox"
-                            aria-expanded="true"
-                            aria-labelledby="listbox-label"
                             className="relative w-full bg-white rounded-md shadow-lg pl-3 pr-10 py-3 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                           >
                             <span className="flex items-center">
