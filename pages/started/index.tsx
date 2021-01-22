@@ -96,16 +96,18 @@ const StartedPage: FC = () => {
             </svg>
             Once Tailwind CSS is installed, you can get started!
           </p>
-          <Link href="/components">
-            <a className="w-44 mb-4 px-4 py-3 mt-8 text-base font-medium rounded-md text-center text-white bg-gray-800 hover:bg-gray-700">
-              &#129513; See components!
-            </a>
-          </Link>
-          <Link href="/templates">
-            <a className="w-44 mb-4 px-4 py-3 ml-4 text-base font-medium rounded-md text-center text-white bg-gray-800 hover:bg-gray-700">
-              &#127912; See templates!
-            </a>
-          </Link>
+          <div className="md:flex md:items-center md:space-x-4">
+            <Link href="/components">
+              <a className="w-auto block mb-4 px-4 py-3 text-base font-medium rounded-md text-center text-white bg-gray-800 hover:bg-gray-700">
+                &#129513; See components!
+              </a>
+            </Link>
+            <Link href="/templates">
+              <a className="w-auto block mb-4 px-4 py-3 text-base font-medium rounded-md text-center text-white bg-gray-800 hover:bg-gray-700">
+                &#127912; See templates!
+              </a>
+            </Link>
+          </div>
         </div>
       </div>
       <div

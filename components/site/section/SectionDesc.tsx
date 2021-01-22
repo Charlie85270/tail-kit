@@ -27,7 +27,7 @@ const SectionDesc = ({ title, items, id, hasCommingSoon }: Props) => {
           return (
             <div
               key={section.title}
-              className="hover:opacity-100 border rounded-lg w-1/3 m-2 md:m-0  md:w-1/5"
+              className="hover:opacity-100 border rounded-lg w-full sm:w-1/3 m-2 md:m-0  md:w-1/5"
             >
               <Link href={section.link}>
                 <a className="">
