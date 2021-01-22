@@ -10,7 +10,7 @@ export const IndexPage: FC = () => {
     <HomeLayout>
       <div className="flex flex-col md:flex-row w-full items-start justify-between md:justify-start h-full md:h-1/2">
         <div className="text-left z-20 md:z-30 w-full md:w-1/2 flex flex-col items-center md:items-start justify-start md:justify-center h-full">
-          <h1 className="tracking-tight font-extrabold text-gray-900 titleHome text-6xl md:mt-24 lg:mt-0">
+          <h1 className="tracking-tight font-extrabold text-gray-900 titleHome text-5xl md:text-6xl md:mt-24 lg:mt-0">
             <span className="flex w-full m-auto text-indigo-600">
               {" "}
               Tail-kit
