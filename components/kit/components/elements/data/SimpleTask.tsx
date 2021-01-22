@@ -4,7 +4,11 @@ import Avatar from "../avatars/Avatar";
 const SimpleTask = () => {
   return (
     <div className="shadow-lg rounded-xl w-full md:w-72 p-4 bg-white dark:bg-gray-800 relative overflow-hidden">
-      <a href="#" className="absolute w-full h-full"></a>
+      <a
+        href="#"
+        aria-label="Go to article"
+        className="absolute w-full h-full"
+      ></a>
       <div className="w-full flex items-center">
         <Avatar size="small" />
         <div className="flex flex-col items-center ml-2">

@@ -49,8 +49,6 @@ const LargeDropDownMenu = (props: Props) => {
               : ""
           } flex items-center justify-center w-full rounded-md  px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-50 hover:bg-gray-50 dark:hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-gray-500`}
           id="options-menu"
-          aria-haspopup="true"
-          aria-expanded="true"
         >
           {props.label}
 

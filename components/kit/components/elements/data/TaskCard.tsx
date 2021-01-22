@@ -3,7 +3,11 @@ import MultipleAvatar from "../avatars/MultipleAvatar";
 const TaskCard: FC = () => {
   return (
     <div className="shadow-lg rounded-xl max-w-xs p-4 bg-white dark:bg-gray-800 relative overflow-hidden">
-      <a href="#" className="absolute w-full h-full"></a>
+      <a
+        href="#"
+        aria-label="Go to article"
+        className="absolute w-full h-full"
+      ></a>
       <div className="w-full">
         <p className="text-gray-800 dark:text-white text-xl font-medium mb-2">
           Improve css design of the carousel

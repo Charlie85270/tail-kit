@@ -5,6 +5,7 @@ const TagsCard: FC = () => {
       <img alt="eggs" src="/images/car/1.jpg" className="rounded-t-lg" />
       <div className="bg-white w-full p-4 relative">
         <button
+          aria-label="Go to article"
           type="button"
           className="absolute rounded-full bg-indigo-500 text-white w-12 h-12 right-8 -top-6"
         >
