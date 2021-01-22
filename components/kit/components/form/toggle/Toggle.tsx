@@ -7,8 +7,8 @@ interface Props {
   label?: string;
 }
 
-const id = _uniqueId("prefix-");
 const Toggle = (props: Props) => {
+  const [id] = useState(_uniqueId("prefix-"));
   return (
     <div>
       <div className="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
