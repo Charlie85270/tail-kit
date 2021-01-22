@@ -29,6 +29,7 @@
     "postcss": "^8.2.1",
     "postcss-import": "^13.0.0",
     "react": "^17.0.1",
+    "react-device-detect": "^1.15.0",
     "react-dom": "^17.0.1",
     "react-live": "^2.2.3",
     "tailwindcss": "^2.0.1"

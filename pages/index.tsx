@@ -3,6 +3,7 @@ import HomeLayout from "../components/layout/HomeLayout";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 const HomeComps = dynamic(() => import("../components/site/home/HomeComps"));
+import { isMobile } from "react-device-detect";
 
 export const IndexPage: FC = () => {
   return (
@@ -66,7 +67,7 @@ export const IndexPage: FC = () => {
             </Link>
           </div>
         </div>
-        <HomeComps />
+        {!isMobile && <HomeComps />}
       </div>
     </HomeLayout>
   );
