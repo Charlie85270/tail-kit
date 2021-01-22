@@ -1,7 +1,8 @@
 import { FC } from "react";
 import HomeLayout from "../components/layout/HomeLayout";
 import Link from "next/link";
-import HomeComps from "../components/site/home/HomeComps";
+import dynamic from "next/dynamic";
+const HomeComps = dynamic(() => import("../components/site/home/HomeComps"));
 
 export const IndexPage: FC = () => {
   return (
