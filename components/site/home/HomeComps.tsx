@@ -125,7 +125,7 @@ const HomeComps: FC = () => {
             </div>
             <div className="mb-4">
               <img
-                src="/images/sections/homePage.png"
+                src="/images/sections/folio.png"
                 className="sm:text-center rounded w-full shadow-xl"
               />
             </div>
