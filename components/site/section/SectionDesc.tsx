@@ -48,7 +48,7 @@ const SectionDesc = ({ title, items, id, hasCommingSoon }: Props) => {
           );
         })}
         {hasCommingSoon && (
-          <div className="opacity-50 border rounded-lg w-1/3 m-2 md:m-0  md:w-1/5">
+          <div className="opacity-50 border border rounded-lg w-full sm:w-1/3 m-2 md:m-0  md:w-1/5">
             <div className="">
               <img
                 src="/images/sections/coming.gif"
