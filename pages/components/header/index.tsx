@@ -4,6 +4,7 @@ import ComponentLayout from "../../../components/layout/ComponentLayout";
 import SectionHeader from "../../../components/site/header/SectionHeader";
 import Header from "../../../components/kit/components/navigation/header/Header";
 import SearchHeader from "../../../components/kit/components/navigation/header/SearchHeader";
+import CenterHeader from "../../../components/kit/components/navigation/header/CenterHeader";
 
 const links = [
   {
@@ -171,6 +172,12 @@ const HeaderPage: FC = () => {
         title="Simple search bar"
         element={<SearchHeader />}
         component={SearchHeader}
+      />
+      <ComponentLayout
+        vertical={true}
+        title="With center title"
+        element={<CenterHeader />}
+        component={CenterHeader}
       />
     </AppLayout>
   );

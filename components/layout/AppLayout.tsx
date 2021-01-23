@@ -57,6 +57,11 @@ export const menuTemplates = [
     desc: "Template like sport site, product home page, Ecommerce",
     link: "/templates#home",
   },
+  {
+    label: "Errors page",
+    desc: "404 templates page, Internal error templates....",
+    link: "/templates#errors",
+  },
 ];
 
 const AppLayout = ({ title, desc, children }) => {

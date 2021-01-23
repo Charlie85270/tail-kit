@@ -5,7 +5,7 @@ const Navigation: FC = () => {
   const formSections = [
     {
       title: "Headers",
-      items: 8,
+      items: 9,
       img: "images/sections/header.png",
       link: "/components/header",
     },
