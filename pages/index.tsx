@@ -23,8 +23,8 @@ export const IndexPage: FC = () => {
           <h2 className="mt-3 text-gray-500 sm:mt-5 text-lg sm:max-w-xl md:mt-5 md:text-xl lg:mx-0">
             Tail-kit gives you access to over{" "}
             <span className="text-gray-700 font-bold">250</span> free components
-            and templates, based on Tailwind CSS 2.0. It's all compatible with
-            React, VueJS and Angular application.
+            and free templates, based on Tailwind CSS 2.0. It's all compatible
+            with React, VueJS and Angular application.
           </h2>
 
           <div className="mt-5 sm:mt-8 inline-block w-full">
