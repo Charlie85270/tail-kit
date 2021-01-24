@@ -12,11 +12,11 @@ export const IndexPage: FC = () => {
         <div className="text-left z-20 md:z-30 w-full md:w-1/2 flex flex-col items-center md:items-start justify-start md:justify-center h-full">
           <h1 className="tracking-tight font-extrabold text-gray-900 titleHome text-5xl md:text-6xl md:mt-24 lg:mt-0">
             <span className="flex w-full m-auto text-indigo-600">
-              Tail-kit{" "}
+              Tail-kit&nbsp;
             </span>
             <span className="block font-bold xl:inline">
-              <span className="fade-A absolute">Components&nbsp; </span>{" "}
-              <span className="fade-B absolute">Templates</span>
+              <span className="fade-A absolute">Components&nbsp; </span>
+              <span className="fade-B absolute">Templates&nbsp;</span>
               <br />
               for Tailwind CSS 2.0
             </span>

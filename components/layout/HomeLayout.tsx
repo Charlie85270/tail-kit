@@ -1,6 +1,5 @@
 import { FC } from "react";
 import AppHeader from "../site/header/AppHeader";
-import Header from "../site/header/header";
 import Meta from "../site/Meta";
 
 const HomeLayout: FC = ({ children }) => {
