@@ -15,8 +15,12 @@ export const IndexPage: FC = () => {
               Tail-kit&nbsp;
             </span>
             <span className="block font-bold xl:inline">
-              <span className="fade-A absolute">Components&nbsp; </span>
-              <span className="fade-B absolute">Templates&nbsp;</span>
+              <span className="fade-A absolute left-6">
+                &nbsp;Components&nbsp;{" "}
+              </span>
+              <span className="fade-B absolute left-6">
+                &nbsp;Templates&nbsp;
+              </span>
               <br />
               for Tailwind CSS 2.0
             </span>
