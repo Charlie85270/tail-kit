@@ -15,7 +15,7 @@ export const IndexPage: FC = () => {
               Tail-kit&nbsp;
             </span>
             <span className="block font-bold xl:inline">
-              <span className="">Components and templates</span>
+              <span className="">Components and templates&nbsp;</span>
               <br />
               for Tailwind CSS 2.0
             </span>
