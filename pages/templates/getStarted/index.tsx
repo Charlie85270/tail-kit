@@ -9,8 +9,8 @@ import Natural3Home from "../../../components/kit/templates/homePage/simplePage/
 const HomePage = () => {
   return (
     <AppLayout
-      title="Free Tailwind home page template for tailwind css"
-      desc="Tailwind home page templates and components for tailwind css"
+      title="Tailwind UI KIT - Configuration to use tailwind components and templates"
+      desc="Configuration page to user templates and components for tailwind css in your ReactJS, VueJS or Angular application."
     >
       <SectionHeader
         backLink="/templates"

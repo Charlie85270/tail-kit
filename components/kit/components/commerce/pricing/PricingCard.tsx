@@ -3,19 +3,19 @@ import Button from "../../elements/buttons/Button";
 
 export const prices = [
   {
-    label: "All illimited link",
+    label: "All illimited components",
     include: true,
   },
   {
-    label: " Own analitycs plateform link",
+    label: " Own custom Tailwind styles",
     include: true,
   },
   {
-    label: "24/24 support link",
+    label: "Unlimited Templates",
     include: true,
   },
   {
-    label: " Unlimited user",
+    label: " Free premium dashboard",
     include: true,
   },
   {

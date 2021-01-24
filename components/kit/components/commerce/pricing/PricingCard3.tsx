@@ -1,18 +1,18 @@
 import React, { FC } from "react";
 
 const includes = [
-  "All illimited link",
-  "Own analitycs plateform link",
+  "All illimited components Tailwind",
+  "Own analitycs templates",
   "24/24 support link",
 ];
-const bonus = ["All illimited link", "Best ranking", "Chocolate and meel"];
+const bonus = ["All free dashboard", "Best ranking", "Chocolate and meel"];
 
 const PricingCard3: FC = () => {
   return (
     <div className="shadow-lg rounded-2xl w-64 bg-white dark:bg-gray-800 p-4">
       <p className="text-black dark:text-white text-3xl font-bold">Essential</p>
       <p className="text-gray-500 dark:text-gray-300 text-sm mb-4">
-        For the basics
+        For the basics tailwind
       </p>
       <p className="text-black dark:text-white  text-3xl font-bold">$99</p>
       <p className="text-gray-500 dark:text-gray-300 text-sm mb-4">
