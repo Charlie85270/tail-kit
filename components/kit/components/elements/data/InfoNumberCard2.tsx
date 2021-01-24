@@ -1,11 +1,12 @@
 import React, { FC } from "react";
+
 const InfoNumberCard2: FC = () => {
   return (
-    <div className="bg-white  overflow-hidden shadow rounded-lg w-72 relative">
+    <div className="bg-white  overflow-hidden shadow rounded-lg w-60 md:w-72 relative">
       <img
         src="https://img.clankapp.com/symbol/btc.svg"
         alt="btc logo"
-        className="h-24 w-24 rounded-full absolute opacity-50 -top-6 -right-4"
+        className="h-24 w-24 rounded-full absolute opacity-50 -top-6 -right-6 md:-right-4"
       />
       <div className="px-4 py-5 sm:p-6">
         <dl>
@@ -17,13 +18,13 @@ const InfoNumberCard2: FC = () => {
           </dd>
           <dd className="text-gray-500 font-semibold">
             <span>
-              500<span className="text-xs">.000</span>
+              500<span className="text-xs">.000</span>BTC
             </span>
-            BTC
           </dd>
         </dl>
       </div>
     </div>
   );
 };
+
 export default InfoNumberCard2;
