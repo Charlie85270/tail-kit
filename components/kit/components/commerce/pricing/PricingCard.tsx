@@ -44,7 +44,7 @@ const PricingCard: FC = () => {
         Entreprise
       </p>
       <p className="text-gray-900 dark:text-white text-3xl font-bold">
-        $199 <span className="text-gray-300 text-sm">/ month </span>
+        $0 <span className="text-gray-300 text-sm">/ month </span>
       </p>
       <p className="text-gray-600 dark:text-gray-100  text-xs mt-4">
         For most businesses that want to optimize web queries.
