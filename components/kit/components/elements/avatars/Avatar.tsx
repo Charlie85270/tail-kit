@@ -25,7 +25,7 @@ const Avatar = ({ withBorder, size, withInfo, type, img }: Props) => {
       <img
         alt="profil"
         src={img || "/images/person/1.jpg"}
-        className={`mx-auto ${roundedClasses} ${sizeClasses} ${
+        className={`mx-auto object-cover ${roundedClasses} ${sizeClasses} ${
           withBorder ? " border-2 border-white dark:border-gray-800" : ""
         }`}
       />

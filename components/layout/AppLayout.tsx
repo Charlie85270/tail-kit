@@ -53,6 +53,11 @@ export const menuEntry = [
 
 export const menuTemplates = [
   {
+    label: "Dashboard",
+    desc: "Dashboard templates page, Admin templates....",
+    link: "/templates#dashboard",
+  },
+  {
     label: "Landing page",
     desc: "Template like sport site, product home page, Ecommerce",
     link: "/templates#home",
