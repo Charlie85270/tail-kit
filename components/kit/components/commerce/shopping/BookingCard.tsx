@@ -21,7 +21,7 @@ const BookingCard: FC = () => {
         <div className="bg-gray-50 w-full p-4 flex h-full justify-between">
           <div>
             <div className="text-lg py-1 text-gray-500">
-              <span className="font-bold text-black">$17</span> per person
+              <span className="font-bold text-black pr-1">$17</span> per person
               <sup>*</sup>
             </div>
             <div className="text-gray-400 flex items-center">
