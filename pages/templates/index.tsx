@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import AppLayout from "../../components/layout/AppLayout";
 import HomePage from "../../components/kit/templates/homePages";
-import ErrorPages from "../../components/kit/templates/errorPages";
+import ErrorPages from "../../components/kit/templates/ErrorPages";
 import DashboardPages from "../../components/kit/templates/dashboardPages";
 
 const ComponentsPage: FC = () => {
