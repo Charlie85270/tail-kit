@@ -1,5 +1,5 @@
 import React from "react";
-import Picture404 from "../../../components/kit/templates/errorPages/error404/Picture404";
+import Pictures404 from "../../../components/kit/templates/errorPages/error404/Pictures404";
 import Simple404 from "../../../components/kit/templates/errorPages/error404/Simple404";
 import AppLayout from "../../../components/layout/AppLayout";
 import ComponentLayout from "../../../components/layout/ComponentLayout";
@@ -29,8 +29,8 @@ const The404pages = () => {
       <ComponentLayout
         vertical={true}
         title="Illustration 404"
-        element={<Picture404 />}
-        component={Picture404}
+        element={<Pictures404 />}
+        component={Pictures404}
       />
     </AppLayout>
   );
