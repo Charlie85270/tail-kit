@@ -9,6 +9,7 @@ import ClassicShoppingCard from "../../../components/kit/components/commerce/sho
 import SimpleShoppingCard from "../../../components/kit/components/commerce/shopping/SimpleShoppingCard";
 import ShippedCard from "../../../components/kit/components/commerce/shopping/ShippedCard";
 import ProductWithEval from "../../../components/kit/components/commerce/shopping/ProductWithEval";
+import BookingCard from "../../../components/kit/components/commerce/shopping/BookingCard";
 
 const ShoppingPage: FC = () => {
   return (
@@ -55,6 +56,11 @@ const ShoppingPage: FC = () => {
         title="Shipped"
         element={<ShippedCard />}
         component={ShippedCard}
+      />
+      <ComponentLayout
+        title="Booking"
+        element={<BookingCard />}
+        component={BookingCard}
       />
     </AppLayout>
   );
