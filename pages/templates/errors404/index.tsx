@@ -1,10 +1,10 @@
 import React from "react";
-import AppLayout from "../../../components/layout/AppLayout";
-import SectionHeader from "../../../components/site/header/SectionHeader";
-import ComponentLayout from "../../../components/layout/ComponentLayout";
-import Picture404 from "../../../components/kit/templates/errorPages/error404/Picture404";
 import Background404 from "../../../components/kit/templates/errorPages/error404/Background404";
+import Picture404 from "../../../components/kit/templates/errorPages/error404/Picture404";
 import Simple404 from "../../../components/kit/templates/errorPages/error404/Simple404";
+import AppLayout from "../../../components/layout/AppLayout";
+import ComponentLayout from "../../../components/layout/ComponentLayout";
+import SectionHeader from "../../../components/site/header/SectionHeader";
 
 const The404pages = () => {
   return (
