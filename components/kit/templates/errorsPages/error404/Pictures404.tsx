@@ -1,6 +1,6 @@
 import React from "react";
 
-const Picture404 = () => {
+const Pictures404 = () => {
   return (
     <main className="bg-white relative overflow-hidden h-screen relative">
       <header className="absolute top-0 left-0 right-0 z-20">
@@ -63,4 +63,4 @@ const Picture404 = () => {
     </main>
   );
 };
-export default Picture404;
+export default Pictures404;

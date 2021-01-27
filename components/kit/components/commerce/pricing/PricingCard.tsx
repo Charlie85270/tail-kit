@@ -3,19 +3,19 @@ import Button from "../../elements/buttons/Button";
 
 export const prices = [
   {
-    label: "All illimited link",
+    label: "All illimited components",
     include: true,
   },
   {
-    label: " Own analitycs plateform link",
+    label: " Own custom Tailwind styles",
     include: true,
   },
   {
-    label: "24/24 support link",
+    label: "Unlimited Templates",
     include: true,
   },
   {
-    label: " Unlimited user",
+    label: " Free premium dashboard",
     include: true,
   },
   {
@@ -44,7 +44,7 @@ const PricingCard: FC = () => {
         Entreprise
       </p>
       <p className="text-gray-900 dark:text-white text-3xl font-bold">
-        $199 <span className="text-gray-300 text-sm">/ month </span>
+        $0 <span className="text-gray-300 text-sm">/ month </span>
       </p>
       <p className="text-gray-600 dark:text-gray-100  text-xs mt-4">
         For most businesses that want to optimize web queries.

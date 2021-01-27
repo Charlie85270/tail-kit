@@ -9,24 +9,22 @@ export const IndexPage: FC = () => {
   return (
     <HomeLayout>
       <div className="flex flex-col md:flex-row w-full items-start justify-between md:justify-start h-full md:h-1/2">
-        <div className="text-left z-20 md:z-30 w-full md:w-1/2 flex flex-col items-center md:items-start justify-start md:justify-center h-full">
-          <h1 className="tracking-tight font-extrabold text-gray-900 titleHome text-5xl md:text-6xl md:mt-24 lg:mt-0">
+        <div className="text-left z-20 md:z-30 w-full md:w-1/2 flex flex-col items-start justify-start md:justify-center h-full">
+          <h1 className="tracking-tight font-extrabold text-gray-900 titleHome text-5xl lg:text-6xl md:mt-24 lg:mt-0">
             <span className="flex w-full m-auto text-indigo-600">
-              {" "}
-              Tail-kit
+              Tail-kit&nbsp;
             </span>
             <span className="block font-bold xl:inline">
-              <span className="fade-A absolute">Components</span>{" "}
-              <span className="fade-B absolute">Templates</span>
+              <span className="">Components and templates&nbsp;</span>
               <br />
               for Tailwind CSS 2.0
             </span>
           </h1>
-          <h2 className="mt-3 text-gray-500 sm:mt-5 text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+          <h2 className="mt-3 text-gray-500 sm:mt-5 text-lg sm:max-w-xl md:mt-5 md:text-xl lg:mx-0">
             Tail-kit gives you access to over{" "}
-            <span className="text-gray-700 font-bold">200</span> fully coded and
-            responsive components and templates, based on Tailwind CSS 2.0. It's
-            all free and open-source.
+            <span className="text-gray-700 font-bold">250</span> free components
+            and free templates, based on Tailwind CSS 2.0. It's all compatible
+            with React, VueJS and Angular application.
           </h2>
 
           <div className="mt-5 sm:mt-8 inline-block w-full">
@@ -60,12 +58,14 @@ export const IndexPage: FC = () => {
               </div>
             </div>
           </div>
-          <div className="mt-4 block w-full text-left">
-            Need specific or new component ?{" "}
+          <h3 className="mt-4 block w-full text-left">
+            Need specific tailwind components or templates ?{" "}
             <Link href="/request">
-              <span className="underline cursor-pointer">Make a request</span>
+              <span className="underline cursor-pointer">
+                Make a request, it's free
+              </span>
             </Link>
-          </div>
+          </h3>
         </div>
         {!isMobile && <HomeComps />}
       </div>

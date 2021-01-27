@@ -18,6 +18,7 @@ interface Props {
   showSwitchMode?: boolean;
   vertical?: boolean;
   containerClasses?: string;
+  fullscreen?: boolean;
 }
 
 enum STATUS {
@@ -177,7 +178,7 @@ const ComponentLayout = (props: Props) => {
             props.vertical
               ? "flex-col justify-center"
               : "flex-col md:flex-row justify-between "
-          } flex gap-4 mx-4 items-start py-12`}
+          } flex gap-4 items-start ${props.fullscreen ? "" : "mx-4 py-12"}`}
         >
           <div
             ref={previewRef}

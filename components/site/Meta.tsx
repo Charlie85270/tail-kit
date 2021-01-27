@@ -25,6 +25,7 @@ const Meta = ({ pageTitle, description }) => {
       <meta property="og:title" content={`${pageTitle}`} />
       <meta property="og:url" content={`${url}${path}`} />
       <link rel="canonical" href={`${url}${path}`} />
+      <meta name="monetization" content="$ilp.uphold.com/GidKX3giK2m2" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
   );

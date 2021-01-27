@@ -17,7 +17,9 @@ Tailwind Starter Kit comes with 230+ Fully Coded CSS elements.
 
 ## Templates
 
-Tailwind Starter Kit contains many templates like landing pages, login pages ect. All are fully Coded and ready to copy paste.
+Tailwind Starter Kit contains many templates like dashboards, landing pages, login pages ect. All are fully Coded and ready to copy paste.
+
+![Tailwind-Kit](https://www.tailwind-kit.com/dashboard.png)
 
 ![Tailwind-Kit](https://www.tailwind-kit.com/template.png)
 
@@ -65,6 +67,12 @@ Do not hesitate to contribe and add your own components/layout.
 
 Tail-Kit is a static site build with [Next.js](https://nextjs.org/) and typescript.
 
+### Prerequisites: 
+
+Node.js 10.13 or later 
+
+Recommanded : **Node v12.18.3** 
+
 Install dependencies:
 
 ```bash
@@ -94,6 +102,178 @@ npm run build
 yarn build
 ```
 
+## 🧐 What's inside?
+
+A quick look at the important repo files and directories you'll see in a the project.
+
+    .
+    ├── node_modules
+    ├── public
+    ├── pages
+    ├── components
+    	 ├── kit
+            ├── components
+            ├── templates
+         ├── layout
+         ├── site
+    ├── utils
+    ├── editorTheme.tsx
+    ├── global.css
+    ├── LICENSE
+    ├── next.config.js
+    ├── tailwind.config.js
+    ├── package.json
+    ├── README
+    ├── tsconfig.json
+    ├── .gitignore
+    └── yarn.lock.json
+
+1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+
+1.  **`/public`**: This directory contain all the public assets that need the project (images, icons).
+
+1.  **`/pages`**: This directory contain all pages of the app. See [NextJs pages documentation](https://nextjs.org/docs/basic-features/pages/) for more details
+
+1.  **`/components`**: This directory contain all components and templates of the app. 
+	1. **kit** : contains all components and templates used for demonstration/preview. Component/templates are sorted by section (Commerce, Elements, Forms ...). Each section have his directory. 
+	1. **layout** : contains all layout used in the application. See [NextJs layout documentation](https://nextjs.org/learn/basics/assets-metadata-css/layout-component) for more details
+	1. **site** : contains all component used for the structure of the application (header, footer, home, ...)
+
+1.  **`/utils`**: This directory contain all utils classes, like html parser, html beautifier (use to indent the components code on preview)
+
+1.  **`editorTheme.tsx`**: This file is the configuration theme (colors) for the components code preview. See [react-prism](https://github.com/FormidableLabs/prism-react-renderer#theming) for more details
+
+2.  **`global.css`**: This css file contain all the 'custom' css use for the app (home page animation)  
+
+3.  **`LICENSE`**: Bulma-css is licensed under [EULA](./LICENSE.md).
+
+4.  **`next.config.js`**: This file contain all the nextJS configuration. Here we use the default one.
+     
+5.  **`tailwind.config.js`**: This file contain all the Tailwind configuration.
+
+6. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+
+7. **`README.md`**: A text file containing useful reference information about your project.
+
+8.  **`tsconfig.json`**: The presence of a tsconfig.json file in a directory indicates that the directory is the root of a TypeScript project. The tsconfig.json file specifies the root files and the compiler options required to compile the project.
+
+9.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+
+10. **`yarn-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+
+## 📋 Create a new section 
+
+Components and templates are sorted by category.
+
+Categories are sorted by section. 
+
+A section can have one or more category.
+
+Category can have one or more component/templates.
+
+To add a new main section like ***Commerce, Element, Form*** .. you must : 
+1.  Create your new directory in **components/kit/components/{yourSectionName}** or **components/kit/templates/{yourSectionName}**. It's inside this directory that you will put all your components/templates files.
+	  
+2.  Create a **index.tsx** file on this new directory. It will contain the description (categories names, components/tempaltes numbers, title, ....) of the section. See other section files for an example.   
+2.  Each time you want create a new category on a section you will need create a directory in the directory of this one. Then you will put the component/templates file in the category directory. 
+
+See an example : 
+
+
+    
+    ├── components
+    	 ├── kit
+         	├── components
+            	├── MyNewSection // section directory
+                	index.tsx // section description file
+                	├── MyCategory // category directory
+                    		MyComponent.tsx // My component source file
+                            MyComponent2.tsx // My component source file
+                            ....
+            ├── templates
+         ├── layout
+         ├── site
+    ├── ...
+    └── ...
+
+
+##  📁 Create a new category
+
+As seen just above, to create a new category you need to create a directory on a section that will contains your components. We also need to create the category page.
+1.  Create your new directory in **pages/components/{yourCategoryName}** or **pages/templates/{yourCategoryName}**. It's inside this directory that we will put the category page code.
+	  
+2.  Create a **index.tsx** file on this new directory. It will contain all the components/templates that we want import and see in this category. See other category files for an example.   
+2.  When index.tsx is created NextJs create a route for this category that we can see on : http://localhost:3000/components/{yourCategoryName} or http://localhost:3000/templates/{yourCategoryName}
+
+
+## ➕ Create a new component/templates
+
+Components and templates are classics React functional component.
+
+
+### dark/light mode
+
+If you want that your component have a dark version, use Tailwind classes for dark mode [(documentation)](https://tailwindcss.com/docs/dark-mode). 
+
+### Import the component
+
+The last thing to do is to import your component/template on the wanted category file : **(/pages/components/{category}/index.tsx)** or **(/pages/templates/{category}/index.tsx)**
+
+To enabled all feature preview like live edition, dark mode, ... you need to pass our component to `ComponentLayout`.
+
+ `ComponentLayout` is the layout who will add all buttons (Code, Copy, Dark mode) and the live edition feature on our component.
+ 
+**`ComponentLayout`** take few props :  
+
+- `element`: The JSX.Element of our component
+- `component`: The component 
+- `title`: The title of the component display on the panel
+- `jsLink`: The link of the component codeon github (if need JS to work)
+- `needConfiguration`: Boolean if the component/template need a custom tailwind  configuration to work
+- `vertical`: Boolean if the code preview is display on side of the component or below
+- `showSwitchMode`: Boolean if the component have dark/light implementation (Display or hide the dark mode checkbox)
+- `containerClasses`: Classes to add on the container of the component (ex : add margin, padding ...)
+
+
+| propName    | propType      | defaultValue | isRequired |
+| ----------- | ------------- | ------------ | ---------- |
+| element | JSX.Element        |              | x          |
+| component       |         |              | x          |
+| title | string       |          | x          |
+| jsLink    | string|              |          |
+| needConfiguration    | boolean|      false        |          |
+| vertical    | boolean|        false      |          |
+| showSwitchMode    | boolean|        false      |          |
+| containerClasses    | string|              |          |
+
+
+Example of the `index.tsx` file of the **toggle** category :
+
+```JSX
+import React, { FC } from "react";
+import AppLayout from "../../../components/layout/AppLayout";
+import ComponentLayout from "../../../components/layout/ComponentLayout";
+import SectionHeader from "../../../components/site/header/SectionHeader";
+import FormSubscribe from "../../../components/kit/components/form/layout/FormSubscribe";
+
+const TogglePage: FC = () => {
+  return (
+     <AppLayout
+      title="Toggle, Checkbox and Radio buttons components for tailwind css"
+      desc="Free and open source toggle, checkbox and radio buttons components for tailwind css"
+    >
+      <SectionHeader title="Form layout" />
+      <ComponentLayout
+        title="Subscribe"
+        element={<FormSubscribe label="Subscribe" placeholder="Email" />}
+        component={FormSubscribe}
+      />
+    </AppLayout>
+  );
+};
+
+export default TogglePage;
+```
 
 ## Learn More
 

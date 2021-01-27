@@ -2,7 +2,7 @@ import React from "react";
 import AppLayout from "../../../components/layout/AppLayout";
 import SectionHeader from "../../../components/site/header/SectionHeader";
 import ComponentLayout from "../../../components/layout/ComponentLayout";
-import SimpleFolioHome from "../../../components/kit/templates/homePage/folio/SimpleFolioHome";
+import SimpleFolioHome from "../../../components/kit/templates/homePages/folio/SimpleFolioHome";
 
 const Folio = () => {
   return (

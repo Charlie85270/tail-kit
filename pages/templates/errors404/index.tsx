@@ -1,10 +1,10 @@
 import React from "react";
+import Pictures404 from "../../../components/kit/templates/errorsPages/error404/Pictures404";
+import Simple404 from "../../../components/kit/templates/errorsPages/error404/Simple404";
 import AppLayout from "../../../components/layout/AppLayout";
-import SectionHeader from "../../../components/site/header/SectionHeader";
 import ComponentLayout from "../../../components/layout/ComponentLayout";
-import Simple404 from "../../../components/kit/templates/ErrorPages/Error404/Simple404";
-import Background404 from "../../../components/kit/templates/ErrorPages/Error404/Background404";
-import Picture404 from "../../../components/kit/templates/ErrorPages/Error404/Picture404";
+import SectionHeader from "../../../components/site/header/SectionHeader";
+import Background404 from "../../../components/kit/templates/errorsPages/error404/Background404";
 
 const The404pages = () => {
   return (
@@ -29,8 +29,8 @@ const The404pages = () => {
       <ComponentLayout
         vertical={true}
         title="Illustration 404"
-        element={<Picture404 />}
-        component={Picture404}
+        element={<Pictures404 />}
+        component={Pictures404}
       />
     </AppLayout>
   );

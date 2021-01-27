@@ -21,6 +21,12 @@ import JobCard from "../../../components/kit/components/elements/data/JobCard";
 import InfoNumberCard3 from "../../../components/kit/components/elements/data/InfoNumberCard3";
 import PopularPerson from "../../../components/kit/components/elements/data/PopularPerson";
 import VideoDetailsCard from "../../../components/kit/components/elements/data/VideoDetailsCard";
+import GoogleTask from "../../../components/kit/components/elements/data/GoogleTask";
+import SlackTask from "../../../components/kit/components/elements/data/SlackTask";
+import TasksList from "../../../components/kit/components/elements/data/TasksList";
+import CalendarCardMonth from "../../../components/kit/components/elements/data/CalendarCardMonth";
+import MessagesList from "../../../components/kit/components/elements/data/MessagesList";
+import LessonsList from "../../../components/kit/components/elements/data/LessonsList";
 
 const DataPage = () => {
   return (
@@ -68,11 +74,52 @@ const DataPage = () => {
       <ComponentLayout
         vertical={false}
         showSwitchMode={true}
-        title="Details Task card"
+        title="Details task card"
         element={<TaskCard />}
         component={TaskCard}
       />
-
+      <ComponentLayout
+        vertical={false}
+        showSwitchMode={true}
+        title="Google task card"
+        element={<GoogleTask />}
+        component={GoogleTask}
+      />
+      <ComponentLayout
+        vertical={false}
+        showSwitchMode={true}
+        title="Slack task card"
+        element={<SlackTask />}
+        component={SlackTask}
+      />
+      <ComponentLayout
+        vertical={false}
+        showSwitchMode={true}
+        title="Lessons tasks card"
+        element={<LessonsList />}
+        component={LessonsList}
+      />
+      <ComponentLayout
+        vertical={false}
+        showSwitchMode={true}
+        title="Lessons list card"
+        element={<TasksList />}
+        component={TasksList}
+      />
+      <ComponentLayout
+        vertical={false}
+        showSwitchMode={true}
+        title="Messages card"
+        element={<MessagesList />}
+        component={MessagesList}
+      />
+      <ComponentLayout
+        vertical={false}
+        showSwitchMode={true}
+        title="Calendar card"
+        element={<CalendarCardMonth />}
+        component={CalendarCardMonth}
+      />
       <ComponentLayout
         vertical={false}
         showSwitchMode={true}

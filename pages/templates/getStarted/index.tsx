@@ -2,15 +2,15 @@ import React from "react";
 import AppLayout from "../../../components/layout/AppLayout";
 import SectionHeader from "../../../components/site/header/SectionHeader";
 import ComponentLayout from "../../../components/layout/ComponentLayout";
-import NaturalHome from "../../../components/kit/templates/homePage/simplePage/NaturalHome";
-import Natural2Home from "../../../components/kit/templates/homePage/simplePage/Natural2Home";
-import Natural3Home from "../../../components/kit/templates/homePage/simplePage/Natural3Home";
+import NaturalHome from "../../../components/kit/templates/homePages/simplePage/NaturalHome";
+import Natural2Home from "../../../components/kit/templates/homePages/simplePage/Natural2Home";
+import Natural3Home from "../../../components/kit/templates/homePages/simplePage/Natural3Home";
 
 const HomePage = () => {
   return (
     <AppLayout
-      title="Free Tailwind home page template for tailwind css"
-      desc="Tailwind home page templates and components for tailwind css"
+      title="Tailwind UI KIT - Configuration to use tailwind components and templates"
+      desc="Configuration page to user templates and components for tailwind css in your ReactJS, VueJS or Angular application."
     >
       <SectionHeader
         backLink="/templates"
