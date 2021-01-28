@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+
 const SimplePhotoDescCard: FC = () => {
     return (
         <div className="shadow-lg rounded-2xl w-64 p-4 bg-white relative overflow-hidden">

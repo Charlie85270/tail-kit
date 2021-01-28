@@ -14,6 +14,7 @@ import PricingCard2 from '../../kit/components/commerce/pricing/PricingCard2';
 import HeadProfil from '../../kit/components/pagesection/profile/HeadProfil';
 import TaskCard from '../../kit/components/elements/data/TaskCard';
 import PopularPerson from '../../kit/components/elements/data/PopularPerson';
+import Image from 'next/image';
 
 const HomeComps: FC = () => {
     return (
@@ -84,85 +85,64 @@ const HomeComps: FC = () => {
             </div>
             <div className="perspective absolute lg:text-left transform  top-1/2 -right-10 transform -translate-y-1/2 translate-x-1/4 md:w-2/3 fade-B">
                 <div className="flex space-x-4 space-y-1">
-                    <div className="col-1">
+                    <div className="col-1 mt-28">
                         <div className="mb-4">
-                            <picture>
-                                <source srcSet="/images/sections/homePage.webp" type="image/webp" />
-                                <source srcSet="/images/sections/homePage.png" />
-                                <img
-                                    className="sm:text-center rounded w-full shadow-xl"
-                                    src="/images/sections/homePage.png"
-                                    alt="home landing page"
-                                />
-                            </picture>
+                            <Image
+                                src="/images/sections/homePage.webp"
+                                alt="template picture"
+                                width={600}
+                                height={350}
+                            />
                         </div>
                         <div className="mb-4">
-                            <picture>
-                                <source srcSet="/images/sections/homePage4.webp" type="image/webp" />
-                                <source srcSet="/images/sections/homePage4.png" />
-                                <img
-                                    className="sm:text-center rounded w-full shadow-xl"
-                                    src="/images/sections/homePage4.png"
-                                    alt="home landing page"
-                                />
-                            </picture>
+                            <Image
+                                src="/images/sections/homePage4.webp"
+                                alt="template landing page"
+                                width={600}
+                                height={350}
+                            />
                         </div>
                         <div className="mb-4">
-                            <picture>
-                                <source srcSet="/images/sections/homePage3.webp" type="image/webp" />
-                                <source srcSet="/images/sections/homePage3.png" />
-                                <img
-                                    className="sm:text-center rounded w-full shadow-xl"
-                                    src="/images/sections/homePage3.png"
-                                    alt="home landing page"
-                                />
-                            </picture>
+                            <Image
+                                src="/images/sections/homePage3.webp"
+                                alt="template landing page"
+                                width={600}
+                                height={350}
+                            />
                         </div>
                     </div>
                     <div className="col-1">
                         <div className="mb-4">
-                            <picture>
-                                <source srcSet="/images/sections/homePage.webp" type="image/webp" />
-                                <source srcSet="/images/sections/homePage.png" />
-                                <img
-                                    className="sm:text-center rounded w-full shadow-xl"
-                                    src="/images/sections/homePage.png"
-                                    alt="home landing page"
-                                />
-                            </picture>
+                            <Image
+                                src="/images/sections/homePage.webp"
+                                alt="template landing page"
+                                width={600}
+                                height={350}
+                            />
                         </div>
                         <div className="mb-4">
-                            <picture>
-                                <source srcSet="/images/sections/homePage2.webp" type="image/webp" />
-                                <source srcSet="/images/sections/homePage2.png" />
-                                <img
-                                    className="sm:text-center rounded w-full shadow-xl"
-                                    src="/images/sections/homePage2.png"
-                                    alt="home landing page"
-                                />
-                            </picture>
+                            <Image
+                                src="/images/sections/homePage2.webp"
+                                alt="template landing page"
+                                width={600}
+                                height={350}
+                            />
                         </div>
                         <div className="mb-4">
-                            <picture>
-                                <source srcSet="/images/sections/homePage5.webp" type="image/webp" />
-                                <source srcSet="/images/sections/homePage5.png" />
-                                <img
-                                    className="sm:text-center rounded w-full shadow-xl"
-                                    src="/images/sections/homePage5.png"
-                                    alt="home landing page"
-                                />
-                            </picture>
+                            <Image
+                                src="/images/sections/homePage5.webp"
+                                alt="template landing page"
+                                width={600}
+                                height={350}
+                            />
                         </div>
                         <div className="mb-4">
-                            <picture>
-                                <source srcSet="/images/sections/folio.webp" type="image/webp" />
-                                <source srcSet="/images/sections/folio.png" />
-                                <img
-                                    className="sm:text-center rounded w-full shadow-xl"
-                                    src="/images/sections/folio.png"
-                                    alt="folio landing page"
-                                />
-                            </picture>
+                            <Image
+                                src="/images/sections/folio.webp"
+                                alt="template landing page"
+                                width={600}
+                                height={350}
+                            />
                         </div>
                     </div>
                 </div>
