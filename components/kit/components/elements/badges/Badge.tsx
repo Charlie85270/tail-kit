@@ -7,15 +7,19 @@ interface Props {
   borderColor?: string;
   label?: string;
   icon?: boolean;
+  rounded?: 'rounded-none' | 'rounded-sm' | 'rounded' | 'rounded-md' | 'rounded-lg' | 'rounded-xl' | 'rounded-2xl' | 'rounded-3xl' | 'rounded-full';
+  isSmall?: boolean;
+  isMediumWeight?: boolean;
 }
+
 const Badge = (props: Props) => {
   return (
     <span
-      className={`px-4 py-2 ${
+      className={`${props.isSmall ? `px-2 py-1` : `px-4 py-2`} ${
         props.icon ? "flex items-center" : ""
-      } text-base rounded-full ${props.textColor ? props.textColor : ""} ${
+      } text-base ${props.rounded} ${props.textColor ? props.textColor : ""} ${
         props.borderColor ? props.borderColor : ""
-      } ${props.color}`}
+      } ${props.color} ${props.isMediumWeight ? 'font-medium' : ''}`}
     >
       {props.icon && (
         <svg
@@ -47,4 +51,5 @@ const Badge = (props: Props) => {
     </span>
   );
 };
+
 export default Badge;

@@ -20,7 +20,7 @@ const BadgesPage: FC = () => {
       <ComponentLayout
         title="Badge"
         element={
-          <Badge label="Hello" color="bg-indigo-500" textColor="text-white" />
+          <Badge label="Hello" color="bg-indigo-500" textColor="text-white" rounded="rounded-full" isSmall={false} />
         }
         component={Badge}
       />
@@ -31,6 +31,8 @@ const BadgesPage: FC = () => {
             label="Hello"
             color="bg-indigo-500"
             textColor="text-white"
+            rounded="rounded-full"
+            isSmall={false}
             removeAction={() => null}
           />
         }
@@ -44,6 +46,8 @@ const BadgesPage: FC = () => {
             icon={true}
             color="bg-indigo-500"
             textColor="text-white"
+            rounded="rounded-full"
+            isSmall={false}
             removeAction={() => null}
           />
         }
@@ -57,6 +61,8 @@ const BadgesPage: FC = () => {
             color="bg-red-200"
             borderColor="border border-red-600"
             textColor="text-red-600"
+            rounded="rounded-full"
+            isSmall={false}
           />
         }
         component={Badge}
@@ -69,6 +75,8 @@ const BadgesPage: FC = () => {
             label="Hello"
             borderColor="border border-indigo-500"
             textColor="text-indigo-500"
+            rounded="rounded-full"
+            isSmall={false}
           />
         }
         component={Badge}
@@ -81,6 +89,8 @@ const BadgesPage: FC = () => {
             label="Facebook"
             color="bg-blue-200"
             textColor="text-blue-600"
+            rounded="rounded-full"
+            isSmall={false}
           />
         }
         component={Badge}
@@ -93,6 +103,8 @@ const BadgesPage: FC = () => {
             label="Facebook"
             borderColor="border border-indigo-500"
             textColor="text-indigo-500"
+            rounded="rounded-full"
+            isSmall={false}
           />
         }
         component={Badge}
@@ -106,6 +118,8 @@ const BadgesPage: FC = () => {
             removeAction={() => null}
             borderColor="border border-indigo-500"
             textColor="text-indigo-500"
+            rounded="rounded-full"
+            isSmall={false}
           />
         }
         component={Badge}
@@ -154,6 +168,12 @@ const BadgesPage: FC = () => {
         title="Notification badge with icon"
         element={<NotificationIconBadge />}
         component={NotificationIconBadge}
+      />
+
+      <ComponentLayout
+        title="Light rounded badge"
+        element={<Badge color="bg-purple-600" textColor="text-white" rounded="rounded" label="tag" isSmall={true} isMediumWeight={true} />}
+        component={Badge}
       />
     </AppLayout>
   );
