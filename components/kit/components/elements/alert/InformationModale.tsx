@@ -1,34 +1,26 @@
-import React from "react";
+import React, { ReactNode } from 'react';
 
-const InformationModale = ({ children, withCloseBtn, onClose, withFooter }) => {
-  return (
-    <div className="relative">
-      <div className="h-screen w-full z-10 inset-0 overflow-y-auto">
-        <div className="absolute w-full h-full inset-0 bg-gray-500 opacity-75"></div>
+interface Props {
+    children: ReactNode;
+    withCloseBtn?: boolean;
+    onClose: () => null;
+    withFooter?: boolean;
+}
 
-        <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
-          <span
-            className="hidden sm:inline-block sm:align-middle sm:h-screen"
-            aria-hidden="true"
-          ></span>
+const InformationModale = ({ children, withCloseBtn, onClose, withFooter }: Props) => {
+    return (
+        <div className="relative">
+            <div className="h-screen w-full z-10 inset-0 overflow-y-auto">
+                <div className="absolute w-full h-full inset-0 bg-gray-500 opacity-75"></div>
 
-          <div
-            className="inline-block relative overflow-hidden transform transition-all sm:align-middle sm:max-w-lg"
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="modal-headline"
-          >
-            <div>
-              <div
-                className={`${
-                  withFooter ? "rounded-t-lg" : "rounded-lg"
-                } p-8 bg-white shadow`}
-              >
-                {withCloseBtn && (
-                  <div className="absolute right-4 top-4">
-                    <button
-                      onClick={() => onClose}
-                      className="bg-transparent border border-transparent"
+                <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+                    <span className="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true"></span>
+
+                    <div
+                        className="inline-block relative overflow-hidden transform transition-all sm:align-middle sm:max-w-lg"
+                        role="dialog"
+                        aria-modal="true"
+                        aria-labelledby="modal-headline"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -60,12 +52,8 @@ const InformationModale = ({ children, withCloseBtn, onClose, withFooter }) => {
                     Cancel
                   </button>
                 </div>
-              )}
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  );
+    );
 };
 export default InformationModale;
