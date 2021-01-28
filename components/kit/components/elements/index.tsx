@@ -1,5 +1,5 @@
-import React, { FC } from "react";
-import SectionDesc from "../../../site/section/SectionDesc";
+import React, { FC } from 'react';
+import SectionDesc from '../../../site/section/SectionDesc';
 
 const Elements: FC = () => {
   const elementsSection = [
@@ -47,7 +47,7 @@ const Elements: FC = () => {
     },
   ];
 
-  return <SectionDesc id="elements" items={elementsSection} title="Elements" />;
+    return <SectionDesc id="elements" items={elementsSection} title="Elements" />;
 };
 
 export default Elements;

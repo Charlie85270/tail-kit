@@ -1,22 +1,18 @@
-import React, { FC } from "react";
-import AppLayout from "../../../components/layout/AppLayout";
-import ComponentLayout from "../../../components/layout/ComponentLayout";
-import ClickableBadge from "../../../components/kit/components/elements/badges/ClickableBadge";
-import NotificationBadge from "../../../components/kit/components/elements/badges/NotificationBadge";
-import BadgeList from "../../../components/kit/components/elements/badges/BadgeList";
-import NotificationIconBadge from "../../../components/kit/components/elements/badges/NotificationIconBadge";
-import SectionHeader from "../../../components/site/header/SectionHeader";
-import Badge from "../../../components/kit/components/elements/badges/Badge";
-import ColoredTextAndBadge from "../../../components/kit/components/elements/badges/ColoredTextAndBadge";
+import React, { FC } from 'react';
+import AppLayout from '../../../components/layout/AppLayout';
+import ComponentLayout from '../../../components/layout/ComponentLayout';
+import ClickableBadge from '../../../components/kit/components/elements/badges/ClickableBadge';
+import NotificationBadge from '../../../components/kit/components/elements/badges/NotificationBadge';
+import BadgeList from '../../../components/kit/components/elements/badges/BadgeList';
+import NotificationIconBadge from '../../../components/kit/components/elements/badges/NotificationIconBadge';
+import SectionHeader from '../../../components/site/header/SectionHeader';
+import Badge from '../../../components/kit/components/elements/badges/Badge';
+import ColoredTextAndBadge from '../../../components/kit/components/elements/badges/ColoredTextAndBadge';
 
 const BadgesPage: FC = () => {
-  return (
-    <AppLayout
-      title="Badges free Tailwind components"
-      desc="Badges, Popins... components for tailwind css"
-    >
-      <SectionHeader title="Badges" />
-
+    return (
+        <AppLayout title="Badges free Tailwind components" desc="Badges, Popins... components for tailwind css">
+            <SectionHeader title="Badges" />
       <ComponentLayout
         title="Badge"
         element={
