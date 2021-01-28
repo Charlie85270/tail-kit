@@ -62,7 +62,7 @@ export const IndexPage: FC = () => {
                         </Link>
                     </h3>
                 </div>
-                {!isMobile && <HomeComps />}
+                <div className="z-20">{!isMobile && <HomeComps />}</div>
             </div>
         </HomeLayout>
     );

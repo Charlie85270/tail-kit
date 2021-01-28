@@ -88,7 +88,7 @@ const HomeComps: FC = () => {
                     <div className="col-1 mt-28">
                         <div className="mb-4">
                             <Image
-                                src="/images/sections/homePage.webp"
+                                src="/images/sections/homePage.png"
                                 alt="template picture"
                                 width={600}
                                 height={350}
@@ -96,7 +96,7 @@ const HomeComps: FC = () => {
                         </div>
                         <div className="mb-4">
                             <Image
-                                src="/images/sections/homePage4.webp"
+                                src="/images/sections/homePage4.png"
                                 alt="template landing page"
                                 width={600}
                                 height={350}
@@ -104,7 +104,7 @@ const HomeComps: FC = () => {
                         </div>
                         <div className="mb-4">
                             <Image
-                                src="/images/sections/homePage3.webp"
+                                src="/images/sections/homePage3.png"
                                 alt="template landing page"
                                 width={600}
                                 height={350}
@@ -114,7 +114,7 @@ const HomeComps: FC = () => {
                     <div className="col-1">
                         <div className="mb-4">
                             <Image
-                                src="/images/sections/homePage.webp"
+                                src="/images/sections/homePage.png"
                                 alt="template landing page"
                                 width={600}
                                 height={350}
@@ -122,7 +122,7 @@ const HomeComps: FC = () => {
                         </div>
                         <div className="mb-4">
                             <Image
-                                src="/images/sections/homePage2.webp"
+                                src="/images/sections/homePage2.png"
                                 alt="template landing page"
                                 width={600}
                                 height={350}
@@ -130,7 +130,7 @@ const HomeComps: FC = () => {
                         </div>
                         <div className="mb-4">
                             <Image
-                                src="/images/sections/homePage5.webp"
+                                src="/images/sections/homePage5.png"
                                 alt="template landing page"
                                 width={600}
                                 height={350}
@@ -138,7 +138,7 @@ const HomeComps: FC = () => {
                         </div>
                         <div className="mb-4">
                             <Image
-                                src="/images/sections/folio.webp"
+                                src="/images/sections/folio.png"
                                 alt="template landing page"
                                 width={600}
                                 height={350}

@@ -11,7 +11,7 @@ const AppHeader = (props: Props) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <div className="relative bg-white dark:bg-gray-800 z-40">
+        <div className="relative bg-transparent dark:bg-gray-800 z-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <div className={`flex justify-between items-center  border-gray-100 py-6  md:space-x-10`}>
                     <div className="flex justify-start items-center gap-12">
