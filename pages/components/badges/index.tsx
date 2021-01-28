@@ -174,6 +174,7 @@ const BadgesPage: FC = () => {
         title="Light rounded badge"
         element={<Badge color="bg-purple-600" textColor="text-white" rounded="rounded" label="tag" isSmall={true} isMediumWeight={true} />}
         component={Badge}
+        isNew={true}
       />
     </AppLayout>
   );

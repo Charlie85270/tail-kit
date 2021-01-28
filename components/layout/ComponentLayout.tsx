@@ -7,6 +7,7 @@ import EDITOR_THEME from "../../editorTheme";
 import Link from "next/link";
 import ReactDOMServer from "react-dom/server";
 import Toggle from "../kit/components/form/toggle/Toggle";
+import Badge from "../kit/components/elements/badges/Badge";
 import { formatHtml } from "../../utils/Utils";
 
 interface Props {
@@ -19,6 +20,7 @@ interface Props {
   vertical?: boolean;
   containerClasses?: string;
   fullscreen?: boolean;
+  isNew?: boolean;
 }
 
 enum STATUS {
@@ -102,7 +104,7 @@ const ComponentLayout = (props: Props) => {
     >
       <div className="flex flex-col md:flex-row items-center justify-between bg-white p-4 border rounded-xl">
         <p className="text-xl font-light text-gray-600 mb-2 md:mb-0">
-          {props.title}
+          {props.title} {props.isNew ? <Badge color="bg-green-300" textColor="text-white" rounded="rounded" label="New" isSmall={true} isMediumWeight={true} /> : ''}
         </p>
         <div className="flex items-center flex-row flex-wrap gap-4 justify-center">
           {props.showSwitchMode && (
