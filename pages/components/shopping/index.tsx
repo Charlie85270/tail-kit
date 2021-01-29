@@ -59,6 +59,7 @@ const ShoppingPage: FC = () => {
       />
       <ComponentLayout
         title="Booking"
+        showSwitchMode={true}
         element={<BookingCard />}
         component={BookingCard}
       />
