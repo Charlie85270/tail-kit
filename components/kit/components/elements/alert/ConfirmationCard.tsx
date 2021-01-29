@@ -25,7 +25,7 @@ const ConfirmationCard: FC = () => {
                         <Button color="white" label="Cancel" />
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
     );
 };

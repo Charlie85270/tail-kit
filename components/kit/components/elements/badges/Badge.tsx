@@ -7,13 +7,28 @@ interface Props {
     borderColor?: string;
     label?: string;
     icon?: boolean;
+    rounded?:
+        | 'rounded-none'
+        | 'rounded-sm'
+        | 'rounded'
+        | 'rounded-md'
+        | 'rounded-lg'
+        | 'rounded-xl'
+        | 'rounded-2xl'
+        | 'rounded-3xl'
+        | 'rounded-full';
+    isSmall?: boolean;
+    isMediumWeight?: boolean;
 }
+
 const Badge = (props: Props) => {
     return (
         <span
-            className={`px-4 py-2 ${props.icon ? 'flex items-center' : ''} text-base rounded-full ${
-                props.textColor ? props.textColor : ''
-            } ${props.borderColor ? props.borderColor : ''} ${props.color}`}
+            className={`${props.isSmall ? `px-2 py-1` : `px-4 py-2`} ${
+                props.icon ? 'flex items-center' : ''
+            } text-base ${props.rounded} ${props.textColor ? props.textColor : ''} ${
+                props.borderColor ? props.borderColor : ''
+            } ${props.color} ${props.isMediumWeight ? 'font-medium' : ''}`}
         >
             {props.icon && (
                 <svg
@@ -26,7 +41,7 @@ const Badge = (props: Props) => {
                 >
                     <path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z" />
                 </svg>
-            )}{' '}
+            )}
             {props.label}
             {props.removeAction && (
                 <button className="bg-transparent hover" onClick={props.removeAction}>
@@ -45,4 +60,5 @@ const Badge = (props: Props) => {
         </span>
     );
 };
+
 export default Badge;

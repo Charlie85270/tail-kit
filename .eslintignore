@@ -1,0 +1,8 @@
+./next-end.d.ts
+./next.config.js
+./postcss.config.js
+./tailwind.config.js
+./build
+./node_modules
+./public
+./lib/gtag.js
