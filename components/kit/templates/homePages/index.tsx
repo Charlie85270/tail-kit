@@ -23,7 +23,9 @@ const HomePage = () => {
         },
     ];
 
-    return <SectionDesc hasCommingSoon={true} id="home" items={homeSection} title="Landing page" />;
+    return (
+        <SectionDesc isTemplate={true} hasCommingSoon={true} id="errors" items={homeSection} title="Landing pages" />
+    );
 };
 
 export default HomePage;

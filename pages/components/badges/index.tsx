@@ -177,7 +177,6 @@ const BadgesPage: FC = () => {
                     />
                 }
                 component={Badge}
-                isNew={true}
             />
         </AppLayout>
     );

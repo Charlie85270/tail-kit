@@ -471,7 +471,7 @@ const KpiProject = () => {
                                         Sign in
                                     </p>
                                     <div className="flex items-end space-x-2 my-6">
-                                        <p className="text-5xl text-black dark:text-white font-bold">12</p>
+                                        <p className="text-5xl text-black dark:text-white font-bold">16</p>
                                         <span className="text-red-500 text-xl font-bold flex items-center">
                                             <svg
                                                 width="20"
@@ -553,7 +553,7 @@ const KpiProject = () => {
                                         Sales
                                     </p>
                                     <div className="flex items-end space-x-2 my-6">
-                                        <p className="text-5xl text-black dark:text-white font-bold">12</p>
+                                        <p className="text-5xl text-black dark:text-white font-bold">9</p>
                                         <span className="text-green-500 text-xl font-bold flex items-center">
                                             <svg
                                                 width="20"
@@ -635,7 +635,7 @@ const KpiProject = () => {
                                         Maintenance
                                     </p>
                                     <div className="flex items-end space-x-2 my-6">
-                                        <p className="text-5xl text-black dark:text-white font-bold">12</p>
+                                        <p className="text-5xl text-black dark:text-white font-bold">15</p>
                                         <span className="text-green-500 text-xl font-bold flex items-center">
                                             <svg
                                                 width="20"
