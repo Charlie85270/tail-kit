@@ -5,7 +5,7 @@ const Navigation: FC = () => {
     const formSections = [
         {
             title: 'Headers',
-            items: 9,
+            items: 10,
             img: 'images/sections/header.png',
             link: '/components/header',
         },
@@ -17,7 +17,7 @@ const Navigation: FC = () => {
         },
         {
             title: 'Sidebars',
-            items: 8,
+            items: 9,
             img: 'images/sections/sidebar.png',
             link: '/components/sidebar',
         },

@@ -27,6 +27,8 @@ import TasksList from '../../../components/kit/components/elements/data/TasksLis
 import CalendarCardMonth from '../../../components/kit/components/elements/data/CalendarCardMonth';
 import MessagesList from '../../../components/kit/components/elements/data/MessagesList';
 import LessonsList from '../../../components/kit/components/elements/data/LessonsList';
+import SimpleLevelsCard from '../../../components/kit/components/elements/data/SimpleLevelsCard';
+import ProjectDataCard from '../../../components/kit/components/elements/data/ProjectDataCard';
 
 const DataPage = () => {
     return (
@@ -56,6 +58,21 @@ const DataPage = () => {
                 element={<PopularPerson />}
                 component={PopularPerson}
             />
+
+            <ComponentLayout
+                vertical={false}
+                title="Levels card"
+                showSwitchMode={true}
+                element={<SimpleLevelsCard />}
+                component={SimpleLevelsCard}
+            />
+            <ComponentLayout
+                vertical={false}
+                title="Project data card"
+                showSwitchMode={true}
+                element={<ProjectDataCard />}
+                component={ProjectDataCard}
+            />
             <ComponentLayout
                 vertical={false}
                 title="Simple task card"
@@ -63,6 +80,7 @@ const DataPage = () => {
                 element={<SimpleTask />}
                 component={SimpleTask}
             />
+
             <ComponentLayout
                 vertical={false}
                 title="Tasks card"

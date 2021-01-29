@@ -2,8 +2,8 @@ import React from 'react';
 import AppLayout from '../../../components/layout/AppLayout';
 import SectionHeader from '../../../components/site/header/SectionHeader';
 import ComponentLayout from '../../../components/layout/ComponentLayout';
-import SimpleFolioHome from '../../../components/kit/templates/homePages/folio/SimpleFolioHome';
 import SimpleProjectDashboard from '../../../components/kit/templates/dashboardPages/projectDashboard/SimpleProjectDashboard';
+import KpiProject from '../../../components/kit/templates/dashboardPages/projectDashboard/KpitDashboard';
 
 const DashBoardTemplates = () => {
     return (
@@ -20,6 +20,14 @@ const DashBoardTemplates = () => {
                 title="Simple dashboard"
                 element={<SimpleProjectDashboard />}
                 component={SimpleProjectDashboard}
+            />
+            <ComponentLayout
+                showSwitchMode={true}
+                vertical={true}
+                fullscreen={true}
+                title="Kpi dashboard"
+                element={<KpiProject />}
+                component={KpiProject}
             />
         </AppLayout>
     );

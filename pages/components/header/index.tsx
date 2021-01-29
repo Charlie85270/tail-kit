@@ -5,6 +5,7 @@ import SectionHeader from '../../../components/site/header/SectionHeader';
 import Header from '../../../components/kit/components/navigation/header/Header';
 import SearchHeader from '../../../components/kit/components/navigation/header/SearchHeader';
 import CenterHeader from '../../../components/kit/components/navigation/header/CenterHeader';
+import SimpleSearchHeader from '../../../components/kit/components/navigation/header/SimpleSearchHeader';
 
 const links = [
     {
@@ -178,6 +179,13 @@ const HeaderPage: FC = () => {
                 title="With center title"
                 element={<CenterHeader />}
                 component={CenterHeader}
+            />
+            <ComponentLayout
+                showSwitchMode={true}
+                vertical={true}
+                title="Simple search"
+                element={<SimpleSearchHeader />}
+                component={SimpleSearchHeader}
             />
         </AppLayout>
     );

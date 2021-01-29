@@ -5,6 +5,7 @@ import SectionHeader from '../../../components/site/header/SectionHeader';
 import Sidebar from '../../../components/kit/components/navigation/sidebar/Sidebar';
 import LittleSidebar from '../../../components/kit/components/navigation/sidebar/LittleSidebar';
 import SidebarWithCateg from '../../../components/kit/components/navigation/sidebar/SidebarWithCateg';
+import SideBar2 from '../../../components/kit/components/navigation/sidebar/SideBar2';
 
 const SideBar: FC = () => {
     const headerImg = '/icons/rocket.svg';
@@ -169,6 +170,7 @@ const SideBar: FC = () => {
                 element={<SidebarWithCateg />}
                 component={SidebarWithCateg}
             />
+            <ComponentLayout showSwitchMode={true} title="With gradient" element={<SideBar2 />} component={SideBar2} />
             <ComponentLayout
                 title="Just icon"
                 showSwitchMode={true}
