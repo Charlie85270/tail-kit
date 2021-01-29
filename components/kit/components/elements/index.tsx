@@ -11,7 +11,7 @@ const Elements: FC = () => {
         },
         {
             title: 'Badges',
-            items: 14,
+            items: 15,
             img: 'images/sections/badges.png',
             link: '/components/badges',
         },

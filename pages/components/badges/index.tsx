@@ -13,15 +13,31 @@ const BadgesPage: FC = () => {
     return (
         <AppLayout title="Badges free Tailwind components" desc="Badges, Popins... components for tailwind css">
             <SectionHeader title="Badges" />
-
             <ComponentLayout
                 title="Badge"
-                element={<Badge label="Hello" color="bg-indigo-500" textColor="text-white" />}
+                element={
+                    <Badge
+                        label="Hello"
+                        color="bg-indigo-500"
+                        textColor="text-white"
+                        rounded="rounded-full"
+                        isSmall={false}
+                    />
+                }
                 component={Badge}
             />
             <ComponentLayout
                 title="Badge with remove button"
-                element={<Badge label="Hello" color="bg-indigo-500" textColor="text-white" removeAction={() => null} />}
+                element={
+                    <Badge
+                        label="Hello"
+                        color="bg-indigo-500"
+                        textColor="text-white"
+                        rounded="rounded-full"
+                        isSmall={false}
+                        removeAction={() => null}
+                    />
+                }
                 component={Badge}
             />
             <ComponentLayout
@@ -32,6 +48,8 @@ const BadgesPage: FC = () => {
                         icon={true}
                         color="bg-indigo-500"
                         textColor="text-white"
+                        rounded="rounded-full"
+                        isSmall={false}
                         removeAction={() => null}
                     />
                 }
@@ -45,6 +63,8 @@ const BadgesPage: FC = () => {
                         color="bg-red-200"
                         borderColor="border border-red-600"
                         textColor="text-red-600"
+                        rounded="rounded-full"
+                        isSmall={false}
                     />
                 }
                 component={Badge}
@@ -52,12 +72,29 @@ const BadgesPage: FC = () => {
 
             <ComponentLayout
                 title="Badge line"
-                element={<Badge label="Hello" borderColor="border border-indigo-500" textColor="text-indigo-500" />}
+                element={
+                    <Badge
+                        label="Hello"
+                        borderColor="border border-indigo-500"
+                        textColor="text-indigo-500"
+                        rounded="rounded-full"
+                        isSmall={false}
+                    />
+                }
                 component={Badge}
             />
             <ComponentLayout
                 title="Stroke with icon"
-                element={<Badge icon={true} label="Facebook" color="bg-blue-200" textColor="text-blue-600" />}
+                element={
+                    <Badge
+                        icon={true}
+                        label="Facebook"
+                        color="bg-blue-200"
+                        textColor="text-blue-600"
+                        rounded="rounded-full"
+                        isSmall={false}
+                    />
+                }
                 component={Badge}
             />
             <ComponentLayout
@@ -68,6 +105,8 @@ const BadgesPage: FC = () => {
                         label="Facebook"
                         borderColor="border border-indigo-500"
                         textColor="text-indigo-500"
+                        rounded="rounded-full"
+                        isSmall={false}
                     />
                 }
                 component={Badge}
@@ -81,6 +120,8 @@ const BadgesPage: FC = () => {
                         removeAction={() => null}
                         borderColor="border border-indigo-500"
                         textColor="text-indigo-500"
+                        rounded="rounded-full"
+                        isSmall={false}
                     />
                 }
                 component={Badge}
@@ -121,6 +162,22 @@ const BadgesPage: FC = () => {
                 title="Notification badge with icon"
                 element={<NotificationIconBadge />}
                 component={NotificationIconBadge}
+            />
+
+            <ComponentLayout
+                title="Light rounded badge"
+                element={
+                    <Badge
+                        color="bg-purple-600"
+                        textColor="text-white"
+                        rounded="rounded"
+                        label="tag"
+                        isSmall={true}
+                        isMediumWeight={true}
+                    />
+                }
+                component={Badge}
+                isNew={true}
             />
         </AppLayout>
     );
