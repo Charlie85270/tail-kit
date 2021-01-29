@@ -5,7 +5,7 @@ const BookingCard: FC = () => {
     <div className="lg:flex  max-w-2xl mx-auto overflow-hidden rounded-lg dark:text-gray-50 dark:bg-gray-900 shadow-lg">
       <img
         className="lg:w-1/3 w-full lg:h-auto h-48  object-cover"
-        src="https://images.unsplash.com/photo-1611608822765-9a15c4aa3f63?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1275&q=80"
+        src="/images/landscape/9.jpg"
       />
 
       <div>
