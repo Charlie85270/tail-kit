@@ -43,7 +43,7 @@ const DropD = (props: Props) => {
                 ref={selectButton}
                 type="button"
                 onClick={() => setIsSectionOpen(!isSectionOpen)}
-                className="group rounded-md text-gray-800 dark:text-white inline-flex items-center text-base font-normal hover:text-black dark:hover:text-gray-50 text-xl"
+                className="group rounded-md text-gray-800 dark:text-white inline-flex items-center text-base font-light hover:text-black dark:hover:text-gray-50 text-xl"
             >
                 <span>{props.label}</span>
 
@@ -68,11 +68,11 @@ const DropD = (props: Props) => {
                             {props.links.map((entry) => {
                                 return (
                                     <Link href={entry.link} key={entry.label}>
-                                        <a className="-m-3 py-2 flex items-center text-indigo-600 hover:bg-gray-50">
+                                        <a className="-m-3 py-2 flex items-center hover:text-indigo-600  text-gray-900">
                                             {entry.icon}
 
                                             <div className="font-normal">
-                                                <p className="text-lg text-gray-900">{entry.label}</p>
+                                                <p className="text-lg">{entry.label}</p>
                                                 <p className="text-xs mt-0 text-gray-400">{entry.desc}</p>
                                             </div>
                                         </a>
