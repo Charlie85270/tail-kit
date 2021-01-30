@@ -19,7 +19,7 @@ const InfoNumberCard3: FC = () => {
             </div>
             <div className="flex flex-col justify-start">
                 <p className="text-gray-700 dark:text-gray-100 text-4xl text-left font-bold my-4">
-                    3,4500<span className="text-sm">$</span>
+                    34,500<span className="text-sm">$</span>
                 </p>
                 <div className="flex items-center text-green-500 text-sm">
                     <svg
