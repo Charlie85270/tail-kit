@@ -11,14 +11,14 @@ const Toggle = (props: Props) => {
     const [id] = useState(_uniqueId('prefix-'));
     return (
         <div>
-            <div className="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in focus-within:ring-2 focus-within:ring-black focus-within:outline-none focus-within:ring-offset-2	 rounded-full">
+            <div className="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in rounded-full">
                 <input
                     type="checkbox"
                     name="toggle"
                     id={id}
                     checked={props.check}
                     onChange={(e) => props.onChange(e.target.checked)}
-                    className="right-4 checked:right-0 duration-200 ease-in checked:bg-blue-600 absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer outline-none"
+                    className="right-4 checked:right-0 duration-200 ease-in checked:bg-blue-600 absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"
                 />
                 <label htmlFor={id} className="block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer" />
             </div>
