@@ -5,6 +5,7 @@ import SectionHeader from '../../../components/site/header/SectionHeader';
 import InputText from '../../../components/kit/components/form/inputtext/InputText';
 import InputArea from '../../../components/kit/components/form/inputtext/InputArea';
 import InputGroup from '../../../components/kit/components/form/inputtext/InputGroup';
+import { TimePicker } from '../../../components/kit/components/form/dateTimePicker/TimePicker';
 
 const InputTextPage: FC = () => {
     return (
@@ -101,6 +102,7 @@ const InputTextPage: FC = () => {
             />
             <ComponentLayout title="Group" element={<InputGroup />} component={InputText} />
             <ComponentLayout title="textarea" element={<InputArea />} component={InputArea} />
+            <ComponentLayout title="Time Picker" element={<TimePicker />} component={TimePicker} />
         </AppLayout>
     );
 };
