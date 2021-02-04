@@ -102,7 +102,7 @@ const InputTextPage: FC = () => {
             />
             <ComponentLayout title="Group" element={<InputGroup />} component={InputText} />
             <ComponentLayout title="textarea" element={<InputArea />} component={InputArea} />
-            <ComponentLayout title="timePicker" element={<TimePicker />} component={TimePicker} />
+            <ComponentLayout title="Time Picker" element={<TimePicker />} component={TimePicker} />
         </AppLayout>
     );
 };
