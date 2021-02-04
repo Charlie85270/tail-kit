@@ -11,7 +11,7 @@ const Toggle = (props: Props) => {
     const [id] = useState(_uniqueId('prefix-'));
     return (
         <div>
-            <div className="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in rounded-full">
+            <div className="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
                 <input
                     type="checkbox"
                     name="toggle"
