@@ -52,13 +52,13 @@ const MultipleToggle = (props: Props) => {
             {colors.map((color) => {
                 return (
                     <div key={color.label} className="mb-3">
-                        <div className="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+                        <div className="relative inline-block w-10 mr-2 align-middle select-none">
                             <input
                                 type="checkbox"
                                 name="toggle"
                                 id={color.label}
                                 onChange={(e) => props.onChange(e.target.checked)}
-                                className={`${color.color} focus:outline-none checked:right-0 absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer`}
+                                className={`${color.color} outline-none focus:outline-none right-4 checked:right-0 duration-200 ease-in absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer`}
                             />
                             <label
                                 htmlFor={color.label}
