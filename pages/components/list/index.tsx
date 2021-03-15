@@ -41,7 +41,8 @@ const ListPages: FC = () => {
             />
             <ComponentLayout
                 showSwitchMode={true}
-                title="With desc and action "
+                title="With desc and action"
+                withPub
                 element={<BlockList withDesc={true} withAction={true} />}
                 component={BlockList}
             />

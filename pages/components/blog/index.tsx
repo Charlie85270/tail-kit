@@ -60,6 +60,7 @@ const BlogPage = () => {
             <ComponentLayout
                 vertical={false}
                 showSwitchMode={true}
+                withPub
                 title="With author"
                 element={
                     <BlogCard

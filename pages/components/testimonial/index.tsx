@@ -37,6 +37,7 @@ const ComponentsPage: FC = () => {
                 vertical={true}
                 element={<BigTestimonial />}
                 component={BigTestimonial}
+                withPub
             />
             <ComponentLayout
                 title="Big with image on left"

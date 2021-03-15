@@ -27,6 +27,7 @@ const TablesPage: FC = () => {
             <ComponentLayout
                 title="With header"
                 vertical={true}
+                withPub
                 element={<ComplexTable withAction={true} withHeader={true} withPager={true} />}
                 component={ComplexTable}
             />

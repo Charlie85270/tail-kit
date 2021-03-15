@@ -60,6 +60,7 @@ const ComponentsPage: FC = () => {
                 vertical={true}
                 showSwitchMode={true}
                 title="With image"
+                withPub
                 element={
                     <SimpleTextCta
                         isLeft={true}
@@ -105,6 +106,7 @@ const ComponentsPage: FC = () => {
                 vertical={true}
                 showSwitchMode={true}
                 title="Multiple images cta"
+                withPub
                 element={
                     <MultipleImagesCta
                         title="Mother hearth host your travel"

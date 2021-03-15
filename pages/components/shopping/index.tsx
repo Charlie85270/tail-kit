@@ -25,6 +25,7 @@ const ShoppingPage: FC = () => {
                 showSwitchMode={true}
                 element={<ClassicShoppingCard />}
                 component={ClassicShoppingCard}
+                withPub
             />
             <ComponentLayout title="Shopping" element={<ShoppingDetailsCard />} component={ShoppingDetailsCard} />
             <ComponentLayout showSwitchMode={true} title="Shipped" element={<ShippedCard />} component={ShippedCard} />

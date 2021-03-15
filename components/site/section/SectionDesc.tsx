@@ -60,18 +60,32 @@ const SectionDesc = ({ title, items, id, hasCommingSoon, isTemplate }: Props) =>
                         </div>
                     );
                 })}
-                {hasCommingSoon && (
-                    <div className="opacity-50 border border rounded-lg w-full sm:w-1/3 m-2 md:m-0  md:w-1/5">
-                        <div className="">
-                            <img
-                                src="/images/sections/coming.gif"
-                                alt="coming soon"
-                                className="rounded-lg w-full object-cover w-60 md:h-36 opacity-90 hover:opacity-100"
-                            />
-                            <p className="text-gray-700 text-sm p-2">More items will coming soon...</p>
+                <>
+                    {hasCommingSoon && (
+                        <div className="opacity-50 border border rounded-lg w-full sm:w-1/3 m-2 md:m-0  md:w-1/5">
+                            <div className="">
+                                <img
+                                    src="/images/sections/coming.gif"
+                                    alt="coming soon"
+                                    className="rounded-lg w-full object-cover w-60 md:h-36 opacity-90 hover:opacity-100"
+                                />
+                                <p className="text-gray-700 text-sm p-2">More items will coming soon...</p>
+                            </div>
                         </div>
+                    )}
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <div className="opacity-100 rounded-lg w-full sm:w-1/3 m-2 md:m-0  md:w-1/5">
+                        <ins
+                            className="adsbygoogle"
+                            style={{ display: 'block' }}
+                            data-ad-client="ca-pub-9198515375847190"
+                            data-ad-slot="5242587151"
+                            data-ad-format="auto"
+                            data-full-width-responsive="true"
+                        ></ins>
+                        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
                     </div>
-                )}
+                </>
             </div>
         </div>
     );

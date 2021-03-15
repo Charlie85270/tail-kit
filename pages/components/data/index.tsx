@@ -52,6 +52,7 @@ const DataPage = () => {
                 component={InfoNumberCard3}
             />
             <ComponentLayout
+                withPub
                 vertical={false}
                 showSwitchMode={true}
                 title="People card"
@@ -90,6 +91,7 @@ const DataPage = () => {
             />
 
             <ComponentLayout
+                withPub
                 vertical={false}
                 showSwitchMode={true}
                 title="Details task card"
@@ -139,6 +141,7 @@ const DataPage = () => {
                 component={CalendarCardMonth}
             />
             <ComponentLayout
+                withPub
                 vertical={false}
                 showSwitchMode={true}
                 title="Calendar event card"
@@ -182,6 +185,7 @@ const DataPage = () => {
             />
             <ComponentLayout
                 vertical={false}
+                withPub
                 title="Bitcoin card"
                 element={<InfoNumberCard2 />}
                 component={InfoNumberCard2}

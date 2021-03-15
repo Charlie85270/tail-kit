@@ -42,6 +42,7 @@ const ComponentsPage: FC = () => {
             />
             <ComponentLayout
                 title="Icon button"
+                withPub
                 element={
                     <Button
                         icon={
@@ -172,6 +173,7 @@ const ComponentsPage: FC = () => {
                 component={Button}
             />
             <ComponentLayout
+                withPub
                 title="GitHub button"
                 element={
                     <Button
@@ -238,6 +240,7 @@ const ComponentsPage: FC = () => {
                 component={SquareButton}
             />
             <ComponentLayout
+                withPub
                 title="With variant background"
                 element={<SquareButton color="variant" label="Free space" />}
                 component={SquareButton}

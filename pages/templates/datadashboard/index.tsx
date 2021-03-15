@@ -18,6 +18,7 @@ const dDtadashboardTemplates = () => {
                 fullscreen={true}
                 title="Kpi dashboard"
                 element={<KpiProject />}
+                withPub
                 component={KpiProject}
             />
         </AppLayout>

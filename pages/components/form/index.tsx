@@ -50,6 +50,7 @@ const TogglePage: FC = () => {
             />
             <ComponentLayout
                 vertical={true}
+                withPub
                 title="Login with background"
                 element={<LoginWithBackground />}
                 component={LoginWithBackground}

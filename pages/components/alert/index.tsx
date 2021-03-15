@@ -53,6 +53,7 @@ const AlertPage: FC = () => {
             />
 
             <ComponentLayout
+                withPub
                 vertical={true}
                 title="Cookie alert"
                 showSwitchMode={true}
@@ -119,6 +120,7 @@ const AlertPage: FC = () => {
                 component={InformationModale}
             />
             <ComponentLayout
+                withPub
                 vertical={true}
                 title="Modale with footer actions"
                 element={

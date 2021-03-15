@@ -121,6 +121,7 @@ const SideBar: FC = () => {
                 showSwitchMode={true}
                 element={<Sidebar links={linksWithIcons} />}
                 component={Sidebar}
+                withPub
             />
 
             <ComponentLayout

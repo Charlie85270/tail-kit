@@ -36,6 +36,7 @@ const ComponentsPage: FC = () => {
                 showSwitchMode={true}
                 title="Pricing card 3"
                 element={<PricingCard3 />}
+                withPub
                 component={PricingCard3}
             />
             <ComponentLayout
@@ -72,6 +73,7 @@ const ComponentsPage: FC = () => {
             />
             <ComponentLayout
                 showSwitchMode={true}
+                withPub
                 vertical={true}
                 title="Pricing card 9"
                 element={<PricingCard9 />}

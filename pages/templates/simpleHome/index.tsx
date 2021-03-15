@@ -27,6 +27,7 @@ const HomePage = () => {
                 title="Watch landing page"
                 element={<WatchLandingPage />}
                 component={WatchLandingPage}
+                withPub
             />
             <ComponentLayout vertical={true} title="NextJS landing page" element={<NextJs />} component={NextJs} />
         </AppLayout>

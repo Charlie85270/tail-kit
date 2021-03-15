@@ -84,6 +84,7 @@ const BadgesPage: FC = () => {
                 component={Badge}
             />
             <ComponentLayout
+                withPub
                 title="Stroke with icon"
                 element={
                     <Badge
@@ -155,6 +156,7 @@ const BadgesPage: FC = () => {
 
             <ComponentLayout
                 title="Notification badge"
+                withPub
                 element={<NotificationBadge number={2} />}
                 component={NotificationBadge}
             />

@@ -92,6 +92,7 @@ const HeaderPage: FC = () => {
             />
             <ComponentLayout
                 vertical={true}
+                withPub
                 title="With profile ddm"
                 containerClasses="pb-32"
                 jsLink="https://github.com/Charlie85270/tail-kit/blob/main/components/kit/components/elements/ddm/DropDownMenu.tsx"

@@ -43,6 +43,7 @@ const ProgressPage = () => {
                 component={ProgressBar}
             />
             <ComponentLayout
+                withPub
                 vertical={true}
                 title="With badge"
                 element={
