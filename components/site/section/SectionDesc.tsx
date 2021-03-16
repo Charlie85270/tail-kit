@@ -24,7 +24,7 @@ const SectionDesc = ({ title, items, id, hasCommingSoon, isTemplate }: Props) =>
         <div className="mb-8" id={id}>
             <h1 className="w-full text-left text-2xl font-light mb-4 text-gray-600">{title}</h1>
 
-            <div className="flex w-full gap-0 md:gap-4 flex-wrap justify-evenly md:justify-start items-center">
+            <div className="flex w-full gap-0 md:gap-4 flex-wrap justify-evenly md:justify-start items-center mb-4">
                 {items.map((section) => {
                     return (
                         <div
