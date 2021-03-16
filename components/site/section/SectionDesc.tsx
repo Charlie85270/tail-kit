@@ -74,12 +74,9 @@ const SectionDesc = ({ title, items, id, hasCommingSoon, isTemplate }: Props) =>
                             </div>
                         </div>
                     )}
-
-                    <div className="opacity-100 rounded-lg w-full sm:w-1/3 m-2 md:m-0  md:w-1/5">
-                        <SquarePub />
-                    </div>
                 </>
             </div>
+            <SquarePub />
         </div>
     );
 };
