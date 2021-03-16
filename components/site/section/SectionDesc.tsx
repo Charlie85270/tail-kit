@@ -9,6 +9,7 @@ interface Props {
     id: string;
     isTemplate?: boolean;
     hasCommingSoon?: boolean;
+    withPub?: boolean;
 }
 
 interface section {
@@ -19,7 +20,7 @@ interface section {
     isNew?: boolean;
 }
 
-const SectionDesc = ({ title, items, id, hasCommingSoon, isTemplate }: Props) => {
+const SectionDesc = ({ title, items, id, hasCommingSoon, isTemplate, withPub }: Props) => {
     return (
         <div className="mb-8" id={id}>
             <h1 className="w-full text-left text-2xl font-light mb-4 text-gray-600">{title}</h1>
@@ -76,7 +77,7 @@ const SectionDesc = ({ title, items, id, hasCommingSoon, isTemplate }: Props) =>
                     )}
                 </>
             </div>
-            <SquarePub />
+            {withPub && <SquarePub />}
         </div>
     );
 };

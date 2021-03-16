@@ -23,7 +23,7 @@ const Navigation: FC = () => {
         },
     ];
 
-    return <SectionDesc id="navigation" items={formSections} title="Navigation" />;
+    return <SectionDesc id="navigation" withPub items={formSections} title="Navigation" />;
 };
 
 export default Navigation;

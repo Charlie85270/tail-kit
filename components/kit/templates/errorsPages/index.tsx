@@ -11,7 +11,16 @@ const ErrorPages = () => {
         },
     ];
 
-    return <SectionDesc isTemplate={true} hasCommingSoon={true} id="home" items={homeSection} title="Errors pages" />;
+    return (
+        <SectionDesc
+            isTemplate={true}
+            withPub
+            hasCommingSoon={true}
+            id="home"
+            items={homeSection}
+            title="Errors pages"
+        />
+    );
 };
 
 export default ErrorPages;
