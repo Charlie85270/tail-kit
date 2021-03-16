@@ -8,6 +8,7 @@ import Link from 'next/link';
 import ReactDOMServer from 'react-dom/server';
 import Toggle from '../kit/components/form/toggle/Toggle';
 import { formatHtml } from '../../utils/Utils';
+import AdBanner from '../site/Pub/Banner';
 
 interface Props {
     element: JSX.Element;
@@ -217,15 +218,7 @@ const ComponentLayout = (props: Props) => {
                         <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
                     </div>
                     <div className="p-4">
-                        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                        <ins
-                            className="adsbygoogle"
-                            style={{ display: 'block' }}
-                            data-ad-format="fluid"
-                            data-ad-layout-key="-6t+ed+2i-1n-4w"
-                            data-ad-client="ca-pub-9198515375847190"
-                            data-ad-slot="5049524770"
-                        ></ins>
+                        <AdBanner />
                     </div>
                 </div>
             )}

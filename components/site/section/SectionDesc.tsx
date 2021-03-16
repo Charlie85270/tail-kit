@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Badge from '../../kit/components/elements/badges/Badge';
+import SquarePub from '../Pub/SquarePub';
 
 interface Props {
     items: section[];
@@ -73,17 +74,9 @@ const SectionDesc = ({ title, items, id, hasCommingSoon, isTemplate }: Props) =>
                             </div>
                         </div>
                     )}
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
                     <div className="opacity-100 rounded-lg w-full sm:w-1/3 m-2 md:m-0  md:w-1/5">
-                        <ins
-                            className="adsbygoogle"
-                            style={{ display: 'block' }}
-                            data-ad-client="ca-pub-9198515375847190"
-                            data-ad-slot="5242587151"
-                            data-ad-format="auto"
-                            data-full-width-responsive="true"
-                        ></ins>
-                        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                        <SquarePub />
                     </div>
                 </>
             </div>
