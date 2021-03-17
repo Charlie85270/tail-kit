@@ -29,7 +29,7 @@ const Forms: FC = () => {
         },
     ];
 
-    return <SectionDesc id="forms" withPub items={formSections} title="Forms" />;
+    return <SectionDesc id="forms" items={formSections} title="Forms" />;
 };
 
 export default Forms;
