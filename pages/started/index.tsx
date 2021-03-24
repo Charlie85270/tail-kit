@@ -3,6 +3,7 @@ import AppLayout from '../../components/layout/AppLayout';
 import { LiveProvider, LiveEditor } from 'react-live';
 import EDITOR_THEME from '../../editorTheme';
 import Link from 'next/link';
+import SquarePub from '../../components/site/Pub/SquarePub';
 
 const confCode = `module.exports = {
   important: true,
@@ -98,6 +99,7 @@ const StartedPage: FC = () => {
                             </a>
                         </Link>
                     </div>
+                    <SquarePub />
                 </div>
             </div>
             <div className="pb-10 border-b border-gray-200 mb-10 text-lg text-gray-500" id="configuration">
