@@ -4,7 +4,7 @@ import SimpleLevelsCard from '../../../components/elements/data/SimpleLevelsCard
 
 const KpiProject = () => {
     return (
-        <main className="bg-gray-100 dark:bg-gray-800 relative h-screen overflow-hidden relative">
+        <main className="bg-gray-100 dark:bg-gray-800 h-screen overflow-hidden relative">
             <div className="flex items-start justify-between">
                 <div className="h-screen hidden lg:block shadow-lg relative w-80">
                     <div className="bg-white h-full dark:bg-gray-700">
