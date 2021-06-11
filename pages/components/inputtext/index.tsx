@@ -6,6 +6,8 @@ import InputText from '../../../components/kit/components/form/inputtext/InputTe
 import InputArea from '../../../components/kit/components/form/inputtext/InputArea';
 import InputGroup from '../../../components/kit/components/form/inputtext/InputGroup';
 import { TimePicker } from '../../../components/kit/components/form/dateTimePicker/TimePicker';
+import { DatePicker } from '../../../components/kit/components/form/dateTimePicker/DatePicker';
+import { DateTimePicker } from '../../../components/kit/components/form/dateTimePicker/DateTimePicker';
 
 const InputTextPage: FC = () => {
     return (
@@ -104,6 +106,13 @@ const InputTextPage: FC = () => {
             <ComponentLayout title="Group" element={<InputGroup />} component={InputText} />
             <ComponentLayout title="textarea" element={<InputArea />} component={InputArea} />
             <ComponentLayout title="Time Picker" element={<TimePicker />} component={TimePicker} />
+            <ComponentLayout title="Date Picker" element={<DatePicker />} component={DatePicker} showSwitchMode />
+            <ComponentLayout
+                title="DateTime Picker"
+                element={<DateTimePicker />}
+                component={DateTimePicker}
+                showSwitchMode
+            />
         </AppLayout>
     );
 };

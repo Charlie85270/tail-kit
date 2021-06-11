@@ -5,7 +5,7 @@ const Forms: FC = () => {
     const formSections = [
         {
             title: 'Inputs',
-            items: 10,
+            items: 14,
             img: 'images/sections/input.png',
             link: '/components/inputtext',
         },
