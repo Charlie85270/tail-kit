@@ -6,9 +6,9 @@ const SimpleTeams = () => {
         <div className="p-8 bg-white dark:bg-gray-800 rounded-lg shadow">
             <p className="text-center text-3xl font-bold text-gray-800 dark:text-white">Professional team</p>
             <p className="text-center mb-12 text-xl font-normal text-gray-500 dark:text-gray-200">
-                Meat the best team in wolrd
+                Meet the best team in world
             </p>
-            <div className="flex items-center flex-col md:flex-row justify evenly">
+            <div className="flex items-center flex-col md:flex-row justify-evenly">
                 <SimpleTeam
                     img="/images/person/1.jpg"
                     name="Patrick Sebastien"
