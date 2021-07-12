@@ -17,7 +17,7 @@ Tailwind Starter Kit comes with 230+ Fully Coded CSS elements.
 
 ## Templates
 
-Tailwind Starter Kit contains many templates like dashboards, landing pages, login pages ect. All are fully Coded and ready to copy paste.
+Tailwind Starter Kit contains many templates like dashboards, landing pages, login pages etc. All are fully Coded and ready to copy paste.
 
 ![Tailwind-Kit](https://www.tailwind-kit.com/dashboard.png)
 
