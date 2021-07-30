@@ -68,7 +68,7 @@ const GoogleTask: FC = () => {
                     PROGRESS
                 </span>
                 <span className="px-2 py-1 flex items-center font-semibold text-xs rounded-md text-red-400 border border-red-400  bg-white">
-                    HIGHT PRIORITY
+                    HIGH PRIORITY
                 </span>
             </div>
 
