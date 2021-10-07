@@ -36,7 +36,7 @@ const MessagesList: FC = () => {
                     <div className="flex flex-col">
                         <span className="text-sm text-gray-900 font-semibold dark:text-white ml-2">Ivan Buck</span>
                         <span className="text-sm text-gray-400 dark:text-gray-300 ml-2">
-                            Seriously ? haha Bob is not a children !
+                            Seriously ? haha Bob is not a child !
                         </span>
                     </div>
                 </li>
@@ -45,7 +45,7 @@ const MessagesList: FC = () => {
 
                     <div className="flex flex-col">
                         <span className="text-sm text-gray-900 font-semibold dark:text-white ml-2">Marina Farga</span>
-                        <span className="text-sm text-gray-400 dark:text-gray-300 ml-2">Do you need that deisgn ?</span>
+                        <span className="text-sm text-gray-400 dark:text-gray-300 ml-2">Do you need that design ?</span>
                     </div>
                 </li>
             </ul>
