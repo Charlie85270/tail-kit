@@ -35,7 +35,6 @@ const Elements: FC = () => {
         },
         {
             title: 'Dashboards',
-            isNew: true,
             items: 26,
             img: 'images/sections/data.png',
             link: '/components/data',
@@ -45,6 +44,13 @@ const Elements: FC = () => {
             items: 5,
             img: 'images/sections/progress.png',
             link: '/components/progress',
+        },
+        {
+            title: 'Skeleton',
+            isNew: true,
+            items: 3,
+            img: 'images/sections/skeleton.png',
+            link: '/components/skeleton',
         },
     ];
 

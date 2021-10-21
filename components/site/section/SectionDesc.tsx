@@ -30,15 +30,17 @@ const SectionDesc = ({ title, items, id, hasCommingSoon, isTemplate, withPub }: 
                     return (
                         <div
                             key={section.title}
-                            className="border rounded-lg relative w-full sm:w-1/3 m-2 md:m-0  md:w-1/5"
+                            className={`${
+                                section.isNew ? 'border-2 border-green-500' : 'border'
+                            } rounded-lg relative w-full sm:w-1/3 m-2 md:m-0  md:w-1/5`}
                         >
                             {section.isNew && (
-                                <div className="absolute z-20 top-4 right-4">
+                                <div className="absolute z-20 -top-3 -right-4">
                                     <Badge
                                         color="bg-green-500"
                                         textColor="text-white"
                                         rounded="rounded"
-                                        label="New items"
+                                        label="New !"
                                         isSmall={true}
                                         isMediumWeight={true}
                                     />
