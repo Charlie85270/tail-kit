@@ -10,6 +10,7 @@ import ListPage from '../../components/kit/components/list';
 const ComponentsPage: FC = () => {
     return (
         <AppLayout
+            withPub
             title="Tailwind UI KIT – Components section for React, VueJS and Angular."
             desc="Over 200 free and open source components for tailwind css, with live code edition to build beautiful UI"
         >

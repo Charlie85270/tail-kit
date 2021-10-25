@@ -1,6 +1,7 @@
 import FooterLight from '../kit/components/navigation/footer/FooterLight';
 import Meta from '../site/Meta';
 import AppHeader from '../site/header/AppHeader';
+import AdBanner from '../site/Pub/Banner';
 
 const footerLink = [
     {
@@ -71,20 +72,26 @@ export const menuTemplates = [
 interface Props {
     title: string;
     desc: string;
+    withPub?: boolean;
     children: React.ReactNode;
 }
 
-const AppLayout = ({ title, desc, children }: Props) => {
+const AppLayout = ({ title, desc, children, withPub }: Props) => {
     return (
         <div className="relative bg-white ">
             <Meta pageTitle={title} description={desc} />
             <div className="mx-auto h-full" style={{ minHeight: 85 + 'vh' }}>
-                <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:w-full lg:pb-28 xl:pb-32 h-full">
+                <div className="relative z-10 pb-8 bg-white overflow-hidden sm:pb-16 md:pb-20 lg:w-full lg:pb-28 xl:pb-32 h-full">
                     <div className="dark">
                         <AppHeader />
                     </div>
 
                     <main className="mx-auto max-w-7xl px-4 mt-8 sm:px-6  lg:px-8 h-full">{children}</main>
+                    {withPub && (
+                        <div className="px-2 mt-8 w-60 right-0 top-0 pr-4 pt-32 xs:hidden 2xl:absolute">
+                            <AdBanner isVertical />
+                        </div>
+                    )}
                 </div>
             </div>
             <div className="dark">
