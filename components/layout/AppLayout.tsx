@@ -86,9 +86,9 @@ const AppLayout = ({ title, desc, children, withPub }: Props) => {
                         <AppHeader />
                     </div>
 
-                    <main className="mx-auto max-w-7xl px-4 mt-8 sm:px-6  lg:px-8 h-full">{children}</main>
+                    <main className="mx-auto max-w-6xl px-4 mt-8 sm:px-6  lg:px-8 h-full">{children}</main>
                     {withPub && (
-                        <div className="px-2 mt-8 w-60 right-0 top-0 pr-4 pt-32 xs:hidden 2xl:absolute">
+                        <div className="px-2 mt-8 w-80 right-0 top-0 pr-4 pt-32 xs:hidden 2xl:absolute">
                             <AdBanner isVertical />
                         </div>
                     )}
