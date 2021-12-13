@@ -1,4 +1,5 @@
-const EDITOR_THEME: any = { //eslint-disable-line
+const EDITOR_THEME: any = {
+    //eslint-disable-line
     plain: {
         color: '#9CDCFE',
         backgroundColor: '#1E1E1E',
