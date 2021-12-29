@@ -69,9 +69,10 @@ Tail-Kit is a static site build with [Next.js](https://nextjs.org/) and typescri
 
 ### Prerequisites
 
-Node.js 10.13 or later
+Node.js 10.13 - 14.18.2
 
-Recommended : **Node v16.13.0** We also support Volta and/or Nodenv
+Recommended : **Node v14.18.2** We also support Volta and/or Nodenv
+Newer versions of Node break current Webpack 4.
 
 Install dependencies:
 
@@ -328,6 +329,9 @@ Shows that
 [react-simple-code-editor v0.11.0](https://www.npmjs.com/package/react-simple-code-editor)
 prevents React from upgrading to the latest version.
 When you upgrade this, you can then remove *acorn* from package.json
+
+[Newer autoprefixer](https://github.com/vercel/next.js/issues/17236)
+breaks current PostCSS.
 
 This readme is linted with
 [markdownlint](https://github.com/igorshubovych/markdownlint-cli)

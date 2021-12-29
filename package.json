@@ -11,11 +11,11 @@
         "prettier": "prettier --check *.{js,ts,tsx} components/**/*.tsx lib/**/*.js pages/**/*.tsx utils/**/*.ts"
     },
     "devDependencies": {
-        "acorn": "6.4.2",
         "@types/node": "^16.11.12",
         "@types/react": "^17.0.37",
         "@typescript-eslint/eslint-plugin": "^5.6.0",
         "@typescript-eslint/parser": "^5.6.0",
+        "acorn": "6.4.2",
         "eslint": "^8.4.1",
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-prettier": "^4.0.0",
@@ -25,12 +25,11 @@
         "typescript": "^4.5.3"
     },
     "dependencies": {
-        "@next/bundle-analyzer": "^12.0.7",
+        "@next/bundle-analyzer": "^10.0.4",
         "autoprefixer": "^10.4.0",
         "lodash": "^4.17.21",
         "next": "^9.5.5",
         "postcss": "^8.4.4",
-        "postcss-import": "^14.0.2",
         "react": "^16.12.0",
         "react-device-detect": "^2.1.2",
         "react-dom": "^16.12.0",
@@ -38,7 +37,7 @@
         "tailwindcss": "^3.0.1"
     },
     "volta": {
-        "node": "16.13.0",
+        "node": "14.18.2",
         "yarn": "1.22.17"
     }
 }
