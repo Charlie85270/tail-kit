@@ -336,6 +336,9 @@ breaks current PostCSS.
 This readme is linted with
 [markdownlint](https://github.com/igorshubovych/markdownlint-cli)
 
+Upgrading `@next/bundle-analyzer` beyond v10 forces an upgrade of Webpack v4.
+This will lead to a world of hurt. It also limits us to Node.js v14
+
 ## Licensing
 
 - Copyright 2020 - 2022 Charlie Rabiller</a>
