@@ -7,7 +7,7 @@
         "dev": "next dev",
         "build": "next build && next export",
         "start": "next start",
-        "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+        "lint": "eslint components/**/*.tsx lib/**/*.js pages/**/*.tsx utils/**/*.ts --quiet --fix",
         "prettier": "prettier --check *.{js,ts,tsx} components/**/*.tsx lib/**/*.js pages/**/*.tsx utils/**/*.ts"
     },
     "devDependencies": {
