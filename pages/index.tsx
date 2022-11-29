@@ -17,7 +17,7 @@ export const IndexPage: FC = () => {
                             <br />
                             for Tailwind CSS <span className="text-green-500 text-8xl">3.0</span>
                             <span className="text-lg font-normal text-green-500">
-                                Tail-kit now support tailwind CC v3 !
+                                Tail-kit now support tailwind CSS v3 !
                             </span>
                         </span>
                     </h1>
