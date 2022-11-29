@@ -47,10 +47,16 @@ const Elements: FC = () => {
         },
         {
             title: 'Skeleton',
-            isNew: true,
             items: 3,
             img: 'images/sections/skeleton.png',
             link: '/components/skeleton',
+        },
+        {
+            title: 'Tabs',
+            isNew: true,
+            items: 3,
+            img: 'images/sections/tabs.png',
+            link: '/components/tabs',
         },
     ];
 
