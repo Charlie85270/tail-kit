@@ -2,16 +2,16 @@ import React, { FC } from 'react';
 import Avatar from '../avatars/Avatar';
 const VideoDetailsCard: FC = () => {
     return (
-        <div className="p-4 bg-white shadow-xl max-w-xl rounded-xl flex justify-start dark:bg-gray-800 md:flex-row flex-col gap-4">
+        <div className="flex flex-col justify-start max-w-xl gap-4 p-4 bg-white shadow-xl rounded-xl dark:bg-gray-800 md:flex-row">
             <div className="relative">
-                <img src="/images/landscape/1.jpg" className="rounded-xl w-full md:w-auto md:max-h-40" />
-                <span className="px-2 py-1 text-white bg-gray-700 text-xs rounded absolute right-2 bottom-2 bg-opacity-50">
+                <img src="/images/landscape/1.jpg" className="w-full rounded-xl md:w-auto md:max-h-40" />
+                <span className="absolute px-2 py-1 text-xs text-white rounded bg-gray-700/50 right-2 bottom-2">
                     7 min
                 </span>
             </div>
 
             <div className="flex flex-col justify-between">
-                <div className="flex items-start justify-between text-gray-700 dark:text-white my-2 md:m-0">
+                <div className="flex items-start justify-between my-2 text-gray-700 dark:text-white md:m-0">
                     <p className="text-xl leading-5">How to travel arround the world without any money</p>
                     <button className="text-red-400 hover:text-red-600">
                         <svg
@@ -25,7 +25,7 @@ const VideoDetailsCard: FC = () => {
                         </svg>
                     </button>
                 </div>
-                <div className="flex items-center text-gray-500 dark:text-gray-400 text-xs my-2 md:m-0">
+                <div className="flex items-center my-2 text-xs text-gray-500 dark:text-gray-400 md:m-0">
                     <svg
                         width="10"
                         height="10"
@@ -56,7 +56,7 @@ const VideoDetailsCard: FC = () => {
                             width="10"
                             height="10"
                             fill="currentColor"
-                            className="fill-current text-white bg-blue-600 rounded-full p-1 absolute bottom-0 right-0 w-4 h-4 -mx-1 -my-1"
+                            className="absolute bottom-0 right-0 w-4 h-4 p-1 -mx-1 -my-1 text-white bg-blue-600 rounded-full fill-current"
                             viewBox="0 0 1792 1792"
                             xmlns="http://www.w3.org/2000/svg"
                         >
@@ -64,10 +64,10 @@ const VideoDetailsCard: FC = () => {
                         </svg>
                     </div>
                     <div className="flex flex-col items-start justify-center ml-2">
-                        <span className="text-gray-600 dark:text-gray-200 text-sm flex items-center">
-                            Charlie Rabiller <span className="w-2 h-2 block bg-green-500 rounded-full ml-1"></span>
+                        <span className="flex items-center text-sm text-gray-600 dark:text-gray-200">
+                            Charlie Rabiller <span className="block w-2 h-2 ml-1 bg-green-500 rounded-full"></span>
                         </span>
-                        <span className="text-gray-400 text-xs">1 week ago</span>
+                        <span className="text-xs text-gray-400">1 week ago</span>
                     </div>
                 </div>
             </div>

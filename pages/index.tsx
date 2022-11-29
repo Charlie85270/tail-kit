@@ -8,27 +8,30 @@ import { isMobile } from 'react-device-detect';
 export const IndexPage: FC = () => {
     return (
         <HomeLayout>
-            <div className="flex flex-col md:flex-row w-full items-start justify-between md:justify-start h-full md:h-1/2">
-                <div className="text-left z-20 md:z-30 w-full md:w-1/2 flex flex-col items-start justify-start md:justify-center h-full">
-                    <h1 className="tracking-tight font-extrabold text-gray-900 titleHome text-5xl lg:text-6xl md:mt-24 lg:mt-0">
+            <div className="flex flex-col items-start justify-between w-full h-full md:flex-row md:justify-start md:h-1/2">
+                <div className="z-20 flex flex-col items-start justify-start w-full h-full text-left md:z-30 md:w-1/2 md:justify-center">
+                    <h1 className="text-5xl font-bold text-gray-900 titleHome lg:text-6xl md:mt-24 lg:mt-0">
                         <span className="flex w-full m-auto text-indigo-600">Tail-kit&nbsp;</span>
                         <span className="block font-bold xl:inline">
                             <span className="">Components and templates&nbsp;</span>
                             <br />
-                            for Tailwind CSS 2.0
+                            for Tailwind CSS <span className="text-green-500 text-8xl">3.0</span>
+                            <span className="text-lg font-normal text-green-500">
+                                Tail-kit now support tailwind CC v3 !
+                            </span>
                         </span>
                     </h1>
-                    <h2 className="mt-3 text-gray-500 sm:mt-5 text-lg sm:max-w-xl md:mt-5 md:text-xl lg:mx-0">
-                        Tail-kit gives you access to over <span className="text-gray-700 font-bold">250</span> free
-                        components and free templates, based on Tailwind CSS 2.0. It&apos;s all compatible with React,
+                    <h2 className="mt-3 text-lg text-gray-500 sm:mt-5 sm:max-w-xl md:mt-5 md:text-xl lg:mx-0">
+                        Tail-kit gives you access to over <span className="font-bold text-gray-700">250</span> free
+                        components and free templates, based on Tailwind CSS 3.0. It&apos;s all compatible with React,
                         VueJS and Angular application.
                     </h2>
 
-                    <div className="mt-5 sm:mt-8 inline-block w-full">
+                    <div className="inline-block w-full mt-5 sm:mt-8">
                         <div className="flex items-start space-x-4 md:items-center">
-                            <div className="rounded-md shadow inline-block">
+                            <div className="inline-block rounded-md shadow">
                                 <Link href="/started">
-                                    <a className="w-full flex items-center justify-center px-8 py-3  text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 px-4 py-2">
+                                    <a className="flex items-center justify-center w-full px-4 px-8 py-2 py-3 text-base font-medium text-white bg-indigo-600 rounded-md hover:bg-indigo-700">
                                         Get started
                                     </a>
                                 </Link>
@@ -38,7 +41,7 @@ export const IndexPage: FC = () => {
                                     target="_blank"
                                     rel="noreferrer"
                                     href="https://github.com/Charlie85270/tail-kit"
-                                    className="w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-gray-800 bg-gray-100 hover:bg-gray-200 px-4 py-2"
+                                    className="flex items-center justify-center w-full px-4 px-8 py-2 py-3 text-base font-medium text-gray-800 bg-gray-100 rounded-md hover:bg-gray-200"
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +58,7 @@ export const IndexPage: FC = () => {
                             </div>
                         </div>
                     </div>
-                    <h3 className="mt-4 block w-full text-left">
+                    <h3 className="block w-full mt-4 text-left">
                         Need specific tailwind components or templates ?{' '}
                         <Link href="/request">
                             <span className="underline cursor-pointer">Make a request, it&apos;s free</span>

@@ -80,8 +80,8 @@ const AppLayout = ({ title, desc, children, withPub }: Props) => {
     return (
         <div className="relative bg-white ">
             <Meta pageTitle={title} description={desc} />
-            <div className="mx-auto h-full" style={{ minHeight: 85 + 'vh' }}>
-                <div className="relative z-10 pb-8 bg-white overflow-hidden sm:pb-16 md:pb-20 lg:w-full lg:pb-28 xl:pb-32 h-full">
+            <div className="h-full mx-auto" style={{ minHeight: 85 + 'vh' }}>
+                <div className="relative z-10 h-full pb-8 overflow-hidden bg-white sm:pb-16 md:pb-20 lg:w-full lg:pb-28 xl:pb-32">
                     <div className="dark">
                         <AppHeader />
                     </div>
@@ -92,7 +92,7 @@ const AppLayout = ({ title, desc, children, withPub }: Props) => {
                         {children}
                     </main>
                     {withPub && (
-                        <div className="px-2 mt-8 w-80 right-0 top-0 pr-4 pt-32 xs:hidden 2xl:absolute">
+                        <div className="top-0 right-0 px-2 pt-32 pr-4 mt-8 w-80 xs:hidden 2xl:absolute">
                             <AdBanner isVertical />
                         </div>
                     )}

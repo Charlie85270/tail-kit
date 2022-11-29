@@ -3,10 +3,10 @@ import Avatar from '../../elements/avatars/Avatar';
 
 const ReviewWithRate = () => {
     return (
-        <div className="bg-gradient-to-b from-blue-500 w-full md:w-60 to-blue-600 w-full rounded-lg p-4 mb-6 shadow sm:inline-block">
+        <div className="w-full p-4 mb-6 rounded-lg shadow bg-gradient-to-b from-blue-500 md:w-60 to-blue-600 sm:inline-block">
             <div className="flex items-start text-left">
                 <div className="flex-shrink-0">
-                    <div className="inline-block relative">
+                    <div className="relative inline-block">
                         <Avatar img="/images/person/4.jpg" />
                     </div>
                 </div>
@@ -69,13 +69,13 @@ const ReviewWithRate = () => {
                 </div>
             </div>
             <div className="mt-3">
-                <p className="mt-1 max-w-xs font-light text-white">
+                <p className="max-w-xs mt-1 font-light text-white">
                     My first job of scanning photos at the Memories 2 Digital Photo Scanning was fantastic. She
                     completed the work quickly while I was waiting. Thanks for a great service..
                 </p>
             </div>
 
-            <div className="flex items-start text-gray-100 mt-6">
+            <div className="flex items-start mt-6 text-gray-100">
                 <button className="mr-4 hover:text-white">
                     <svg
                         width="25"

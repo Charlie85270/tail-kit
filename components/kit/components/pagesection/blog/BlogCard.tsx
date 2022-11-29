@@ -14,15 +14,15 @@ interface Props {
 
 const BlogCard = (props: Props) => {
     return (
-        <div className="overflow-hidden shadow-lg rounded-lg h-90 w-60 md:w-80 cursor-pointer m-auto">
-            <a href="#" className="w-full block h-full">
-                <img alt="blog photo" src={props.img} className="max-h-40 w-full object-cover" />
-                <div className="bg-white dark:bg-gray-800 w-full p-4">
-                    <p className="text-indigo-500 text-md font-medium">{props.categ}</p>
-                    <p className="text-gray-800 dark:text-white text-xl font-medium mb-2">{props.title}</p>
-                    <p className="text-gray-400 dark:text-gray-300 font-light text-md">{props.desc}</p>
+        <div className="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer h-90 w-60 md:w-80">
+            <a href="#" className="block w-full h-full">
+                <img alt="blog photo" src={props.img} className="object-cover w-full max-h-40" />
+                <div className="w-full p-4 bg-white dark:bg-gray-800">
+                    <p className="font-medium text-indigo-500 text-md">{props.categ}</p>
+                    <p className="mb-2 text-xl font-medium text-gray-800 dark:text-white">{props.title}</p>
+                    <p className="font-light text-gray-400 dark:text-gray-300 text-md">{props.desc}</p>
                     {props.showTags && (
-                        <div className="flex flex-wrap justify-starts items-center mt-4">
+                        <div className="flex flex-wrap items-center mt-4 justify-starts">
                             {props.tags.map((tag) => {
                                 return (
                                     <div

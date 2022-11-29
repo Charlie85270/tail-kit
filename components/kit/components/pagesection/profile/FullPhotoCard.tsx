@@ -1,18 +1,18 @@
 import React, { FC } from 'react';
 const FullPhotoCard: FC = () => {
     return (
-        <div className="overflow-hidden shadow-lg rounded-lg relative mb-1 mb-6 w-64 m-auto">
+        <div className="relative w-64 m-auto mb-1 mb-6 overflow-hidden rounded-lg shadow-lg">
             <img alt="eggs" src="/images/person/3.jpg" className="rounded-lg" />
-            <div className="absolute bg-gradient-to-b bg-opacity-60 from-transparent to-black w-full p-4 bottom-0">
-                <p className="text-white text-2xl nb-4">Helena Yakro</p>
+            <div className="absolute bottom-0 w-full p-4 bg-gradient-to-b bg-opacity-60 from-transparent to-black">
+                <p className="text-2xl text-white nb-4">Helena Yakro</p>
                 <div className="flex justify-between">
-                    <p className="text-sm text-gray-300 flex items-center">18/12/1993</p>
-                    <p className="text-sm text-gray-300 flex items-center">
+                    <p className="flex items-center text-sm text-gray-300">18/12/1993</p>
+                    <p className="flex items-center text-sm text-gray-300">
                         <svg
                             width="10"
                             height="10"
                             fill="currentColor"
-                            className="h-4 w-4"
+                            className="w-4 h-4"
                             viewBox="0 0 1792 1792"
                             xmlns="http://www.w3.org/2000/svg"
                         >

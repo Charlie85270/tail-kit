@@ -3,15 +3,15 @@ import Avatar from '../../elements/avatars/Avatar';
 
 const SimpleReview = () => {
     return (
-        <div className="bg-white dark:bg-gray-800 w-full rounded-lg p-4 mb-6 shadow sm:inline-block">
+        <div className="w-full p-4 mb-6 bg-white rounded-lg shadow dark:bg-gray-800 sm:inline-block">
             <div className="flex items-start text-left">
                 <div className="flex-shrink-0">
-                    <div className="inline-block relative">
+                    <div className="relative inline-block">
                         <Avatar />
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 20 20"
-                            className="fill-current text-white bg-green-600 rounded-full p-1 absolute bottom-0 right-0 w-6 h-6 -mx-1 -my-1"
+                            className="absolute bottom-0 right-0 w-6 h-6 p-1 -mx-1 -my-1 text-white bg-green-600 rounded-full fill-current"
                         >
                             <path d="M19 11a7.5 7.5 0 0 1-3.5 5.94L10 20l-5.5-3.06A7.5 7.5 0 0 1 1 11V3c3.38 0 6.5-1.12 9-3 2.5 1.89 5.62 3 9 3v8zm-9 1.08l2.92 2.04-1.03-3.41 2.84-2.15-3.56-.08L10 5.12 8.83 8.48l-3.56.08L8.1 10.7l-1.03 3.4L10 12.09z"></path>
                         </svg>
@@ -19,8 +19,8 @@ const SimpleReview = () => {
                 </div>
                 <div className="ml-6">
                     <p className="flex items-baseline">
-                        <span className="text-gray-600 dark:text-gray-200 font-bold">A Msan</span>
-                        <span className="text-gray-500 dark:text-gray-300  ml-2 text-sm">2 months ago</span>
+                        <span className="font-bold text-gray-600 dark:text-gray-200">A Msan</span>
+                        <span className="ml-2 text-sm text-gray-500 dark:text-gray-300">2 months ago</span>
                     </p>
                     <div className="flex items-center mt-1">
                         <svg
@@ -75,7 +75,7 @@ const SimpleReview = () => {
                         </svg>
                     </div>
                     <div className="mt-3">
-                        <p className="mt-1 max-w-xs dark:text-white">
+                        <p className="max-w-xs mt-1 dark:text-white">
                             My first job of scanning photos at the Memories 2 Digital Photo Scanning was fantastic. She
                             completed the work quickly while I was waiting. Thanks for a great service..
                         </p>

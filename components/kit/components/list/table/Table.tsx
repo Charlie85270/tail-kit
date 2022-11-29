@@ -24,7 +24,7 @@ const Table = (props: Props) => {
     const borderClasses = props.withBorder ? 'border' : 'border-b-2';
 
     return (
-        <table className="table p-4 bg-white shadow rounded-lg">
+        <table className="table p-4 bg-white rounded-lg shadow">
             <thead>
                 <tr>
                     {headers.map((head) => {

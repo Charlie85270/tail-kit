@@ -3,16 +3,16 @@ import Button from '../../elements/buttons/Button';
 
 const PricingCard9: FC = () => {
     return (
-        <div className="mx-auto bg-white h-36 w-96 rounded border-indigo-500 dark:bg-gray-800 shadow text-center p-4">
-            <div className="flex h-full items-center justify-between">
-                <div className="flex h-full flex-col justify-between">
+        <div className="p-4 mx-auto text-center bg-white border-indigo-500 rounded shadow h-36 w-96 dark:bg-gray-800">
+            <div className="flex items-center justify-between h-full">
+                <div className="flex flex-col justify-between h-full">
                     <div>
-                        <span className="bg-gray-700 dark:bg-gray-400 rounded mr-2 text-white p-2">Business</span>
+                        <span className="p-2 mr-2 text-white bg-gray-700 rounded dark:bg-gray-400">Business</span>
                         <span className="dark:text-white"> Plan </span>
                     </div>
                     <div>
                         <p className="mb-0 text-left text-gray-500 dark:text-gray-300">12 of 20 user</p>
-                        <div className="w-full h-4 bg-gray-400 rounded-full mt-3">
+                        <div className="w-full h-4 mt-3 bg-gray-400 rounded-full">
                             <div className={`w-2/3 h-full text-center text-xs text-white bg-indigo-500 rounded-full`}>
                                 60%
                             </div>
@@ -20,9 +20,9 @@ const PricingCard9: FC = () => {
                     </div>
                 </div>
 
-                <div className="flex h-full flex-col justify-between">
-                    <p className="text-gray-900 dark:text-white text-4xl font-bold">
-                        <span className="text-sm">$</span> 199 <span className="text-gray-300 text-sm">/ month </span>
+                <div className="flex flex-col justify-between h-full">
+                    <p className="text-4xl font-bold text-gray-900 dark:text-white">
+                        <span className="text-sm">$</span> 199 <span className="text-sm text-gray-300">/ month </span>
                     </p>
                     <Button color="indigo" label="Upgrade plan" />
                 </div>

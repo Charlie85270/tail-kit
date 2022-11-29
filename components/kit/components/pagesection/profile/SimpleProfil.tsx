@@ -21,8 +21,8 @@ const SimpleProfile = (props: Props) => {
                 </div>
 
                 <div className={`${props.horizontal ? '' : 'mt-2 text-center'} flex flex-col`}>
-                    <span className="text-gray-600 dark:text-white text-lg font-medium">{props.name || 'Charlie'}</span>
-                    <span className="text-gray-400 text-xs">{props.job || 'CTO'}</span>
+                    <span className="text-lg font-medium text-gray-600 dark:text-white">{props.name || 'Charlie'}</span>
+                    <span className="text-xs text-gray-400">{props.job || 'CTO'}</span>
                 </div>
 
                 {props.withAction && <Button label="Add" color="indigo" />}

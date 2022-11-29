@@ -11,7 +11,7 @@ interface Props {
 const ProgressBar = (props: Props) => {
     return (
         <div>
-            <div className="bg-white rounded-lg w-72 shadow block p-4 m-auto">
+            <div className="block p-4 m-auto bg-white rounded-lg shadow w-72">
                 {props.withBadge && (
                     <div>
                         <span

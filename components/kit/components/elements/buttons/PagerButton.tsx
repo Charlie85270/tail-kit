@@ -4,7 +4,7 @@ const PagerButton: FC = () => {
         <div className="flex items-center">
             <button
                 type="button"
-                className="w-full p-4 border text-base rounded-l-xl text-gray-600 bg-white hover:bg-gray-100"
+                className="w-full p-4 text-base text-gray-600 bg-white border rounded-l-xl hover:bg-gray-100"
             >
                 <svg
                     width="9"
@@ -19,31 +19,31 @@ const PagerButton: FC = () => {
             </button>
             <button
                 type="button"
-                className="w-full px-4 py-2 border-t border-b text-base text-indigo-500 bg-white hover:bg-gray-100 "
+                className="w-full px-4 py-2 text-base text-indigo-500 bg-white border-t border-b hover:bg-gray-100 "
             >
                 1
             </button>
             <button
                 type="button"
-                className="w-full px-4 py-2 border text-base text-gray-600 bg-white hover:bg-gray-100"
+                className="w-full px-4 py-2 text-base text-gray-600 bg-white border hover:bg-gray-100"
             >
                 2
             </button>
             <button
                 type="button"
-                className="w-full px-4 py-2 border-t border-b text-base text-gray-600 bg-white hover:bg-gray-100"
+                className="w-full px-4 py-2 text-base text-gray-600 bg-white border-t border-b hover:bg-gray-100"
             >
                 3
             </button>
             <button
                 type="button"
-                className="w-full px-4 py-2 border text-base text-gray-600 bg-white hover:bg-gray-100"
+                className="w-full px-4 py-2 text-base text-gray-600 bg-white border hover:bg-gray-100"
             >
                 4
             </button>
             <button
                 type="button"
-                className="w-full p-4 border-t border-b border-r text-base  rounded-r-xl text-gray-600 bg-white hover:bg-gray-100"
+                className="w-full p-4 text-base text-gray-600 bg-white border-t border-b border-r rounded-r-xl hover:bg-gray-100"
             >
                 <svg
                     width="9"

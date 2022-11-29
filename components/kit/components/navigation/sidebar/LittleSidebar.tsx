@@ -14,11 +14,11 @@ interface Links {
 const LittleSidebar = (props: Props) => {
     return (
         <div className="flex flex-row h-full">
-            <nav className="bg-white dark:bg-gray-800 w-20 h-screen justify-between flex flex-col">
+            <nav className="flex flex-col justify-between w-20 h-screen bg-white dark:bg-gray-800">
                 <div className="mt-10 mb-10">
                     {props.withHeader && (
                         <a href="#">
-                            <img src="/images/person/2.jpeg" className="rounded-full w-10 h-10 mb-3 mx-auto" />
+                            <img src="/images/person/2.jpeg" className="w-10 h-10 mx-auto mb-3 rounded-full" />
                         </a>
                     )}
 
@@ -45,7 +45,7 @@ const LittleSidebar = (props: Props) => {
                         <a href="#">
                             <span>
                                 <svg
-                                    className="fill-current h-5 w-5 text-gray-300 mx-auto hover:text-red-500"
+                                    className="w-5 h-5 mx-auto text-gray-300 fill-current hover:text-red-500"
                                     viewBox="0 0 24 24"
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg"

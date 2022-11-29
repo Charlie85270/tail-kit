@@ -11,10 +11,10 @@ interface Question {
 
 const Faq = (props: Props) => {
     return (
-        <div className="max-w-screen-xl mx-auto p-8">
-            <h2 className="text-3xl font-extrabold leading-9 border-b-2 border-gray-100 text-gray-900 mb-12">FAQs</h2>
+        <div className="max-w-screen-xl p-8 mx-auto">
+            <h2 className="mb-12 text-3xl font-extrabold leading-9 text-gray-900 border-b-2 border-gray-100">FAQs</h2>
 
-            <ul className="flex items-start gap-8 flex-wrap">
+            <ul className="flex flex-wrap items-start gap-8">
                 {props.questions.map((quest) => {
                     return (
                         <li className="w-2/5" key={quest.question}>

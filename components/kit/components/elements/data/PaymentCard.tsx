@@ -2,17 +2,17 @@ import React from 'react';
 
 const PaymentCard = () => {
     return (
-        <div className="shadow-lg rounded-xl w-full md:w-80 p-4 bg-white dark:bg-gray-800 relative overflow-hidden">
-            <div className="w-full flex items-center justify-between mb-8">
-                <p className="text-gray-800 dark:text-white text-xl">Account</p>
+        <div className="relative w-full p-4 overflow-hidden bg-white shadow-lg rounded-xl md:w-80 dark:bg-gray-800">
+            <div className="flex items-center justify-between w-full mb-8">
+                <p className="text-xl text-gray-800 dark:text-white">Account</p>
                 <a
                     href="#"
-                    className="flex items-center text-sm hover:text-gray-600 dark:text-gray-50 dark:hover:text-white text-gray-300 border-0 focus:outline-none"
+                    className="flex items-center text-sm text-gray-300 border-0 hover:text-gray-600 dark:text-gray-50 dark:hover:text-white focus:outline-none"
                 >
                     VIEW ALL
                 </a>
             </div>
-            <div className="flex items-center mb-6 rounded justify-between">
+            <div className="flex items-center justify-between mb-6 rounded">
                 <span className="rounded-lg">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -31,15 +31,15 @@ const PaymentCard = () => {
                     </svg>
                 </span>
 
-                <div className="flex items-center w-full justify-between">
-                    <div className="flex text-sm flex-col w-full ml-2 items-start justify-between">
+                <div className="flex items-center justify-between w-full">
+                    <div className="flex flex-col items-start justify-between w-full ml-2 text-sm">
                         <p className="dark:text-white">American Express</p>
                         <p className="text-gray-300">Wallet deposit</p>
                     </div>
                     <span className="text-green-400">+$3,124</span>
                 </div>
             </div>
-            <div className="flex items-center mb-6 rounded justify-between">
+            <div className="flex items-center justify-between mb-6 rounded">
                 <span className="rounded-lg">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -70,15 +70,15 @@ const PaymentCard = () => {
                     </svg>
                 </span>
 
-                <div className="flex items-center w-full justify-between">
-                    <div className="flex text-sm flex-col w-full ml-2 items-start justify-between">
+                <div className="flex items-center justify-between w-full">
+                    <div className="flex flex-col items-start justify-between w-full ml-2 text-sm">
                         <p className="dark:text-white">Visa Premier</p>
                         <p className="text-gray-300">Wallet deposit</p>
                     </div>
                     <span className="text-green-400">+$23,240</span>
                 </div>
             </div>
-            <div className="flex items-center mb-6 rounded justify-between">
+            <div className="flex items-center justify-between mb-6 rounded">
                 <span className="rounded-lg">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -117,15 +117,15 @@ const PaymentCard = () => {
                     </svg>
                 </span>
 
-                <div className="flex items-center w-full justify-between">
-                    <div className="flex text-sm flex-col w-full ml-2 items-start justify-between">
+                <div className="flex items-center justify-between w-full">
+                    <div className="flex flex-col items-start justify-between w-full ml-2 text-sm">
                         <p className="dark:text-white">MasterCard</p>
                         <p className="text-gray-300">Wallet deposit</p>
                     </div>
                     <span className="text-red-400">-$1,904</span>
                 </div>
             </div>
-            <div className="flex items-center rounded justify-between">
+            <div className="flex items-center justify-between rounded">
                 <span className="rounded-lg">
                     <svg
                         width="40"
@@ -161,8 +161,8 @@ const PaymentCard = () => {
                     </svg>
                 </span>
 
-                <div className="flex items-center w-full justify-between">
-                    <div className="flex text-sm flex-col w-full ml-2 items-start justify-between">
+                <div className="flex items-center justify-between w-full">
+                    <div className="flex flex-col items-start justify-between w-full ml-2 text-sm">
                         <p className="dark:text-white">Paypal</p>
                         <p className="text-gray-300">Wallet deposit</p>
                     </div>

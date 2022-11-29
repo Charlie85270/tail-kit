@@ -23,10 +23,10 @@ const MultipleImagesCta = (props: Props) => {
             </div>
 
             <div className="flex items-center gap-8 p-8 lg:p-24">
-                <img src="/images/landscape/3.jpg" className="rounded-lg w-1/2" alt="Tree" />
+                <img src="/images/landscape/3.jpg" className="w-1/2 rounded-lg" alt="Tree" />
 
                 <div>
-                    <img src="/images/landscape/2.jpg" className="rounded-lg mb-8" alt="Tree" />
+                    <img src="/images/landscape/2.jpg" className="mb-8 rounded-lg" alt="Tree" />
                     <img src="/images/landscape/4.jpg" className="rounded-lg" alt="Tree" />
                 </div>
             </div>

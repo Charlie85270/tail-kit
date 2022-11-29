@@ -2,9 +2,9 @@ import React from 'react';
 
 const FaqHori = () => {
     return (
-        <div className="bg-lightblue py-20 px-4">
-            <div className="mx-auto max-w-6xl flex flex-col md:flex-row">
-                <h2 className="mr-8 w-full md:w-1/3 text-3xl font-extrabold leading-9">Frequently-asked questions</h2>
+        <div className="px-4 py-20 bg-lightblue">
+            <div className="flex flex-col max-w-6xl mx-auto md:flex-row">
+                <h2 className="w-full mr-8 text-3xl font-extrabold leading-9 md:w-1/3">Frequently-asked questions</h2>
                 <dl className="w-full md:w-2/3">
                     <dt className="mb-4">
                         <h3 className="text-xl font-semibold">

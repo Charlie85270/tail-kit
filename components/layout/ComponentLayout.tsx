@@ -101,14 +101,14 @@ const ComponentLayout = (props: Props) => {
                 className={`bg-gray-100 shadow rounded-xl mb-4 ${props.containerClasses ? props.containerClasses : ''}`}
                 key={props.title}
             >
-                <div className="flex flex-col md:flex-row items-center justify-between bg-white p-4 border rounded-xl">
-                    <p className="text-xl font-light text-gray-600 mb-2 md:mb-0">{props.title} </p>
-                    <div className="flex items-center flex-row flex-wrap gap-4 justify-center">
+                <div className="flex flex-col items-center justify-between p-4 bg-white border md:flex-row rounded-xl">
+                    <p className="mb-2 text-xl font-light text-gray-600 md:mb-0">{props.title} </p>
+                    <div className="flex flex-row flex-wrap items-center justify-center gap-4">
                         {props.showSwitchMode && <Toggle label="Dark mode" onChange={(mode) => changeMode(mode)} />}
 
                         {props.jsLink && (
                             <a
-                                className="flex items-center text-black border border-gray-800 bg-yellow-300 hover:bg-yellow-400 rounded-lg p-2"
+                                className="flex items-center p-2 text-black bg-yellow-300 border border-gray-800 rounded-lg hover:bg-yellow-400"
                                 href={props.jsLink}
                             >
                                 <svg
@@ -116,7 +116,7 @@ const ComponentLayout = (props: Props) => {
                                     width="20"
                                     height="20"
                                     fill="currentColor"
-                                    className=" w-6 h-6 mr-2"
+                                    className="w-6 h-6 mr-2 "
                                     viewBox="0 0 1792 1792"
                                 >
                                     <path d="M1024 1375v-190q0-14-9.5-23.5t-22.5-9.5h-192q-13 0-22.5 9.5t-9.5 23.5v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19-13-11-24-11h-220q-11 0-24 11-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126-17 29-46.5 46t-63.5 17h-1536q-34 0-63.5-17t-46.5-46q-37-63-2-126l768-1408q17-31 47-49t65-18 65 18 47 49z" />
@@ -126,13 +126,13 @@ const ComponentLayout = (props: Props) => {
                         )}
                         {props.needConfiguration && (
                             <Link href="/started#configuration">
-                                <a className="flex items-center text-black border border-gray-800 bg-yellow-300 hover:bg-yellow-400 rounded-lg p-2">
+                                <a className="flex items-center p-2 text-black bg-yellow-300 border border-gray-800 rounded-lg hover:bg-yellow-400">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="20"
                                         height="20"
                                         fill="currentColor"
-                                        className=" w-6 h-6 mr-2"
+                                        className="w-6 h-6 mr-2 "
                                         viewBox="0 0 1792 1792"
                                     >
                                         <path d="M1024 1375v-190q0-14-9.5-23.5t-22.5-9.5h-192q-13 0-22.5 9.5t-9.5 23.5v190q0 14 9.5 23.5t22.5 9.5h192q13 0 22.5-9.5t9.5-23.5zm-2-374l18-459q0-12-10-19-13-11-24-11h-220q-11 0-24 11-10 7-10 21l17 457q0 10 10 16.5t24 6.5h185q14 0 23.5-6.5t10.5-16.5zm-14-934l768 1408q35 63-2 126-17 29-46.5 46t-63.5 17h-1536q-34 0-63.5-17t-46.5-46q-37-63-2-126l768-1408q17-31 47-49t65-18 65 18 47 49z" />
@@ -144,7 +144,7 @@ const ComponentLayout = (props: Props) => {
                         <div className="w-32">
                             <button
                                 onClick={() => setStatus(STATUS.EDIT_CODE)}
-                                className="w-28 flex items-center justify-between px-4 py-2 border border-gray-800  text-base font-medium rounded-md text-gray-800 bg-white hover:bg-gray-100"
+                                className="flex items-center justify-between px-4 py-2 text-base font-medium text-gray-800 bg-white border border-gray-800 rounded-md w-28 hover:bg-gray-100"
                             >
                                 <svg
                                     width="20"
@@ -182,17 +182,17 @@ const ComponentLayout = (props: Props) => {
                         {status !== STATUS.DEFAULT && (
                             <div className={`${props.vertical ? '' : 'md:w-3/4'} relative w-full`}>
                                 <div>
-                                    <div className="absolute top-2 right-24 z-10">{COPY_BTN()}</div>
+                                    <div className="absolute z-10 top-2 right-24">{COPY_BTN()}</div>
 
                                     <button
                                         onClick={() => setStatus(STATUS.DEFAULT)}
-                                        className="w-12 p-2 absolute top-2 right-2 z-30 text-base font-medium rounded-md bg-red-300 hover:bg-red-400 "
+                                        className="absolute z-30 w-12 p-2 text-base font-medium bg-red-300 rounded-md top-2 right-2 hover:bg-red-400 "
                                     >
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             width="6"
                                             height="6"
-                                            className="h-6 w-6 mx-auto text-gray-800 "
+                                            className="w-6 h-6 mx-auto text-gray-800 "
                                             fill="currentColor"
                                             viewBox="0 0 1792 1792"
                                         >
@@ -213,8 +213,8 @@ const ComponentLayout = (props: Props) => {
                     }`}
                     key={props.title}
                 >
-                    <div className="flex flex-col md:flex-row items-center justify-between bg-white p-4 border rounded-xl">
-                        <p className="text-xl font-light text-gray-600 mb-2 md:mb-0">Publicity </p>
+                    <div className="flex flex-col items-center justify-between p-4 bg-white border md:flex-row rounded-xl">
+                        <p className="mb-2 text-xl font-light text-gray-600 md:mb-0">Publicity </p>
                         <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
                     </div>
                     <div className="p-4">

@@ -22,7 +22,7 @@ const Sidebar = (props: Props) => {
     return (
         <div className="relative bg-white dark:bg-gray-800">
             <div className="flex flex-col sm:flex-row sm:justify-around">
-                <div className="w-72 h-screen">
+                <div className="h-screen w-72">
                     {withHeader && (
                         <div className="flex items-center justify-start mx-6 mt-10">
                             {props.headerImg && <img className="h-10" src="/icons/rocket.svg" />}

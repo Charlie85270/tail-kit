@@ -11,12 +11,12 @@ interface Props {
 
 const AllTeam = () => {
     return (
-        <div className="p-8 bg-white dark:bg-gray-800 rounded-lg shadow">
-            <p className="text-center text-3xl font-bold text-gray-800 dark:text-white">The big team</p>
-            <p className="text-center mb-12 text-xl font-normal text-gray-500 dark:text-gray-300">
+        <div className="p-8 bg-white rounded-lg shadow dark:bg-gray-800">
+            <p className="text-3xl font-bold text-center text-gray-800 dark:text-white">The big team</p>
+            <p className="mb-12 text-xl font-normal text-center text-gray-500 dark:text-gray-300">
                 Meat the best team in wolrd
             </p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
                 <SimpleProfile
                     size="big"
                     name="Hean Hiut"

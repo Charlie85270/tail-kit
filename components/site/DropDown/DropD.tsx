@@ -43,12 +43,12 @@ const DropD = (props: Props) => {
                 ref={selectButton}
                 type="button"
                 onClick={() => setIsSectionOpen(!isSectionOpen)}
-                className="group rounded-md text-gray-800 dark:text-white inline-flex items-center text-base font-light hover:text-black dark:hover:text-gray-50 text-xl"
+                className="inline-flex items-center text-base text-xl font-light text-gray-800 rounded-md group dark:text-white hover:text-black dark:hover:text-gray-50"
             >
                 <span>{props.label}</span>
 
                 <svg
-                    className="ml-2 h-5 w-5 text-gray-500 dark:text-gray-100 hover:text-gray-500 dark:hover:text-white"
+                    className="w-5 h-5 ml-2 text-gray-500 dark:text-gray-100 hover:text-gray-500 dark:hover:text-white"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                     fill="currentColor"
@@ -62,18 +62,18 @@ const DropD = (props: Props) => {
                 </svg>
             </button>
             {isSectionOpen && (
-                <div ref={listElement} className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0">
-                    <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-                        <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 divide-y divide-gray-300">
+                <div ref={listElement} className="absolute z-10 w-screen max-w-md px-2 mt-3 -ml-4 transform sm:px-0">
+                    <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                        <div className="relative grid gap-6 px-5 py-6 bg-white divide-y divide-gray-300 sm:gap-8 sm:p-8">
                             {props.links.map((entry) => {
                                 return (
                                     <Link href={entry.link} key={entry.label}>
-                                        <a className="-m-3 py-2 flex items-center hover:text-indigo-600  text-gray-900">
+                                        <a className="flex items-center py-2 -m-3 text-gray-900 hover:text-indigo-600">
                                             {entry.icon}
 
                                             <div className="font-normal">
                                                 <p className="text-lg">{entry.label}</p>
-                                                <p className="text-xs mt-0 text-gray-400">{entry.desc}</p>
+                                                <p className="mt-0 text-xs text-gray-400">{entry.desc}</p>
                                             </div>
                                         </a>
                                     </Link>

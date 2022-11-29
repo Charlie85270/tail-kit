@@ -30,27 +30,27 @@ const CustomSelect = (props: Props) => {
 
     return (
         <div className="w-64">
-            <div className="mt-1 relative">
+            <div className="relative mt-1">
                 <button
                     type="button"
                     ref={selectButton}
                     onClick={() => setShowList(!showList)}
-                    className="relative w-full bg-white rounded-md shadow-lg pl-3 pr-10 py-3 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    className="relative w-full py-3 pl-3 pr-10 text-left bg-white rounded-md shadow-lg cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                 >
                     <span className="flex items-center">
                         {!props.hideImage && (
                             <img
                                 src="/images/person/2.jpeg"
                                 alt="person"
-                                className="flex-shrink-0 h-6 w-6 rounded-full"
+                                className="flex-shrink-0 w-6 h-6 rounded-full"
                             />
                         )}
 
-                        <span className="ml-3 block truncate">John Jackson</span>
+                        <span className="block ml-3 truncate">John Jackson</span>
                     </span>
-                    <span className="ml-3 absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+                    <span className="absolute inset-y-0 right-0 flex items-center pr-2 ml-3 pointer-events-none">
                         <svg
-                            className="h-5 w-5 text-gray-400"
+                            className="w-5 h-5 text-gray-400"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 20 20"
                             fill="currentColor"
@@ -66,33 +66,33 @@ const CustomSelect = (props: Props) => {
                 </button>
 
                 {(showList || props.forceOpen) && (
-                    <div ref={panelResultElement} className="absolute mt-1 w-full z-10 rounded-md bg-white shadow-lg">
+                    <div ref={panelResultElement} className="absolute z-10 w-full mt-1 bg-white rounded-md shadow-lg">
                         <ul
                             tabIndex={-1}
                             role="listbox"
                             aria-labelledby="listbox-label"
                             aria-activedescendant="listbox-item-3"
-                            className="max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm"
+                            className="py-1 overflow-auto text-base rounded-md max-h-56 ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm"
                         >
                             <li
                                 id="listbox-item-0"
                                 role="option"
-                                className="text-gray-900 cursor-default hover:bg-indigo-500 hover:text-white select-none relative py-2 pl-3 pr-9"
+                                className="relative py-2 pl-3 text-gray-900 cursor-default select-none hover:bg-indigo-500 hover:text-white pr-9"
                             >
                                 <div className="flex items-center">
                                     {!props.hideImage && (
                                         <img
                                             src="/images/person/1.jpg"
                                             alt="person"
-                                            className="flex-shrink-0 h-6 w-6 rounded-full"
+                                            className="flex-shrink-0 w-6 h-6 rounded-full"
                                         />
                                     )}
-                                    <span className="ml-3 block font-normal truncate">Mick Poulaz</span>
+                                    <span className="block ml-3 font-normal truncate">Mick Poulaz</span>
                                 </div>
 
                                 <span className="absolute inset-y-0 right-0 flex items-center pr-4">
                                     <svg
-                                        className="h-5 w-5"
+                                        className="w-5 h-5"
                                         xmlns="http://www.w3.org/2000/svg"
                                         viewBox="0 0 20 20"
                                         fill="currentColor"
@@ -109,17 +109,17 @@ const CustomSelect = (props: Props) => {
                             <li
                                 id="listbox-item-1"
                                 role="option"
-                                className="text-gray-900 cursor-default select-none hover:bg-indigo-500 hover:text-white relative py-2 pl-3 pr-9"
+                                className="relative py-2 pl-3 text-gray-900 cursor-default select-none hover:bg-indigo-500 hover:text-white pr-9"
                             >
                                 <div className="flex items-center">
                                     {!props.hideImage && (
                                         <img
                                             src="/images/person/1.jpg"
                                             alt="person"
-                                            className="flex-shrink-0 h-6 w-6 rounded-full"
+                                            className="flex-shrink-0 w-6 h-6 rounded-full"
                                         />
                                     )}
-                                    <span className="ml-3 block font-normal truncate">Julien Schiano</span>
+                                    <span className="block ml-3 font-normal truncate">Julien Schiano</span>
                                 </div>
                             </li>
                         </ul>

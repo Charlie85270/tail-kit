@@ -11,29 +11,29 @@ const AppHeader = (props: Props) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <div className="relative bg-transparent dark:bg-gray-800 z-50">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="relative z-50 bg-transparent dark:bg-gray-800">
+            <div className="px-4 mx-auto max-w-7xl sm:px-6">
                 <div className={`flex justify-between items-center  border-gray-100 py-6  md:space-x-10`}>
-                    <div className="flex justify-start items-center gap-12">
+                    <div className="flex items-center justify-start gap-12">
                         <Link href="/">
                             <a className="flex items-center">
-                                <img className="h-8 w-auto sm:h-12" src="/icons/rocket.svg" alt="site" />
+                                <img className="w-auto h-8 sm:h-12" src="/icons/rocket.svg" alt="site" />
                             </a>
                         </Link>
-                        <nav className="hidden md:flex space-x-10">
+                        <nav className="hidden space-x-10 md:flex">
                             <DropD label="&#129513; Components" links={menuEntry} />
                             <DropD label="&#127912; Templates" links={menuTemplates} />
                         </nav>
                     </div>
                     {!props.hideLinks && (
-                        <div className="flex item-center justify-end">
+                        <div className="flex justify-end item-center">
                             <Link href="/started">
                                 <a className="flex items-center">
                                     <svg
                                         width="20"
                                         height="20"
                                         fill="currentColor"
-                                        className="mr-2 w-10 h-10 text-gray-400 hover:text-gray-200"
+                                        className="w-10 h-10 mr-2 text-gray-400 hover:text-gray-200"
                                         viewBox="0 0 2048 1792"
                                         xmlns="http://www.w3.org/2000/svg"
                                     >
@@ -53,7 +53,7 @@ const AppHeader = (props: Props) => {
                                     width="20"
                                     height="20"
                                     fill="currentColor"
-                                    className="mr-2 w-10 h-10 text-gray-400 hover:text-gray-200"
+                                    className="w-10 h-10 mr-2 text-gray-400 hover:text-gray-200"
                                     viewBox="0 0 1792 1792"
                                 >
                                     <path d="M896 128q209 0 385.5 103t279.5 279.5 103 385.5q0 251-146.5 451.5t-378.5 277.5q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-119-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-85-13.5q-45 113-8 204-79 87-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-39 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5t-146.5-451.5q0-209 103-385.5t279.5-279.5 385.5-103zm-477 1103q3-7-7-12-10-3-13 2-3 7 7 12 9 6 13-2zm31 34q7-5-2-16-10-9-16-3-7 5 2 16 10 10 16 3zm30 45q9-7 0-19-8-13-17-6-9 5 0 18t17 7zm42 42q8-8-4-19-12-12-20-3-9 8 4 19 12 12 20 3zm57 25q3-11-13-16-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11-16 0-16 11 0 13 17 11 16 0 16-11zm58-10q-2-11-18-9-16 3-14 15t18 8 14-14z" />
@@ -62,16 +62,16 @@ const AppHeader = (props: Props) => {
                         </div>
                     )}
 
-                    <div className="-mr-2 -my-2 md:hidden">
+                    <div className="-my-2 -mr-2 md:hidden">
                         <button
                             type="button"
                             onClick={() => setIsMenuOpen(true)}
-                            className="bg-white dark:bg-gray-800 rounded-md p-2 inline-flex items-center justify-center text-gray-400 dark:text-gray-50 dark:hover:text-white hover:text-gray-500 dark:hover:bg-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                            className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md dark:bg-gray-800 dark:text-gray-50 dark:hover:text-white hover:text-gray-500 dark:hover:bg-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                         >
                             <span className="sr-only">Open menu</span>
 
                             <svg
-                                className="h-6 w-6"
+                                className="w-6 h-6"
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
                                 viewBox="0 0 24 24"
@@ -90,23 +90,23 @@ const AppHeader = (props: Props) => {
                 </div>
             </div>
             {isMenuOpen && (
-                <div className="absolute top-0 z-20 inset-x-0 transition transform origin-top-right md:hidden">
-                    <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50 dark:bg-gray-800">
-                        <div className="pt-5 pb-6 px-5">
+                <div className="absolute inset-x-0 top-0 z-20 transition origin-top-right transform md:hidden">
+                    <div className="bg-white divide-y-2 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 divide-gray-50 dark:bg-gray-800">
+                        <div className="px-5 pt-5 pb-6">
                             <div className="flex items-center justify-between">
                                 <div>
-                                    <img className="h-8 w-auto" src="/icons/rocket.svg" alt="Workflow" />
+                                    <img className="w-auto h-8" src="/icons/rocket.svg" alt="Workflow" />
                                 </div>
                                 <div className="-mr-2">
                                     <button
                                         type="button"
                                         onClick={() => setIsMenuOpen(false)}
-                                        className="bg-white dark:bg-gray-800 rounded-md p-2 inline-flex items-center justify-center text-gray-400 dark:text-gray-50 hover:text-gray-500 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                                        className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md dark:bg-gray-800 dark:text-gray-50 hover:text-gray-500 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                                     >
                                         <span className="sr-only">Close menu</span>
 
                                         <svg
-                                            className="h-6 w-6"
+                                            className="w-6 h-6"
                                             xmlns="http://www.w3.org/2000/svg"
                                             fill="none"
                                             viewBox="0 0 24 24"
@@ -125,11 +125,11 @@ const AppHeader = (props: Props) => {
                             </div>
                             <div className="mt-2">
                                 <nav>
-                                    <p className="text-indigo-500 font-bold">Components</p>
+                                    <p className="font-bold text-indigo-500">Components</p>
                                     {menuEntry.map((entry) => {
                                         return (
                                             <Link href={entry.link} key={entry.label}>
-                                                <a className="p-2 flex items-center rounded-md hover:bg-gray-50 dark:hover:bg-gray-700">
+                                                <a className="flex items-center p-2 rounded-md hover:bg-gray-50 dark:hover:bg-gray-700">
                                                     <span className="ml-1 text-base font-normal text-gray-900 dark:text-white">
                                                         {entry.label}
                                                     </span>
@@ -141,11 +141,11 @@ const AppHeader = (props: Props) => {
                             </div>
                             <div className="mt-2">
                                 <nav>
-                                    <p className="text-indigo-500 font-bold">Templates</p>
+                                    <p className="font-bold text-indigo-500">Templates</p>
                                     {menuTemplates.map((entry) => {
                                         return (
                                             <Link href={entry.link} key={entry.label}>
-                                                <a className="p-2 flex items-center rounded-md hover:bg-gray-50 dark:hover:bg-gray-700">
+                                                <a className="flex items-center p-2 rounded-md hover:bg-gray-50 dark:hover:bg-gray-700">
                                                     <span className="ml-1 text-base font-normal text-gray-900 dark:text-white">
                                                         {entry.label}
                                                     </span>

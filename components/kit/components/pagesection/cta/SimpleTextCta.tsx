@@ -41,14 +41,14 @@ const SimpleTextCta = (props: Props) => {
                         <Button label="Get started" isFat={true} color="indigo"></Button>
                     </div>
                     {props.twoButton && (
-                        <div className="ml-3 inline-flex rounded-md shadow">
+                        <div className="inline-flex ml-3 rounded-md shadow">
                             <Button label="Invite friend" isFat={true} color="gray" />
                         </div>
                     )}
                 </div>
             </div>
             {props.image && (
-                <img src={props.image} className="absolute h-full max-w-1/2 hidden lg:block right-0 top-0" />
+                <img src={props.image} className="absolute top-0 right-0 hidden h-full max-w-1/2 lg:block" />
             )}
         </div>
     );

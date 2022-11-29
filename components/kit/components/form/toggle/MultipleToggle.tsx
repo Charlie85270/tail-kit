@@ -62,11 +62,11 @@ const MultipleToggle = (props: Props) => {
                             />
                             <label
                                 htmlFor={color.label}
-                                className="block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"
+                                className="block h-6 overflow-hidden bg-gray-300 rounded-full cursor-pointer"
                             />
                         </div>
 
-                        <span className="text-gray-400 font-medium">{props.label || color.label}</span>
+                        <span className="font-medium text-gray-400">{props.label || color.label}</span>
                     </div>
                 );
             })}

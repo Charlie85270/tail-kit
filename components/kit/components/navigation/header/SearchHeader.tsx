@@ -2,23 +2,23 @@ import React from 'react';
 
 const SearchHeader = () => {
     return (
-        <div className="w-full flex flex-row items-center p-2 justify-between bg-white shadow-xs bg-indigo-500">
-            <div className="ml-8 text-lg text-white hidden md:flex">Tail-kit</div>
-            <span className="w-full md:w-1/3 h-10 cursor-pointer border border-gray-300 text-sm rounded-full flex">
+        <div className="flex flex-row items-center justify-between w-full p-2 bg-white bg-indigo-500 shadow-xs">
+            <div className="hidden ml-8 text-lg text-white md:flex">Tail-kit</div>
+            <span className="flex w-full h-10 text-sm border border-gray-300 rounded-full cursor-pointer md:w-1/3">
                 <input
                     type="search"
                     name="serch"
                     placeholder="Search"
-                    className="flex-grow px-4 rounded-l-full rounded-r-full text-sm focus:outline-none"
+                    className="flex-grow px-4 text-sm rounded-l-full rounded-r-full focus:outline-none"
                 />
             </span>
-            <div className="flex flex-row-reverse text-white mr-4 ml-4 md:hidden">
+            <div className="flex flex-row-reverse ml-4 mr-4 text-white md:hidden">
                 <button>
                     <svg
                         width="20"
                         height="20"
                         fill="currentColor"
-                        className="h-8 w-8"
+                        className="w-8 h-8"
                         viewBox="0 0 1792 1792"
                         xmlns="http://www.w3.org/2000/svg"
                     >
@@ -26,10 +26,10 @@ const SearchHeader = () => {
                     </svg>
                 </button>
             </div>
-            <div className="flex items-center mr-8 hidden md:flex">
+            <div className="flex items-center hidden mr-8 md:flex">
                 <a
                     href="https://github.com/Charlie85270/tail-kit"
-                    className="p-1 rounded-full text-white focus:outline-none hover:text-gray-200 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                    className="p-1 text-white rounded-full focus:outline-none hover:text-gray-200 focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                 >
                     <span className="sr-only">View github</span>
                     <svg
@@ -48,7 +48,7 @@ const SearchHeader = () => {
                         width="2048"
                         height="1792"
                         fill="currentColor"
-                        className="mr-2 w-8 h-8 text-white hover:text-gray-100"
+                        className="w-8 h-8 mr-2 text-white hover:text-gray-100"
                         viewBox="0 0 2048 1792"
                         xmlns="http://www.w3.org/2000/svg"
                     >

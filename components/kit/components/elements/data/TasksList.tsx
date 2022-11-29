@@ -2,14 +2,14 @@ import React, { FC } from 'react';
 
 const TasksList: FC = () => {
     return (
-        <div className="shadow-lg rounded-2xl bg-white dark:bg-gray-700 w-full">
-            <p className="font-bold text-md p-4 text-black dark:text-white">
+        <div className="w-full bg-white shadow-lg rounded-2xl dark:bg-gray-700">
+            <p className="p-4 font-bold text-black text-md dark:text-white">
                 My Tasks
-                <span className="text-sm text-gray-500 dark:text-gray-300 dark:text-white ml-2">(05)</span>
+                <span className="ml-2 text-sm text-gray-500 dark:text-gray-300 dark:text-white">(05)</span>
             </p>
 
             <ul>
-                <li className="flex items-center text-gray-600 dark:text-gray-200 justify-between py-3 border-b-2 border-gray-100 dark:border-gray-800">
+                <li className="flex items-center justify-between py-3 text-gray-600 border-b-2 border-gray-100 dark:text-gray-200 dark:border-gray-800">
                     <div className="flex items-center justify-start text-sm">
                         <span className="mx-4">01</span>
                         <span>Create wireframe</span>
@@ -31,11 +31,11 @@ const TasksList: FC = () => {
                         ></path>
                     </svg>
                 </li>
-                <li className="flex items-center text-gray-600 dark:text-gray-200 justify-between py-3 border-b-2 border-gray-100 dark:border-gray-800">
+                <li className="flex items-center justify-between py-3 text-gray-600 border-b-2 border-gray-100 dark:text-gray-200 dark:border-gray-800">
                     <div className="flex items-center justify-start text-sm">
                         <span className="mx-4">02</span>
                         <span>Dashboard design</span>
-                        <span className="lg:ml-6 ml-2 flex items-center text-gray-400 dark:text-gray-300">
+                        <span className="flex items-center ml-2 text-gray-400 lg:ml-6 dark:text-gray-300">
                             3
                             <svg width="15" height="15" fill="currentColor" className="ml-1" viewBox="0 0 512 512">
                                 <path
@@ -44,7 +44,7 @@ const TasksList: FC = () => {
                                 ></path>
                             </svg>
                         </span>
-                        <span className="mx-4 flex items-center text-gray-400 dark:text-gray-300">
+                        <span className="flex items-center mx-4 text-gray-400 dark:text-gray-300">
                             3
                             <svg width="15" height="15" className="ml-1" fill="currentColor" viewBox="0 0 384 512">
                                 <path
@@ -72,11 +72,11 @@ const TasksList: FC = () => {
                         ></path>
                     </svg>
                 </li>
-                <li className="flex items-center text-gray-600 dark:text-gray-200 justify-between py-3 border-b-2 border-gray-100 dark:border-gray-800">
+                <li className="flex items-center justify-between py-3 text-gray-600 border-b-2 border-gray-100 dark:text-gray-200 dark:border-gray-800">
                     <div className="flex items-center justify-start text-sm">
                         <span className="mx-4">03</span>
                         <span>Components card</span>
-                        <span className="lg:ml-6 ml-2 flex items-center text-gray-400 dark:text-gray-300">
+                        <span className="flex items-center ml-2 text-gray-400 lg:ml-6 dark:text-gray-300">
                             3
                             <svg width="15" height="15" fill="currentColor" className="ml-1" viewBox="0 0 512 512">
                                 <path
@@ -104,7 +104,7 @@ const TasksList: FC = () => {
                         ></path>
                     </svg>
                 </li>
-                <li className="flex items-center text-gray-400 justify-between py-3 border-b-2 border-gray-100 dark:border-gray-800">
+                <li className="flex items-center justify-between py-3 text-gray-400 border-b-2 border-gray-100 dark:border-gray-800">
                     <div className="flex items-center justify-start text-sm">
                         <span className="mx-4">04</span>
                         <span className="line-through">Google logo design</span>
@@ -114,7 +114,7 @@ const TasksList: FC = () => {
                         height="20"
                         fill="currentColor"
                         viewBox="0 0 1024 1024"
-                        className="text-green-500 mx-4"
+                        className="mx-4 text-green-500"
                     >
                         <path
                             d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448s448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 0 1-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8l157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z"
@@ -122,7 +122,7 @@ const TasksList: FC = () => {
                         ></path>
                     </svg>
                 </li>
-                <li className="flex items-center text-gray-400  justify-between py-3 border-b-2 border-gray-100 dark:border-gray-800">
+                <li className="flex items-center justify-between py-3 text-gray-400 border-b-2 border-gray-100 dark:border-gray-800">
                     <div className="flex items-center justify-start text-sm">
                         <span className="mx-4">05</span>
                         <span className="line-through">Header navigation</span>
@@ -132,7 +132,7 @@ const TasksList: FC = () => {
                         height="20"
                         fill="currentColor"
                         viewBox="0 0 1024 1024"
-                        className="text-green-500 mx-4"
+                        className="mx-4 text-green-500"
                     >
                         <path
                             d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448s448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 0 1-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8l157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z"
@@ -140,11 +140,11 @@ const TasksList: FC = () => {
                         ></path>
                     </svg>
                 </li>
-                <li className="flex items-center text-gray-600 dark:text-gray-200 justify-between py-3 border-b-2 border-gray-100 dark:border-gray-800">
+                <li className="flex items-center justify-between py-3 text-gray-600 border-b-2 border-gray-100 dark:text-gray-200 dark:border-gray-800">
                     <div className="flex items-center justify-start text-sm">
                         <span className="mx-4">06</span>
                         <span>International</span>
-                        <span className="lg:ml-6 ml-2 flex items-center text-gray-400 dark:text-gray-300">
+                        <span className="flex items-center ml-2 text-gray-400 lg:ml-6 dark:text-gray-300">
                             3
                             <svg width="15" height="15" fill="currentColor" className="ml-1" viewBox="0 0 512 512">
                                 <path
@@ -153,7 +153,7 @@ const TasksList: FC = () => {
                                 ></path>
                             </svg>
                         </span>
-                        <span className="mx-4 flex items-center text-gray-400 dark:text-gray-300">
+                        <span className="flex items-center mx-4 text-gray-400 dark:text-gray-300">
                             3
                             <svg width="15" height="15" className="ml-1" fill="currentColor" viewBox="0 0 384 512">
                                 <path
@@ -181,7 +181,7 @@ const TasksList: FC = () => {
                         ></path>
                     </svg>
                 </li>
-                <li className="flex items-center text-gray-600 dark:text-gray-200 justify-between py-3">
+                <li className="flex items-center justify-between py-3 text-gray-600 dark:text-gray-200">
                     <div className="flex items-center justify-start text-sm">
                         <span className="mx-4">07</span>
                         <span>Production data</span>

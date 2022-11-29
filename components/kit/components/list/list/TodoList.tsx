@@ -22,7 +22,7 @@ const TodoList = () => {
 
     return (
         <div className="px-4 py-5 border-b rounded-t sm:px-6">
-            <div className="bg-white dark:bg-gray-800 shadow overflow-hidden sm:rounded-md">
+            <div className="overflow-hidden bg-white shadow dark:bg-gray-800 sm:rounded-md">
                 <ul className="divide-y divide-gray-200">
                     {list.map((list) => {
                         return (
@@ -30,18 +30,18 @@ const TodoList = () => {
                                 <a className="block hover:bg-gray-50 dark:hover:bg-gray-900">
                                     <div className="px-4 py-4 sm:px-6">
                                         <div className="flex items-center justify-between">
-                                            <p className="text-md text-gray-700 dark:text-white md:truncate">
+                                            <p className="text-gray-700 text-md dark:text-white md:truncate">
                                                 {list.title}
                                             </p>
-                                            <div className="ml-2 flex-shrink-0 flex">
-                                                <p className="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
+                                            <div className="flex flex-shrink-0 ml-2">
+                                                <p className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full">
                                                     {list.categ}
                                                 </p>
                                             </div>
                                         </div>
                                         <div className="mt-2 sm:flex sm:justify-between">
                                             <div className="sm:flex">
-                                                <p className="flex items-center text-md font-light text-gray-500 dark:text-gray-300">
+                                                <p className="flex items-center font-light text-gray-500 text-md dark:text-gray-300">
                                                     {list.desc}
                                                 </p>
                                             </div>
@@ -52,7 +52,7 @@ const TodoList = () => {
                         );
                     })}
                 </ul>
-                <div className="p-4 w-full md:w-1/2 mx-auto">
+                <div className="w-full p-4 mx-auto md:w-1/2">
                     <Button color="indigo" label="View all" />
                 </div>
             </div>

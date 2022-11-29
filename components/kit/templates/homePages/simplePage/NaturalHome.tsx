@@ -2,13 +2,13 @@ import React from 'react';
 
 const NaturalHome = () => {
     return (
-        <div className="bg-indigo-900 relative overflow-hidden h-screen">
-            <img src="/images/landscape/5.svg" className="absolute h-full w-full object-cover" />
-            <div className="inset-0 bg-black opacity-25 absolute"></div>
+        <div className="relative h-screen overflow-hidden bg-indigo-900">
+            <img src="/images/landscape/5.svg" className="absolute object-cover w-full h-full" />
+            <div className="absolute inset-0 bg-black opacity-25"></div>
             <header className="absolute top-0 left-0 right-0 z-20">
-                <nav className="container mx-auto px-6 md:px-12 py-4">
-                    <div className="md:flex justify-between items-center">
-                        <div className="flex justify-between items-center">
+                <nav className="container px-6 py-4 mx-auto md:px-12">
+                    <div className="items-center justify-between md:flex">
+                        <div className="flex items-center justify-between">
                             <a href="#" className="text-white">
                                 <svg
                                     className="w-8 mr-2 fill-current"
@@ -25,7 +25,7 @@ const NaturalHome = () => {
                             <div className="md:hidden">
                                 <button className="text-white focus:outline-none">
                                     <svg
-                                        className="h-12 w-12"
+                                        className="w-12 h-12"
                                         viewBox="0 0 24 24"
                                         fill="none"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -42,14 +42,14 @@ const NaturalHome = () => {
                             </div>
                         </div>
 
-                        <div className="hidden md:flex items-center">
-                            <a className="text-lg uppercase mx-3 text-white cursor-pointer hover:text-gray-300">
+                        <div className="items-center hidden md:flex">
+                            <a className="mx-3 text-lg text-white uppercase cursor-pointer hover:text-gray-300">
                                 About us
                             </a>
-                            <a className="text-lg uppercase mx-3 text-white cursor-pointer hover:text-gray-300">
+                            <a className="mx-3 text-lg text-white uppercase cursor-pointer hover:text-gray-300">
                                 Calendar
                             </a>
-                            <a className="text-lg uppercase mx-3 text-white cursor-pointer hover:text-gray-300">
+                            <a className="mx-3 text-lg text-white uppercase cursor-pointer hover:text-gray-300">
                                 Contact us
                             </a>
                         </div>
@@ -57,17 +57,17 @@ const NaturalHome = () => {
                 </nav>
             </header>
 
-            <div className="container mx-auto px-6 md:px-12 relative z-10 flex items-center py-32 xl:py-40">
-                <div className="lg:w-3/5 xl:w-2/5 flex flex-col items-start relative z-10">
-                    <span className="font-bold uppercase text-yellow-400">Himalaya</span>
+            <div className="container relative z-10 flex items-center px-6 py-32 mx-auto md:px-12 xl:py-40">
+                <div className="relative z-10 flex flex-col items-start lg:w-3/5 xl:w-2/5">
+                    <span className="font-bold text-yellow-400 uppercase">Himalaya</span>
 
-                    <h1 className="font-bold text-6xl sm:text-7xl text-white leading-tight mt-4">
+                    <h1 className="mt-4 text-6xl font-bold leading-tight text-white sm:text-7xl">
                         Let yourself be carried <br /> by nature
                     </h1>
 
                     <a
                         href="#"
-                        className="block bg-white hover:bg-gray-100 py-3 px-4 rounded-lg text-lg text-gray-800 font-bold uppercase mt-10"
+                        className="block px-4 py-3 mt-10 text-lg font-bold text-gray-800 uppercase bg-white rounded-lg hover:bg-gray-100"
                     >
                         Discover
                     </a>

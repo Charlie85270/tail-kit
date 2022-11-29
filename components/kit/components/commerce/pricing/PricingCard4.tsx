@@ -2,29 +2,29 @@ import React, { FC } from 'react';
 
 const PricingCard4: FC = () => {
     return (
-        <div className="rounded-lg shadow-lg overflow-hidden mb-4">
+        <div className="mb-4 overflow-hidden rounded-lg shadow-lg">
             <div className="px-6 py-8 bg-white dark:bg-gray-800 sm:p-10 sm:pb-6">
                 <div className="flex justify-center">
-                    <span className="inline-flex px-4 py-1 dark:text-white rounded-full text-sm leading-5 font-semibold tracking-wide uppercase">
+                    <span className="inline-flex px-4 py-1 text-sm font-semibold leading-5 tracking-wide uppercase rounded-full dark:text-white">
                         Team Plan
                     </span>
                 </div>
-                <div className="mt-4 flex justify-center text-6xl leading-none font-extrabold dark:text-white">
-                    <span className="ml-1 mr-3 text-xl leading-8 font-medium text-gray-500 dark:text-gray-400">
+                <div className="flex justify-center mt-4 text-6xl font-extrabold leading-none dark:text-white">
+                    <span className="ml-1 mr-3 text-xl font-medium leading-8 text-gray-500 dark:text-gray-400">
                         from
                     </span>
                     $10
-                    <span className="ml-1 pt-8 text-2xl leading-8 font-medium text-gray-500 dark:text-gray-400">
+                    <span className="pt-8 ml-1 text-2xl font-medium leading-8 text-gray-500 dark:text-gray-400">
                         /month
                     </span>
                 </div>
             </div>
             <div className="px-6 pt-6 pb-8 bg-white dark:bg-gray-800 sm:p-10 sm:pt-6">
                 <ul>
-                    <li className="mt-4 flex items-start">
+                    <li className="flex items-start mt-4">
                         <div className="flex-shrink-0">
                             <svg
-                                className="h-6 w-6 text-green-500"
+                                className="w-6 h-6 text-green-500"
                                 stroke="currentColor"
                                 fill="none"
                                 viewBox="0 0 24 24"
@@ -39,10 +39,10 @@ const PricingCard4: FC = () => {
                         </div>
                         <p className="ml-3 text-base leading-6 text-gray-700 dark:text-gray-200">$10/month per user</p>
                     </li>
-                    <li className="mt-4 flex items-start">
+                    <li className="flex items-start mt-4">
                         <div className="flex-shrink-0">
                             <svg
-                                className="h-6 w-6 text-green-500"
+                                className="w-6 h-6 text-green-500"
                                 stroke="currentColor"
                                 fill="none"
                                 viewBox="0 0 24 24"
@@ -59,10 +59,10 @@ const PricingCard4: FC = () => {
                             Unlimited number of projects
                         </p>
                     </li>
-                    <li className="mt-4 flex items-start">
+                    <li className="flex items-start mt-4">
                         <div className="flex-shrink-0">
                             <svg
-                                className="h-6 w-6 text-green-500"
+                                className="w-6 h-6 text-green-500"
                                 stroke="currentColor"
                                 fill="none"
                                 viewBox="0 0 24 24"
@@ -81,7 +81,7 @@ const PricingCard4: FC = () => {
                 <div className="mt-6 rounded-md shadow">
                     <a
                         href="#"
-                        className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+                        className="flex items-center justify-center px-5 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-500 focus:outline-none focus:shadow-outline"
                     >
                         Start team plan
                     </a>

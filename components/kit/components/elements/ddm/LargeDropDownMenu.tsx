@@ -67,16 +67,16 @@ const LargeDropDownMenu = (props: Props) => {
             {(props.forceOpen || isOpen) && (
                 <div
                     ref={listElement}
-                    className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2"
+                    className="absolute z-10 w-screen max-w-md px-2 mt-3 -ml-4 transform sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2"
                 >
-                    <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-                        <div className="relative grid gap-6 bg-white dark:bg-gray-800 px-5 py-6 sm:gap-8 sm:p-8 divide-y divide-gray-100">
+                    <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                        <div className="relative grid gap-6 px-5 py-6 bg-white divide-y divide-gray-100 dark:bg-gray-800 sm:gap-8 sm:p-8">
                             {props.items.map((item) => {
                                 return (
                                     <a
                                         href={item.link || '#'}
                                         key={item.label}
-                                        className="-m-3 p-3 flex items-center hover:bg-gray-50"
+                                        className="flex items-center p-3 -m-3 hover:bg-gray-50"
                                     >
                                         {item.icon}
 

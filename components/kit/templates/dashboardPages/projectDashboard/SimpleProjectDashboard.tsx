@@ -9,10 +9,10 @@ import TasksList from '../../../components/elements/data/TasksList';
 
 const SimpleProjectDashboard = () => {
     return (
-        <main className="bg-gray-100 dark:bg-gray-800 rounded-2xl h-screen overflow-hidden relative">
+        <main className="relative h-screen overflow-hidden bg-gray-100 dark:bg-gray-800 rounded-2xl">
             <div className="flex items-start justify-between">
-                <div className="h-screen hidden lg:block my-4 ml-4 shadow-lg relative w-80">
-                    <div className="bg-white h-full rounded-2xl dark:bg-gray-700">
+                <div className="relative hidden h-screen my-4 ml-4 shadow-lg lg:block w-80">
+                    <div className="h-full bg-white rounded-2xl dark:bg-gray-700">
                         <div className="flex items-center justify-center pt-6">
                             <svg
                                 width="35"
@@ -60,7 +60,7 @@ const SimpleProjectDashboard = () => {
                         <nav className="mt-6">
                             <div>
                                 <a
-                                    className="w-full font-thin uppercase text-blue-500 flex items-center p-4 my-2 transition-colors duration-200 justify-start bg-gradient-to-r from-white to-blue-100 border-r-4 border-blue-500 dark:from-gray-700 dark:to-gray-800 border-r-4 border-blue-500"
+                                    className="flex items-center justify-start w-full p-4 my-2 font-thin text-blue-500 uppercase transition-colors duration-200 border-r-4 border-blue-500 bg-gradient-to-r from-white to-blue-100 dark:from-gray-700 dark:to-gray-800"
                                     href="#"
                                 >
                                     <span className="text-left">
@@ -77,7 +77,7 @@ const SimpleProjectDashboard = () => {
                                     <span className="mx-4 text-sm font-normal">Dashboard</span>
                                 </a>
                                 <a
-                                    className="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
+                                    className="flex items-center justify-start w-full p-4 my-2 font-thin text-gray-500 uppercase transition-colors duration-200 dark:text-gray-200 hover:text-blue-500"
                                     href="#"
                                 >
                                     <span className="text-left">
@@ -95,7 +95,7 @@ const SimpleProjectDashboard = () => {
                                     <span className="mx-4 text-sm font-normal">Projects</span>
                                 </a>
                                 <a
-                                    className="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
+                                    className="flex items-center justify-start w-full p-4 my-2 font-thin text-gray-500 uppercase transition-colors duration-200 dark:text-gray-200 hover:text-blue-500"
                                     href="#"
                                 >
                                     <span className="text-left">
@@ -113,7 +113,7 @@ const SimpleProjectDashboard = () => {
                                     <span className="mx-4 text-sm font-normal">My tasks</span>
                                 </a>
                                 <a
-                                    className="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
+                                    className="flex items-center justify-start w-full p-4 my-2 font-thin text-gray-500 uppercase transition-colors duration-200 dark:text-gray-200 hover:text-blue-500"
                                     href="#"
                                 >
                                     <span className="text-left">
@@ -131,7 +131,7 @@ const SimpleProjectDashboard = () => {
                                     <span className="mx-4 text-sm font-normal">Calendar</span>
                                 </a>
                                 <a
-                                    className="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
+                                    className="flex items-center justify-start w-full p-4 my-2 font-thin text-gray-500 uppercase transition-colors duration-200 dark:text-gray-200 hover:text-blue-500"
                                     href="#"
                                 >
                                     <span className="text-left">
@@ -149,7 +149,7 @@ const SimpleProjectDashboard = () => {
                                     <span className="mx-4 text-sm font-normal">Time manage</span>
                                 </a>
                                 <a
-                                    className="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
+                                    className="flex items-center justify-start w-full p-4 my-2 font-thin text-gray-500 uppercase transition-colors duration-200 dark:text-gray-200 hover:text-blue-500"
                                     href="#"
                                 >
                                     <span className="text-left">
@@ -167,7 +167,7 @@ const SimpleProjectDashboard = () => {
                                     <span className="mx-4 text-sm font-normal">Reports</span>
                                 </a>
                                 <a
-                                    className="w-full font-thin uppercase text-gray-500 dark:text-gray-200 flex items-center p-4 my-2 transition-colors duration-200 justify-start hover:text-blue-500"
+                                    className="flex items-center justify-start w-full p-4 my-2 font-thin text-gray-500 uppercase transition-colors duration-200 dark:text-gray-200 hover:text-blue-500"
                                     href="#"
                                 >
                                     <span className="text-left">
@@ -175,7 +175,7 @@ const SimpleProjectDashboard = () => {
                                             width="20"
                                             fill="currentColor"
                                             height="20"
-                                            className="h-5 w-5"
+                                            className="w-5 h-5"
                                             viewBox="0 0 1792 1792"
                                             xmlns="http://www.w3.org/2000/svg"
                                         >
@@ -190,11 +190,11 @@ const SimpleProjectDashboard = () => {
                 </div>
 
                 <div className="flex flex-col w-full pl-0 md:p-4 md:space-y-4">
-                    <header className="w-full shadow-lg bg-white dark:bg-gray-700 items-center h-16 rounded-2xl z-40">
+                    <header className="z-40 items-center w-full h-16 bg-white shadow-lg dark:bg-gray-700 rounded-2xl">
                         <div className="relative z-20 flex flex-col justify-center h-full px-3 mx-auto flex-center">
-                            <div className="relative items-center pl-1 flex w-full lg:max-w-68 sm:pr-2 sm:ml-0">
+                            <div className="relative flex items-center w-full pl-1 lg:max-w-68 sm:pr-2 sm:ml-0">
                                 <div className="container relative left-0 z-50 flex w-3/4 h-auto h-full">
-                                    <div className="relative flex items-center w-full lg:w-64 h-full group">
+                                    <div className="relative flex items-center w-full h-full lg:w-64 group">
                                         <div className="absolute z-50 flex items-center justify-center block w-auto h-10 p-3 pr-2 text-sm text-gray-500 uppercase cursor-pointer sm:hidden">
                                             <svg
                                                 fill="none"
@@ -227,13 +227,13 @@ const SimpleProjectDashboard = () => {
                                     </div>
                                 </div>
 
-                                <div className="relative p-1 flex items-center justify-end w-1/4 ml-5 mr-4 sm:mr-0 sm:right-auto">
+                                <div className="relative flex items-center justify-end w-1/4 p-1 ml-5 mr-4 sm:mr-0 sm:right-auto">
                                     <Avatar size="small" />
                                 </div>
                             </div>
                         </div>
                     </header>
-                    <div className="overflow-auto h-screen pb-24 pt-2 pr-2 pl-2 md:pt-0 md:pr-0 md:pl-0">
+                    <div className="h-screen pt-2 pb-24 pl-2 pr-2 overflow-auto md:pt-0 md:pr-0 md:pl-0">
                         <div className="flex flex-col flex-wrap sm:flex-row ">
                             <div className="w-full sm:w-1/2 xl:w-1/3">
                                 <div className="mb-4">
@@ -245,7 +245,7 @@ const SimpleProjectDashboard = () => {
                             </div>
 
                             <div className="w-full sm:w-1/2 xl:w-1/3">
-                                <div className="mb-4 mx-0 sm:ml-4 xl:mr-4">
+                                <div className="mx-0 mb-4 sm:ml-4 xl:mr-4">
                                     <TasksList />
                                 </div>
                                 <div className="mb-4 sm:ml-4 xl:mr-4">

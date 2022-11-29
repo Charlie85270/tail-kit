@@ -4,7 +4,7 @@ import Avatar from '../../elements/avatars/Avatar';
 const BigTestimonialFlex = () => {
     return (
         <div className={`bg-white dark:bg-gray-800 w-full mx-auto p-8`}>
-            <div className="flex items-center md:items-start flex-col md:flex-row justify-center">
+            <div className="flex flex-col items-center justify-center md:items-start md:flex-row">
                 <Avatar size="monster" />
 
                 <div className="w-full md:w-2/3">
@@ -14,10 +14,10 @@ const BigTestimonialFlex = () => {
                         accounts by posting regularly yourself
                         <span className="font-bold text-indigo-500">”</span>
                     </p>
-                    <div className="flex mt-8 items-center justify-center">
-                        <span className="font-semibold text-indigo-500 mr-2 text-lg">Jean Miguel</span>
-                        <span className="text-gray-400 text-xl font-light">/</span>
-                        <span className="text-gray-400 text-md ml-2">User of tail-kit</span>
+                    <div className="flex items-center justify-center mt-8">
+                        <span className="mr-2 text-lg font-semibold text-indigo-500">Jean Miguel</span>
+                        <span className="text-xl font-light text-gray-400">/</span>
+                        <span className="ml-2 text-gray-400 text-md">User of tail-kit</span>
                     </div>
                 </div>
             </div>

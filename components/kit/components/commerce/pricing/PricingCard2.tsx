@@ -3,24 +3,24 @@ import { prices } from './PricingCard';
 
 const PricingCard2: FC = () => {
     return (
-        <div className="shadow-lg rounded-2xl w-64 bg-indigo-500 dark:bg-gray-800 p-4">
-            <div className="flex text-white  items-center justify-between">
-                <p className="text-4xl font-medium mb-4">Pro</p>
-                <p className="text-3xl font-bold flex flex-col">
+        <div className="w-64 p-4 bg-indigo-500 shadow-lg rounded-2xl dark:bg-gray-800">
+            <div className="flex items-center justify-between text-white">
+                <p className="mb-4 text-4xl font-medium">Pro</p>
+                <p className="flex flex-col text-3xl font-bold">
                     $99
-                    <span className="font-thin text-right text-sm">month</span>
+                    <span className="text-sm font-thin text-right">month</span>
                 </p>
             </div>
 
-            <p className="text-white text-md mt-4">Plan include :</p>
+            <p className="mt-4 text-white text-md">Plan include :</p>
 
-            <ul className="text-sm text-white w-full mt-6 mb-6">
+            <ul className="w-full mt-6 mb-6 text-sm text-white">
                 {prices.map((price) => {
                     return (
                         <li key={price.label} className={`mb-3 flex items-center ${price.include ? '' : 'opacity-50'}`}>
                             {price.include ? (
                                 <svg
-                                    className="h-6 w-6 mr-2"
+                                    className="w-6 h-6 mr-2"
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="6"
                                     height="6"
@@ -35,7 +35,7 @@ const PricingCard2: FC = () => {
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="6"
                                     height="6"
-                                    className="h-6 w-6 mr-2"
+                                    className="w-6 h-6 mr-2"
                                     fill="white"
                                     viewBox="0 0 1792 1792"
                                 >
@@ -51,7 +51,7 @@ const PricingCard2: FC = () => {
 
             <button
                 type="button"
-                className="w-full px-3 py-3 text-sm shadow rounded-lg text-indigo-500 bg-white hover:bg-gray-100 "
+                className="w-full px-3 py-3 text-sm text-indigo-500 bg-white rounded-lg shadow hover:bg-gray-100 "
             >
                 Choose plan
             </button>

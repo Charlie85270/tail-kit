@@ -2,22 +2,22 @@ import React from 'react';
 
 const FeaturesImage = () => {
     return (
-        <div className="relative bg-white dark:bg-gray-800 p-4">
+        <div className="relative p-4 bg-white dark:bg-gray-800">
             <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-12 lg:items-center">
                 <div className="lg:col-start-2 md:pl-20">
-                    <h4 className="text-2xl leading-8 font-extrabold text-gray-900 dark:text-white tracking-tight sm:leading-9">
+                    <h4 className="text-2xl font-extrabold leading-8 tracking-tight text-gray-900 dark:text-white sm:leading-9">
                         Manage everything
                     </h4>
                     <ul className="mt-10">
                         <li>
                             <div className="flex">
                                 <div className="flex-shrink-0">
-                                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                    <div className="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
                                         <svg
                                             width="20"
                                             height="20"
                                             fill="currentColor"
-                                            className="h-6 w-6"
+                                            className="w-6 h-6"
                                             viewBox="0 0 1792 1792"
                                             xmlns="http://www.w3.org/2000/svg"
                                         >
@@ -26,7 +26,7 @@ const FeaturesImage = () => {
                                     </div>
                                 </div>
                                 <div className="ml-4">
-                                    <h5 className="text-lg leading-6 text-gray-900 dark:text-white font-bold">
+                                    <h5 className="text-lg font-bold leading-6 text-gray-900 dark:text-white">
                                         One-look dashboard
                                     </h5>
                                     <p className="mt-2 text-base leading-6 text-gray-500 dark:text-gray-300">
@@ -38,12 +38,12 @@ const FeaturesImage = () => {
                         <li className="mt-10">
                             <div className="flex">
                                 <div className="flex-shrink-0">
-                                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                    <div className="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
                                         <svg
                                             width="20"
                                             height="20"
                                             fill="currentColor"
-                                            className="h-6 w-6"
+                                            className="w-6 h-6"
                                             viewBox="0 0 1792 1792"
                                             xmlns="http://www.w3.org/2000/svg"
                                         >
@@ -52,7 +52,7 @@ const FeaturesImage = () => {
                                     </div>
                                 </div>
                                 <div className="ml-4">
-                                    <h5 className="text-lg leading-6 text-gray-900 dark:text-white font-bold">
+                                    <h5 className="text-lg font-bold leading-6 text-gray-900 dark:text-white">
                                         Orders, managed
                                     </h5>
                                     <p className="mt-2 text-base leading-6 text-gray-500 dark:text-gray-300">
@@ -65,12 +65,12 @@ const FeaturesImage = () => {
                         <li className="mt-10">
                             <div className="flex">
                                 <div className="flex-shrink-0">
-                                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                    <div className="flex items-center justify-center w-12 h-12 text-white bg-indigo-500 rounded-md">
                                         <svg
                                             width="20"
                                             height="20"
                                             fill="currentColor"
-                                            className="h-6 w-6"
+                                            className="w-6 h-6"
                                             viewBox="0 0 1792 1792"
                                             xmlns="http://www.w3.org/2000/svg"
                                         >
@@ -79,7 +79,7 @@ const FeaturesImage = () => {
                                     </div>
                                 </div>
                                 <div className="ml-4">
-                                    <h5 className="text-lg leading-6 text-gray-900 dark:text-white font-bold">
+                                    <h5 className="text-lg font-bold leading-6 text-gray-900 dark:text-white">
                                         Email &amp; SMS Notifications
                                     </h5>
                                     <p className="mt-2 text-base leading-6 text-gray-500 dark:text-gray-300">
@@ -91,11 +91,11 @@ const FeaturesImage = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="mt-10 -mx-4 md:-mx-12 relative lg:mt-0 lg:col-start-1">
+                <div className="relative mt-10 -mx-4 md:-mx-12 lg:mt-0 lg:col-start-1">
                     <img
                         src="/images/object/8.jpg"
                         alt="illustration"
-                        className="relative mx-auto shadow-lg rounded w-auto"
+                        className="relative w-auto mx-auto rounded shadow-lg"
                     />
                 </div>
             </div>

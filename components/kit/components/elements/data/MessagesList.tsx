@@ -3,18 +3,18 @@ import Avatar from '../avatars/Avatar';
 
 const MessagesList: FC = () => {
     return (
-        <div className="shadow-lg rounded-2xl p-4 bg-white dark:bg-gray-700 w-full">
-            <p className="font-bold text-md text-black dark:text-white">Messages</p>
+        <div className="w-full p-4 bg-white shadow-lg rounded-2xl dark:bg-gray-700">
+            <p className="font-bold text-black text-md dark:text-white">Messages</p>
 
             <ul>
                 <li className="flex items-center my-6 space-x-2">
                     <Avatar size="small" />
 
                     <div className="flex flex-col">
-                        <span className="text-sm text-gray-900 font-semibold dark:text-white ml-2">
+                        <span className="ml-2 text-sm font-semibold text-gray-900 dark:text-white">
                             Charlie Rabiller
                         </span>
-                        <span className="text-sm text-gray-400 dark:text-gray-300 ml-2">
+                        <span className="ml-2 text-sm text-gray-400 dark:text-gray-300">
                             Hey John ! Do you read the NextJS doc ?
                         </span>
                     </div>
@@ -24,8 +24,8 @@ const MessagesList: FC = () => {
                     <Avatar size="small" img="/images/person/5.jpg" />
 
                     <div className="flex flex-col">
-                        <span className="text-sm text-gray-900 font-semibold dark:text-white ml-2">Marie Lou</span>
-                        <span className="text-sm text-gray-400 dark:text-gray-300 ml-2">
+                        <span className="ml-2 text-sm font-semibold text-gray-900 dark:text-white">Marie Lou</span>
+                        <span className="ml-2 text-sm text-gray-400 dark:text-gray-300">
                             No I think the dog is better...
                         </span>
                     </div>
@@ -34,8 +34,8 @@ const MessagesList: FC = () => {
                     <Avatar size="small" img="/images/person/6.jpg" />
 
                     <div className="flex flex-col">
-                        <span className="text-sm text-gray-900 font-semibold dark:text-white ml-2">Ivan Buck</span>
-                        <span className="text-sm text-gray-400 dark:text-gray-300 ml-2">
+                        <span className="ml-2 text-sm font-semibold text-gray-900 dark:text-white">Ivan Buck</span>
+                        <span className="ml-2 text-sm text-gray-400 dark:text-gray-300">
                             Seriously ? haha Bob is not a child !
                         </span>
                     </div>
@@ -44,8 +44,8 @@ const MessagesList: FC = () => {
                     <Avatar size="small" img="/images/person/7.jpg" />
 
                     <div className="flex flex-col">
-                        <span className="text-sm text-gray-900 font-semibold dark:text-white ml-2">Marina Farga</span>
-                        <span className="text-sm text-gray-400 dark:text-gray-300 ml-2">Do you need that design ?</span>
+                        <span className="ml-2 text-sm font-semibold text-gray-900 dark:text-white">Marina Farga</span>
+                        <span className="ml-2 text-sm text-gray-400 dark:text-gray-300">Do you need that design ?</span>
                     </div>
                 </li>
             </ul>

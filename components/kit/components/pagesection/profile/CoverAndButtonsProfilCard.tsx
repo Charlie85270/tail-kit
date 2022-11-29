@@ -4,18 +4,18 @@ import Button from '../../elements/buttons/Button';
 
 const CoverAndButtonsProfilCard: FC = () => {
     return (
-        <div className="shadow-lg rounded-2xl w-64 bg-white dark:bg-gray-800">
-            <img alt="profil" src="/images/landscape/1.jpg" className="rounded-t-lg h-28 w-full mb-4" />
+        <div className="w-64 bg-white shadow-lg rounded-2xl dark:bg-gray-800">
+            <img alt="profil" src="/images/landscape/1.jpg" className="w-full mb-4 rounded-t-lg h-28" />
             <div className="flex flex-col items-center justify-center p-4 -mt-16">
                 <Avatar />
 
-                <p className="text-gray-800 dark:text-white text-xl font-medium mt-2">Charlie</p>
-                <p className="text-gray-400 text-xs flex items-center">
+                <p className="mt-2 text-xl font-medium text-gray-800 dark:text-white">Charlie</p>
+                <p className="flex items-center text-xs text-gray-400">
                     <svg
                         width="10"
                         height="10"
                         fill="currentColor"
-                        className="h-4 w-4 mr-2"
+                        className="w-4 h-4 mr-2"
                         viewBox="0 0 1792 1792"
                         xmlns="http://www.w3.org/2000/svg"
                     >
@@ -23,9 +23,9 @@ const CoverAndButtonsProfilCard: FC = () => {
                     </svg>
                     Nantes
                 </p>
-                <p className="text-gray-400 text-xs">FullStack dev</p>
+                <p className="text-xs text-gray-400">FullStack dev</p>
 
-                <div className="flex items-center justify-between gap-4 w-full mt-8">
+                <div className="flex items-center justify-between w-full gap-4 mt-8">
                     <Button color="indigo" label="See profile" />
                 </div>
             </div>

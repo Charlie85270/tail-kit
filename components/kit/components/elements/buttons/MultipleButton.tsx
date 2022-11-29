@@ -5,19 +5,19 @@ const MultipleButton: FC = () => {
         <div className="flex items-center">
             <button
                 type="button"
-                className="w-full border-l border-t border-b text-base font-medium rounded-l-md text-black bg-white hover:bg-gray-100 px-4 py-2"
+                className="w-full px-4 py-2 text-base font-medium text-black bg-white border-t border-b border-l rounded-l-md hover:bg-gray-100"
             >
                 Left
             </button>
             <button
                 type="button"
-                className="w-full border text-base font-medium text-black bg-white hover:bg-gray-100 px-4 py-2"
+                className="w-full px-4 py-2 text-base font-medium text-black bg-white border hover:bg-gray-100"
             >
                 Center
             </button>
             <button
                 type="button"
-                className="w-full border-t border-b border-r text-base font-medium rounded-r-md text-black bg-white hover:bg-gray-100 px-4 py-2"
+                className="w-full px-4 py-2 text-base font-medium text-black bg-white border-t border-b border-r rounded-r-md hover:bg-gray-100"
             >
                 Right
             </button>

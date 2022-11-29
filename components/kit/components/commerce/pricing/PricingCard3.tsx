@@ -5,23 +5,23 @@ const bonus = ['All free dashboard', 'Best ranking', 'Chocolate and meel'];
 
 const PricingCard3: FC = () => {
     return (
-        <div className="shadow-lg rounded-2xl w-64 bg-white dark:bg-gray-800 p-4">
-            <p className="text-black dark:text-white text-3xl font-bold">Essential</p>
-            <p className="text-gray-500 dark:text-gray-300 text-sm mb-4">For the basics tailwind</p>
-            <p className="text-black dark:text-white  text-3xl font-bold">$99</p>
-            <p className="text-gray-500 dark:text-gray-300 text-sm mb-4">Per agent per month</p>
+        <div className="w-64 p-4 bg-white shadow-lg rounded-2xl dark:bg-gray-800">
+            <p className="text-3xl font-bold text-black dark:text-white">Essential</p>
+            <p className="mb-4 text-sm text-gray-500 dark:text-gray-300">For the basics tailwind</p>
+            <p className="text-3xl font-bold text-black dark:text-white">$99</p>
+            <p className="mb-4 text-sm text-gray-500 dark:text-gray-300">Per agent per month</p>
 
             <button
                 type="button"
-                className="w-56 m-auto px-3 py-3 text-sm shadow border border-black rounded-lg text-black bg-white hover:bg-black hover:text-white dark:hover-text-gray-900 dark:hover:bg-gray-100 "
+                className="w-56 px-3 py-3 m-auto text-sm text-black bg-white border border-black rounded-lg shadow hover:bg-black hover:text-white dark:hover-text-gray-900 dark:hover:bg-gray-100 "
             >
                 Request demo
             </button>
 
-            <ul className="text-sm text-black dark:text-white w-full mt-6 mb-6">
+            <ul className="w-full mt-6 mb-6 text-sm text-black dark:text-white">
                 {includes.map((price) => {
                     return (
-                        <li key={price} className="mb-3 flex items-center">
+                        <li key={price} className="flex items-center mb-3">
                             <svg
                                 className="mr-2"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -36,11 +36,11 @@ const PricingCard3: FC = () => {
                     );
                 })}
             </ul>
-            <span className="w-56 block bg-gray-100 h-1 rounded-lg my-2" />
-            <ul className="text-sm text-black dark:text-white w-full mt-6 mb-6">
+            <span className="block w-56 h-1 my-2 bg-gray-100 rounded-lg" />
+            <ul className="w-full mt-6 mb-6 text-sm text-black dark:text-white">
                 {bonus.map((bon, index) => {
                     return (
-                        <li key={index} className="mb-3 flex items-center space-x-2">
+                        <li key={index} className="flex items-center mb-3 space-x-2">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="16"
@@ -53,7 +53,7 @@ const PricingCard3: FC = () => {
                             <div>
                                 {bon}
                                 {index === 0 && (
-                                    <a href="#" className="text-red-500 font-semibold">
+                                    <a href="#" className="font-semibold text-red-500">
                                         free plan
                                     </a>
                                 )}

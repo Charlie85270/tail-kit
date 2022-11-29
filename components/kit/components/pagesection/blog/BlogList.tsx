@@ -51,10 +51,10 @@ const BlogList = (props: Props) => {
     ];
 
     return (
-        <div className="w-full bg-white p-12">
-            <div className="header flex items-end justify-between mb-12">
+        <div className="w-full p-12 bg-white">
+            <div className="flex items-end justify-between mb-12 header">
                 <div className="title">
-                    <p className="text-4xl font-bold text-gray-800 mb-4">Lastest articles</p>
+                    <p className="mb-4 text-4xl font-bold text-gray-800">Lastest articles</p>
                     <p className="text-2xl font-light text-gray-400">
                         All article are verified by 2 experts and valdiate by the CTO
                     </p>
@@ -65,7 +65,7 @@ const BlogList = (props: Props) => {
                     </div>
                 )}
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12">
+            <div className="grid grid-cols-1 gap-12 md:grid-cols-2 xl:grid-cols-3">
                 {blogs.map((blog) => {
                     return (
                         <BlogCard

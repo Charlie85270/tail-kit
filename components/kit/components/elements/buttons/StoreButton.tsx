@@ -6,7 +6,7 @@ const StoreButton = () => {
             <div>
                 <button
                     type="button"
-                    className="flex mt-3 w-48 h-14 bg-black text-white rounded-xl items-center justify-center"
+                    className="flex items-center justify-center w-48 mt-3 text-white bg-black h-14 rounded-xl"
                 >
                     <div className="mr-3">
                         <svg viewBox="0 0 384 512" width="30">
@@ -18,13 +18,13 @@ const StoreButton = () => {
                     </div>
                     <div>
                         <div className="text-xs">Download on the</div>
-                        <div className="text-xl font-semibold font-sans -mt-1">App Store</div>
+                        <div className="-mt-1 font-sans text-xl font-semibold">App Store</div>
                     </div>
                 </button>
 
                 <button
                     type="button"
-                    className="flex mt-3 w-48 h-14 bg-transparent text-black border border-black rounded-xl items-center justify-center"
+                    className="flex items-center justify-center w-48 mt-3 text-black bg-transparent border border-black h-14 rounded-xl"
                 >
                     <div className="mr-3">
                         <svg viewBox="0 0 384 512" width="30">
@@ -36,13 +36,13 @@ const StoreButton = () => {
                     </div>
                     <div>
                         <div className="text-xs">Download on the</div>
-                        <div className="text-2xl font-semibold font-sans -mt-1">App Store</div>
+                        <div className="-mt-1 font-sans text-2xl font-semibold">App Store</div>
                     </div>
                 </button>
 
                 <button
                     type="button"
-                    className="flex mt-3 w-60 h-14 bg-black text-white rounded-xl items-center justify-center"
+                    className="flex items-center justify-center mt-3 text-white bg-black w-60 h-14 rounded-xl"
                 >
                     <div className="mr-3">
                         <svg viewBox="0 0 384 512" width="30">
@@ -54,13 +54,13 @@ const StoreButton = () => {
                     </div>
                     <div>
                         <div className="text-xs">Download on the</div>
-                        <div className="text-2xl font-semibold font-sans -mt-1">Mac App Store</div>
+                        <div className="-mt-1 font-sans text-2xl font-semibold">Mac App Store</div>
                     </div>
                 </button>
 
                 <button
                     type="button"
-                    className="flex mt-3 w-48 h-14 bg-black text-white rounded-lg items-center justify-center"
+                    className="flex items-center justify-center w-48 mt-3 text-white bg-black rounded-lg h-14"
                 >
                     <div className="mr-3">
                         <svg viewBox="30 336.7 120.9 129.2" width="30">
@@ -84,7 +84,7 @@ const StoreButton = () => {
                     </div>
                     <div>
                         <div className="text-xs">GET IT ON</div>
-                        <div className="text-xl font-semibold font-sans -mt-1">Google Play</div>
+                        <div className="-mt-1 font-sans text-xl font-semibold">Google Play</div>
                     </div>
                 </button>
             </div>

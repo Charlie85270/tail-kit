@@ -36,36 +36,36 @@ const SimpleList = (props: Props) => {
     ];
 
     return (
-        <div className="container flex flex-col mx-auto w-full items-center justify-center bg-white dark:bg-gray-800 rounded-lg shadow">
+        <div className="container flex flex-col items-center justify-center w-full mx-auto bg-white rounded-lg shadow dark:bg-gray-800">
             {props.withHeader && (
-                <div className="px-4 py-5 sm:px-6 border-b w-full">
-                    <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-white">User database</h3>
-                    <p className="mt-1 max-w-2xl text-sm text-gray-500 dark:text-gray-200">
+                <div className="w-full px-4 py-5 border-b sm:px-6">
+                    <h3 className="text-lg font-medium leading-6 text-gray-900 dark:text-white">User database</h3>
+                    <p className="max-w-2xl mt-1 text-sm text-gray-500 dark:text-gray-200">
                         Details and informations about user.
                     </p>
                 </div>
             )}
-            <ul className="flex flex-col divide divide-y">
+            <ul className="flex flex-col divide-y divide">
                 {lists.map((el) => {
                     return (
                         <li className="flex flex-row" key={el.label}>
-                            <div className="select-none cursor-pointer flex flex-1 items-center p-4">
-                                <div className="flex flex-col w-10 h-10 justify-center items-center mr-4">
+                            <div className="flex items-center flex-1 p-4 cursor-pointer select-none">
+                                <div className="flex flex-col items-center justify-center w-10 h-10 mr-4">
                                     <Avatar size="small" img={el.img} />
                                 </div>
                                 <div className="flex-1 pl-1 mr-16">
                                     <div className="font-medium dark:text-white">{el.label}</div>
-                                    <div className="text-gray-600 dark:text-gray-200 text-sm">{el.desc}</div>
+                                    <div className="text-sm text-gray-600 dark:text-gray-200">{el.desc}</div>
                                 </div>
 
-                                <div className="text-gray-600 dark:text-gray-200 text-xs">6:00 AM</div>
+                                <div className="text-xs text-gray-600 dark:text-gray-200">6:00 AM</div>
                                 {props.withAction && (
-                                    <button className="w-24 text-right flex justify-end">
+                                    <button className="flex justify-end w-24 text-right">
                                         <svg
                                             width="20"
                                             fill="currentColor"
                                             height="20"
-                                            className="hover:text-gray-800 dark:hover:text-white dark:text-gray-200 text-gray-500"
+                                            className="text-gray-500 hover:text-gray-800 dark:hover:text-white dark:text-gray-200"
                                             viewBox="0 0 1792 1792"
                                             xmlns="http://www.w3.org/2000/svg"
                                         >

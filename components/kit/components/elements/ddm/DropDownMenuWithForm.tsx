@@ -37,13 +37,13 @@ const DropDownMenuWithForm = (props: Props) => {
             </div>
 
             {(props.forceOpen || isOpen) && (
-                <div className="origin-top-right border border-gray-300 absolute right-0 mt-2 w-56 rounded-md bg-white dark:bg-gray-800">
+                <div className="absolute right-0 w-56 mt-2 origin-top-right bg-white border border-gray-300 rounded-md dark:bg-gray-800">
                     <div className="p-4" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                         <div>
                             <InputText placeholder="Name" />
                         </div>
                         <div>
-                            <div className="text-md text-gray-500 w-full text-center my-3">Or</div>
+                            <div className="w-full my-3 text-center text-gray-500 text-md">Or</div>
                             <InputText placeholder="City" />
                         </div>
                         <div className="flex items-center mt-3">

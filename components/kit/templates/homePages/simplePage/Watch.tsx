@@ -3,32 +3,32 @@ import WatchCta from '../../../components/pagesection/cta/WatchCta';
 
 const WatchLandingPage = () => {
     return (
-        <main className="dark:bg-gray-800 bg-white relative overflow-hidden h-screen">
-            <header className="h-24 sm:h-32 flex items-center z-30 w-full">
-                <div className="container mx-auto px-6 flex items-center justify-between">
-                    <div className="uppercase text-gray-800 dark:text-white font-black text-3xl">Watch.ME</div>
+        <main className="relative h-screen overflow-hidden bg-white dark:bg-gray-800">
+            <header className="z-30 flex items-center w-full h-24 sm:h-32">
+                <div className="container flex items-center justify-between px-6 mx-auto">
+                    <div className="text-3xl font-black text-gray-800 uppercase dark:text-white">Watch.ME</div>
                     <div className="flex items-center">
-                        <nav className="font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex items-center hidden">
-                            <a href="#" className="py-2 px-6 flex">
+                        <nav className="items-center hidden text-lg text-gray-800 uppercase font-sen dark:text-white lg:flex">
+                            <a href="#" className="flex px-6 py-2">
                                 Home
                             </a>
-                            <a href="#" className="py-2 px-6 flex">
+                            <a href="#" className="flex px-6 py-2">
                                 Watch
                             </a>
-                            <a href="#" className="py-2 px-6 flex">
+                            <a href="#" className="flex px-6 py-2">
                                 Product
                             </a>
-                            <a href="#" className="py-2 px-6 flex">
+                            <a href="#" className="flex px-6 py-2">
                                 Contact
                             </a>
-                            <a href="#" className="py-2 px-6 flex">
+                            <a href="#" className="flex px-6 py-2">
                                 Carrer
                             </a>
                         </nav>
-                        <button className="lg:hidden flex flex-col ml-4">
-                            <span className="w-6 h-1 bg-gray-800 dark:bg-white mb-1"></span>
-                            <span className="w-6 h-1 bg-gray-800 dark:bg-white mb-1"></span>
-                            <span className="w-6 h-1 bg-gray-800 dark:bg-white mb-1"></span>
+                        <button className="flex flex-col ml-4 lg:hidden">
+                            <span className="w-6 h-1 mb-1 bg-gray-800 dark:bg-white"></span>
+                            <span className="w-6 h-1 mb-1 bg-gray-800 dark:bg-white"></span>
+                            <span className="w-6 h-1 mb-1 bg-gray-800 dark:bg-white"></span>
                         </button>
                     </div>
                 </div>

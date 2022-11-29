@@ -13,17 +13,17 @@ const SubscribeCta = () => {
                     every time we release a new batch of components.
                 </p>
                 <form>
-                    <div className="sm:flex jusitfy-start mt-6">
+                    <div className="mt-6 sm:flex jusitfy-start">
                         <FormSubscribe label="Subscribe" placeholder="Email" />
                     </div>
                 </form>
 
-                <div className="hidden lg:block absolute inset-y-0 lg:left-2/3 xl:left-1/2 right-0">
+                <div className="absolute inset-y-0 right-0 hidden lg:block lg:left-2/3 xl:left-1/2">
                     <picture>
                         <source srcSet="/images/object/5.webp" type="image/webp" />
                         <source srcSet="/images/object/5.png" />
                         <img
-                            className="w-1/2 object-cover maw-w-44 mx-auto"
+                            className="object-cover w-1/2 mx-auto maw-w-44"
                             src="/images/object/5.png"
                             alt="shopping item"
                         />

@@ -23,9 +23,9 @@ interface section {
 const SectionDesc = ({ title, items, id, hasCommingSoon, isTemplate, withPub }: Props) => {
     return (
         <div className="mb-8" id={id}>
-            <h1 className="w-full text-left text-2xl font-light mb-4 text-gray-600">{title}</h1>
+            <h1 className="w-full mb-4 text-2xl font-light text-left text-gray-600">{title}</h1>
 
-            <div className="flex w-full gap-0 md:gap-4 flex-wrap justify-evenly md:justify-start items-center mb-4">
+            <div className="flex flex-wrap items-center w-full gap-0 mb-4 md:gap-4 justify-evenly md:justify-start">
                 {items.map((section) => {
                     return (
                         <div
@@ -51,11 +51,11 @@ const SectionDesc = ({ title, items, id, hasCommingSoon, isTemplate, withPub }: 
                                     <img
                                         src={section.img}
                                         alt={section.title}
-                                        className="rounded-lg w-full object-cover w-60 md:h-36 opacity-90 hover:opacity-100"
+                                        className="object-cover w-full rounded-lg w-60 md:h-36 opacity-90 hover:opacity-100"
                                     />
-                                    <p className="text-gray-700 text-md p-2">
+                                    <p className="p-2 text-gray-700 text-md">
                                         {section.title}{' '}
-                                        <span className="text-gray-500 font-thin text-sm">
+                                        <span className="text-sm font-thin text-gray-500">
                                             ({section.items} {isTemplate ? 'templates' : 'components'})
                                         </span>
                                     </p>
@@ -66,14 +66,14 @@ const SectionDesc = ({ title, items, id, hasCommingSoon, isTemplate, withPub }: 
                 })}
                 <>
                     {hasCommingSoon && (
-                        <div className="opacity-50 border border rounded-lg w-full sm:w-1/3 m-2 md:m-0  md:w-1/5">
+                        <div className="w-full m-2 border rounded-lg opacity-50 sm:w-1/3 md:m-0 md:w-1/5">
                             <div className="">
                                 <img
                                     src="/images/sections/coming.gif"
                                     alt="coming soon"
-                                    className="rounded-lg w-full object-cover w-60 md:h-36 opacity-90 hover:opacity-100"
+                                    className="object-cover w-full rounded-lg w-60 md:h-36 opacity-90 hover:opacity-100"
                                 />
-                                <p className="text-gray-700 text-sm p-2">More items will coming soon...</p>
+                                <p className="p-2 text-sm text-gray-700">More items will coming soon...</p>
                             </div>
                         </div>
                     )}

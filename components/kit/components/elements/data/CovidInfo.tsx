@@ -2,19 +2,19 @@ import React, { FC } from 'react';
 
 const CovidInfo: FC = () => {
     return (
-        <div className="md:p-8 p-6 bg-white shadow-xl rounded-lg flex justify-between dark:bg-gray-800 md:items-center md:flex-row flex-col gap-12">
+        <div className="flex flex-col justify-between gap-12 p-6 bg-white rounded-lg shadow-xl md:p-8 dark:bg-gray-800 md:items-center md:flex-row">
             <div>
-                <span className="text-bold text-gray-700 dark:text-gray-400 block">Total Cases</span>
-                <span className="text-yellow-500 text-4xl md:text-5xl mt-2 font-black block">75,858,724</span>
+                <span className="block text-gray-700 text-bold dark:text-gray-400">Total Cases</span>
+                <span className="block mt-2 text-4xl font-black text-yellow-500 md:text-5xl">75,858,724</span>
             </div>
             <div className="self-end">
-                <div className="md:text-right text-left md:block">
-                    <p className="text-xl md:mb-2 mb-0 dark:text-gray-100 flex items-center increase">
+                <div className="text-left md:text-right md:block">
+                    <p className="flex items-center mb-0 text-xl md:mb-2 dark:text-gray-100 increase">
                         <svg
                             width="20"
                             height="20"
                             fill="currentColor"
-                            className="h-6 w-6 text-red-500 mr-2"
+                            className="w-6 h-6 mr-2 text-red-500"
                             viewBox="0 0 1792 1792"
                             xmlns="http://www.w3.org/2000/svg"
                         >
@@ -23,7 +23,7 @@ const CovidInfo: FC = () => {
                         1.2% increase
                     </p>
                 </div>
-                <p className="text-lg text-gray-600 md:text-right text-left dark:text-gray-400 md:block inline-block md:mb-0">
+                <p className="inline-block text-lg text-left text-gray-600 md:text-right dark:text-gray-400 md:block md:mb-0">
                     from yesterday (+906,503)
                 </p>
             </div>

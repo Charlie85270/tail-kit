@@ -127,10 +127,10 @@ const SidebarWithCateg = () => {
     return (
         <div className="relative bg-white dark:bg-gray-800">
             <div className="flex flex-col sm:flex-row sm:justify-around">
-                <div className="w-72 h-screen">
-                    <nav className="mt-10 px-6">
+                <div className="h-screen w-72">
+                    <nav className="px-6 mt-10">
                         <a
-                            className="hover:text-gray-800 text-gray-600 bg-gray-50 dark:bg-gray-600 dark:text-gray-400hover:bg-gray-100 flex items-center p-2 my-6 transition-colors dark:hover:text-white dark:hover:bg-gray-600 duration-200 justify-start"
+                            className="flex items-center justify-start p-2 my-6 text-gray-600 transition-colors duration-200 hover:text-gray-800 bg-gray-50 dark:bg-gray-600 dark:text-gray-400hover:bg-gray-100 dark:hover:text-white dark:hover:bg-gray-600"
                             href="#"
                         >
                             <svg
@@ -146,24 +146,24 @@ const SidebarWithCateg = () => {
                                 />
                             </svg>
 
-                            <span className="mx-4 text-md font-normal">Dashboard</span>
+                            <span className="mx-4 font-normal text-md">Dashboard</span>
                         </a>
                         {links.map((link) => {
                             return (
                                 <div key={link.label}>
-                                    <p className="text-gray-300 ml-2 w-full border-b-2 pb-2 border-gray-100 mb-4 text-md font-normal">
+                                    <p className="w-full pb-2 mb-4 ml-2 font-normal text-gray-300 border-b-2 border-gray-100 text-md">
                                         {link.label}
                                     </p>
                                     {link.links.map((entry) => {
                                         return (
                                             <a
                                                 key={entry.label}
-                                                className="hover:text-gray-800 font-thin text-gray-500 dark:text-gray-400 hover:bg-gray-100 flex items-center p-2 my-4 transition-colors dark:hover:text-white dark:hover:bg-gray-600 duration-200 justify-start"
+                                                className="flex items-center justify-start p-2 my-4 font-thin text-gray-500 transition-colors duration-200 hover:text-gray-800 dark:text-gray-400 hover:bg-gray-100 dark:hover:text-white dark:hover:bg-gray-600"
                                                 href="#"
                                             >
                                                 <span className="text-left">{entry.icon}</span>
 
-                                                <span className="mx-4 text-md font-normal">{entry.label}</span>
+                                                <span className="mx-4 font-normal text-md">{entry.label}</span>
                                             </a>
                                         );
                                     })}

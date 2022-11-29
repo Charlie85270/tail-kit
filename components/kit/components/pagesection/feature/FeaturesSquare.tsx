@@ -2,21 +2,21 @@ import React from 'react';
 
 const FeaturesSquare = () => {
     return (
-        <div className="container mx-auto px-6 p-6 bg-white dark:bg-gray-800">
+        <div className="container p-6 px-6 mx-auto bg-white dark:bg-gray-800">
             <div className="mb-16 text-center">
-                <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">Features</h2>
-                <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+                <h2 className="text-base font-semibold tracking-wide text-indigo-600 uppercase">Features</h2>
+                <p className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 dark:text-white sm:text-4xl">
                     A better way to live
                 </p>
             </div>
             <div className="flex flex-wrap my-12 dark:text-white">
-                <div className="w-full border-b md:w-1/2 md:border-r lg:w-1/3 p-8">
+                <div className="w-full p-8 border-b md:w-1/2 md:border-r lg:w-1/3">
                     <div className="flex items-center mb-6">
                         <svg
                             width="20"
                             height="20"
                             fill="currentColor"
-                            className="h-6 w-6 text-indigo-500"
+                            className="w-6 h-6 text-indigo-500"
                             viewBox="0 0 1792 1792"
                             xmlns="http://www.w3.org/2000/svg"
                         >
@@ -29,13 +29,13 @@ const FeaturesSquare = () => {
                         point of entry.
                     </p>
                 </div>
-                <div className="w-full border-b md:w-1/2 lg:w-1/3 lg:border-r p-8">
+                <div className="w-full p-8 border-b md:w-1/2 lg:w-1/3 lg:border-r">
                     <div className="flex items-center mb-6">
                         <svg
                             width="20"
                             height="20"
                             fill="currentColor"
-                            className="h-6 w-6 text-indigo-500"
+                            className="w-6 h-6 text-indigo-500"
                             viewBox="0 0 1792 1792"
                             xmlns="http://www.w3.org/2000/svg"
                         >
@@ -48,13 +48,13 @@ const FeaturesSquare = () => {
                         touch.
                     </p>
                 </div>
-                <div className="w-full border-b md:w-1/2 md:border-r lg:w-1/3 lg:border-r-0 p-8">
+                <div className="w-full p-8 border-b md:w-1/2 md:border-r lg:w-1/3 lg:border-r-0">
                     <div className="flex items-center mb-6">
                         <svg
                             width="20"
                             height="20"
                             fill="currentColor"
-                            className="h-6 w-6 text-indigo-500"
+                            className="w-6 h-6 text-indigo-500"
                             viewBox="0 0 1792 1792"
                             xmlns="http://www.w3.org/2000/svg"
                         >
@@ -67,13 +67,13 @@ const FeaturesSquare = () => {
                         with low margins.
                     </p>
                 </div>
-                <div className="w-full border-b md:w-1/2 lg:w-1/3 lg:border-r lg:border-b-0 p-8">
+                <div className="w-full p-8 border-b md:w-1/2 lg:w-1/3 lg:border-r lg:border-b-0">
                     <div className="flex items-center mb-6">
                         <svg
                             width="20"
                             height="20"
                             fill="currentColor"
-                            className="h-6 w-6 text-indigo-500"
+                            className="w-6 h-6 text-indigo-500"
                             viewBox="0 0 1792 1792"
                             xmlns="http://www.w3.org/2000/svg"
                         >
@@ -86,13 +86,13 @@ const FeaturesSquare = () => {
                         lower costs.
                     </p>
                 </div>
-                <div className="w-full border-b md:w-1/2 md:border-r md:border-b-0 lg:w-1/3 lg:border-b-0 p-8">
+                <div className="w-full p-8 border-b md:w-1/2 md:border-r md:border-b-0 lg:w-1/3 lg:border-b-0">
                     <div className="flex items-center mb-6">
                         <svg
                             width="20"
                             height="20"
                             fill="currentColor"
-                            className="h-6 w-6 text-indigo-500"
+                            className="w-6 h-6 text-indigo-500"
                             viewBox="0 0 1792 1792"
                             xmlns="http://www.w3.org/2000/svg"
                         >
@@ -105,13 +105,13 @@ const FeaturesSquare = () => {
                         channel.
                     </p>
                 </div>
-                <div className="w-full md:w-1/2 lg:w-1/3 p-8">
+                <div className="w-full p-8 md:w-1/2 lg:w-1/3">
                     <div className="flex items-center mb-6">
                         <svg
                             width="20"
                             height="20"
                             fill="currentColor"
-                            className="h-6 w-6 text-indigo-500"
+                            className="w-6 h-6 text-indigo-500"
                             viewBox="0 0 1792 1792"
                             xmlns="http://www.w3.org/2000/svg"
                         >

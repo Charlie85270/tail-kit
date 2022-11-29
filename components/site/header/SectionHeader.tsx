@@ -9,10 +9,10 @@ interface Props {
 const SectionHeader = ({ title, backLink }: Props) => {
     return (
         <div className="flex items-center justify-between mb-8">
-            <h1 className="font-light text-3xl">{title}</h1>
+            <h1 className="text-3xl font-light">{title}</h1>
 
             <Link href={backLink ? backLink : '/components'}>
-                <a className="w-28 flex items-center px-4 py-2 text-base font-medium rounded-md text-white bg-gray-700 hover:bg-black">
+                <a className="flex items-center px-4 py-2 text-base font-medium text-white bg-gray-700 rounded-md w-28 hover:bg-black">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"

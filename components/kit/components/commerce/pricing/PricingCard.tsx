@@ -39,22 +39,22 @@ export const notIncluded = [
 
 const PricingCard: FC = () => {
     return (
-        <div className="shadow-lg rounded-2xl w-64 bg-white dark:bg-gray-800 p-4">
-            <p className="text-gray-800 dark:text-gray-50 text-xl font-medium mb-4">Entreprise</p>
-            <p className="text-gray-900 dark:text-white text-3xl font-bold">
-                $0 <span className="text-gray-300 text-sm">/ month </span>
+        <div className="w-64 p-4 bg-white shadow-lg rounded-2xl dark:bg-gray-800">
+            <p className="mb-4 text-xl font-medium text-gray-800 dark:text-gray-50">Entreprise</p>
+            <p className="text-3xl font-bold text-gray-900 dark:text-white">
+                $0 <span className="text-sm text-gray-300">/ month </span>
             </p>
-            <p className="text-gray-600 dark:text-gray-100  text-xs mt-4">
+            <p className="mt-4 text-xs text-gray-600 dark:text-gray-100">
                 For most businesses that want to optimize web queries.
             </p>
 
-            <ul className="text-sm text-gray-600 dark:text-gray-100 w-full mt-6 mb-6">
+            <ul className="w-full mt-6 mb-6 text-sm text-gray-600 dark:text-gray-100">
                 {prices.map((price) => {
                     return (
                         <li key={price.label} className={`mb-3 flex items-center ${price.include ? '' : 'opacity-50'}`}>
                             {price.include ? (
                                 <svg
-                                    className="h-6 w-6 mr-2"
+                                    className="w-6 h-6 mr-2"
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="6"
                                     height="6"
@@ -69,7 +69,7 @@ const PricingCard: FC = () => {
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="6"
                                     height="6"
-                                    className="h-6 w-6 mr-2"
+                                    className="w-6 h-6 mr-2"
                                     fill="red"
                                     viewBox="0 0 1792 1792"
                                 >

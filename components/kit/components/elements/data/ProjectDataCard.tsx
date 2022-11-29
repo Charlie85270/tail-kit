@@ -2,13 +2,13 @@ import React from 'react';
 
 const ProjectDataCard = () => {
     return (
-        <div className="shadow-lg px-4 py-6 w-full bg-white dark:bg-gray-800 relative">
-            <p className="text-sm w-max text-gray-700 dark:text-white font-semibold border-b border-gray-200">
+        <div className="relative w-full px-4 py-6 bg-white shadow-lg dark:bg-gray-800">
+            <p className="text-sm font-semibold text-gray-700 border-b border-gray-200 w-max dark:text-white">
                 Project Reffered
             </p>
-            <div className="flex items-end space-x-2 my-6">
-                <p className="text-5xl text-black dark:text-white font-bold">12</p>
-                <span className="text-green-500 text-xl font-bold flex items-center">
+            <div className="flex items-end my-6 space-x-2">
+                <p className="text-5xl font-bold text-black dark:text-white">12</p>
+                <span className="flex items-center text-xl font-bold text-green-500">
                     <svg
                         width="20"
                         fill="currentColor"
@@ -23,7 +23,7 @@ const ProjectDataCard = () => {
                 </span>
             </div>
             <div className="dark:text-white">
-                <div className="flex items-center pb-2 mb-2 text-sm space-x-12 md:space-x-24 justify-between border-b border-gray-200">
+                <div className="flex items-center justify-between pb-2 mb-2 space-x-12 text-sm border-b border-gray-200 md:space-x-24">
                     <p>Unique refferal URL</p>
                     <div className="flex items-end text-xs">
                         34
@@ -42,7 +42,7 @@ const ProjectDataCard = () => {
                         </span>
                     </div>
                 </div>
-                <div className="flex items-center mb-2 pb-2 text-sm space-x-12 md:space-x-24 justify-between border-b border-gray-200">
+                <div className="flex items-center justify-between pb-2 mb-2 space-x-12 text-sm border-b border-gray-200 md:space-x-24">
                     <p>Embedded form</p>
                     <div className="flex items-end text-xs">
                         13
@@ -61,7 +61,7 @@ const ProjectDataCard = () => {
                         </span>
                     </div>
                 </div>
-                <div className="flex items-center text-sm space-x-12 md:space-x-24 justify-between">
+                <div className="flex items-center justify-between space-x-12 text-sm md:space-x-24">
                     <p>New visitor</p>
                     <div className="flex items-end text-xs">
                         45

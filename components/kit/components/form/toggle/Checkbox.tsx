@@ -49,13 +49,13 @@ const Checkbox = (props: Props) => {
         <div>
             {colors.map((color, index) => {
                 return (
-                    <label key={color.label} className="flex items-center space-x-3 mb-3">
+                    <label key={color.label} className="flex items-center mb-3 space-x-3">
                         <input
                             type="checkbox"
                             name="checked-demo"
                             className={`form-tick appearance-none bg-white bg-check h-6 w-6 border border-gray-300 rounded-md ${color.color} checked:border-transparent focus:outline-none`}
                         />
-                        <span className="text-gray-700 dark:text-white font-normal">{color.label}</span>
+                        <span className="font-normal text-gray-700 dark:text-white">{color.label}</span>
                     </label>
                 );
             })}

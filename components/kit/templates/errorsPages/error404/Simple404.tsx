@@ -2,15 +2,15 @@ import React from 'react';
 
 const Simple404 = () => {
     return (
-        <main className="bg-white relative overflow-hidden h-screen relative">
+        <main className="relative h-screen overflow-hidden bg-white">
             <header className="absolute top-0 left-0 right-0 z-20">
-                <nav className="container mx-auto px-6 md:px-12 py-4">
-                    <div className="md:flex justify-between items-center">
-                        <div className="flex justify-between items-center">
+                <nav className="container px-6 py-4 mx-auto md:px-12">
+                    <div className="items-center justify-between md:flex">
+                        <div className="flex items-center justify-between">
                             <div className="md:hidden">
                                 <button className="text-gray-800 focus:outline-none">
                                     <svg
-                                        className="h-12 w-12"
+                                        className="w-12 h-12"
                                         viewBox="0 0 24 24"
                                         fill="none"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -27,27 +27,27 @@ const Simple404 = () => {
                             </div>
                         </div>
 
-                        <div className="hidden md:flex md:items-center md:justify-end space-x-4">
-                            <button className="px-6 py-2 w-36 transition ease-in duration-200 uppercase hover:bg-blue-500 text-white border border-blue-400 bg-blue-400 focus:outline-none">
+                        <div className="hidden space-x-4 md:flex md:items-center md:justify-end">
+                            <button className="px-6 py-2 text-white uppercase transition duration-200 ease-in bg-blue-400 border border-blue-400 w-36 hover:bg-blue-500 focus:outline-none">
                                 Login
                             </button>
-                            <button className="px-6 py-2 w-36 transition ease-in duration-200 uppercase hover:bg-blue-400 hover:text-white border border-blue-400 focus:outline-none">
+                            <button className="px-6 py-2 uppercase transition duration-200 ease-in border border-blue-400 w-36 hover:bg-blue-400 hover:text-white focus:outline-none">
                                 Register
                             </button>
                         </div>
                     </div>
                 </nav>
             </header>
-            <div className="container mx-auto px-6 md:px-12 relative z-10 flex items-center py-32">
-                <div className="container mx-auto px-6 flex flex-col justify-between items-center relative">
-                    <div className="flex w-full items-center justify-center space-x-12 flex-col md:flex-row mb-16 md:mb-8">
-                        <h1 className="font-thin text-center text-6xl text-gray-800">GOT LOST ?</h1>
-                        <button className="px-3 py-2 w-32 font-light transition ease-in duration-200 uppercase hover:bg-yellow-600 hover:text-white border-b text-2xl border-yellow-600 focus:outline-none">
+            <div className="container relative z-10 flex items-center px-6 py-32 mx-auto md:px-12">
+                <div className="container relative flex flex-col items-center justify-between px-6 mx-auto">
+                    <div className="flex flex-col items-center justify-center w-full mb-16 space-x-12 md:flex-row md:mb-8">
+                        <h1 className="text-6xl font-thin text-center text-gray-800">GOT LOST ?</h1>
+                        <button className="w-32 px-3 py-2 text-2xl font-light uppercase transition duration-200 ease-in border-b border-yellow-600 hover:bg-yellow-600 hover:text-white focus:outline-none">
                             Help Me
                         </button>
                     </div>
 
-                    <div className="block w-full mx-auto mt-6 md:mt-0 relative">
+                    <div className="relative block w-full mx-auto mt-6 md:mt-0">
                         <svg
                             className="max-w-2xl m-auto"
                             viewBox="0 0 1440 1024"

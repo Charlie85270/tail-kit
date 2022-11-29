@@ -2,27 +2,27 @@ import React, { FC } from 'react';
 import Button from '../../elements/buttons/Button';
 const ClassicShoppingCard: FC = () => {
     return (
-        <div className="flex bg-white dark:bg-gray-800 rounded-lg shadow">
-            <div className="flex-none w-24 md:w-48  relative">
+        <div className="flex bg-white rounded-lg shadow dark:bg-gray-800">
+            <div className="relative flex-none w-24 md:w-48">
                 <img
                     src="/images/object/8.jpg"
                     alt="shopping image"
-                    className="absolute rounded-lg inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 object-cover w-full h-full rounded-lg"
                 />
             </div>
             <form className="flex-auto p-6">
                 <div className="flex flex-wrap">
                     <h1 className="flex-auto text-xl font-semibold dark:text-gray-50">Classic Utility Jacket</h1>
                     <div className="text-xl font-semibold text-gray-500 dark:text-gray-300">$110.00</div>
-                    <div className="w-full flex-none text-sm font-medium text-gray-500 dark:text-gray-300 mt-2">
+                    <div className="flex-none w-full mt-2 text-sm font-medium text-gray-500 dark:text-gray-300">
                         In stock
                     </div>
                 </div>
                 <div className="flex items-baseline mt-4 mb-6 text-gray-700 dark:text-gray-300">
-                    <div className="space-x-2 flex">
+                    <div className="flex space-x-2">
                         <label className="text-center">
                             <input
-                                className="w-6 h-6 flex items-center justify-center bg-gray-100 dark:bg-gray-600 rounded-lg"
+                                className="flex items-center justify-center w-6 h-6 bg-gray-100 rounded-lg dark:bg-gray-600"
                                 name="size"
                                 type="radio"
                                 value="xs"
@@ -31,7 +31,7 @@ const ClassicShoppingCard: FC = () => {
                         </label>
                         <label className="text-center">
                             <input
-                                className="w-6 h-6 flex items-center justify-center"
+                                className="flex items-center justify-center w-6 h-6"
                                 name="size"
                                 type="radio"
                                 value="s"
@@ -40,7 +40,7 @@ const ClassicShoppingCard: FC = () => {
                         </label>
                         <label className="text-center">
                             <input
-                                className="w-6 h-6 flex items-center justify-center"
+                                className="flex items-center justify-center w-6 h-6"
                                 name="size"
                                 type="radio"
                                 value="m"
@@ -49,7 +49,7 @@ const ClassicShoppingCard: FC = () => {
                         </label>
                         <label className="text-center">
                             <input
-                                className="w-6 h-6 flex items-center justify-center"
+                                className="flex items-center justify-center w-6 h-6"
                                 name="size"
                                 type="radio"
                                 value="l"
@@ -58,7 +58,7 @@ const ClassicShoppingCard: FC = () => {
                         </label>
                         <label className="text-center">
                             <input
-                                className="w-6 h-6 flex items-center justify-center"
+                                className="flex items-center justify-center w-6 h-6"
                                 name="size"
                                 type="radio"
                                 value="xl"
@@ -66,7 +66,7 @@ const ClassicShoppingCard: FC = () => {
                             XL
                         </label>
                     </div>
-                    <a href="#" className="ml-auto hidden md:block text-sm text-gray-500 dark:text-gray-300 underline">
+                    <a href="#" className="hidden ml-auto text-sm text-gray-500 underline md:block dark:text-gray-300">
                         Size Guide
                     </a>
                 </div>

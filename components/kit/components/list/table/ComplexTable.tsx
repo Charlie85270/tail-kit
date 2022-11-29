@@ -56,10 +56,10 @@ const ComplexTable = (props: Props) => {
         headers.push('');
     }
     return (
-        <div className="container mx-auto px-4 sm:px-8 max-w-3xl">
+        <div className="container max-w-3xl px-4 mx-auto sm:px-8">
             <div className="py-8">
                 {props.withHeader && (
-                    <div className="flex flex-row mb-1 sm:mb-0 justify-between w-full">
+                    <div className="flex flex-row justify-between w-full mb-1 sm:mb-0">
                         <h2 className="text-2xl leading-tight">Users</h2>
 
                         <div className="text-end">
@@ -68,8 +68,8 @@ const ComplexTable = (props: Props) => {
                     </div>
                 )}
 
-                <div className="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
-                    <div className="inline-block min-w-full shadow rounded-lg overflow-hidden">
+                <div className="px-4 py-4 -mx-4 overflow-x-auto sm:-mx-8 sm:px-8">
+                    <div className="inline-block min-w-full overflow-hidden rounded-lg shadow">
                         <table className="min-w-full leading-normal">
                             <thead>
                                 <tr>
@@ -78,7 +78,7 @@ const ComplexTable = (props: Props) => {
                                             <th
                                                 scope="col"
                                                 key={header}
-                                                className="px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal"
+                                                className="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200"
                                             >
                                                 {header}
                                             </th>
@@ -90,7 +90,7 @@ const ComplexTable = (props: Props) => {
                                 {rows.map((row) => {
                                     return (
                                         <tr key={row.user.name}>
-                                            <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                            <td className="px-5 py-5 text-sm bg-white border-b border-gray-200">
                                                 <div className="flex items-center">
                                                     <div className="flex-shrink-0">
                                                         <Avatar size="small" img={row.user.img} />
@@ -102,23 +102,23 @@ const ComplexTable = (props: Props) => {
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                            <td className="px-5 py-5 text-sm bg-white border-b border-gray-200">
                                                 <p className="text-gray-900 whitespace-no-wrap">{row.role}</p>
                                             </td>
-                                            <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                            <td className="px-5 py-5 text-sm bg-white border-b border-gray-200">
                                                 <p className="text-gray-900 whitespace-no-wrap">{row.date}</p>
                                             </td>
-                                            <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                                <span className="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
+                                            <td className="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                                                <span className="relative inline-block px-3 py-1 font-semibold leading-tight text-green-900">
                                                     <span
                                                         aria-hidden
-                                                        className="absolute inset-0 bg-green-200 opacity-50 rounded-full"
+                                                        className="absolute inset-0 bg-green-200 rounded-full opacity-50"
                                                     ></span>
                                                     <span className="relative">{row.status}</span>
                                                 </span>
                                             </td>
                                             {props.withAction && (
-                                                <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                <td className="px-5 py-5 text-sm bg-white border-b border-gray-200">
                                                     <a href="#" className="text-indigo-600 hover:text-indigo-900">
                                                         Edit
                                                     </a>
@@ -130,7 +130,7 @@ const ComplexTable = (props: Props) => {
                             </tbody>
                         </table>
                         {props.withPager && (
-                            <div className="px-5 bg-white py-5 flex flex-col xs:flex-row items-center xs:justify-between">
+                            <div className="flex flex-col items-center px-5 py-5 bg-white xs:flex-row xs:justify-between">
                                 <PagerButton />
                             </div>
                         )}

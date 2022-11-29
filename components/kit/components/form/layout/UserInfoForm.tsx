@@ -5,9 +5,9 @@ import Button from '../../elements/buttons/Button';
 
 const UserInfoForm = () => {
     return (
-        <section className="h-screen bg-gray-100 bg-opacity-50">
+        <section className="h-screen bg-gray-100/50">
             <form className="container max-w-2xl mx-auto shadow-md md:w-3/4">
-                <div className="p-4 bg-gray-100 border-t-2 border-indigo-400 rounded-lg bg-opacity-5">
+                <div className="p-4 border-t-2 border-indigo-400 rounded-lg bg-gray-100/5 ">
                     <div className="max-w-sm mx-auto md:w-full md:mx-0">
                         <div className="inline-flex items-center space-x-4">
                             <Avatar />

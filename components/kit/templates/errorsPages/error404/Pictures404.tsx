@@ -2,15 +2,15 @@ import React from 'react';
 
 const Pictures404 = () => {
     return (
-        <main className="bg-white relative overflow-hidden h-screen relative">
+        <main className="relative h-screen overflow-hidden bg-white">
             <header className="absolute top-0 left-0 right-0 z-20">
-                <nav className="container mx-auto px-6 md:px-12 py-4">
-                    <div className="md:flex justify-between items-center">
-                        <div className="flex justify-between items-center">
+                <nav className="container px-6 py-4 mx-auto md:px-12">
+                    <div className="items-center justify-between md:flex">
+                        <div className="flex items-center justify-between">
                             <div className="md:hidden">
                                 <button className="text-gray-800 focus:outline-none">
                                     <svg
-                                        className="h-12 w-12"
+                                        className="w-12 h-12"
                                         viewBox="0 0 24 24"
                                         fill="none"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -27,16 +27,16 @@ const Pictures404 = () => {
                             </div>
                         </div>
 
-                        <div className="hidden md:flex md:items-center md:justify-end space-x-4">
+                        <div className="hidden space-x-4 md:flex md:items-center md:justify-end">
                             <a
                                 href="#"
-                                className="px-3 py-2 transition ease-in duration-200 uppercase hover:text-gray-700 text-gray-400 focus:outline-none"
+                                className="px-3 py-2 text-gray-400 uppercase transition duration-200 ease-in hover:text-gray-700 focus:outline-none"
                             >
                                 Shop
                             </a>
                             <a
                                 href="#"
-                                className="px-3 py-2 transition ease-in duration-200 uppercase hover:text-gray-700 text-gray-400 focus:outline-none"
+                                className="px-3 py-2 text-gray-400 uppercase transition duration-200 ease-in hover:text-gray-700 focus:outline-none"
                             >
                                 Contact
                             </a>
@@ -44,18 +44,18 @@ const Pictures404 = () => {
                     </div>
                 </nav>
             </header>
-            <div className="container mx-auto h-screen pt-32 md:pt-0 px-6 z-10 flex items-center justify-between">
-                <div className="container mx-auto px-6 flex flex-col-reverse lg:flex-row justify-between items-center relative">
-                    <div className="w-full mb-16 md:mb-8 text-center lg:text-left">
-                        <h1 className="font-light font-sans text-center lg:text-left text-5xl lg:text-8xl mt-12 md:mt-0 text-gray-700">
+            <div className="container z-10 flex items-center justify-between h-screen px-6 pt-32 mx-auto md:pt-0">
+                <div className="container relative flex flex-col-reverse items-center justify-between px-6 mx-auto lg:flex-row">
+                    <div className="w-full mb-16 text-center md:mb-8 lg:text-left">
+                        <h1 className="mt-12 font-sans text-5xl font-light text-center text-gray-700 lg:text-left lg:text-8xl md:mt-0">
                             Sorry, this page isn't available
                         </h1>
-                        <button className="px-2 py-2 w-36 mt-16 font-light transition ease-in duration-200 hover:bg-yellow-400 border-2 text-lg border-gray-700 bg-yellow-300 focus:outline-none">
+                        <button className="px-2 py-2 mt-16 text-lg font-light transition duration-200 ease-in bg-yellow-300 border-2 border-gray-700 w-36 hover:bg-yellow-400 focus:outline-none">
                             Go back home
                         </button>
                     </div>
 
-                    <div className="block w-full mx-auto md:mt-0 relative max-w-md lg:max-w-2xl">
+                    <div className="relative block w-full max-w-md mx-auto md:mt-0 lg:max-w-2xl">
                         <img src="/images/illustrations/1.svg" />
                     </div>
                 </div>

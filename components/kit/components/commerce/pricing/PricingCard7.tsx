@@ -4,10 +4,10 @@ import { prices, notIncluded } from './PricingCard';
 
 const PricingCard7: FC = () => {
     return (
-        <div className="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="pricing-box max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-none lg:flex">
-                <div className="bg-white dark:bg-gray-800 px-6 py-8 lg:flex-shrink-1 lg:p-12">
-                    <h3 className="text-2xl leading-8 font-extrabold text-gray-900 sm:text-3xl sm:leading-9 dark:text-white">
+        <div className="relative max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
+            <div className="max-w-lg mx-auto overflow-hidden rounded-lg shadow-lg pricing-box lg:max-w-none lg:flex">
+                <div className="px-6 py-8 bg-white dark:bg-gray-800 lg:flex-shrink-1 lg:p-12">
+                    <h3 className="text-2xl font-extrabold leading-8 text-gray-900 sm:text-3xl sm:leading-9 dark:text-white">
                         Zero Commission
                     </h3>
                     <p className="mt-6 text-base leading-6 text-gray-500 dark:text-gray-200">
@@ -16,7 +16,7 @@ const PricingCard7: FC = () => {
                     </p>
                     <div className="mt-8">
                         <div className="flex items-center">
-                            <h4 className="flex-shrink-0 pr-4 bg-white dark:bg-gray-800 text-sm leading-5 tracking-wider font-semibold uppercase text-indigo-600">
+                            <h4 className="flex-shrink-0 pr-4 text-sm font-semibold leading-5 tracking-wider text-indigo-600 uppercase bg-white dark:bg-gray-800">
                                 What's included
                             </h4>
                             <div className="flex-1 border-t-2 border-gray-200"></div>
@@ -27,7 +27,7 @@ const PricingCard7: FC = () => {
                                     <li className="flex items-start lg:col-span-1" key={price.label}>
                                         <div className="flex-shrink-0">
                                             <svg
-                                                className="h-6 w-6 mr-2"
+                                                className="w-6 h-6 mr-2"
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 width="6"
                                                 height="6"
@@ -48,7 +48,7 @@ const PricingCard7: FC = () => {
                     </div>
                     <div className="mt-8">
                         <div className="flex items-center">
-                            <h4 className="flex-shrink-0 pr-4 bg-white text-sm dark:bg-gray-800 leading-5 tracking-wider font-semibold uppercase text-indigo-600">
+                            <h4 className="flex-shrink-0 pr-4 text-sm font-semibold leading-5 tracking-wider text-indigo-600 uppercase bg-white dark:bg-gray-800">
                                 &amp; What's not
                             </h4>
                         </div>
@@ -61,7 +61,7 @@ const PricingCard7: FC = () => {
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 width="6"
                                                 height="6"
-                                                className="h-6 w-6 mr-2"
+                                                className="w-6 h-6 mr-2"
                                                 fill="red"
                                                 viewBox="0 0 1792 1792"
                                             >
@@ -75,14 +75,14 @@ const PricingCard7: FC = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="py-8 px-6 text-center bg-gray-50 dark:bg-gray-700 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
-                    <p className="text-lg leading-6 font-bold text-gray-900 dark:text-white">Free</p>
-                    <div className="mt-4 flex items-center justify-center text-5xl leading-none font-extrabold text-gray-900 dark:text-white">
+                <div className="px-6 py-8 text-center bg-gray-50 dark:bg-gray-700 lg:flex-shrink-0 lg:flex lg:flex-col lg:justify-center lg:p-12">
+                    <p className="text-lg font-bold leading-6 text-gray-900 dark:text-white">Free</p>
+                    <div className="flex items-center justify-center mt-4 text-5xl font-extrabold leading-none text-gray-900 dark:text-white">
                         <span>$0/mo</span>
                     </div>
                     <p className="mt-4 text-sm leading-5">
                         <span className="block font-medium text-gray-500 dark:text-gray-400">Card payments:</span>
-                        <span className=" inline-block font-medium text-gray-500 dark:text-gray-400">
+                        <span className="inline-block font-medium text-gray-500  dark:text-gray-400">
                             2.9% + 20p per transaction
                         </span>
                     </p>

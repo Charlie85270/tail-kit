@@ -4,9 +4,9 @@ import ShadowTeam from './ShadowTeam';
 const ShadowTeams = () => {
     return (
         <div className="p-4">
-            <p className="text-center text-3xl font-bold text-gray-800">Professional team</p>
-            <p className="text-center mb-32 text-xl font-normal text-gray-500">Meat the best team in wolrd</p>
-            <div className="flex items-center space-y-24 md:space-y-0 flex-col md:flex-row justify evenly">
+            <p className="text-3xl font-bold text-center text-gray-800">Professional team</p>
+            <p className="mb-32 text-xl font-normal text-center text-gray-500">Meat the best team in wolrd</p>
+            <div className="flex flex-col items-center space-y-24 md:space-y-0 md:flex-row justify evenly">
                 <ShadowTeam
                     img="/images/person/1.jpg"
                     name="Patrick Sebastien"

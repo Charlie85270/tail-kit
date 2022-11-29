@@ -2,18 +2,18 @@ import React from 'react';
 
 const ActivityCard = () => {
     return (
-        <div className="shadow-lg rounded-xl w-full md:w-80 p-4 bg-white dark:bg-gray-800 relative overflow-hidden">
-            <div className="w-full flex items-center justify-between mb-8">
-                <p className="text-gray-800 dark:text-white text-xl font-normal">Activity</p>
+        <div className="relative w-full p-4 overflow-hidden bg-white shadow-lg rounded-xl md:w-80 dark:bg-gray-800">
+            <div className="flex items-center justify-between w-full mb-8">
+                <p className="text-xl font-normal text-gray-800 dark:text-white">Activity</p>
                 <a
                     href="#"
-                    className="flex items-center text-sm hover:text-gray-600 dark:text-gray-50 dark:hover:text-white text-gray-300 border-0 focus:outline-none"
+                    className="flex items-center text-sm text-gray-300 border-0 hover:text-gray-600 dark:text-gray-50 dark:hover:text-white focus:outline-none"
                 >
                     VIEW ALL
                 </a>
             </div>
-            <div className="flex items-start mb-6 rounded justify-between">
-                <span className="rounded-full text-white dark:text-gray-800 p-2 bg-yellow-300">
+            <div className="flex items-start justify-between mb-6 rounded">
+                <span className="p-2 text-white bg-yellow-300 rounded-full dark:text-gray-800">
                     <svg
                         width="20"
                         height="20"
@@ -25,18 +25,18 @@ const ActivityCard = () => {
                     </svg>
                 </span>
 
-                <div className="flex items-center w-full justify-between">
-                    <div className="flex text-sm flex-col w-full ml-2 items-start justify-between">
+                <div className="flex items-center justify-between w-full">
+                    <div className="flex flex-col items-start justify-between w-full ml-2 text-sm">
                         <p className="text-gray-700 dark:text-white">
-                            <span className="font-bold mr-1">Andrea &nbsp;</span> uploaded 3 documents on concept deisgn
+                            <span className="mr-1 font-bold">Andrea &nbsp;</span> uploaded 3 documents on concept deisgn
                             home page
                         </p>
                         <p className="text-gray-300">Aug 10</p>
                     </div>
                 </div>
             </div>
-            <div className="flex items-start mb-6 rounded justify-between">
-                <span className="rounded-full text-white dark:text-gray-800 p-2 bg-green-400">
+            <div className="flex items-start justify-between mb-6 rounded">
+                <span className="p-2 text-white bg-green-400 rounded-full dark:text-gray-800">
                     <svg
                         width="20"
                         height="20"
@@ -48,18 +48,18 @@ const ActivityCard = () => {
                     </svg>
                 </span>
 
-                <div className="flex items-center w-full justify-between">
-                    <div className="flex text-sm flex-col w-full ml-2 items-start justify-between">
+                <div className="flex items-center justify-between w-full">
+                    <div className="flex flex-col items-start justify-between w-full ml-2 text-sm">
                         <p className="text-gray-700 dark:text-white">
-                            <span className="font-bold mr-1">Karen &nbsp;</span> leave some comments on concept deisgn
+                            <span className="mr-1 font-bold">Karen &nbsp;</span> leave some comments on concept deisgn
                             support page
                         </p>
                         <p className="text-gray-300">Aug 10</p>
                     </div>
                 </div>
             </div>
-            <div className="flex items-start mb-6 rounded justify-between">
-                <span className="rounded-full text-white dark:text-gray-800 p-2 bg-indigo-400">
+            <div className="flex items-start justify-between mb-6 rounded">
+                <span className="p-2 text-white bg-indigo-400 rounded-full dark:text-gray-800">
                     <svg
                         width="20"
                         height="20"
@@ -71,18 +71,18 @@ const ActivityCard = () => {
                     </svg>
                 </span>
 
-                <div className="flex items-center w-full justify-between">
-                    <div className="flex text-sm flex-col w-full ml-2 items-start justify-between">
+                <div className="flex items-center justify-between w-full">
+                    <div className="flex flex-col items-start justify-between w-full ml-2 text-sm">
                         <p className="text-gray-700 dark:text-white">
-                            <span className="font-bold mr-1">Karen &nbsp;</span> change project description to
+                            <span className="mr-1 font-bold">Karen &nbsp;</span> change project description to
                             "SubMarine protection project"
                         </p>
                         <p className="text-gray-300">Aug 09</p>
                     </div>
                 </div>
             </div>
-            <div className="flex items-start rounded justify-between">
-                <span className="rounded-full text-white dark:text-gray-800 p-2 bg-yellow-300">
+            <div className="flex items-start justify-between rounded">
+                <span className="p-2 text-white bg-yellow-300 rounded-full dark:text-gray-800">
                     <svg
                         width="20"
                         height="20"
@@ -94,10 +94,10 @@ const ActivityCard = () => {
                     </svg>
                 </span>
 
-                <div className="flex items-center w-full justify-between">
-                    <div className="flex text-sm flex-col w-full ml-2 items-start justify-between">
+                <div className="flex items-center justify-between w-full">
+                    <div className="flex flex-col items-start justify-between w-full ml-2 text-sm">
                         <p className="text-gray-700 dark:text-white">
-                            <span className="font-bold mr-1">John &nbsp;</span> uploaded 17 pictures on concept deisgn
+                            <span className="mr-1 font-bold">John &nbsp;</span> uploaded 17 pictures on concept deisgn
                             galery page
                         </p>
                         <p className="text-gray-300">Aug 1</p>

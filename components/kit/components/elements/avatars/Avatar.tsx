@@ -21,7 +21,7 @@ const Avatar = ({ withBorder, size, withInfo, type, img }: Props) => {
         roundedClasses = type === 'square' ? '' : 'rounded-lg';
     }
     return (
-        <a href="#" className="block relative">
+        <a href="#" className="relative block">
             <img
                 alt="profil"
                 src={img || '/images/person/1.jpg'}
@@ -30,7 +30,7 @@ const Avatar = ({ withBorder, size, withInfo, type, img }: Props) => {
                 }`}
             />
             {withInfo && (
-                <span className="absolute w-3 border-2 left-1/2 -bottom-2 transform -translate-x-1/2 border-white h-3 bg-green-500 rounded-full"></span>
+                <span className="absolute w-3 h-3 transform -translate-x-1/2 bg-green-500 border-2 border-white rounded-full left-1/2 -bottom-2"></span>
             )}
         </a>
     );

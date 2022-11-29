@@ -2,12 +2,12 @@ import React, { FC } from 'react';
 import Button from '../../elements/buttons/Button';
 const BandeauInfo: FC = () => {
     return (
-        <section className="max-w-screen-xl bg-green-500 dark:bg-gray-800 px-4 py-12 mx-auto sm:py-16 sm:px-6 lg:px-8 lg:py-20">
+        <section className="max-w-screen-xl px-4 py-12 mx-auto bg-green-500 dark:bg-gray-800 sm:py-16 sm:px-6 lg:px-8 lg:py-20">
             <div className="max-w-4xl mx-auto text-center">
                 <h2 className="text-3xl font-extrabold leading-9 text-white sm:text-4xl sm:leading-10">
                     Used by leading architects, home builders renovators.
                 </h2>
-                <p className="mt-3 text-base leading-7 sm:mt-4 text-white">
+                <p className="mt-3 text-base leading-7 text-white sm:mt-4">
                     Feel confident in choosing the best energy assessor for your energy rating.
                 </p>
             </div>
@@ -25,10 +25,10 @@ const BandeauInfo: FC = () => {
                     <p className="mt-2 text-base font-medium leading-6 text-white">Average turnaround</p>
                 </div>
             </div>
-            <div className="w-52 mx-auto mt-4 p-4 flex">
+            <div className="flex p-4 mx-auto mt-4 w-52">
                 <button
                     type="button"
-                    className="py-2 px-4  bg-gradient-to-r from-green-400 to-green-400 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 "
+                    className="w-full px-4 py-2 text-base font-semibold text-center text-white transition duration-200 ease-in shadow-md bg-gradient-to-r from-green-400 to-green-400 focus:outline-none focus:ring-2 focus:ring-offset-2 "
                 >
                     Buy the kit
                 </button>

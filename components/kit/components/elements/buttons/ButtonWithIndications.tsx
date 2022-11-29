@@ -13,7 +13,7 @@ const ButtonWithIndications = (props: Props) => {
             <button
                 onClick={() => props.onClick()}
                 type="button"
-                className="w-full flex items-center border-l border-t border-b text-base font-medium rounded-l-md text-black bg-white hover:bg-gray-100 px-4 py-2"
+                className="flex items-center w-full px-4 py-2 text-base font-medium text-black bg-white border-t border-b border-l rounded-l-md hover:bg-gray-100"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +31,7 @@ const ButtonWithIndications = (props: Props) => {
             <button
                 type="button"
                 onClick={() => props.onIndicationClick()}
-                className="w-full border text-base font-medium rounded-r-md text-black bg-white hover:bg-gray-100 px-4 py-2"
+                className="w-full px-4 py-2 text-base font-medium text-black bg-white border rounded-r-md hover:bg-gray-100"
             >
                 {props.indication}
             </button>

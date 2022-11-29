@@ -3,7 +3,7 @@ import SimpleTestimonial from './SimpleTestimonial';
 
 const MultipleTestimonial = () => {
     return (
-        <div className="w-full flex flex-col md:flex-row gap-4 mb-8 md:mb-0 flex-between items-center p-8">
+        <div className="flex flex-col items-center w-full gap-4 p-8 mb-8 md:flex-row md:mb-0 flex-between">
             <SimpleTestimonial withShadow={true} />
 
             <SimpleTestimonial withShadow={true} />

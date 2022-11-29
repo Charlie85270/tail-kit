@@ -2,10 +2,10 @@ import React, { FC } from 'react';
 import MultipleAvatar from '../avatars/MultipleAvatar';
 const GoogleTask: FC = () => {
     return (
-        <div className="shadow-lg rounded-2xl p-4 bg-white dark:bg-gray-700 w-full">
+        <div className="w-full p-4 bg-white shadow-lg rounded-2xl dark:bg-gray-700">
             <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center">
-                    <span className="rounded-xl relative p-2 bg-blue-100">
+                    <span className="relative p-2 bg-blue-100 rounded-xl">
                         <svg
                             width="25"
                             height="25"
@@ -32,12 +32,12 @@ const GoogleTask: FC = () => {
                         </svg>
                     </span>
                     <div className="flex flex-col">
-                        <span className="font-bold text-md text-black dark:text-white ml-2">Google</span>
-                        <span className="text-sm text-gray-500 dark:text-white ml-2">Google Inc.</span>
+                        <span className="ml-2 font-bold text-black text-md dark:text-white">Google</span>
+                        <span className="ml-2 text-sm text-gray-500 dark:text-white">Google Inc.</span>
                     </div>
                 </div>
                 <div className="flex items-center">
-                    <button className="border p-1 border-gray-200 rounded-full">
+                    <button className="p-1 border border-gray-200 rounded-full">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="20"
@@ -64,37 +64,37 @@ const GoogleTask: FC = () => {
             </div>
 
             <div className="flex items-center justify-between mb-4 space-x-12">
-                <span className="px-2 py-1 flex items-center font-semibold text-xs rounded-md text-gray-500 bg-gray-200">
+                <span className="flex items-center px-2 py-1 text-xs font-semibold text-gray-500 bg-gray-200 rounded-md">
                     PROGRESS
                 </span>
-                <span className="px-2 py-1 flex items-center font-semibold text-xs rounded-md text-red-400 border border-red-400  bg-white">
+                <span className="flex items-center px-2 py-1 text-xs font-semibold text-red-400 bg-white border border-red-400 rounded-md">
                     HIGH PRIORITY
                 </span>
             </div>
 
             <div className="block m-auto">
                 <div>
-                    <span className="text-sm inline-block text-gray-500 dark:text-gray-100">
-                        Task done : <span className="text-gray-700 dark:text-white font-bold">25 </span> /50
+                    <span className="inline-block text-sm text-gray-500 dark:text-gray-100">
+                        Task done : <span className="font-bold text-gray-700 dark:text-white">25 </span> /50
                     </span>
                 </div>
-                <div className="w-full h-2 bg-gray-200 rounded-full mt-2">
-                    <div className="w-1/2 h-full text-center text-xs text-white bg-purple-500 rounded-full"></div>
+                <div className="w-full h-2 mt-2 bg-gray-200 rounded-full">
+                    <div className="w-1/2 h-full text-xs text-center text-white bg-purple-500 rounded-full"></div>
                 </div>
             </div>
 
             <div className="flex items-center justify-start my-4 space-x-4">
-                <span className="px-2 py-1 flex items-center text-xs rounded-md font-semibold text-green-500 bg-green-50">
+                <span className="flex items-center px-2 py-1 text-xs font-semibold text-green-500 rounded-md bg-green-50">
                     IOS APP
                 </span>
-                <span className="px-2 py-1 flex items-center text-xs rounded-md text-blue-500 font-semibold bg-blue-100">
+                <span className="flex items-center px-2 py-1 text-xs font-semibold text-blue-500 bg-blue-100 rounded-md">
                     UI/UX
                 </span>
             </div>
 
             <MultipleAvatar size="small" />
 
-            <span className="px-2 py-1 flex w-36 mt-4 items-center text-xs rounded-md font-semibold text-yellow-500 bg-yellow-100">
+            <span className="flex items-center px-2 py-1 mt-4 text-xs font-semibold text-yellow-500 bg-yellow-100 rounded-md w-36">
                 DUE DATE : 18 JUN
             </span>
         </div>
