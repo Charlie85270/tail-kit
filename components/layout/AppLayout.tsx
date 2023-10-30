@@ -1,7 +1,6 @@
 import FooterLight from '../kit/components/navigation/footer/FooterLight';
 import Meta from '../site/Meta';
 import AppHeader from '../site/header/AppHeader';
-import AdBanner from '../site/Pub/Banner';
 
 const footerLink = [
     {
@@ -91,11 +90,6 @@ const AppLayout = ({ title, desc, children, withPub }: Props) => {
                     >
                         {children}
                     </main>
-                    {withPub && (
-                        <div className="top-0 right-0 px-2 pt-32 pr-4 mt-8 w-80 xs:hidden 2xl:absolute">
-                            <AdBanner isVertical />
-                        </div>
-                    )}
                 </div>
             </div>
             <div className="dark">

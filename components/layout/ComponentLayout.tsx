@@ -8,7 +8,6 @@ import Link from 'next/link';
 import ReactDOMServer from 'react-dom/server';
 import Toggle from '../kit/components/form/toggle/Toggle';
 import { formatHtml } from '../../utils/Utils';
-import AdBanner from '../site/Pub/Banner';
 
 interface Props {
     element: JSX.Element;
@@ -206,22 +205,6 @@ const ComponentLayout = (props: Props) => {
                     </div>
                 </LiveProvider>
             </div>
-            {props.withPub && (
-                <div
-                    className={`bg-gray-100 shadow rounded-xl mb-4 ${
-                        props.containerClasses ? props.containerClasses : ''
-                    }`}
-                    key={props.title}
-                >
-                    <div className="flex flex-col items-center justify-between p-4 bg-white border md:flex-row rounded-xl">
-                        <p className="mb-2 text-xl font-light text-gray-600 md:mb-0">Publicity </p>
-                        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-                    </div>
-                    <div className="p-4">
-                        <AdBanner />
-                    </div>
-                </div>
-            )}
         </>
     );
 };

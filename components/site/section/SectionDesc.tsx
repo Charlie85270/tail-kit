@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import Badge from '../../kit/components/elements/badges/Badge';
-import SquarePub from '../Pub/SquarePub';
 
 interface Props {
     items: section[];
@@ -79,7 +78,6 @@ const SectionDesc = ({ title, items, id, hasCommingSoon, isTemplate, withPub }: 
                     )}
                 </>
             </div>
-            {withPub && <SquarePub />}
         </div>
     );
 };
