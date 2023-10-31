@@ -89,7 +89,7 @@ const AppLayout = ({ title, desc, children, withPub }: Props) => {
                     <main
                         className={`mx-auto ${withPub ? 'max-w-6xl' : 'max-w-7xl'} px-4 mt-8 sm:px-6  lg:px-8 h-full`}
                     >
-                        <div className="relative flex flex-col items-center justify-between w-full mb-5 rounded shadow-lg h-44 overflow-hidden md:flex-row">
+                        <div className="relative hidden md:flex flex-col items-center justify-between w-full mb-5 rounded shadow-lg h-44 overflow-hidden md:flex-row">
                             <img src="/banner.jpg" className="absolute w-full h-full rounded-lg z-1" />
                             <div className="flex items-center justify-between px-6 pt-4 my-2 md:pt-0 w-54 md:w-72">
                                 <div className="z-10 flex justify-between w-72 item-center">
